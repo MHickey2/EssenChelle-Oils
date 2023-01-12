@@ -15,6 +15,11 @@ body {
     font-family: 'Courgette';
 }
 
+.nav-link {
+    color: purple!important;
+    font-size: 20px;
+}
+
 /* from Bulma */
 .icon {
     align-items: center;
@@ -69,6 +74,10 @@ body {
 
 .bg-black {
     background-color: #000 !important;
+}
+
+.bg-purple {
+    background-color: purple!important;
 }
 
 .overlay {

@@ -36,14 +36,17 @@
 
     <title>EssenChelle Oils {% block extra_title %}{% endblock %}</title>    
   </head>
-  <body>
-    <header class="container-fluid fixed-top"></header>
-    <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
-        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+  <body>    
+    <header class="container-fluid fixed-top"></header>        
+    <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">        
+        <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">           
             <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                <h2 class="logo-font text-purple my-0"><strong>EssenChelle Oils</strong></h2>
+                <!-- <img src="media/logo.png" width="150" alt="logo image" class="">-->
+                      
+                <h2 class="logo-font text-purple my-0"><strong>EssenChelle Oils</strong></h2>    
             </a>
         </div>
+        
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
             <form method="GET" action="">
                 <div class="input-group w-100">
@@ -97,6 +100,7 @@
             </ul>
         </div>
     </div>
+
     <div class="row bg-white">
         <nav class="navbar navbar-expand-lg navbar-light w-100">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">

@@ -10,21 +10,21 @@
           "category":1,
           "rating":4.6,
           "image_url":"",
-          "image":"media/teatree.png"
+          "image":"teatree.png"
        }
     },
     {
        "pk":2,
        "model":"products.product",
        "fields":{
-          "sku":"pp5001600425",
+          "sku":"pp5001600418",
           "name":"Lavender Oil",
           "description":"Lavender essential oil is often considered a must-have oil due to its versatile uses. Its calming and relaxing aroma promotes a peaceful environment conducive to sleep and it can ease feelings of tension when used internally.",
           "price":12.99,
           "category":1,
           "rating":4.2,
           "image_url":"",
-          "image":"media/lavender.png"
+          "image":"lavender.png"
        }
     },
     {
@@ -38,7 +38,21 @@
            "category":1,
            "rating":4.8,
            "image_url":"",
-           "image":"media/lemon.png"
+           "image":"lemon.png"
         }
-     }
+     },
+     {
+      "pk":4,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001600495",
+         "name":"Rosemary Oil",
+         "description":"While it is frequently used for cooking, Rosemary has long been revered by many cultures for its internal benefits and energizing scent.",
+         "price":13.99,
+         "category":1,
+         "rating":4.6,
+         "image_url":"",
+         "image":"lemon.png"
+      }
+   }
  ]

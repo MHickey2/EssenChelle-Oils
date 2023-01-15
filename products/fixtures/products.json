@@ -54,5 +54,175 @@
          "image_url":"",
          "image":"lemon.png"
       }
-   }
+   },
+   {
+      "pk":5,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001640495",
+         "name":"Citronella Oil",
+         "description":"Citronella is a tall grass grown in Asia with a crisp, fresh aroma. It is soothing to the skin and creates an uplifting atmosphere. Citronella essential oil is a known powerful insect repellent and an ideal companion during outdoor activities.",
+         "price":14.99,
+         "category":1,
+         "rating":4.1,
+         "image_url":"",
+         "image":"citronella.png"
+      }
+   },
+   {
+      "pk":6,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001360495",
+         "name":"Eucalyptus Oil",
+         "description":"",
+         "price":12.99,
+         "category":1,
+         "rating":3.9,
+         "image_url":" Eucalyptus also has cleansing properties. Use aromatically or topically to promote feelings of clear breathing and open airways. Eucalyptus also adds to a soothing massage.",
+         "image":"eucalyptus.png"
+      }
+   },
+   {
+      "pk":7,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001360595",
+         "name":"Frankincense Oil",
+         "description":"Considered the The king of oils, Frankincense has extraordinary health benefits when used topically or taken internally. ",
+         "price":14.50,
+         "category":1,
+         "rating":4.3,
+         "image_url":"",
+         "image":"frankincense.png"
+      }
+   },
+   {
+      "pk":8,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001360495",
+         "name":"Lemongrass Oil",
+         "description":"A favorite oil for massages, Lemongrass oil provides a pungent, smoky aroma, and offers purifying and toning benefits for the skin. ",
+         "price":13.99,
+         "category":1,
+         "rating":4.6,
+         "image_url":"",
+         "image":"lemongrass.png"
+      }
+   },
+   {
+      "pk":9,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5056360495",
+         "name":"Patchouli Oil",
+         "description":" ",
+         "price":12.99,
+         "category":1,
+         "rating":4.2,
+         "image_url":"A member of the mint family, Patchouli oil is known to help with skin imperfections and for its grounding, earthy aroma.",
+         "image":"patchouli.png"
+      }
+   },
+   {
+      "pk":10,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp5001240495",
+         "name":"Peppermint Oil",
+         "description":"Peppermint oil also helps alleviate occasional stomach upset and promotes healthy respiratory function when taken internally. ",
+         "price":13.99,
+         "category":1,
+         "rating":4.7,
+         "image_url":"",
+         "image":"peppermint.png"
+      }
+   },    
+   {
+      "pk":11,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp6101240495",
+         "name":"Elephant Oil Burner",
+         "description":"Rustic oil burner in an elephant shape",
+         "price":16.00,
+         "category":3,
+         "rating":4.7,
+         "image_url":"",
+         "image":"elephantburner.png"
+      }
+   }, 
+   {
+      "pk":12,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp6101240495",
+         "name":"Nighttime Oil Burner",
+         "description":"Quirky nightime Burner with the moon and the stars design, perfect for your nightime relaxation.",
+         "price":17.00,
+         "category":3,
+         "rating":4.3,
+         "image_url":"",
+         "image":"nightburner.png"
+      }
+   },
+   {
+      "pk":13,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp6101240495",
+         "name":"Old Urn Oil Burner",
+         "description":"Stylish Antiquated Urn shaped Burner, which is eloguent in design",
+         "price":15.00,
+         "category":3,
+         "rating":4.4,
+         "image_url":"",
+         "image":"oldurnburner.png"
+      }
+   }, 
+   {
+      "pk":14,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp6101240495",
+         "name":"Oriental Oil Burner",
+         "description":"Multicoloured Burner which is oriental in design, which will create a joyful ambience",
+         "price":17.50,
+         "category":3,
+         "rating":4.7,
+         "image_url":"",
+         "image":"orientalburner.png"
+      }
+   }, 
+   {
+      "pk":15,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp6101240495",
+         "name":"Teapot Oil Burner",
+         "description":"Ceramic Teapot oil burner, which is delicate but quirky in nature ",
+         "price":15.00,
+         "category":3,
+         "rating":4.2,
+         "image_url":"",
+         "image":"teapot.png"
+      }
+   }, 
+   {
+      "pk":16,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp6101240495",
+         "name":"White Ceramic Oil Burner",
+         "description":"Simple but beautiful Oil Burner with a floral design",
+         "price":14.00,
+         "category":3,
+         "rating":4.1,
+         "image_url":"",
+         "image":"whiteceramic.png"
+      }
+   } 
+       
+   
  ]

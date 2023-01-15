@@ -19,8 +19,8 @@
        "pk":3,
        "model":"products.category",
        "fields":{
-          "name":"diffusers",
-          "friendly_name":"Diffusers"
+          "name":"oil_burners",
+          "friendly_name":"Burners"
        }
     },
     {

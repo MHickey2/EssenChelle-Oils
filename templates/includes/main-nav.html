@@ -17,10 +17,10 @@
                 EssenChelle Product Line
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="product-link">
-                <a href="" class="dropdown-item  logo-font nav-link">Essential Oils</a>
-                <a href="" class="dropdown-item  logo-font nav-link">Massage Oils</a>
-                <a href="" class="dropdown-item  logo-font nav-link">Oil Burners</a>                
-                <a href="{% url 'products' %}" class="dropdown-item  logo-font nav-link">All Products</a>
+                <a href="{% url 'products' %}?category=essential_oils" class="dropdown-item  logo-font nav-link">Essential Oils</a>
+                <a href="{% url 'products' %}?category=massage_oils" class="dropdown-item  logo-font nav-link">Massage Oils</a>
+                <a href="{% url 'products' %}?category=oil_burners" class="dropdown-item  logo-font nav-link">Oil Burners</a>                
+                <a href="{% url 'products' %}?category=essential_oils,massage_oils,oil_burners" class="dropdown-item  logo-font nav-link">All Products</a>
             </div>
         </li>
 
@@ -40,10 +40,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item logo-font nav-link">New Arrivals</a>
-                <a href="" class="dropdown-item logo-font nav-link">Deals</a>
-                <a href="" class="dropdown-item logo-font nav-link">Clearance</a>
-                <a href="" class="dropdown-item logo-font nav-link">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item logo-font nav-link">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item logo-font nav-link">Deals</a>
+                <a href="{% url 'products' %}?category=clearance_items" class="dropdown-item logo-font nav-link">Clearance</a>
+                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance_items" class="dropdown-item logo-font nav-link">All Specials</a>
             </div>
         </li>
     </ul>

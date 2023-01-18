@@ -22,6 +22,15 @@
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
 
+    {% block additional_styles %}
+        <style>
+        body {
+            background: url('/media/massageoil.jpg') no-repeat center center fixed;
+            background-size: cover;           
+        }
+        </style>
+    {% endblock %}
+
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
 
     {% block corejs %}

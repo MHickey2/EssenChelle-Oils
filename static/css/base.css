@@ -3,9 +3,7 @@ html {
     height: 100%;
 }
 
-body {
-    background: url('/media/massageoil.jpg') no-repeat center center fixed;
-    background-size: cover;
+body {    
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Roboto';
@@ -90,6 +88,17 @@ body {
 	z-index: -1;
 }
 
+.overlayabout {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+    background-color: darksalmon;    
+	z-index: -1;
+}
+
+
 .background {
     background-color: rgb(230, 198, 209);
 }
@@ -105,6 +114,67 @@ footer {
     background-color: purple;
     padding: 10px;
     color: white;
+}
+
+.card-img-top {
+    object-fit: cover;
+    width: 250px;
+    height: auto;
+    
+}
+
+.text-about {
+    width: 80%;
+    color: black;    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-image {
+    padding: 10px;
+    position: cover-fit;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-newsletter {
+    padding: 40px 0;
+    background: #f84e77;
+    }
+    
+.home-newsletter .single {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2; 
+}
+
+.home-newsletter .single h2 {
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 20px; 
+}
+
+.home-newsletter .single .form-control {
+    height: 50px;
+    background: rgba(255, 255, 255, 0.6);
+    border-color: transparent;
+    border-radius: 20px 0 0 20px; 
+}
+
+.home-newsletter .single .form-control:focus {
+    box-shadow: none;
+    border-color: #243c4f; 
+}
+    .home-newsletter .single .btn {
+    min-height: 50px; 
+    border-radius: 0 20px 20px 0;
+    background: #243c4f;
+    color: #fff;
 }
 
 /* -------------------------------- Media Queries */

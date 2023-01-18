@@ -138,9 +138,121 @@
          "image_url":"",
          "image":"peppermint.png"
       }
-   },    
+   },
    {
       "pk":11,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp6107320495",
+         "name":"Sweet Almond Oil",
+         "description":"Sweet Almond Oil is a rich, nourishing base to which other essential oils are added for use in body massage. It is both colourless and odourless and may offer relief for dry and itchy skin. It is easily absorbed by the skin and offers nourishment and soothing care. Sweet almond can also be used in aromatic baths, for inhalation and as body massage oil.",
+         "price":4.40,
+         "category":2,
+         "rating":3.9,
+         "image_url":"",
+         "image":"sweetalmond.png"
+      }
+   }, 
+   {
+      "pk":12,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp4321240495",
+         "name":"Light Coconut Oil",
+         "description":" Light Coconut Oil is made from pure oil extracted from the coconut, cocos nucifera and deodourised. This product is an amazing pure body moisturiser, its cooling and moisturising properties work to protect the skin and retain moisture. It is particularly useful after exposure to the sun to help nourish the skin.",
+         "price":5.80,
+         "category":2,
+         "rating":4.2,
+         "image_url":"",
+         "image":"coconutoil.png"
+      }
+   },
+   {
+      "pk":13,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp6731240495",
+         "name":"Rose Oil In Almond Oil",
+         "description":"Rose Oil, 0.4% in sweet Almond Oil is an all round balancing oil ideal as a general aromatherapy massage oil because of its richness and nourishing qualities. You can add this product to essential oils to make a beautiful massage oil, which works particularly well on mature skin as it is very rich and contains many moisturising properties. ",
+         "price":10.45,
+         "category":2,
+         "rating":4.4,
+         "image_url":"",
+         "image":"roseoil.png"
+      }
+   },
+   {
+      "pk":14,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp6109870495",
+         "name":"Jojoba Oil",
+         "description":"ojoba is a liquid wax, smooth and moisturising and naturally rich in antioxidants and fatty acids. When applied in massage, Jojoba will soften and condition the skin, leaving it with a silky finish. Jojoba is highly compatible with the skin's own natural oils and therefore beautifully absorbent. ",
+         "price":20.50,
+         "category":2,
+         "rating":4.6,
+         "image_url":"",
+         "image":"jojobaoil.png"
+      }
+   },
+   {
+      "pk":15,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp6101273495",
+         "name":"Arnica Oil",
+         "description":"Arnica Oil is a pure oil extracted from the flowers of arnica montana in helianthus annus oil, used for its pain-relieving and health promoting properties. This product is particularly useful for exercise related injuries such as sprains or bruises.. It is not recommended for aromatherapy as it is very potent and could be toxic. ",
+         "price":10.00,
+         "category":2,
+         "rating":4.7,
+         "image_url":"",
+         "image":"arnicaoil.png"
+      }
+   },
+   {
+      "pk":16,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp7981240495",
+         "name":"Frankincense Massage & Body Oil",
+         "description":"A deeply relaxing and meditative massage oil, Atlantic Aromatics massage oils are blended in small batches to ensure freshness, using the finest quality essential oils and cold pressed unrefined sweet almond oil. They are free from alcohol and preservatives and are not tested on animals",
+         "price":14.60,
+         "category":2,
+         "rating":4.8,
+         "image_url":"",
+         "image":"frankincenseoil.png"
+      }
+   },
+   {
+      "pk":17,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp6101240495",
+         "name":"Neroli Massage Oil",
+         "description":"Neroli Massage Blend is a multi-purpose natural oil blend. The aromas of Neroli and Mandarin may help to uplift mood and help one to relax during periods of anxiety. It is also incredible at reducing the appearance of stretch marks. It can be used during pregnancy to prevent stretch marks from ever appearing. ",
+         "price":18.00,
+         "category":2,
+         "rating":4.7,
+         "image_url":"",
+         "image":"nerolioil.png"
+      }
+   },
+   {
+      "pk":18,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp6101240495",
+         "name":"Baby Massage Oil",
+         "description":"Baby Massage Oil is a gentle and soothing blend of organic essential oils including Lavender and Chamomile. Massaging this blend into your babies skin can help keep them feel relaxed and calm. The gentle, calming aromas of the oils add to the relaxing feel of the massage.",
+         "price":10.50,
+         "category":2,
+         "rating":4.1,
+         "image_url":"",
+         "image":"babymassage.png"
+      }
+   },
+   {
+      "pk":19,
       "model":"products.product",
       "fields":{
          "sku":"pp6101240495",
@@ -154,7 +266,7 @@
       }
    }, 
    {
-      "pk":12,
+      "pk":20,
       "model":"products.product",
       "fields":{
          "sku":"pp6101240495",
@@ -168,7 +280,7 @@
       }
    },
    {
-      "pk":13,
+      "pk":21,
       "model":"products.product",
       "fields":{
          "sku":"pp6101240495",
@@ -182,7 +294,7 @@
       }
    }, 
    {
-      "pk":14,
+      "pk":22,
       "model":"products.product",
       "fields":{
          "sku":"pp6101240495",
@@ -196,7 +308,7 @@
       }
    }, 
    {
-      "pk":15,
+      "pk":23,
       "model":"products.product",
       "fields":{
          "sku":"pp6101240495",
@@ -210,7 +322,7 @@
       }
    }, 
    {
-      "pk":16,
+      "pk":24,
       "model":"products.product",
       "fields":{
          "sku":"pp6101240495",
@@ -222,7 +334,35 @@
          "image_url":"",
          "image":"whiteceramic.png"
       }
-   } 
+   }, 
+   {
+      "pk":25,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp6101240495",
+         "name":"Oil Burner",
+         "description":"",
+         "price":14.00,
+         "category":3,
+         "rating":4.1,
+         "image_url":"",
+         "image":".png"
+      }
+   },
+   {
+      "pk":26,
+      "model":"products.product",
+      "fields":{
+         "sku":"pp6101240495",
+         "name":"White Ceramic Oil Burner",
+         "description":"",
+         "price":14.00,
+         "category":3,
+         "rating":4.1,
+         "image_url":"",
+         "image":".png"
+      }
+   }  
        
    
  ]

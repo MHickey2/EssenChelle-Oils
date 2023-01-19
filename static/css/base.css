@@ -104,7 +104,6 @@ body {
 }
 
 
-
 a.category-badge > span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
@@ -177,6 +176,55 @@ footer {
     color: #fff;
 }
 
+.card-img-top {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Changing img holder position, so the overlay will be related to it */
+
+.card-image {
+    position: relative;
+  }
+  
+  .image-overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background: rgba(245, 243, 245, 0.5);
+    }
+  
+  .card:hover .image-overlay {
+      opacity: 1;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .productname, .productprice {
+        text-align: center;
+        font-weight: bold;
+        font-size: large;
+    }
+
+    .productdescription {
+        padding: 10px;
+        background-color: #2d023d;
+        border: 5px solid rgb(224, 142, 224);
+        border-radius: 15px;
+        color: white;
+    }
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -211,3 +259,4 @@ footer {
         height: calc(100vh - 116px);
     }
 }
+

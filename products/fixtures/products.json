@@ -8,7 +8,7 @@
           "description":"“Tea Tree” or Melaleuca Essential Oil, is best known for its purifying qualities, which make it useful for cleansing the skin, home surfaces, and purifying the air.",
           "price":13.99,
           "category":1,
-          "rating":4.6,
+          "rating": 5.0,
           "image_url":"",
           "image":"teatree.png"
        }
@@ -22,7 +22,7 @@
           "description":"Lavender essential oil is often considered a must-have oil due to its versatile uses. Its calming and relaxing aroma promotes a peaceful environment conducive to sleep and it can ease feelings of tension when used internally.",
           "price":12.99,
           "category":1,
-          "rating":4.2,
+          "rating": 4.2,
           "image_url":"",
           "image":"lavender.png"
        }
@@ -36,7 +36,7 @@
            "description":"Lemon oil has cleansing, purifying, and invigorating properties for an uplifting, positive boost throughout the day. Shop our best-selling Lemon oil.",
            "price":11.99,
            "category":1,
-           "rating":4.8,
+           "rating": 4.8,
            "image_url":"",
            "image":"lemon.png"
         }

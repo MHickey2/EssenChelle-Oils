@@ -215,9 +215,10 @@ footer {
         text-align: center;
         font-weight: bold;
         font-size: large;
+        padding: 10px;
     }
 
-    .productdescription {
+    .product-details-container {
         padding: 10px;
         background-color: #2d023d;
         border: 5px solid rgb(224, 142, 224);

@@ -257,7 +257,7 @@
       "fields":{
          "sku":"pp6101240495",
          "name":"Elephant Oil Burner",
-         "description":"Rustic oil burner in an elephant shape",
+         "description":"A white elephant oil burner with a two tone cream and brown effect. Perfect for burning oil or wax melts. This white elephant wax burner makes a wonderful gift for anyone",
          "price":16.00,
          "category":3,
          "rating":4.7,
@@ -270,8 +270,8 @@
       "model":"products.product",
       "fields":{
          "sku":"pp6101240495",
-         "name":"Nighttime Oil Burner",
-         "description":"Quirky nightime Burner with the moon and the stars design, perfect for your nightime relaxation.",
+         "name":"Multicoloured Oil Burner",
+         "description":"Multicoloured Oil Burner, ceramic and glossy. Bring colour into your life with this stylish burner",
          "price":17.00,
          "category":3,
          "rating":4.3,
@@ -284,13 +284,13 @@
       "model":"products.product",
       "fields":{
          "sku":"pp6101240495",
-         "name":"Old Urn Oil Burner",
-         "description":"Stylish Antiquated Urn shaped Burner, which is eloguent in design",
-         "price":15.00,
+         "name":"Open Hands Burner",
+         "description":"Stylish Minimalist Oil Burner in the shape of an open hand, simple but effective. Comes in a blue colour",
+         "price":16.00,
          "category":3,
          "rating":4.4,
          "image_url":"",
-         "image":"oldurnburner.png"
+         "image":"openhands.png"
       }
    }, 
    {
@@ -299,7 +299,7 @@
       "fields":{
          "sku":"pp6101240495",
          "name":"Oriental Oil Burner",
-         "description":"Multicoloured Burner which is oriental in design, which will create a joyful ambience",
+         "description":"Hot Brown Porcelain Burner which is oriental in design, which will create a joyful ambience. Has a Zen Symbol Motive",
          "price":17.50,
          "category":3,
          "rating":4.7,
@@ -313,7 +313,7 @@
       "fields":{
          "sku":"pp6101240495",
          "name":"Teapot Oil Burner",
-         "description":"Ceramic Teapot oil burner, which is delicate but quirky in nature ",
+         "description":"Charming oil warmer is a little teapot atop a country stove made from beautiful blue porcelain.",
          "price":15.00,
          "category":3,
          "rating":4.2,
@@ -327,12 +327,12 @@
       "fields":{
          "sku":"pp6101240495",
          "name":"White Ceramic Oil Burner",
-         "description":"Simple but beautiful Oil Burner with a floral design",
-         "price":14.00,
+         "description":"This white ceramic oil burner features a cutout heart and 'home' text in a cute, contemporary design. Brilliant to capture the home vibe",
+         "price":12.50,
          "category":3,
-         "rating":4.1,
+         "rating":4.5,
          "image_url":"",
-         "image":"whiteceramic.png"
+         "image":"home.png"
       }
    }, 
    {
@@ -340,13 +340,13 @@
       "model":"products.product",
       "fields":{
          "sku":"pp6101240495",
-         "name":"Oil Burner",
-         "description":"",
-         "price":14.00,
+         "name":"Metal Oil Burner",
+         "description":"Small ceramic essential oil burner, in navy colour, suitable for diffusing essential oil, it resonates with the element Metal",
+         "price":12.99,
          "category":3,
-         "rating":4.1,
+         "rating":4.4,
          "image_url":"",
-         "image":".png"
+         "image":"metal.png"
       }
    },
    {
@@ -354,13 +354,13 @@
       "model":"products.product",
       "fields":{
          "sku":"pp6101240495",
-         "name":"White Ceramic Oil Burner",
-         "description":"",
+         "name":"White Ceramic Beehive Oil Burner",
+         "description":"This ceramic oil burner comes in the shape of a white beehive with a sweet little bee on the lid. A truly original design which is quirky yet elegant and the perfect accessory to help you relax.",
          "price":14.00,
          "category":3,
          "rating":4.1,
          "image_url":"",
-         "image":".png"
+         "image":"multi.png"
       }
    }  
        

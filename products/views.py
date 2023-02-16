@@ -4,8 +4,8 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category
-from .forms import ProductForm
+from .models import Product, Category, Review
+from .forms import ProductForm, ReviewForm
 
 
 def all_products(request):
@@ -56,18 +56,6 @@ def all_products(request):
     }
 
     return render(request, 'products/products.html', context)
-
-
-def product_detail(request, product_id):
-    """ A view to show individual product details """
-
-    product = get_object_or_404(Product, pk=product_id)
-
-    context = {
-        'product': product,
-    }
-
-    return render(request, 'products/product_detail.html', context)
 
 
 @login_required
@@ -136,3 +124,36 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+def product_detail(request, product_id):
+    """ A view to show individual product details """
+
+    product = get_object_or_404(Product, pk=product_id)
+    template = "products/product_detail.html"
+    reviews = product.reviews.order_by("-created_on")
+    form = ReviewForm()
+    # reviews = []
+
+    if request.method == 'POST':      
+        form = ReviewForm(data=request.POST)
+        # form = ReviewForm(request.POST, request.FILES)
+        if form.is_valid():
+            review = form.save(commit=False)
+            review.user = request.user
+            review.name = request.user.username
+            review.product = product
+            review.save()
+            # return redirect(reverse('product_detail', args=[product.id]))
+        # else:
+        #     form = ReviewForm()
+        #     msg = 'Your Review was added successfully and is awaiting approval!'
+        #     messages.add_message(self.request, messages.SUCCESS, msg)
+
+    context = {
+        'product': product,
+        'form': form,
+        'reviews': reviews,
+    }
+
+    return render(request, 'products/product_detail.html', context)

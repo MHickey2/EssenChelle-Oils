@@ -1,4 +1,6 @@
 from django.db import models
+from django.contrib.auth.models import User
+from django.utils import timezone
 
 
 class Category(models.Model):
@@ -28,3 +30,30 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Review(models.Model):  
+    name = models.CharField(max_length=80)  
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name="reviews")
+    review_date = models.DateTimeField(default=timezone.now)
+    rate_choices = (
+        (1, 1),
+        (2, 2),
+        (3, 3),
+        (4, 4),
+        (5, 5)
+    )
+    stars = models.IntegerField(choices=rate_choices, default="1")
+    body = models.TextField(max_length=4000)
+    created_on = models.DateTimeField(auto_now_add=True)
+    approved = models.BooleanField(default=False)
+
+    class Meta:
+        ordering = ["created_on"]
+
+    def __str__(self):
+        return f"Review {self.body} by {self.name}"
+    
+    # def get_absolute_url(self):
+    #     """ Returns review with primary key"""
+    #     return reverse('product_detail', kwargs={'pk': self.pk})

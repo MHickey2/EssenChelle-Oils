@@ -132,9 +132,13 @@ a.category-badge > span.badge:hover {
 }
 
 footer {
+    position: relative;
+    width: 100%;
+    left: 0;
+    bottom: 0;
     background-color: purple;
-    padding: 10px;
     color: white;
+    padding: 10px;
 }
 
 .card-img-top {

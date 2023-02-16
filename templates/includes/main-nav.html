@@ -19,7 +19,7 @@
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-purple mr-5" href="#" id="product-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                EssenChelle Product Line
+                EssenChelle Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="product-link">
                 <a href="{% url 'products' %}?category=essential_oils" class="dropdown-item  logo-font nav-link">Essential Oils</a>
@@ -50,6 +50,12 @@
                 <a href="{% url 'products' %}?category=clearance_items" class="dropdown-item logo-font nav-link">Clearance</a>
                 <a href="{% url 'products' %}?category=new_arrivals,deals,clearance_items" class="dropdown-item logo-font nav-link">All Specials</a>
             </div>
+        </li>
+        
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-purple" href="#" id="contact-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Contact Us
+            </a>            
         </li>
     </ul>
 </div>

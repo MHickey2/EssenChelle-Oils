@@ -133,7 +133,7 @@ def product_detail(request, product_id):
     template = "products/product_detail.html"
     reviews = product.reviews.order_by("-created_on")
     form = ReviewForm()
-    # reviews = []
+    
 
     if request.method == 'POST':      
         form = ReviewForm(data=request.POST)
@@ -144,11 +144,10 @@ def product_detail(request, product_id):
             review.name = request.user.username
             review.product = product
             review.save()
-            # return redirect(reverse('product_detail', args=[product.id]))
-        # else:
-        #     form = ReviewForm()
-        #     msg = 'Your Review was added successfully and is awaiting approval!'
-        #     messages.add_message(self.request, messages.SUCCESS, msg)
+            messages.success(request, 'Your Review has been added and awaits approval!')
+            return redirect(reverse('product_detail', args=[product.id]))
+        else:
+            form = ReviewForm()
 
     context = {
         'product': product,

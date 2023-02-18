@@ -9,7 +9,7 @@ from django.contrib import messages
 def contact(request):
     """ A view to show the contact form for the user """
 
-    template = "contact/contact.html"
+    # template = "contact/contact.html"
     form = ContactForm()
 
     if request.method == 'POST':
@@ -22,6 +22,7 @@ def contact(request):
         else:
             form = ContactForm()
 
+    template = 'contact/contact.html'
     context = {        
         'form': form,
     }

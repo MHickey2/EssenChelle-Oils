@@ -29,9 +29,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = 'DEVELOPMENT' in os.environ
+
 DEBUG = True
 
-# X_FRAME_OPTIONS = 'SAMEORIGIN'
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ALLOWED_HOSTS = ['essenchelle-oils.herokuapp.com', 'localhost']
 
@@ -45,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_summernote',
     'django.contrib.sites',
     'allauth',
     'allauth.account',
@@ -60,6 +62,7 @@ INSTALLED_APPS = [
     # other
     'crispy_forms',
     'storages',
+    
 ]
 
 MIDDLEWARE = [

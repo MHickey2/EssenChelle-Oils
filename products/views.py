@@ -133,9 +133,8 @@ def product_detail(request, product_id):
     template = "products/product_detail.html"
     reviews = product.reviews.order_by("-created_on")
     form = ReviewForm()
-    
 
-    if request.method == 'POST':      
+    if request.method == 'POST':
         form = ReviewForm(data=request.POST)
         # form = ReviewForm(request.POST, request.FILES)
         if form.is_valid():
@@ -144,7 +143,8 @@ def product_detail(request, product_id):
             review.name = request.user.username
             review.product = product
             review.save()
-            messages.success(request, 'Your Review has been added and awaits approval!')
+            messages.success(
+                request, 'Your Review has been added and awaits approval!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
             form = ReviewForm()

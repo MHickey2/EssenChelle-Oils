@@ -1,4 +1,7 @@
 User-agent: *
 Disallow: /accounts/
-Disallow: /bag/
+Disallow: /admin/
+Disallow: /shoppingcart/
+Disallow: /summernote/
+Disallow: /profile/
 Sitemap:  # put in site inke for sitemap when created

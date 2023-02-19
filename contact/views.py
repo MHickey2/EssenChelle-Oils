@@ -19,6 +19,8 @@ def contact(request):
             contact.save()
             messages.success(request, 'Your message has been sent!')
             return redirect(reverse('contact'))
+           # return redirect('success')
+            
         else:
             form = ContactForm()
 

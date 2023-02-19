@@ -34,7 +34,7 @@ class Product(models.Model):
 
 class Review(models.Model):  
     name = models.CharField(max_length=80)  
-    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name="reviews")
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name="reviews")  # noqa
     review_date = models.DateTimeField(default=timezone.now)
     rate_choices = (
         (1, 1),
@@ -53,7 +53,7 @@ class Review(models.Model):
 
     def __str__(self):
         return f"Review {self.body} by {self.name}"
-    
-    # def get_absolute_url(self):
-    #     """ Returns review with primary key"""
-    #     return reverse('product_detail', kwargs={'pk': self.pk})
+
+    def get_absolute_url(self):
+        """ Returns review with primary key"""
+        return reverse('product_detail', kwargs={'pk': self.pk})

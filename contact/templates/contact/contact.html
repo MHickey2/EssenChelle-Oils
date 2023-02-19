@@ -1,18 +1,24 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static '/css/base.css' %}">
+    
+{% endblock %}
+
 
 {% block content %}
 
 <div class="overlay"></div>
 
 <!--Contact form-->
+<section id="cover">   
+
 <div class="container-fluid">
-    <h2 class="text-center mx-auto text-purple">Contact Us</h2>
-    <p class="text-center mx-auto mb-4">We are always happy to hear from you and
-        are easy to reach, just drop us an email at hello@essenchelleoils.ie or fill out the
-        form below. We will get back to you as soon as possible.</p>
-    <div class="mb-6">
+    <h2 class="text-center mx-auto md-3  lg-4 text-purple">Contact Us</h2>
+    <p class="text-center mx-auto md-4 lg-4">We are always happy to hear from you
+        , just fill out the form below. We will get back to you as soon as possible.</p>
+    <div class="md-3 lg-4">
         <form method="post">
             {% csrf_token %}
             {{form.as_p}}
@@ -20,7 +26,7 @@
         </form>
     </div>
 </div>
-
+</section>
 
 
 {% endblock %}

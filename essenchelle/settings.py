@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_summernote',
+    'cloudinary',
     'django.contrib.sites',
     'allauth',
     'allauth.account',
@@ -58,6 +59,7 @@ INSTALLED_APPS = [
     'checkout',
     'profiles',
     'contact',
+    'blog',
 
     # other
     'crispy_forms',
@@ -198,6 +200,7 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 
 # if 'USE_AWS' in os.environ:
 #     # Cache control

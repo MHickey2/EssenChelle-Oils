@@ -330,6 +330,41 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
+
+/* Blogs */
+
+
+.card {
+    border: none;
+    background-color: transparent;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-flash {
+    position: absolute;
+    bottom: 5%;
+    min-width: 30%;
+    left: -2px;
+    background-color: #23BBBB;
+}
+
+.card-title {    
+    text-align: center;
+    
+
+}
+
+.author {
+    color: purple;
+    margin: 4px;
+    text-transform: uppercase;
+    
+}
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -421,6 +456,12 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+#cover {   
+  color: black;  
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {

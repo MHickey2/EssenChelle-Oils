@@ -15,67 +15,94 @@
 {% block sidebar %}
 
 <style>
-        .card{
-            box-shadow: 0 16px 48px #E3E7EB;
-            margin: 10px;
-        }
+    .card {
+        box-shadow: 0 16px 48px #E3E7EB;
+        margin: 10px;
+    }
 
-        .btn-danger {
-            background-color: rgb(206, 29, 138) !important;
-        }
+    .btn-danger {
+        background-color: rgb(206, 29, 138) !important;
+    }
 
-        .minheight {
-             height: 100px;
+    .minheight {
+        height: 100px;
 
-        }    
-        
+    }
 
+    .cardheight {
+        min-height: 570px;
+    }
+
+    .created-text {
+        color: red;
+    }
+
+    .display-block {
+        padding: 5px;
+
+
+    }
 </style>
 
 <!-- Sidebar Widgets Column -->
 <div class="col-md-4 float-right ">
-<div class="card my-4">
+    <div class="card my-4">
         <h3 class="card-header text-purple">Our Blog</h3>
-    <div class="card-body">
-        <p class="card-text"> This blog highlights the benefits and uses for using our EssenChelle product range, and includes our favorite recipes for individual products.
-            You can used the following link to find more indepth knowledge for our essential and massage oils
-        </p>
-        <a href="" aria="brings you to a website, with more detailed information on essential oils"
-           class="btn btn-danger">Learn more!</a>
+        <div class="card-body">
+            <p class="card-text"> This blog highlights the benefits and uses for using our EssenChelle product range,
+                and includes our favorite recipes for individual products.
+                You can used the following link to find more indepth knowledge for our essential and massage oils
+            </p>
+            <a href="" aria="brings you to a website, with more detailed information on essential oils"
+                class="btn btn-danger">Learn more!</a>
+        </div>
     </div>
 </div>
-</div>
+
+
 
 {% endblock sidebar %}
 
 
 <div class="container-fluid">
-   
-        <!--Blog Entries Column -->
-        <div class="container-fluid">
-            <div class="row">
-                {% for post in post_list %}
-                <div class="col-md-6 mt-2 ">
-                    <div class="card">
-                        <div class="card-body">                        
-                                
-                                <!-- <a href="{# url 'post_detail' post.slug  #}"> -->                              
-                            <h4 class="card-title text-purple mx-auto text-center">{{ post.title }}</h4>
-                            <p class="card-text text-muted">{{ post.created_on }}</p>
-                            <p class="card-text text-justify-center minheight">{{ post.excerpt }}</p>
-                            <hr>
-                            <div class="">
-                                <p class="card-text text-muted text-purple">{{ post.author }}</p>
-                            </div>
-                            <br>
-                            <a href="{# url 'post_detail' post.slug  #}" class="btn btn-primary">Read More &rarr;</a>
+
+    <!--Blog Entries Column -->
+    <div class="container-fluid">
+        <div class="row">
+            {% for post in post_list %}
+            <div class="col-md-6 mt-3">
+                <div class="card">
+                    <div class="card-body cardheight">
+
+                        <!-- <a href="{# url 'post_detail' post.slug  #}"> -->
+                        <h4 class="card-title text-purple mx-auto text-center">{{ post.title }}</h4>
+                        {% if "placeholder" in post.blog_image.url %}
+                        <img class="card-img-top img-fluid" src="/media/placeholder.png" width="300" height="250"
+                            alt="{{ post.title }} generic">
+                        {% else %}
+                        <img class="card-img-top img-fluid" src=" {{ post.blog_image.url }}" width="200" height="150"
+                            alt="{{ post.title }} photo">
+                        {% endif %}
+                        <p class="created-text text-muted">{{ post.created_on }}</p>
+                        <p class="card-text text-justify-center minheight">{{ post.excerpt }}</p>
+                        <hr>
+                        <div class="">
+                            <p class="card-text text-muted text-purple">{{ post.author }}</p>
                         </div>
+                        <br>
+                        <a href="{% url 'post_details' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
+                        {% if request.user.is_superuser %}
+                        <small class="ml-3">
+                            <a href="{% url post.slug 'edit_blog' %}">Edit</a> |
+                            <a class="text-danger" href="{% url post.slug 'delete_post' %}">Delete</a>
+                        </small>
+                        {% endif %}
                     </div>
                 </div>
-                {% endfor %}
             </div>
-           
-        </div>   
+            {% endfor %}
+        </div>
+    </div>
 </div>
 
 <br>

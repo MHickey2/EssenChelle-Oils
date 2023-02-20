@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% block title %}EssenchelleOils/Blog Details{% endblock %}
+
+
+
+
+{% block content %}
+
+<style>
+   /*Styling for titles*/
+.card-title {
+    text-align: center;
+    color: purple;
+    text-transform: capitalize;
+    min-height: 30px;
+}
+
+/* alignment of images in blogs */
+#centerimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-subtitle {
+    text-align: center;
+    color: purple;
+}
+
+.card-body {
+    min-height: 300px;
+    line-height: 1.5;
+    padding: 5px;
+    width: 70vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.display-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+     /*Styling for back buttons on pages*/
+     .backbutton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+    
+
+</style>
+
+
+<div class="overlay"></div>
+{% load crispy_forms_tags %}
+
+<div id="top"></div>
+
+<div>
+    <!-- Post title goes in these h1 tags -->
+    <h2 class="card-title">{{ post.title }}</h2>
+    <!-- Post author goes before the | the post's created date goes after -->
+    <h6 class="post-subtitle text-muted">{{ post.author }} | {{ post.created_on }}</h6>
+    <br>
+    <!-- The featured image URL goes in the src attribute -->
+    {% if "placeholder" in post.featured_image.url %}
+    <img src="https://res.cloudinary.com/dspwticaf/image/upload/v1664552676/po7sj5nr75pw0p9maekl.jpg"
+        alt="{{ post.title }} generic" id="centerimage">
+
+    {% else %}
+    <img src=" {{ post.blog_image.url }}" id="centerimage" alt="{{ post.title }} photo">
+    {% endif %}
+</div>
+<br>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col card mb-4">
+            <div class="card-body">
+                <div class="content">{{ post.content | safe }}</div>
+            </div>
+        </div>
+        </div>
+
+       
+    </div>
+</div>
+
+<br>
+<a href="{% url 'blog'  %}" class="btn btn-primary align-center">Back</a>
+
+<br>
+
+<a id="top-button" href="#top" aria-label="Going to top of page">Top of Screen &nbsp; <iconify-icon inline
+        icon="mdi:arrow-up" class="greenicon" width="18"></iconify-icon>
+</a>
+
+{% endblock content %}

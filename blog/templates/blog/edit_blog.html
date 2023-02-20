@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}EssenchelleOils/Edit Post{% endblock %}
+{% block content %}
+
+{% load crispy_forms_tags %}
+
+{% if user.is_authenticated %}
+{% if request.user.is_superuser %}
+<div class="overlay"></div>
+  
+    <h1 class="text-center text-purple"><iconify-icon inline icon="material-symbols:edit-document-outline-rounded" class="greenicon"></iconify-icon>&nbsp;Edit your Post:</h1>
+    <p class="text-center">Ensure to complete all fields</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="py-5 min-vh-50">
+                <div class="container" id="newpost">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">                            
+                            <br>
+                            <form class="form text-muted" method="post" enctype="multipart/form-data">
+                                {% csrf_token %}
+                                {{ form | crispy }}
+                                <br>
+                                <br>
+                                <button type="submit" class="btn btn-success btn-lg btn-block">Update</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% else %}
+    <br>
+       <h4 class="green">Sorry, you are not allowed to edit this Blog</h4>
+    {% endif %}          
+{% endif %}
+
+<div class="center">
+    <a href="{% url 'blog' %}" class="btn btn-primary btn-sm">BACK</a>
+</div>
+<br>
+
+{%endblock%}

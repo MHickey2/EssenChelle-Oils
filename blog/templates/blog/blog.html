@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block extra_css %}
+{# block extra_css #}
 <link rel="stylesheet" href="{% static '/css/base.css' %}">
-{% endblock %}
+{# endblock #}
 
 
 {% block content %}
@@ -93,8 +93,8 @@
                         <a href="{% url 'post_details' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
                         {% if request.user.is_superuser %}
                         <small class="ml-3">
-                            <a href="{% url post.slug 'edit_blog' %}">Edit</a> |
-                            <a class="text-danger" href="{% url post.slug 'delete_post' %}">Delete</a>
+                            <a href="{# url post.slug 'edit_blog' #}">Edit</a> |
+                            <a class="text-danger" href="{# url post.slug 'delete_post' #}">Delete</a>
                         </small>
                         {% endif %}
                     </div>

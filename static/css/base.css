@@ -364,6 +364,28 @@ input[name='q']::placeholder {
     
 }
 
+.fa-star {    
+    color: #f3da35!important;
+}
+
+.contact-information {
+   background-color: darkorchid;
+   padding: 15px;
+   color: white;
+}
+
+.contactform {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black;
+
+}
+
+.faveproducts {   
+    border: 5px solid purple;
+    border-radius: 15px;
+}
+
 
 /* -------------------------------- Media Queries */
 

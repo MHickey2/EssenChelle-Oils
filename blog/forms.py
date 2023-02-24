@@ -1,4 +1,4 @@
-from .models import Post
+from .models import Post, Comment
 from django import forms
 from django.forms import ModelForm, TextInput
 from django_summernote.widgets import SummernoteWidget, SummernoteInplaceWidget
@@ -7,7 +7,7 @@ from django_summernote.widgets import SummernoteWidget, SummernoteInplaceWidget
 class PostForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = ('title', 'blog_image', 'excerpt', 'content', 'status')
+        fields = ('title', 'blog_image', 'slug', 'excerpt', 'content', 'status')
 
         widgets = {
              'title': forms.TextInput(attrs={'placeholder': 'Enter your Title'}),  # noqa
@@ -18,3 +18,9 @@ class PostForm(forms.ModelForm):
 
         def __init__(self, *args, **kwargs):
             super(PostForm, self).__init__(*args, **kwargs)
+            
+
+class CommentForm(forms.ModelForm):
+    class Meta:
+        model = Comment
+        fields = ('body',)

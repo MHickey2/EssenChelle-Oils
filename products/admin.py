@@ -10,6 +10,7 @@ class ProductAdmin(admin.ModelAdmin):
         'price',
         'rating',
         'image',
+        'is_featured'
     )
 
     ordering = ('sku',)
@@ -25,7 +26,7 @@ class CategoryAdmin(admin.ModelAdmin):
 @admin.register(Review)
 class ReviewAdmin(admin.ModelAdmin):
     list_display = ('name', 'body', 'created_on', 'approved')
-    list_filter = ('approved', 'created_on')
+    list_filter = ('approved', 'created_on', )
     search_fields = ('name', 'body')
     actions = ['approve_reviews']
 

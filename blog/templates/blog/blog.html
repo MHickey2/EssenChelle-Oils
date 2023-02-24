@@ -1,10 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
 
-{# block extra_css #}
-<link rel="stylesheet" href="{% static '/css/base.css' %}">
-{# endblock #}
-
 
 {% block content %}
 
@@ -89,12 +85,12 @@
                         <div class="">
                             <p class="card-text text-muted text-purple">{{ post.author }}</p>
                         </div>
-                        <br>
-                        <a href="{% url 'post_details' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
+                        <br>                                                                     
+                        <a href="{% url 'blog_details' post.slug %}" class="btn btn-primary">Read More &rarr;</a>
                         {% if request.user.is_superuser %}
                         <small class="ml-3">
-                            <a href="{# url post.slug 'edit_blog' #}">Edit</a> |
-                            <a class="text-danger" href="{# url post.slug 'delete_post' #}">Delete</a>
+                            <a href="{% url 'edit_blog' post.slug %}">Edit</a> 
+                            <a class="text-danger" href="{% url 'delete_blog' post.slug %}">Delete</a>
                         </small>
                         {% endif %}
                     </div>
@@ -106,6 +102,7 @@
 </div>
 
 <br>
+<a href="{% url 'add_blog'  %}" class="btn btn-success btnstyle">Add Blog</a>
 
 
 {% endblock %}

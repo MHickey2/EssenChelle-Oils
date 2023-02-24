@@ -6,6 +6,7 @@ from django.db.models.functions import Lower
 
 from .models import Product, Category, Review
 from .forms import ProductForm, ReviewForm
+from django.contrib.auth.models import User
 
 
 def all_products(request):
@@ -131,7 +132,7 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     template = "products/product_detail.html"
-    reviews = product.reviews.order_by("-created_on")
+    reviews = product.reviews.filter(approved=True).order_by("-created_on")
     form = ReviewForm()
 
     if request.method == 'POST':
@@ -156,3 +157,32 @@ def product_detail(request, product_id):
     }
 
     return render(request, 'products/product_detail.html', context)
+
+
+@login_required
+def favourite_add(request, product_id):
+    """ A view to allow users to add and remove products to favourite."""
+    product = get_object_or_404(Product, id=product_id)
+    if request.method == "POST":
+        if request.user in product.favourites.all():  # noqa
+            product.favourites.remove(request.user)
+            messages.success(request, 'Product removed from Favourites')
+        else:
+            product.favourites.add(request.user)
+            messages.success(request, 'Product added to Favourites')
+
+    return redirect(reverse('product_detail', args=[product.id]))
+
+
+def favourite_list(request):
+    """
+    Favourite Product List which displays all of the users favourite products.
+    """
+    user = request.user
+    favourite_products = user.favourites.all()
+
+    context = {
+        'favourites': favourite_products
+    }
+
+    return render(request, 'products/favourite_list.html', context)

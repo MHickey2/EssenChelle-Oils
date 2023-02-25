@@ -100,7 +100,9 @@ class DeletePostView(generic.DeleteView):
     template_name = "blog/delete_blog.html"
     success_url = reverse_lazy('blog')
 
-    def get_success_url(self):
-        """ Allows the superuser  """
-        msg = 'The Blog has been deleted successfully'
-        messages.add_message(self.request, messages.SUCCESS, msg)
+
+class LatestPostView(generic.ListView):
+    model = Post
+    queryset = Post.objects.filter(status=1).order_by("-created_on")[:5]
+    template_name = "blog/blog.html"
+    context_object_name = 'post_list'

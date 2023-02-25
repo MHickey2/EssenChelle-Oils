@@ -2,6 +2,8 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.core.files.storage import FileSystemStorage
+from cloudinary.models import CloudinaryField
+
 
 fs = FileSystemStorage(location='/media/photos')
 
@@ -15,8 +17,8 @@ class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
     excerpt = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
-    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='admin_posts')  # noqa
-    blog_image = models.ImageField(upload_to='media/', default="placeholder")
+    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='admin_posts')  # noqa    
+    blog_image = CloudinaryField('image', default='placeholder') 
     updated_on = models.DateTimeField(auto_now=True)
     content = models.TextField(max_length=2000)
     created_on = models.DateTimeField(auto_now_add=True)
@@ -27,8 +29,8 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
-    
-    
+
+
 class Comment(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE,
                              related_name="comments")

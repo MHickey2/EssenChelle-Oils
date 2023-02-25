@@ -28,9 +28,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = 'DEVELOPMENT' in os.environ
 
-DEBUG = False
+# DEBUG = False
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
@@ -200,7 +200,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# DISABLE_COLLECTSTATIC = 0  # for charges in aws keepin g them down
+DISABLE_COLLECTSTATIC = 0  # for charges in aws keepin g them down
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

@@ -43,14 +43,20 @@
 <!-- Sidebar Widgets Column -->
 <div class="col-md-4 float-right ">
     <div class="card my-4">
-        <h3 class="card-header text-purple">Our Blog</h3>
+       
         <div class="card-body">
+            <h2 class="text-purple">Our Blog</h2>
             <p class="card-text"> This blog highlights the benefits and uses for using our EssenChelle product range,
                 and includes our favorite recipes for individual products.
                 You can used the following link to find more indepth knowledge for our essential and massage oils
             </p>
             <a href="" aria="brings you to a website, with more detailed information on essential oils"
                 class="btn btn-danger">Learn more!</a>
+
+                <h3 class=" mt-4 text-purple">Latest Posts</h3>
+                {% for post in post_list %}
+                <h2></h2>{{ post.title}}</h2>
+                {% endfor %}
         </div>
     </div>
 </div>
@@ -73,7 +79,7 @@
                         <!-- <a href="{# url 'post_detail' post.slug  #}"> -->
                         <h4 class="card-title text-purple mx-auto text-center">{{ post.title }}</h4>
                         {% if "placeholder" in post.blog_image.url %}
-                        <img class="card-img-top img-fluid" src="/media/placeholder.png" width="300" height="250"
+                        <img class="card-img-top img-fluid" src="https://res.cloudinary.com/dspwticaf/image/upload/v1677333448/pa9lehu7vhb8pp5mvtyi.jpg" width="300" height="250"
                             alt="{{ post.title }} generic">
                         {% else %}
                         <img class="card-img-top img-fluid" src=" {{ post.blog_image.url }}" width="200" height="150"

@@ -5,6 +5,40 @@
 {% endblock %}
 
 {% block content %}
+
+<style>
+  .accordion {
+    background-color: #9b0dbe;
+    color: #f5f1f8;
+    cursor: pointer;
+    padding: 10px;
+    width: 30%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .active,
+  .accordion:hover {
+    background-color: #340442;
+  }
+
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    text-align: center;
+  }
+</style>
+
+
 <div id="top"></div>
 <div class="overlay background"></div>
 
@@ -66,17 +100,38 @@
   </div>
 </div>
 
-  <hr>
+<hr>
 
-  <div class="card h-100">
-    <h2 class="mt-2 logo-font text-purple text-center">Testimonials</h2>
-    <p class="col-md-6 text-about text-center align-content-center">But don't just take our word for it, instead have a
-      look at our testimonials from happy customers, who have already
-      availed of our products. We love hearing from our customers and value your experience. Please share your
-      experiences with us
-      and maybe your testimonial will be featured in the future.
-    </p>
-  </div>
+<div class="card h-100">
+  <h2 class="mt-2 logo-font text-purple text-center">Testimonials</h2>
+  <p class="col-md-6 text-about text-center align-content-center">But don't just take our word for it, instead have a
+    look at our testimonials from happy customers, who have already
+    availed of our products. We love hearing from our customers and value your experience. Please share your
+    experiences with us
+    and maybe your testimonial will be featured in the future.
+  </p>
+  </div>  
+
+      <h4 class="text-purple text-center">Testimonials</h4>
+
+      <button class="accordion">Testimonial 1</button>
+      <div class="panel">
+        <p> lavender.</p>
+      </div>
+
+      <button class="accordion">Testimonial 2</button>
+      <div class="panel">
+        <p>ion ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+
+      <button class="accordion">Testimonial 3</button>
+      <div class="panel">
+        <p>laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+
+
+</div>
 </div>
 </div>
 

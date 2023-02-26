@@ -20,7 +20,7 @@ class Post(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='admin_posts')  # noqa    
     blog_image = CloudinaryField('image', default='placeholder') 
     updated_on = models.DateTimeField(auto_now=True)
-    content = models.TextField(max_length=2000)
+    content = models.TextField(max_length=7000)
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
 
@@ -29,6 +29,9 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+    
+    def number_of_comments(self):
+        return self.comments.count()
 
 
 class Comment(models.Model):

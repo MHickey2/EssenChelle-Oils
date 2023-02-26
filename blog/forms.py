@@ -7,7 +7,7 @@ from django_summernote.widgets import SummernoteWidget, SummernoteInplaceWidget
 class PostForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = ('title', 'blog_image', 'slug', 'excerpt', 'content', 'status')
+        fields = ('title', 'blog_image', 'slug', 'excerpt', 'content', 'status')  # noqa
 
         widgets = {
              'title': forms.TextInput(attrs={'placeholder': 'Enter your Title'}),  # noqa

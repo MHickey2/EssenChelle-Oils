@@ -8,8 +8,8 @@
           "description":"“Tea Tree” or Melaleuca Essential Oil, is best known for its purifying qualities, which make it useful for cleansing the skin, home surfaces, and purifying the air.",
           "price":13.99,
           "category":1,
-          "rating": 5.0,
-          "image_url":"",
+          "rating": 5.0, 
+          "image_url": "https://res.cloudinary.com/dspwticaf/image/upload/v1677321225/essenchelle/teatree_rnktxz.png",         
           "image":"teatree.png"
        }
     },
@@ -22,9 +22,9 @@
           "description":"Lavender essential oil is often considered a must-have oil due to its versatile uses. Its calming and relaxing aroma promotes a peaceful environment conducive to sleep and it can ease feelings of tension when used internally.",
           "price":12.99,
           "category":1,
-          "rating": 4.2,
-          "image_url":"",
-          "image":"lavender.png"
+          "rating": 4.2, 
+          "image_url":"",         
+          "image":"media/lavender.png"
        }
     },
     {
@@ -36,8 +36,8 @@
            "description":"Lemon oil has cleansing, purifying, and invigorating properties for an uplifting, positive boost throughout the day. Shop our best-selling Lemon oil.",
            "price":11.99,
            "category":1,
-           "rating": 4.8,
-           "image_url":"",
+           "rating": 4.8, 
+           "image_url":"",          
            "image":"lemon.png"
         }
      },
@@ -51,7 +51,7 @@
          "price":13.99,
          "category":1,
          "rating":4.6,
-         "image_url":"",
+         "image_url":"",        
          "image":"lemon.png"
       }
    },
@@ -64,8 +64,8 @@
          "description":"Citronella is a tall grass grown in Asia with a crisp, fresh aroma. It is soothing to the skin and creates an uplifting atmosphere. Citronella essential oil is a known powerful insect repellent and an ideal companion during outdoor activities.",
          "price":14.99,
          "category":1,
-         "rating":4.1,
-         "image_url":"",
+         "rating":4.1, 
+         "image_url":"",       
          "image":"citronella.png"
       }
    },
@@ -75,11 +75,11 @@
       "fields":{
          "sku":"pp5001360495",
          "name":"Eucalyptus Oil",
-         "description":"",
+         "description":"Eucalyptus also has cleansing properties. Use aromatically or topically to promote feelings of clear breathing and open airways. Eucalyptus also adds to a soothing massage.",
          "price":12.99,
          "category":1,
-         "rating":3.9,
-         "image_url":" Eucalyptus also has cleansing properties. Use aromatically or topically to promote feelings of clear breathing and open airways. Eucalyptus also adds to a soothing massage.",
+         "rating":3.9, 
+         "image_url":"",         
          "image":"eucalyptus.png"
       }
    },
@@ -93,7 +93,7 @@
          "price":14.50,
          "category":1,
          "rating":4.3,
-         "image_url":"",
+         "image_url":"",        
          "image":"frankincense.png"
       }
    },
@@ -107,7 +107,7 @@
          "price":13.99,
          "category":1,
          "rating":4.6,
-         "image_url":"",
+         "image_url":"",        
          "image":"lemongrass.png"
       }
    },
@@ -121,7 +121,7 @@
          "price":12.99,
          "category":1,
          "rating":4.2,
-         "image_url":"A member of the mint family, Patchouli oil is known to help with skin imperfections and for its grounding, earthy aroma.",
+         "image_url":"",         
          "image":"patchouli.png"
       }
    },
@@ -135,7 +135,7 @@
          "price":13.99,
          "category":1,
          "rating":4.7,
-         "image_url":"",
+         "image_url":"",         
          "image":"peppermint.png"
       }
    },
@@ -148,8 +148,8 @@
          "description":"Sweet Almond Oil is a rich, nourishing base to which other essential oils are added for use in body massage. It is both colourless and odourless and may offer relief for dry and itchy skin. It is easily absorbed by the skin and offers nourishment and soothing care. Sweet almond can also be used in aromatic baths, for inhalation and as body massage oil.",
          "price":4.40,
          "category":2,
-         "rating":3.9,
-         "image_url":"",
+         "rating":3.9, 
+         "image_url":"",       
          "image":"sweetalmond.png"
       }
    }, 
@@ -162,8 +162,8 @@
          "description":" Light Coconut Oil is made from pure oil extracted from the coconut, cocos nucifera and deodourised. This product is an amazing pure body moisturiser, its cooling and moisturising properties work to protect the skin and retain moisture. It is particularly useful after exposure to the sun to help nourish the skin.",
          "price":5.80,
          "category":2,
-         "rating":4.2,
-         "image_url":"",
+         "rating":4.2, 
+         "image_url":"",        
          "image":"coconutoil.png"
       }
    },
@@ -176,8 +176,8 @@
          "description":"Rose Oil, 0.4% in sweet Almond Oil is an all round balancing oil ideal as a general aromatherapy massage oil because of its richness and nourishing qualities. You can add this product to essential oils to make a beautiful massage oil, which works particularly well on mature skin as it is very rich and contains many moisturising properties. ",
          "price":10.45,
          "category":2,
-         "rating":4.4,
-         "image_url":"",
+         "rating":4.4, 
+         "image_url":"",        
          "image":"roseoil.png"
       }
    },
@@ -191,7 +191,7 @@
          "price":20.50,
          "category":2,
          "rating":4.6,
-         "image_url":"",
+         "image_url":"",        
          "image":"jojobaoil.png"
       }
    },
@@ -205,7 +205,7 @@
          "price":10.00,
          "category":2,
          "rating":4.7,
-         "image_url":"",
+         "image_url":"",         
          "image":"arnicaoil.png"
       }
    },
@@ -218,8 +218,8 @@
          "description":"A deeply relaxing and meditative massage oil, Atlantic Aromatics massage oils are blended in small batches to ensure freshness, using the finest quality essential oils and cold pressed unrefined sweet almond oil. They are free from alcohol and preservatives and are not tested on animals",
          "price":14.60,
          "category":2,
-         "rating":4.8,
-         "image_url":"",
+         "rating":4.8, 
+         "image_url":"",       
          "image":"frankincenseoil.png"
       }
    },
@@ -233,7 +233,7 @@
          "price":18.00,
          "category":2,
          "rating":4.7,
-         "image_url":"",
+         "image_url":"",        
          "image":"nerolioil.png"
       }
    },
@@ -247,7 +247,7 @@
          "price":10.50,
          "category":2,
          "rating":4.1,
-         "image_url":"",
+         "image_url":"",         
          "image":"babymassage.png"
       }
    },
@@ -261,7 +261,7 @@
          "price":16.00,
          "category":3,
          "rating":4.7,
-         "image_url":"",
+         "image_url":"",         
          "image":"elephantburner.png"
       }
    }, 
@@ -275,7 +275,7 @@
          "price":17.00,
          "category":3,
          "rating":4.3,
-         "image_url":"",
+         "image_url":"",         
          "image":"nightburner.png"
       }
    },
@@ -288,8 +288,8 @@
          "description":"Stylish Minimalist Oil Burner in the shape of an open hand, simple but effective. Comes in a blue colour",
          "price":16.00,
          "category":3,
-         "rating":4.4,
-         "image_url":"",
+         "rating":4.4, 
+         "image_url":"",        
          "image":"openhands.png"
       }
    }, 
@@ -303,7 +303,7 @@
          "price":17.50,
          "category":3,
          "rating":4.7,
-         "image_url":"",
+         "image_url":"",        
          "image":"orientalburner.png"
       }
    }, 
@@ -317,7 +317,7 @@
          "price":15.00,
          "category":3,
          "rating":4.2,
-         "image_url":"",
+         "image_url":"",         
          "image":"teapot.png"
       }
    }, 
@@ -330,8 +330,8 @@
          "description":"This white ceramic oil burner features a cutout heart and 'home' text in a cute, contemporary design. Brilliant to capture the home vibe",
          "price":12.50,
          "category":3,
-         "rating":4.5,
-         "image_url":"",
+         "rating":4.5, 
+         "image_url":"",        
          "image":"home.png"
       }
    }, 
@@ -345,11 +345,12 @@
          "price":12.99,
          "category":3,
          "rating":4.4,
-         "image_url":"",
+         "image_url":"",         
          "image":"metal.png"
       }
    },
-   {
+   
+      {
       "pk":26,
       "model":"products.product",
       "fields":{
@@ -359,10 +360,25 @@
          "price":14.00,
          "category":3,
          "rating":4.1,
-         "image_url":"",
+         "image_url":"",        
          "image":"multi.png"
       }
-   }  
+   }, 
+   {
+      
+         "pk":27,
+         "model":"products.product",
+         "fields":{
+            "sku":"pp6101240687",
+            "name":"black burner",
+            "description":"Small black burner, suitable for diffusing essential oil, it is a last in stock item, limited edition",
+            "price":8.99,
+            "category":4,
+            "rating":3,
+            "image_url":"",
+            "image":""
+         }
+   } 
        
    
  ]

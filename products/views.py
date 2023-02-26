@@ -133,6 +133,7 @@ def product_detail(request, product_id):
     product = get_object_or_404(Product, pk=product_id)
     template = "products/product_detail.html"
     reviews = product.reviews.filter(approved=True).order_by("-created_on")
+    number_of_reviews = product.reviews.count()
     form = ReviewForm()
 
     if request.method == 'POST':

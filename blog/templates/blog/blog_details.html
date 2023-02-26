@@ -8,9 +8,9 @@
     /*Styling for titles*/
     .card-title {
         text-align: center;
-        color: purple;
+        color: rgb(95, 7, 95);
         text-transform: capitalize;
-        min-height: 30px;
+        min-height: 20px;
     }
 
     /* alignment of images in blogs */
@@ -26,13 +26,15 @@
     }
 
     .card-body {
-        min-height: 300px;
-        line-height: 1.5;
+        min-height: 200px;
+        line-height: 1;
         padding: 5px;
-        width: 70vw;
+        width: 60vw;
         display: block;
         margin-left: auto;
         margin-right: auto;
+        color: black;
+        line-height: 1.5;
 
     }
 
@@ -48,8 +50,10 @@
         margin-left: auto;
         margin-right: auto;
 
-    }
+    }  
+
 </style>
+
 
 
 <div class="overlay"></div>
@@ -59,7 +63,7 @@
 
 <div>
     <!-- Post title goes in these h1 tags -->
-    <h2 class="card-title">{{ post.title }}</h2>
+    <h2 class="card-title mt-3">{{ post.title }}</h2>
     <!-- Post author goes before the | the post's created date goes after -->
     <h6 class="post-subtitle text-muted">{{ post.author }} | {{ post.created_on }}</h6>
     <br>
@@ -75,28 +79,28 @@
 <br>
 <div class="container-fluid">
     <div class="row">
-        <div class="col card mb-4">
+        <div class="col card ">
             <div class="card-body">
-                <div class="content">{{ post.content | safe }}</div>
+                <p class="content">{{ post.content | safe }}</p>
             </div>
         </div>
     </div>
-
 </div>
 </div>
 
+<hr>
 <br>
 
 <div class="row">
     <div class="col-md-8 card mb-4  mt-3">
-        <h3 class="green">Comments:</h3>
+        <h3 class="text-purple">Comments:{{post.number_of_comments}}</h3>
         <div class="commentsection">
             <!-- loop inside the empty control tags to iterate through each comment in comments -->
             {% for comment in comments %}
-            <div class="comments" style="padding: 10px;">
+            <div class="comments" style="padding: 10px;">                
                 <p class="font-weight-bold">
                     {{ comment.name }}
-                    <span class="font-weight-bold" style="color: rgb(7, 124, 7); font-weight: 600;">
+                    <span class="font-weight-bold" style="color: rgb(67, 6, 102); font-weight: 600;">
                         <!-- The comment's created date goes here -->
                         {{ comment.created_on }}
                     </span> wrote:
@@ -117,7 +121,7 @@
             {% else %}
             {% if user.is_authenticated %}
 
-            <h3>Leave a comment:</h3>
+            <h3 class="text-purple">Leave a comment:</h3>
             <p>Posting as: {{ user.username }}</p>
             <form method="post" style="margin-top: 1.3em;">
                 {{ comment_form | crispy }}

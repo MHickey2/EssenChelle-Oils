@@ -386,6 +386,51 @@ input[name='q']::placeholder {
     border-radius: 15px;
 }
 
+/*Styling for content i blogs */
+/* Styling for unordered lists in blogs and Recipes */
+.unordered {
+    line-height: 1.5;
+    font-family: 'Marhey', cursive;
+    text-align: left;
+}
+
+/* Styling for ordered lists in blogs and Recipes */
+.ordered {
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* Styling for List items in blogs and Recipes */
+ul li,
+ol li {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+ol {
+    list-style: none;
+    counter-reset: num;
+}
+
+ol li {
+    counter-increment: num;
+}
+
+ol li::before {
+    content: counter(num) ". ";
+    color: green;
+}
+
+/*Styling for text content in recipes*/
+.content {
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    color: #313131;
+    font-size: 1rem;
+    text-align: left;
+}
+
+
 
 /* -------------------------------- Media Queries */
 

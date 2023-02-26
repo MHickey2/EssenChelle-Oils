@@ -80,8 +80,11 @@
                                             {% if product.rating %}
                                                 <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
                                             {% else %}
-                                                <small class="text-muted">No Rating</small>
+                                                <small class="text-muted">No Rating</small>                                                
                                             {% endif %}
+                                            <br>
+                                            <iconify-icon inline icon="fa-regular:comments" width="23" class="">
+                                            </iconify-icon>&nbsp;{{ product.number_of_reviews }}</p> 
                                             {% if request.user.is_superuser %}
                                                 <small class="ml-3">
                                                     <a href="{% url 'edit_product' product.id %}">Edit</a> | 

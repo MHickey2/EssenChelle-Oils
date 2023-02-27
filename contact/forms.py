@@ -13,9 +13,9 @@ class ContactForm(forms.ModelForm):
         fields = ('first_name', 'last_name', 'email_address', 'message')
 
     widgets = {
-            'first_name': forms.TextInput(attrs={'placeholder': 'Enter your first name'}),
-            'last_name': forms.TextInput(attrs={'placeholder': 'Enter your last name'}),
-            'email_address': forms.TextInput(attrs={'placeholder': 'Enter your email address'}),
+            'first_name': forms.TextInput(attrs={'placeholder': 'Enter your first name', 'class': 'form-control'}),  # noqa
+            'last_name': forms.TextInput(attrs={'placeholder': 'Enter your last name', 'class': 'form-control'}),  # noqa
+            'email_address': forms.TextInput(attrs={'placeholder': 'Enter your email address', 'class': 'form-control'}),  # noqa
             'message': SummernoteWidget(),
     }
 
@@ -24,4 +24,3 @@ class ContactForm(forms.ModelForm):
 
     def success(request):
         return render(request, "contact/success.html")
-    

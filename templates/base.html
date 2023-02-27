@@ -73,7 +73,7 @@
             <a href="{% url 'home' %}" class="nav-link main-logo-link">
                 <!-- <img src="/media/eschenellelogo.png" width="130" class="img-responsive" alt="logo image" class=""> -->
                 <img src="https://res.cloudinary.com/dspwticaf/image/upload/v1677320549/essenchelle/eschenellelogo_vfmrwo.png"
-                    width="130" class="img-responsive" alt="logo image" class="">
+                    width="130" class="img-responsive" alt="logo image">
                 <!-- <h3 class="logo-font text-purple my-0"><strong><img src="media/eschenellelogo.png" width="90" alt="logo image" class="">EssenChelle Oils</strong></h3>     -->
             </a>
         </div>
@@ -97,7 +97,7 @@
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
             <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                 <li class="list-inline-item dropdown">
-                    <a class="text-black nav-link" href="" id="user-options" data-toggle="dropdown" aria-haspopup="true"
+                    <a class="text-black nav-link" href="" id="profile-options" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">
                         <div class="text-center">
                             <div>
@@ -157,7 +157,7 @@
             <h4 class="logo-font my-1">Free delivery on orders over €{{ free_delivery_threshold }}!</h4>
         </div>
     </div>
-    </header>
+
 
 
     {% if messages %}
@@ -187,35 +187,20 @@
     {% include 'includes/footer.html' %}
 
     {% block postloadjs %}
-    <script type="text/javascript">
+
+    <script>
         $('.toast').toast('show');
     </script>
     <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-        $(document).ready(function () {
-                    $('.summernote').summernote({
-                        height: 300
-                    });
-                })
-    </script>
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-            } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-            } 
-        });
-}
-</script>
-
+        $(document).ready(function () {
+            $('.summernote').summernote({
+                height: 300
+            });
+        })
+    </script>
 
     {% endblock %}
 

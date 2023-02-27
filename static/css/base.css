@@ -378,6 +378,8 @@ input[name='q']::placeholder {
     padding: 10px;
     text-align: center;
     border: 1px solid black;
+    border-radius: 25px;
+    color: white;
 
 }
 

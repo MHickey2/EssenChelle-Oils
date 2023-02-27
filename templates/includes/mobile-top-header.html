@@ -4,7 +4,7 @@
             <div><i class="fas fa-search fa-lg"></i></div>
             <p class="my-0">Search</p>
         </div>
-    </a>
+    </a>    
     <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
         <form class="form" method="GET" action="{% url 'products' %}">
             <div class="input-group w-100">
@@ -46,9 +46,9 @@
             <div><iconify-icon inline icon="ic:round-shopping-bag" class="text-purple" width="30"></iconify-icon></div>
             <p class="my-0">
                 {% if grand_total %}
-                    ${{ grand_total|floatformat:2 }}
+                    €{{ grand_total|floatformat:2 }}
                 {% else %}
-                    $0.00
+                    €0.00
                 {% endif %}
             </p>
         </div>

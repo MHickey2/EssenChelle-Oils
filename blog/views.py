@@ -5,20 +5,21 @@ from .models import Post, Comment
 from .forms import PostForm, CommentForm
 from django.contrib import messages
 from django.urls import reverse_lazy
-# from cloudinary.models import CloudinaryField
+from cloudinary.models import CloudinaryField
 
 
 # Create your views here.
 class PostList(generic.ListView):
+    """ users can see a selecton of post promoting site products """
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")
     template_name = "blog/blog.html"
     context_object_name = 'post_list'
-    # paginate_by = 6
+    paginate_by = 6
 
 
 class PostDetails(View):
-
+    """ allows user to a full blog post """
     def get(self, request, slug, *args, **kwargs):
         """ Presents the details of individual blogs on the Blog Detail Page """  # noqa
         queryset = Post.objects.filter(status=1)
@@ -68,6 +69,7 @@ class PostDetails(View):
 
 
 class AddPostView(generic.CreateView):
+    """ allows a superuser to add a Blog """
     model = Post
     form_class = PostForm
     template_name = 'blog/add_blog.html'
@@ -84,12 +86,12 @@ class AddPostView(generic.CreateView):
 
 
 class EditPostView(generic.UpdateView):
+    """ allows a superuser to edit a Blog """
     model = Post
     form_class = PostForm
     template_name = 'blog/edit_blog.html'
 
-    def get_success_url(self):
-        """ Allows the superuser to edit an existing blog """
+    def get_success_url(self):        
         slug = self.kwargs["slug"]
         msg = 'The Blog has been edited successfully'
         messages.add_message(self.request, messages.SUCCESS, msg)
@@ -97,12 +99,14 @@ class EditPostView(generic.UpdateView):
 
 
 class DeletePostView(generic.DeleteView):
+    """ allows a superuser to delete a Blog """
     model = Post
     template_name = "blog/delete_blog.html"
     success_url = reverse_lazy('blog')
 
 
 class LatestPostView(generic.ListView):
+    """ user can see the latest 5 blog title """
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")[:5]
     template_name = "blog/blog.html"

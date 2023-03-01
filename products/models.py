@@ -33,7 +33,7 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
-    
+
     def number_of_reviews(self):
         return self.reviews.count()
 

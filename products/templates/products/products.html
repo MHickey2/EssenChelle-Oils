@@ -14,7 +14,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center mt-3">
-                <h2 class="logo-font">Products</h2>
+                <h2 class="logo-font text-purple text-center">Products</h2>
                 {% for c in current_categories %}
                     <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
                         <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
@@ -64,33 +64,39 @@
                                 </a>
                                 {% endif %}
                                 <div class="card-body pb-0">
-                                    <p class="mb-0">{{ product.name }}</p>
+                                    <p class="mb-0 text-purple text-center"><bold>{{ product.name }}</bold></p>
                                 </div>
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col">
-                                            <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                                            <p class="lead mb-0 font-weight-bold text-center">${{ product.price }}</p>
                                             {% if product.category %}
-                                            <p class="small mt-1 mb-0">
-                                                <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                                            <p class="small mt-1 mb-0 text-center">
+                                                <a class="text-muted text-center" href="{% url 'products' %}?category={{ product.category.name }}">
                                                     <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
                                                 </a>
                                             </p>
+                                            <hr>
                                             {% endif %}
                                             {% if product.rating %}
-                                                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                                                <small class="text-muted float-left"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
                                             {% else %}
-                                                <small class="text-muted">No Rating</small>                                                
+                                                <small class="text-muted float-left">No Rating</small>                                                
                                             {% endif %}
                                             <br>
-                                            <iconify-icon inline icon="fa-regular:comments" width="23" class="">
+                                            <p class="float-right"><iconify-icon inline icon="fa-regular:comments" width="23" >
                                             </iconify-icon>&nbsp;{{ product.number_of_reviews }}</p> 
                                             {% if request.user.is_superuser %}
-                                                <small class="ml-3">
+                                                <div class="ml-3">
                                                     <a href="{% url 'edit_product' product.id %}">Edit</a> | 
                                                     <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
-                                                </small>
+                                                </div>
                                             {% endif %}
+                                            <form action="{% url 'favourite_add' product.pk %}" method="post">
+                                            {% csrf_token %}
+                                            <button type="submit" class="btn-sm btn-outline-primary float-right">
+                                            {% if product.favourite_add %}Un-favourite Product{% else %}Add to Favourites{% endif %}</button>
+                                            </form>  
                                         </div>
                                     </div>
                                 </div>

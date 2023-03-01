@@ -43,9 +43,18 @@ It includes user authentication and Full CRUD functionality for the products. Th
     - [3. Imagery    ](#3-imagery----)
     - [4. Website Structure    ](#4-website-structure----)
     - [5. Wireframes    ](#5-wireframes----)
+  - [Web Marketing](#web-marketing)
+    - [1. E-Commerce Application Type](#1-e-commerce-application-type)
+    - [2. Marketing Strategy](#2-marketing-strategy)
+    - [3. Search Engine Optimization(SEO)](#3-search-engine-optimizationseo)
+    - [4. XML Sitemap](#4-xml-sitemap)
+      - [**Facebook Page**](#facebook-page)
   - [6. Features  ](#6-features--)
     - [1. Home Page   ](#1-home-page---)
     - [2. Products Page     ](#2-products-page-----)
+    - [3. Aout Page     ](#3-aout-page-----)
+    - [4. Our Products Page     ](#4-our-products-page-----)
+    - [5. Blog Page     ](#5-blog-page-----)
     - [17. Signup Page   ](#17-signup-page---)
     - [18. Login Page   ](#18-login-page---)
     - [19. Logout Page   ](#19-logout-page---)
@@ -302,6 +311,39 @@ The Wireframes for the site were created in Figma, I concentrated on the standar
 
 <br>
 
+## Web Marketing
+
+### 1. E-Commerce Application Type
+EssenChelle Oil is a B2C E-Commerce Application. It deal with seling direectly to its customer. THere is a great emphasis in promoting a good user experience for the customer. The aim is to retain current customers and growing the customer base by organic means. 
+
+### 2. Marketing Strategy
+Essenchelle Oils is a fledgling company, with a limited budget for marketing, so decisions need to be cost effective and practical. That being said the company has come up with a range of marketing strategies, ie content marketing, utilizing social media platforms, digital promotions, and highlighting events that will promote the products firsthand. The goal is is to increase project sales, create a following online and concentrate on building brand awareness.
+
+Social Media will play a big part in the marketing strategy, research into the different platforms has highligted ways that can be cost effective and easy to implement. Facebook is a great way to fuild up followers and share information with a wide range of customers. A Facebook page was created to share pertinent information with the users, and promotes the latest great deal, that should entice new customers to the EssenChelle site. The image below shows the Facebook page [EssenChelle Oils]().
+
+Google Ads : insert info here
+
+There is a large industry dealing with essesntial oils and aromatherapy in Irelan, and indeed worldwide. In this regard you can tap into existing events that are used to promote the industry and that are very accessible to the public. One of the largest event, occurs yearly in the RDS in the Body Mind Spirit fair where a range of companies, mostly smaller companies have the opportunity to highlight their products to a very involved and motivated audience. You have the opporuity to mingle with and sell directly to the public and grow a valuable network which will pay dividents for future business. This would play a major
+part in growing the brand and linking with a potentially large customer base. But this occurs later in the year, and meantime smaller events, in this vein are held in venues throughtout the country and would be an excellent way to connect with the right clientele. As well as growing a customer base it wold be good to network with other business's and there may be some mutual gains in forging such alliances.
+
+The website itself offers users the chance to sign up for a regular newsletter. This newsletter would be a good way to promote new products, provide articles which hihhlight the benefits of using certain products, offer special offer and highlight future offerings. This will be a great way to grown the Essenchelle community and keep the customers in the loop.
+
+
+###  3. Search Engine Optimization(SEO)
+SEO research will help drive pople to our site more efficiently. Inititally finding the right keywords will help send our site further up in the rankings. Finding the right words involved looking at present sites, previous research finding and analysing which words were suggested when searching for essential oils and aromatherapy in particular. I then picked the top words ad phrased and ensured they were integrated into the site via meta-tags or by ensuring they were included in headings, image names and content. There were also links included for bother internal pages and external sites of good standing that are in a similar industry.
+
+
+### 4. XML Sitemap
+Additionally to help the search engines crawl the site, I've added an XML sitemap file to the main root directory. 
+
+A robots.txt file has also added to indicate to the search engine crawlers which URLs the crawler can access on this ste, used mainly to avoid overloading the site with requests.
+
+#### **Facebook Page**
+![Facebook Page]()
+
+---
+
+
 ## 6. Features  <a name="features"></a>
 
 There are features common to all pages in the site and these are found in the base.html page. These include:
@@ -393,6 +435,45 @@ arranged according to specified criteria, such as by price, by rating and by cat
 </p>
 
 <br>
+
+### 3. Aout Page     <a name="aboutpage"></a>
+
+The About Page provides information on EssenChelle Oil, who they are and what they do
+
+<br>
+
+<p align ="center">      
+     <img src="assets/readme/images/"  width="700" height="700" alt="products page" />    
+</p>
+
+<br/> 
+
+### 4. Our Products Page     <a name="ourproductpage"></a>
+
+The our products page shows information of each category in the product range. It also provides customer
+testimonials on why to choose a product in the EssenChelle Product Range.
+
+<br>
+
+<p align ="center">      
+     <img src="assets/readme/images/"  width="700" height="700" alt="our products page" />    
+</p>
+
+<br/> 
+
+### 5. Blog Page     <a name="blogpage"></a>
+
+The products page shows the the full collection within the EssenChelle range. These products can be
+arranged according to specified criteria, such as by price, by rating and by catagory. 
+
+<br>
+
+<p align ="center">      
+     <img src="assets/readme/images/"  width="700" height="700" alt="products page" />    
+</p>
+
+<br/> 
+
 
 ###  17. Signup Page   <a name="signuppage"></a>
 

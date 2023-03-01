@@ -1,16 +1,16 @@
 {% extends "account/base.html" %}
 
+
 {% load i18n %}
 {% load account socialaccount %}
-
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
 {% block inner_content %}
 
-<hr>
-<h2 class="logo-font mb-4">{% trans "Sign In" %}</h2>
-<hr>
 
+<h1 class="logo-font text-purple  text-center mb-4">{% trans "Sign In" %}</h1>
+<hr>
+<div class="backlay">
 {% get_providers as socialaccount_providers %}
 
 {% if socialaccount_providers %}
@@ -47,5 +47,8 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
     <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
   </p>
 </form>
+</div>
+
+<br>
 
 {% endblock %}

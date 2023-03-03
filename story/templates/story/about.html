@@ -13,8 +13,8 @@
     <div class="col-md-3 mx-auto">
         <img src="https://res.cloudinary.com/dspwticaf/image/upload/v1677321233/essenchelle/teawithfriend_sdew66.jpg" class="center-block about-image" alt="friendly tea with friend">
     </div>
-    <h1 class="text-center logo-font text-purple">Welcome to EssenChelle Oils<iconify-icon icon="fluent-mdl2:eyedropper"></iconify-icon></h1>
-    <p class="col-md-6 text-about text-center align-content-center">EsenChelle Oil started as a small enterprise in 2019 and was
+    <h2 class="text-center logo-font text-purple mt-2">Welcome to EssenChelle Oils<iconify-icon icon="fluent-mdl2:eyedropper"></iconify-icon></h2>
+    <p class="col-md-6 text-about text-center align-content-center">EssenChelle Oil started as a small enterprise in 2019 and was
         initially a market stall at a bootmarket. When there was considerable interest, I decided to start an online presence. I created a small blog with links
         where I could be contacted for the sale of a number of essential oils. As demand grew the range got bigger and I had a
         dedicated website created to deal with the increasing demand. The range has also grown to increase massage oils and
@@ -26,23 +26,67 @@
         and to learn about special offers. Enjoy the site!</p>
 </div>
 <hr>
-<!-- <section class="home-newsletter">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="single">
-                    <h2>Subscribe to the EssenChelle Newsletter</h2>
-                    <div class="input-group">
-                        <input type="email" class="form-control" placeholder="Enter your email">
-                        <span class="input-group-btn">
-                            <button class="btn btn-theme" type="submit">Subscribe</button>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+<div class="overlay"></div>
+<div id="myCarousel" class="carousel slide" data-mdb-ride="carousel">
+  <div class="carousel-indicators">
+    <button
+      type="button"
+      data-mdb-target="#carouselDarkVariant"
+      data-mdb-slide-to="0"
+      class="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      type="button"
+      data-mdb-target="#carouselDarkVariant"
+      data-mdb-slide-to="1"
+      aria-label="Slide 2"
+    ></button>
+    <button
+      type="button"
+      data-mdb-target="#carouselDarkVariant"
+      data-mdb-slide-to="2"
+      aria-label="Slide 3"
+    ></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://res.cloudinary.com/dspwticaf/image/upload/v1677782539/essenchelle/essential-oils-background_tc7nve.jpg" class="d-block w-40 center item1" alt="Selection of Essential Oils"/>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Essential Oils</h5>
+        <p>Our essential oils are 100% Organic and sourced from the finest providers..</p>
+      </div>
     </div>
-</section> -->
+    <div class="carousel-item">
+      <img src="https://res.cloudinary.com/dspwticaf/image/upload/v1677782539/essenchelle/hands_vf82p3.jpg" class="d-block w-40 center item2" alt="Large range of Massage Oils"/>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Massage Oils</h5>
+        <p>A range of massage blends that can fit whatever requirement you need.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://res.cloudinary.com/dspwticaf/image/upload/v1677782539/essenchelle/essential-oils_iukkb8.jpg" class="d-block w-40 center" alt="Collection of Esssential Oil Burners"/>
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Essential Oild Burners</h5>
+        <p>A wide selection of Essential Oil Burners, to cater for your tastes within your home environment.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev left text-black" type="button" data-mdb-target="#carousel" data-mdb-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next right text-black" type="button" data-mdb-target="#carousel" data-mdb-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+<br>
+
 
 
 {% endblock %}

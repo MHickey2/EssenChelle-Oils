@@ -18,14 +18,18 @@ def contact(request):
         if form.is_valid():
             contact = form.save(commit=False)
             contact.save()
+            email_subject = f'New contact {form.cleaned_data["email_address"]}: {form.cleaned_data["subject"]}'
+            email_message = form.cleaned_data['message']
+            send_mail(email_subject, email_message, '', ['michellehickey2@yahoo.ie'],)
             messages.success(request, 'Your message has been sent!')
-            return redirect(reverse('contact'))
-            # return redirect('success')
-            
-            send_mail(subject, message, from_email, ['michellehickey2@yahoo.ie'],)
-
+            return render(request, 'contact/success.html')
+           
         else:
-            form = ContactForm()
+            # Form is invalid. Render the form again with error messages.
+            messages.error(request, 'Invalid form submission.')
+            return render(request, 'contact/contact.html', {'form': form})
+    else:
+        form = ContactForm()
 
     template = 'contact/contact.html'
     context = {

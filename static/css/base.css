@@ -1,9 +1,8 @@
-
 html {
     height: 100%;
 }
 
-body {    
+body {
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Roboto';
@@ -14,7 +13,7 @@ body {
 }
 
 .nav-link {
-    color: purple!important;
+    color: purple !important;
     font-size: 20px;
 }
 
@@ -27,7 +26,7 @@ body {
     width: 1.5rem;
 }
 
-.text-purple{
+.text-purple {
     color: rgb(226, 55, 226);
 }
 
@@ -36,7 +35,7 @@ body {
 }
 
 .shop-now-button {
-    background:  rgb(226, 55, 226);     
+    background: rgb(226, 55, 226);
     color: white;
     min-width: 260px;
 }
@@ -48,7 +47,8 @@ body {
 
 .btn-outline-black {
     background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
+    color: black !important;
+    /* use important to override link colors for <a> elements */
     border: 1px solid black;
 }
 
@@ -75,14 +75,11 @@ body {
     border-radius: 15px;
     color: black;
     border: 2px solid white;
-    
 }
 
 .outline {
     -webkit-text-stroke: .1px white;
 }
-
-
 
 .text-black {
     color: #000 !important;
@@ -97,27 +94,27 @@ body {
 }
 
 .bg-purple {
-    background-color: purple!important;
+    background-color: purple !important;
 }
 
 .overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: white;
-	z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
 }
 
 .overlayabout {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-    background-color: darksalmon;    
-	z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: darksalmon;
+    z-index: -1;
 }
 
 
@@ -126,7 +123,7 @@ body {
 }
 
 
-a.category-badge > span.badge:hover {
+a.category-badge>span.badge:hover {
     background: #212529 !important;
     color: #fff !important;
 }
@@ -145,12 +142,11 @@ footer {
     object-fit: cover;
     width: 250px;
     height: auto;
-    
 }
 
 .text-about {
     width: 80%;
-    color: black;    
+    color: black;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -167,36 +163,37 @@ footer {
 .home-newsletter {
     padding: 40px 0;
     background: #f84e77;
-    }
-    
+}
+
 .home-newsletter .single {
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
     position: relative;
-    z-index: 2; 
+    z-index: 2;
 }
 
 .home-newsletter .single h2 {
     font-size: 20px;
     color: white;
     text-transform: uppercase;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 .home-newsletter .single .form-control {
     height: 50px;
     background: rgba(255, 255, 255, 0.6);
     border-color: transparent;
-    border-radius: 20px 0 0 20px; 
+    border-radius: 20px 0 0 20px;
 }
 
 .home-newsletter .single .form-control:focus {
     box-shadow: none;
-    border-color: #243c4f; 
+    border-color: #243c4f;
 }
-    .home-newsletter .single .btn {
-    min-height: 50px; 
+
+.home-newsletter .single .btn {
+    min-height: 50px;
     border-radius: 0 20px 20px 0;
     background: #243c4f;
     color: #fff;
@@ -212,50 +209,51 @@ footer {
 
 .card-image {
     position: relative;
-  }
-  
-  .image-overlay {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 100%;
-      width: 100%;
-      opacity: 0;
-      transition: .5s ease;
-      background: rgba(245, 243, 245, 0.5);
-    }
-  
-  .card:hover .image-overlay {
-      opacity: 1;
-    }
+}
 
-    .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+.image-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background: rgba(245, 243, 245, 0.5);
+}
 
-    .productname, .productprice {
-        text-align: center;
-        font-weight: bold;
-        font-size: large;
-        padding: 10px;
-    }
+.card:hover .image-overlay {
+    opacity: 1;
+}
 
-    .product-details-container {
-        padding: 10px;
-        background-color: #2d023d;
-        border: 5px solid rgb(224, 142, 224);
-        border-radius: 15px;
-        color: white;
-    }
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    .btt-link,
-    .update-link,
-    .remove-item {
-        cursor: pointer;
+.productname,
+.productprice {
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    padding: 10px;
+}
+
+.product-details-container {
+    padding: 10px;
+    background-color: #2d023d;
+    border: 5px solid rgb(224, 142, 224);
+    border-radius: 15px;
+    color: white;
+}
+
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
 }
 
 input[name='q']::placeholder {
@@ -281,10 +279,10 @@ input[name='q']::placeholder {
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 4px solid transparent;
-    border-right: 4px solid transparent; 
+    border-right: 4px solid transparent;
     border-bottom: 10px solid black;
     position: absolute;
     top: -10px;
@@ -351,27 +349,24 @@ input[name='q']::placeholder {
     background-color: #23BBBB;
 }
 
-.card-title {    
+.card-title {
     text-align: center;
-    
-
 }
 
 .author {
     color: purple;
     margin: 4px;
     text-transform: uppercase;
-    
 }
 
-.fa-star {    
-    color: #f3da35!important;
+.fa-star {
+    color: #f3da35 !important;
 }
 
 .contact-information {
-   background-color: darkorchid;
-   padding: 15px;
-   color: white;
+    background-color: darkorchid;
+    padding: 15px;
+    color: white;
 }
 
 .contactform {
@@ -380,10 +375,9 @@ input[name='q']::placeholder {
     border: 1px solid black;
     border-radius: 25px;
     color: white;
-
 }
 
-.faveproducts {   
+.faveproducts {
     border: 5px solid purple;
     border-radius: 15px;
 }
@@ -423,7 +417,7 @@ ol li::before {
     color: green;
 }
 
-/*Styling for text content in recipes*/
+/*Styling for text content */
 .content {
     line-height: 1.5;
     font-family: 'Roboto', sans-serif;
@@ -438,16 +432,18 @@ ol li::before {
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
+    .container {
+        max-width: 80%;
+    }
 }
 
-  /* Allauth form formatting */
+/* Allauth form formatting */
 
 .allauth-form-inner-content p {
-    margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text-secondary */
+    margin-top: 1.5rem;
+    /* mt-4 */
+    color: #6c757d;
+    /* text-secondary */
 }
 
 .allauth-form-inner-content input {
@@ -465,8 +461,8 @@ ol li::before {
 
 .allauth-form-inner-content button,
 .allauth-form-inner-content input[type='submit'] {
-	/* btn */
-	display: inline-block;
+    /* btn */
+    display: inline-block;
     font-weight: 400;
     color: #fff;
     text-align: center;
@@ -483,18 +479,19 @@ ol li::before {
     border-radius: 0;
 
     /* standard bootstrap btn transitions */
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {	
-	color: #fff;
+.allauth-form-inner-content input[type='submit']:hover {
+    color: #fff;
     background-color: #222;
     border-color: #222;
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+    color: #17a2b8;
+    /* text-info */
 }
 
 /* Product Form */
@@ -525,12 +522,17 @@ ol li::before {
     border-radius: 0;
 }
 
-#cover {   
-  color: black;  
-  text-align: center;
-  display: flex;
-  align-items: center;
+#cover {
+    color: black;
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
+
+/* Carousel styling */
+.carousel-caption {
+    vertical-align: middle;
+  }
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
@@ -600,8 +602,8 @@ ol li::before {
         font-size: .75rem;
     }
 
-    .increment-qty, .decrement-qty {
+    .increment-qty,
+    .decrement-qty {
         padding: .25rem .5rem !important;
     }
 }
-

@@ -1,8 +1,18 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block page_header %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static '/css/base.css' %}">    
 {% endblock %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
 
 {% block content %}
 
@@ -55,21 +65,21 @@
     <div class="carousel-item active">
       <img src="https://res.cloudinary.com/dspwticaf/image/upload/v1677782539/essenchelle/essential-oils-background_tc7nve.jpg" class="d-block w-40 center item1" alt="Selection of Essential Oils"/>
       <div class="carousel-caption d-none d-md-block">
-        <h5>Essential Oils</h5>
+        <h3 class="text-center text-purple carousel-title">Essential Oils</h3>
         <p>Our essential oils are 100% Organic and sourced from the finest providers..</p>
       </div>
     </div>
     <div class="carousel-item">
       <img src="https://res.cloudinary.com/dspwticaf/image/upload/v1677782539/essenchelle/hands_vf82p3.jpg" class="d-block w-40 center item2" alt="Large range of Massage Oils"/>
       <div class="carousel-caption d-none d-md-block">
-        <h5>Massage Oils</h5>
+        <h3 class="text-center text-purple carousel-title">Massage Oils</h3>
         <p>A range of massage blends that can fit whatever requirement you need.</p>
       </div>
     </div>
     <div class="carousel-item">
       <img src="https://res.cloudinary.com/dspwticaf/image/upload/v1677782539/essenchelle/essential-oils_iukkb8.jpg" class="d-block w-40 center" alt="Collection of Esssential Oil Burners"/>
       <div class="carousel-caption d-none d-md-block">
-        <h5>Essential Oild Burners</h5>
+        <h3 class="text-center text-purple carousel-title">Essential Oild Burners</h3>
         <p>A wide selection of Essential Oil Burners, to cater for your tastes within your home environment.</p>
       </div>
     </div>

@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}EssenchelleOils/Delete Product{% endblock %}
+
+
+
+{% block content %}
+
+{% load crispy_forms_tags %}
+
+{% if user.is_authenticated %}
+{% if request.user.is_superuser %}
+
+<div class="overlay"></div>
+
+<h2 class="text-center text-purple"><iconify-icon inline icon="material-symbols:delete-outline-rounded" class="text-purple"></iconify-icon>&nbsp;Delete this Product:</h2>
+<div class="container-fluid">
+    <div class="row">
+        <section class="display-block">            
+            <div class="container-fluid align-center" id="newpost">
+                <div class="">
+                    <div class="c"> 
+                        <br>  
+                        <p>Are you sure you want to Delete this product?</p>                     
+                        <h4 class="text-purple">Delete the Product: </h4>
+                        <h5 class="text-purple">{{ product.name }}</h5>
+                        <br>                        
+                        <form class="form text-muted" method="post">
+                            {% csrf_token %}
+                            {{ form | crispy }}
+                            <br>                           
+                            <button type="submit" class="btn btn-danger btn-lg btn-block center">Delete</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+{% else %}
+<br>
+       <h4 class="green">Sorry, you are not allowed to delete this Product</h4>
+    {% endif %}   
+{% endif %}
+
+
+<div class="center">
+    <a href="{% url 'products' %}" class="btn btn-primary">BACK</a>
+</div>
+<br>
+
+{%endblock%}
+
+

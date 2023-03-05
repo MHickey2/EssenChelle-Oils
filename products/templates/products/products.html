@@ -92,11 +92,11 @@
                                                     <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
                                                 </div>
                                             {% endif %}
-                                            <form action="{% url 'favourite_add' product.pk %}" method="post">
+                                            <!-- <form action="{% url 'favourite_add' product.pk %}" method="post">
                                             {% csrf_token %}
                                             <button type="submit" class="btn-sm btn-outline-primary float-right">
                                             {% if product.favourite_add %}Un-favourite Product{% else %}Add to Favourites{% endif %}</button>
-                                            </form>  
+                                            </form>   -->
                                         </div>
                                     </div>
                                 </div>

@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponseRedirect
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
@@ -61,7 +61,7 @@ def all_products(request):
 
 @login_required
 def add_product(request):
-    """ Add a product to the store """
+    """ Add a new product to the store """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
@@ -104,6 +104,7 @@ def edit_product(request, product_id):
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
+        # return redirect(reverse('products'))
 
     template = 'products/edit_product.html'
     context = {
@@ -119,7 +120,7 @@ def delete_product(request, product_id):
     """ Delete a product from the store """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
-        return redirect(reverse('home'))    
+        return redirect(reverse('home'))
 
     product = get_object_or_404(Product, pk=product_id)
 
@@ -175,7 +176,7 @@ def product_detail(request, product_id):
 
 @login_required
 def favourite_add(request, product_id):
-    """ A view to allow users to add and remove products to favourite."""
+    """ A view to allow users to add and remove products to favourites."""
     product = get_object_or_404(Product, id=product_id)
     if request.method == "POST":
         if request.user in product.favourites.all():  # noqa

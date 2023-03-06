@@ -12,7 +12,6 @@ urlpatterns = [
          name='edit_blog'),
     path('<slug:slug>/delete_blog/', views.DeletePostView.as_view(),
          name='delete_blog'),
-
 ]
 
 if settings.DEBUG:

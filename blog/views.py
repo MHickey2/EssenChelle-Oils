@@ -10,7 +10,7 @@ from cloudinary.models import CloudinaryField
 
 # Create your views here.
 class PostList(generic.ListView):
-    """ users can see a selecton of post promoting site products """
+    """ users can see a selecton of blog posts promoting products on site """
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")
     template_name = "blog/blog.html"
@@ -18,10 +18,10 @@ class PostList(generic.ListView):
     paginate_by = 6
 
 
-class PostDetails(View):
+class PostDetails(View):    
     """ allows user to a full blog post """
     def get(self, request, slug, *args, **kwargs):
-        """ Presents the details of individual blogs on the Blog Detail Page """  # noqa
+        """ Presents the details of individual blogs on the Blog Detail Page """  # noqa     
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(approved=True).order_by("-created_on")
@@ -106,7 +106,7 @@ class DeletePostView(generic.DeleteView):
 
 
 class LatestPostView(generic.ListView):
-    """ user can see the latest 5 blog title """
+    """ user can see the latest 5 blog titles """
     model = Post
     queryset = Post.objects.filter(status=1).order_by("-created_on")[:5]
     template_name = "blog/blog.html"

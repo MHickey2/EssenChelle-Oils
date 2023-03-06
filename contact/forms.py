@@ -10,10 +10,11 @@ class ContactForm(forms.ModelForm):
 
     class Meta:
         model = Contact
-        fields = ('first_name', 'last_name', 'email_address', 'subject', 'message')
+        fields = ('first_name', 'last_name', 'email_address',
+                  'subject', 'message')
 
     widgets = {
-            'first_name': forms.TextInput(attrs={'placeholder': 'Enter your first name', 'class': 'form-control'}),  # noqa
+            'first_name': forms.TextInput(attrs={'placeholder': 'Enter your first name', 'class': 'form-control-default'}),  # noqa
             'last_name': forms.TextInput(attrs={'placeholder': 'Enter your last name', 'class': 'form-control'}),  # noqa
             'email_address': forms.TextInput(attrs={'placeholder': 'Enter your email address', 'class': 'form-control'}),  # noqa
             'subject': forms.TextInput(attrs={'placeholder': 'Enter the subject', 'class': 'form-control'}),  # noqa

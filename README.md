@@ -73,9 +73,9 @@ It includes user authentication and Full CRUD functionality for the products. Th
     - [21. Signup Page   ](#21-signup-page---)
     - [22. Login Page   ](#22-login-page---)
     - [23. Logout Page   ](#23-logout-page---)
-    - [20. Custom Error Pages  ](#20-custom-error-pages--)
-    - [21. Admin Panel  ](#21-admin-panel--)
-    - [22. Security Measures  ](#22-security-measures--)
+    - [24. Custom Error Pages  ](#24-custom-error-pages--)
+    - [25. Admin Panel  ](#25-admin-panel--)
+    - [26. Security Measures  ](#26-security-measures--)
       - [Return to Table of Contents](#return-to-table-of-contents-2)
   - [7. Future Implementation  ](#7-future-implementation--)
       - [Return to Table of Contents](#return-to-table-of-contents-3)
@@ -694,7 +694,7 @@ In the Logout Page, the User can confirm that they want to exit the website.
 
 <br/> 
 
-### 20. Custom Error Pages  <a name="error pages"></a>
+### 24. Custom Error Pages  <a name="error pages"></a>
 
 I have included custom Error Pages in the error folder within the templates folder(403,404,405,500), Below is the image from the 404 page, but they all look similar, barring the fault lines.
 
@@ -706,7 +706,7 @@ I have included custom Error Pages in the error folder within the templates fold
 
 <br/> 
 
-### 21. Admin Panel  <a name="adminpanel"></a>
+### 25. Admin Panel  <a name="adminpanel"></a>
 
 The admin panel allows the admin/superuser to perform a wide range of functionalities within the site. The admin can add, delete, edit product, blog, users. The admin can also approve reviews for individual products and comments for individual blogs.
 
@@ -724,7 +724,7 @@ The admin panel allows the admin/superuser to perform a wide range of functional
 
 <br/> 
 
-### 22. Security Measures  <a name="security"></a>
+### 26. Security Measures  <a name="security"></a>
 
 To ensure security on the site, only logged in users can access certain features on the site. A logged in user can add a product review or comment for a blog in the blog section. A superuser can add, updata and delete products within the admin panel. The superuser also has access to add, edit and delete products within the product pages. The superuser can add, edit and delete blogs in the admin panel but they can also access these capabilities within the blog page. Only the Admin/Superuser can access the admin Panel(would need sign in credentials).The Database URL and secret key are stored in the env.py file to prevent unwanted connections to the Database. As I was following the boutique ado walkthrough, I had not realised the secret key was commited in the early stages of the development, after doing my research into the issue and with the advice from CI, I generated a new key, and this was immediately put in the env.py file, making the other key obselete. All secret keys were included in the env.py file. Cross-Site Request Forgery (CSRF) Tokens are used on all Forms within the App for added protection. All keys needed for the inclusion of AWS, CLoudinary and Stripe were concealed for security purposes.
 
@@ -743,6 +743,18 @@ To ensure security on the site, only logged in users can access certain features
  ## 7. Future Implementation  <a name="future"></a>
 
  <br>
+
+ This is my first E-Commerce Site, so the main goal is to have a fully functional site with customised models to expand on the original concept as defined in the Boutique Ado Walkthrough. There were a number of features that I would like to expand upon in the future.
+
+ In relation to the products, I would like to expand the information relating to the product. Besides the description, I would ike to include directions for use and cautions. You could also sort products according to the health conditions that can be addressed by using them i.e. insomnia, anxiety, respiratory issues.
+
+ In regards to the blogs I have just added a few basic blogs, with heavy emphasis on product spotlighting for marketing purposes. These blogs could also be broken down into further categories, outside fo this remit. You can add a do it yourself section, where you could provide simple instructions for users to use the products in creative ways, this is incorporated into the present blog in a small way, but would be a great way for users to learn to integrate the products into their lives. I would also include a recipe category where you could provide the user with recipes using the essential oils. This could be a good way to get users to interact with the site. you could ask the users to contribute their own recipes via the social media channels or by contacting the company directly with the contact form. User's recipes could then be featured on the site. Healthy Living could also be a category and you could give advice on how to use oils in the home and provide tips for everyday living in relation to EssenChelle Oils. These measures should not only drive sales, but should create a a thriving community with a shared interest in essential oil and their byproducts.
+
+ In regard to the profiles, I would customise it more for the user, in the previous project I had an image for the profile user, but would rather ensure I meet all the project criteria first, and if there is time at the end I could explore this possibility, but if not will introduce this in a future iteration.
+
+ In regard to the review, I had looked into the idea of using the ratings in the reviews in the product rating, again this is still a possibility, but time restraints this may not be possible at this time.
+
+
  
  <br>
 
@@ -806,6 +818,8 @@ Go to the [TESTING DOCUMENT](TESTING.md)
 ----
 
  ## 10. Bugs and Issues  <a name="bugs"></a>
+
+ There have been a number of issues during development. Initially there was major issues with images, both sourcing assets and resizing them so they are uniform on the site. I wanted the products to carry the brand of the site, so this meant they had to be customised within photoshop. The special offer section are different in that they have a coloured background, but the sizing is the same, so I could live with that.
 
 <br>
 
@@ -915,6 +929,7 @@ time you push to your Repository. (Option Taken)
 - [YouTube](https://www.youtube.com/)
 - [Card Zoom Hover Effect video on YouTube](https://www.youtube.com/watch?v=KAHjf1Xj0SU)
 - [W3Schools.com](https://www.w3schools.com/)
+- [Ordinary Coders: Bootstrap Card Hover Effects](https://ordinarycoders.com/blog/article/codepen-bootstrap-card-hovers)
 
 <br>
 

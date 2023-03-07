@@ -104,6 +104,8 @@ def checkout(request):
             currency=settings.STRIPE_CURRENCY,
         )
 
+        print(intent)
+
         # Attempt to prefill the form with info the user maintains in their profile  # noqa
         if request.user.is_authenticated:
             try:

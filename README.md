@@ -52,12 +52,27 @@ It includes user authentication and Full CRUD functionality for the products. Th
   - [6. Features  ](#6-features--)
     - [1. Home Page   ](#1-home-page---)
     - [2. Products Page     ](#2-products-page-----)
-    - [3. Aout Page     ](#3-aout-page-----)
-    - [4. Our Products Page     ](#4-our-products-page-----)
-    - [5. Blog Page     ](#5-blog-page-----)
-    - [17. Signup Page   ](#17-signup-page---)
-    - [18. Login Page   ](#18-login-page---)
-    - [19. Logout Page   ](#19-logout-page---)
+    - [3. EssenChelle Products Page     ](#3-essenchelle-products-page-----)
+    - [4. Product Details Page     ](#4-product-details-page-----)
+    - [5. About Page     ](#5-about-page-----)
+    - [6. Our Products Page     ](#6-our-products-page-----)
+    - [7. Blog Page     ](#7-blog-page-----)
+    - [8. Blog Details Page     ](#8-blog-details-page-----)
+    - [9. Contact Page     ](#9-contact-page-----)
+    - [10. Profile Page    ](#10-profile-page----)
+    - [11. Product Favourites Page     ](#11-product-favourites-page-----)
+    - [12. Shopping Bag Page     ](#12-shopping-bag-page-----)
+    - [13. Checkout Page     ](#13-checkout-page-----)
+    - [14. Checkout Success Page     ](#14-checkout-success-page-----)
+    - [15. Add Product Page     ](#15-add-product-page-----)
+    - [16. Edit Product Page     ](#16-edit-product-page-----)
+    - [17. Delete Product Page     ](#17-delete-product-page-----)
+    - [18. Add Blog Page     ](#18-add-blog-page-----)
+    - [19. Edit Blog Page     ](#19-edit-blog-page-----)
+    - [20. Delete Blog Page     ](#20-delete-blog-page-----)
+    - [21. Signup Page   ](#21-signup-page---)
+    - [22. Login Page   ](#22-login-page---)
+    - [23. Logout Page   ](#23-logout-page---)
     - [20. Custom Error Pages  ](#20-custom-error-pages--)
     - [21. Admin Panel  ](#21-admin-panel--)
     - [22. Security Measures  ](#22-security-measures--)
@@ -181,7 +196,7 @@ The project was developed using Agile Methodology and it was by use of the GitHu
 
 ### 1. Colour  Scheme  <a name="colourscheme"></a>
 
-The colour scheme was inspired by essential oils, in particular lavender oil, so the website is based on lavender hues.
+The colour scheme was inspired by essential oils, in particular lavender oil, so the website uses this colour throughout the site. The color Lavender represents holistic wellness and it is known for its tranquility and calming effects. Lavender Oil is also one of the most popular oils and very versatile so it made sense to utilize it's popularity and use a colour most holistic users would be familiar with. There is not a lot of colour and the backgrounds are either white or lavendender where suitable. Headings, borders and the footer are purple. In this project I wanted to only have a subtle use of colour, so that there would be little distraction to the user, when making their purchases on the site.
 
 <br>
 <p align ="center">      
@@ -233,7 +248,7 @@ font stuff here
 
 The Logo was created with [LogoMaker](https://www.logomaker.com/), as the theme was health related, I used predominantly green in the logo iteself and the logo had a strong influence on the overall website colour scheme going forward.
 
-The imagery of the site focuses on essential oils and their byproducts, the images were sourced from the Pexels site and supplement the content. The images for the site are hosted in [Cloudinary](https://cloudinary.com/). I had used AWS for a while but was not comfortable using aws, as it was unpredictable in regards to pricing, and chose to revert to cloudinary as I trusted this platform, but am currently using AWS for the static files.
+The imagery of the site focuses on essential oils and their byproducts, the images were sourced from the Pexels site and supplement the content. The images for the site are hosted in [Cloudinary](https://cloudinary.com/). I had used AWS for a while but was not comfortable using aws, as it was unpredictable in regards to pricing, and chose to revert to cloudinary as I trusted this platform.
 
 There are also images sporadically placed throughout the site, There is a background image which highlights the nature of the site on the index page, the product was initially a template with no packaging, so I used it in photoshop to apply the packaging for the different products in the essential and massage oil range. The aromatherapy burners were sourced on a shopping site platorm, as it did not have to have the essenchelle branding.
 
@@ -274,6 +289,9 @@ The website consists of the following Pages:
  - The Add Product Page, which is a form that allows the superuser to add a Product.
  - The Edit Product Page, which is a form that allows the superuser to edit a Product.
  - The Delete Product Page, which is a form that allows the superuser to delete a Product.
+ - The Bag Page which shows the details of the products presently in the Bag.
+ - The Checkout Page, which shows the details of an order and the user details form and checkout       submission button.
+ - The Checkout Submission page, which shows the order details and price and Thank you message.
  - The About Page, which gives more information on the site 
  - The Our Products Page, with an introduction to EssenChelle Products by category and it includes customer testimonials.
  - The Blog Page with a spotlight on products, it highlights individual products and blogs can only be
@@ -283,6 +301,7 @@ The website consists of the following Pages:
  - The Edit Blog Page, which is a form that allows the superuser to edit a Blog.
  - The Delete Blog Page, which is a form that allows the superuser to delete a Blog.
  - The Profile Page, which contains profile information and  product history for the logged in user.
+ - The User Favourites Page, which shows the users favourite products.
  - The Sign Up Page, consists of a form where a new user can register for the site.
  - The Login Page, consists of a form where the user can login to the site.
  - The logout Page, consists of a form where the user can logout of the site.
@@ -314,19 +333,19 @@ The Wireframes for the site were created in Figma, I concentrated on the standar
 ## Web Marketing
 
 ### 1. E-Commerce Application Type
-EssenChelle Oil is a B2C E-Commerce Application. It deal with seling direectly to its customer. THere is a great emphasis in promoting a good user experience for the customer. The aim is to retain current customers and growing the customer base by organic means. 
+EssenChelle Oil is a B2C E-Commerce Application. It deal with seling directly to its customer. There is a great emphasis in promoting a good user experience for the customer. The aim is to retain current customers and at the same time grow the customer base by organic means. 
 
 ### 2. Marketing Strategy
 Essenchelle Oils is a fledgling company, with a limited budget for marketing, so decisions need to be cost effective and practical. That being said the company has come up with a range of marketing strategies, ie content marketing, utilizing social media platforms, digital promotions, and highlighting events that will promote the products firsthand. The goal is is to increase project sales, create a following online and concentrate on building brand awareness.
 
 Social Media will play a big part in the marketing strategy, research into the different platforms has highligted ways that can be cost effective and easy to implement. Facebook is a great way to fuild up followers and share information with a wide range of customers. A Facebook page was created to share pertinent information with the users, and promotes the latest great deal, that should entice new customers to the EssenChelle site. The image below shows the Facebook page [EssenChelle Oils]().
 
-Google Ads : insert info here
+Google Ads : This option is out of reach at the moment, as the budget is small, but with enough experience and analysis I hope to be able to plan a campaign in the future that will be cost effective and will earn results.
 
 There is a large industry dealing with essesntial oils and aromatherapy in Irelan, and indeed worldwide. In this regard you can tap into existing events that are used to promote the industry and that are very accessible to the public. One of the largest event, occurs yearly in the RDS in the Body Mind Spirit fair where a range of companies, mostly smaller companies have the opportunity to highlight their products to a very involved and motivated audience. You have the opporuity to mingle with and sell directly to the public and grow a valuable network which will pay dividents for future business. This would play a major
 part in growing the brand and linking with a potentially large customer base. But this occurs later in the year, and meantime smaller events, in this vein are held in venues throughtout the country and would be an excellent way to connect with the right clientele. As well as growing a customer base it wold be good to network with other business's and there may be some mutual gains in forging such alliances.
 
-The website itself offers users the chance to sign up for a regular newsletter. This newsletter would be a good way to promote new products, provide articles which hihhlight the benefits of using certain products, offer special offer and highlight future offerings. This will be a great way to grown the Essenchelle community and keep the customers in the loop.
+The website itself offers users the chance to sign up for a regular newsletter. This newsletter would be a good way to promote new products, provide articles which highlight the benefits of using certain products, offer special offers and highlight new arrival products. This will be a great way to grow the Essenchelle community and keep the customers in the loop. The newsletter functionality utilizes mailchimp, who will keep track of users and with their extensive capabilities, the company would seek to utilize more of their services in the future.
 
 
 ###  3. Search Engine Optimization(SEO)
@@ -359,12 +378,22 @@ The logo was the first asset I created, and I developed it with a view of promot
 </p>
 
 <br/> 
-  
+There is a searcbar, where the user can put in their search criteria term. There is an Account Icon, which contains a dropdown menu:
+
+Account Icon - Register, Log In (Before Log in or registering)
+Account Icon - Product Management, My Profile, Product Favourites, Log Out. (If logged in)
+
+Shopping Bag Icon - Takes you to the Shopping Bag Page.
 
 - The Navigation Bar:
 
-The navigation exists in different forms, for a general user the navigation contains home, about, recipes and an account dropdown with register and login options. 
+The navigation consists of the following options: All Products, EssenChelle Products, Our Story, Special Offers and Contact. Each of these Nav items have dropdown menus:
 
+All Products - By Price, By Rating, By Category and All Products.
+EssenChelle Products - Essential Oils, Massage Oils, Oil Burners and All Products.
+Our Story - About Us, Our Products and Blog.
+Special Offers - New Arrivals, Deals, Clearance and All Specials.
+Contact - Contact Form.
   <br>
 
 <p align ="center">      
@@ -373,7 +402,6 @@ The navigation exists in different forms, for a general user the navigation cont
 
 <br/> 
 
-For a logged in user the naviation contains, home, about, recipes, profile and logout. When logged in you will also see your profile picture to the right of the other options.
 
 
 <p align ="center">      
@@ -382,7 +410,7 @@ For a logged in user the naviation contains, home, about, recipes, profile and l
 
 <br/> 
 
-On smaller screens, there is a hamburger menu where the navigation items appear in a collapsable dropdown menu. The image is also included in this menu.
+On smaller screens, there is a hamburger menu where the navigation items appear in a collapsable dropdown menu. The image is included in this menu.
 
 <br>
 
@@ -393,7 +421,7 @@ On smaller screens, there is a hamburger menu where the navigation items appear 
 <br/> 
 
 - The Footer:
-The Footer contains a blurb on the site, some contact details and social media icons, also the copyright information on the Wannabe Healthy site. 
+The Footer contains a blurb on the site, some contact details and social media icons, also the copyright information on the EssenChelle Oils site. THe footer also includes a newsletter sign up form provided by mailchimp.
 
  <br>
 
@@ -417,8 +445,7 @@ The home page has an introductory image and a shop button, that can bring you di
 
 ### 2. Products Page     <a name="productpage"></a>
 
-The products page shows the the full collection within the EssenChelle range. These products can be
-arranged according to specified criteria, such as by price, by rating and by catagory. 
+The products page shows the the full collection within the EssenChelle range including the special offers. These products can be arranged according to specified criteria, such as by price, by rating and by category. 
 
 <br>
 
@@ -428,7 +455,10 @@ arranged according to specified criteria, such as by price, by rating and by cat
 
 <br/> 
 
+### 3. EssenChelle Products Page     <a name="essenchelleproductpage"></a>
+
 <br>
+This Page shows products in the category of Essential, Massage and Burners. You can select to see products within just one category by choosing the option in the dropdown menu or by selecting the relevant button at the top of the page. You can view the number of products and there is a facility for sorting at the top of the page. The options include price, rating, name and category.
 
 <p align ="center">      
      <img src="assets/readme/images/editprofile.jpg" width="500" alt="Edit Profile Page" />    
@@ -436,9 +466,20 @@ arranged according to specified criteria, such as by price, by rating and by cat
 
 <br>
 
-### 3. Aout Page     <a name="aboutpage"></a>
+### 4. Product Details Page     <a name="productdetailspage"></a>
+The Page shows the full details of an individual product including an image. There is a review form, where a product user can leave a review for others, there is also a review section showing existing reviews.
 
-The About Page provides information on EssenChelle Oil, who they are and what they do
+<br>
+
+<p align ="center">      
+     <img src="assets/readme/images/"  width="700" height="700" alt="products page" />    
+</p>
+
+<br/>
+
+### 5. About Page     <a name="aboutpage"></a>
+
+The About Page provides information on EssenChelle Oil, gives information of background and what services the company offers. It also features a carousel with information on the different categories on offer in the site.
 
 <br>
 
@@ -448,7 +489,7 @@ The About Page provides information on EssenChelle Oil, who they are and what th
 
 <br/> 
 
-### 4. Our Products Page     <a name="ourproductpage"></a>
+### 6. Our Products Page     <a name="ourproductpage"></a>
 
 The our products page shows information of each category in the product range. It also provides customer
 testimonials on why to choose a product in the EssenChelle Product Range.
@@ -461,10 +502,9 @@ testimonials on why to choose a product in the EssenChelle Product Range.
 
 <br/> 
 
-### 5. Blog Page     <a name="blogpage"></a>
+### 7. Blog Page     <a name="blogpage"></a>
 
-The products page shows the the full collection within the EssenChelle range. These products can be
-arranged according to specified criteria, such as by price, by rating and by catagory. 
+The Blog Page shows a collection of blogs with a spotlight on products being sold on the site. The sidebar gives a brief introduction to the blogs. There is a link with more comprehensive information on individual essential oils. It also shows the titles for the 5 latest blogs available.
 
 <br>
 
@@ -472,10 +512,152 @@ arranged according to specified criteria, such as by price, by rating and by cat
      <img src="assets/readme/images/"  width="700" height="700" alt="products page" />    
 </p>
 
-<br/> 
+<br/>
+
+### 8. Blog Details Page     <a name="blogdetailspage"></a>
+The Blog Detail page shows the full blog which has information pertaining to products on the site. It will either concentrate on an indivual oil, or a selection of products, it may also include internal links to products within the site. There is also a comment form, for logged in users to leave a comment and there is a comment section for existing comments.
+
+<br>
+
+<p align ="center">      
+     <img src="assets/readme/images/"  width="700" height="700" alt="products page" />    
+</p>
+
+<br/>
 
 
-###  17. Signup Page   <a name="signuppage"></a>
+### 9. Contact Page     <a name="contactpage"></a>
+The contact page has a map showing the location of the Company, contact information and a contact form so that the user can send a message to the company.
+
+<br>
+
+<p align ="center">      
+     <img src="assets/readme/images/"  width="700" height="700" alt="products page" />    
+</p>
+
+<br/>
+
+### 10. Profile Page    <a name="profile page"></a>
+The Profile page contains a form to update your default delivery information and order history.
+<br>
+
+<p align ="center">      
+     <img src="assets/readme/images/"  width="700" height="700" alt="products page" />    
+</p>
+
+<br/>
+
+### 11. Product Favourites Page     <a name="favouritespage"></a>
+The Page shows a collection of the user's product favourites
+
+<br>
+
+<p align ="center">      
+     <img src="assets/readme/images/"  width="700" height="700" alt="products page" />    
+</p>
+
+<br/>
+
+### 12. Shopping Bag Page     <a name="shoppingbagpage"></a>
+The Page shows the products that the user has currently in their shopping bag.
+<br>
+
+<p align ="center">      
+     <img src="assets/readme/images/"  width="700" height="700" alt="products page" />    
+</p>
+
+<br/>
+
+### 13. Checkout Page     <a name="checkoutpage"></a>
+The Checkout Page shows the form to complete the order and the order summary. You can adjust your bag or you can complete your order.
+<br>
+
+<p align ="center">      
+     <img src="assets/readme/images/"  width="700" height="700" alt="products page" />    
+</p>
+
+<br/>
+
+### 14. Checkout Success Page     <a name="checkoutsuccesspage"></a>
+The Page is shown to the user when their order has been processed. It contains a Thank you message and includes the order information, and a link to the new arrival products on the site.
+
+<br>
+
+<p align ="center">      
+     <img src="assets/readme/images/"  width="700" height="700" alt="products page" />    
+</p>
+
+<br/>
+
+The following pages are also available, but only to the superuser on the site.
+
+### 15. Add Product Page     <a name="addproductpage"></a>
+This Page is also the product management page. The superuser can add a product in the frontend as well as in admin. It can be accessed via the account icon or with a button at the bottom of the products page.
+
+<br>
+
+<p align ="center">      
+     <img src="assets/readme/images/"  width="700" height="700" alt="products page" />    
+</p>
+
+<br/>
+
+### 16. Edit Product Page     <a name="editproductpage"></a>
+The Page has a form which allows the superuser to edit product details for individual products.
+
+<br>
+
+<p align ="center">      
+     <img src="assets/readme/images/"  width="700" height="700" alt="products page" />    
+</p>
+
+<br/>
+
+### 17. Delete Product Page     <a name="deleteproductpage"></a>
+The Page has a form which allows the superuser to delete products.
+<br>
+
+<p align ="center">      
+     <img src="assets/readme/images/"  width="700" height="700" alt="products page" />    
+</p>
+
+<br/>
+
+### 18. Add Blog Page     <a name="addblogpage"></a>
+The Page has a form which allows the superuser to add a blog to the blog collection. The button is available on the bottom of the blog page.
+
+<br>
+
+<p align ="center">      
+     <img src="assets/readme/images/"  width="700" height="700" alt="products page" />    
+</p>
+
+<br/>
+
+### 19. Edit Blog Page     <a name="editblogpage"></a>
+The Page has a form which allows the superuser to edit an existing blog. The link is available under the blog excerpt in individual blogs in the blog page.
+
+<br>
+
+<p align ="center">      
+     <img src="assets/readme/images/"  width="700" height="700" alt="products page" />    
+</p>
+
+<br/>
+
+### 20. Delete Blog Page     <a name="deleteblogpage"></a>
+The Page has a form which allows the superuser to delete an existing blog. The link is available under the blog excerpt in individual blogs in the blog page.
+
+<br>
+
+<p align ="center">      
+     <img src="assets/readme/images/"  width="700" height="700" alt="products page" />    
+</p>
+
+<br/>
+ 
+
+###  21. Signup Page   <a name="signuppage"></a>
 
 On the Signup Page, a new user can sign up for the Wannabe Healthy website by filling out and submitting the form. On registering they will be assigned a Profile for the site.
 
@@ -487,7 +669,7 @@ On the Signup Page, a new user can sign up for the Wannabe Healthy website by fi
 
 <br/>
 
-###  18. Login Page   <a name="loginpage"></a>
+###  22. Login Page   <a name="loginpage"></a>
 
 A registered User can log in to the website by inputting their username and password and they will have full access to all the features within the site. 
 
@@ -500,7 +682,7 @@ A registered User can log in to the website by inputting their username and pass
 
 <br/> 
 
-###  19. Logout Page   <a name="logoutpage"></a>
+###  23. Logout Page   <a name="logoutpage"></a>
 
 In the Logout Page, the User can confirm that they want to exit the website.
 

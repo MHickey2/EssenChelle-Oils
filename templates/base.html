@@ -30,10 +30,11 @@
 
     {% block extra_css %}
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
-    <style type="text/css">
-        #mc_embed_signup{background:#f8f6f6; color:purple; clear:left; font:14px Helvetica,Arial,sans-serif;  padding:0; width:400px;}
+    <style>
+        #mc_embed_signup{background:#f8f6f6; color:purple; align-content: center; clear:left; font:14px Helvetica,Arial,sans-serif;  padding:0; width:360px; }
         /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
            We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+     
     </style>
     {% endblock %}
 
@@ -83,11 +84,9 @@
     <header class="container-fluid fixed-top"></header>
     <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-            <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                <!-- <img src="/media/eschenellelogo.png" width="130" class="img-responsive" alt="logo image" class=""> -->
+            <a href="{% url 'home' %}" class="nav-link main-logo-link">                 
                 <img src="https://res.cloudinary.com/dspwticaf/image/upload/v1677933340/essenchelle/essenchelle-logo_tgqlf6.png"
-                    width="130" class="img-responsive" alt="logo image">
-                <!-- <h3 class="logo-font text-purple my-0"><strong><img src="media/eschenellelogo.png" width="90" alt="logo image" class="">EssenChelle Oils</strong></h3>     -->
+                    width="130" class="img-responsive" alt="essenchelle logo image">                
             </a>
         </div>
 
@@ -215,31 +214,7 @@
         })        
     </script>
 
-    <script>
-        $(document).ready(function(){
-          // Activate Carousel
-          $("#myCarousel").carousel();
-            
-          // Enable Carousel Indicators
-          $(".item1").click(function(){
-            $("#myCarousel").carousel(0);
-          });
-          $(".item2").click(function(){
-            $("#myCarousel").carousel(1);
-          });
-          $(".item3").click(function(){
-            $("#myCarousel").carousel(2);
-          });         
-            
-          // Enable Carousel Controls
-          $(".left").click(function(){
-            $("#myCarousel").carousel("prev");
-          });
-          $(".right").click(function(){
-            $("#myCarousel").carousel("next");
-          });
-        });
-        </script>       
+    
          <!-- SCRIPTS -->
              
         <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"

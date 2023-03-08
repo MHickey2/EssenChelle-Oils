@@ -9,7 +9,7 @@
  
 # Introduction <a name="introduction"></a>
 
-The EssenChelle Oils site is my 5th Project for the Code Institute and it ia full stack Ecommerce site using the Django Framework and using Python, JavaScript, CSS, Bootstrap5 and it utilizes Stripe payments.
+The EssenChelle Oils site is my 5th Project for the Code Institute and it is a full stack Ecommerce site using the Django Framework and using Python, JavaScript, CSS, Bootstrap5 and it utilizes Stripe payments.
 It includes user authentication and Full CRUD functionality for the products. The website is an ecommerce site dealing with the sale of essential oils and accessories, but the website has been built for project purposes only and the payment transactions are purely for demonstration only.
 
 <br/>

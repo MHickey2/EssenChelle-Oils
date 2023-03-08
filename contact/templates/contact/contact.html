@@ -50,23 +50,27 @@
                 <p class="mb-0">info@EssenChelleOils.ie</p>
             </div>
         </div>
-
-        <!-- Contact Form -->
-        <section class="mt-4 col-md-6 float-right contactform" style="background-color:#e4b0df">           
-                <h2 class="text-purple">Contact Us </h2>
-                <p class="">We are always happy to hear from you
-                    , just fill out the form below. We will get back to you asap.</p>
-                <div class="text-center">
-                    <form  method="post" >
-                        {% csrf_token %}
-                        {{form.as_p}}
-                        <button type="submit">Submit</button>
-                    </form>
-                </div>
-                   
     </div>
+
+
+    <!-- Contact Form -->
+    <section class="mt-4 col-md-5 float-right contactform" style="background-color:#e90dd3; color: black">
+        <h2 class="text-black">Contact Us </h2>
+        <p class="">We are always happy to hear from you
+            , just fill out the form below. We will get back to you asap.</p>
+        <div class="text-center">
+            <form method="post">
+                {% csrf_token %}
+                <!-- {{form.as_p}} -->
+                {{ form|crispy}}
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+    </section>
+
 </div>
-</section>
+
 <br>
 
 

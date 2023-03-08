@@ -14,11 +14,11 @@ class ContactForm(forms.ModelForm):
                   'subject', 'message')
 
     widgets = {
-            'first_name': forms.TextInput(attrs={'placeholder': 'Enter your first name', 'class': 'form-control-default'}),  # noqa
+            'first_name': forms.TextInput(attrs={'placeholder': 'Enter your first name'}),  # noqa
             'last_name': forms.TextInput(attrs={'placeholder': 'Enter your last name', 'class': 'form-control'}),  # noqa
             'email_address': forms.TextInput(attrs={'placeholder': 'Enter your email address', 'class': 'form-control'}),  # noqa
             'subject': forms.TextInput(attrs={'placeholder': 'Enter the subject', 'class': 'form-control'}),  # noqa
-            'message': SummernoteWidget(),
+            'message': forms.TextInput()
     }
 
     def __init__(self, *args, **kwargs):

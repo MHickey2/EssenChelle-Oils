@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extracss %}    
+    <link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
+{% endblock %}
+
 
 {% block content %}
 
@@ -10,48 +14,7 @@
 
 {% block sidebar %}
 
-<style>
-    .card {
-        box-shadow: 0 16px 48px #E3E7EB;
-        
-    }
 
-    .btn-danger {
-        background-color: rgb(206, 29, 138) !important;
-    }
-
-    .minheight {
-        height: 100px;
-
-    }
-
-    .cardheight {
-        min-height: 570px;
-    }
-
-    .created-text {
-        color: red;
-    }
-
-    .display-block {
-        padding: 5px;
-    }
-
-    .card{
-    border-radius: 4px;
-    background: #fff;
-    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-    padding: 14px 80px 18px 36px;
-    cursor: pointer;
-     margin: 10px;
-}
-
-.card:hover{
-     transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
-}
-</style>
 
 <!-- Sidebar Widgets Column -->
 <div class="col-md-4 float-right ">
@@ -63,12 +26,11 @@
                 and includes our favorite recipes for individual products.
                 You can used the following link to find more indepth knowledge for our essential and massage oils
             </p>
-            <a href="" aria="brings you to a website, with more detailed information on essential oils"
-                class="btn btn-danger">Learn more!</a>
+            <a href="" class="btn btn-danger">Learn more!</a>
 
                 <h3 class=" mt-4 text-purple">Latest Posts</h3>
                 {% for post in post_list %}
-                <h2></h2>{{ post.title}}</h2>
+                <p>{{ post.title}}</p>
                 {% endfor %}
         </div>
     </div>
@@ -104,6 +66,7 @@
                         <div class="">
                             <p class="card-text text-muted text-purple">{{ post.author }}</p>
                         </div>
+                        <p>
                         <iconify-icon inline icon="fa-regular:comments"
                                     width="23" class="btn-comment">
                                 </iconify-icon>&nbsp;{{ post.number_of_comments }}</p>                                                                                            
@@ -123,7 +86,9 @@
 </div>
 
 <br>
-
 <a href="{% url 'add_blog'  %}" class="btn btn-success btnstyle">Add Blog</a>
+
+<br>
+
 
 {% endblock %}

@@ -1,15 +1,11 @@
 {% extends "base.html" %}
 {% load static %}
-
-
-{% block content %}
-
 {% load crispy_forms_tags %}
 
+{% block content %}
 {% if user.is_superuser %}
 
 <div class="overlay"></div>
-
 <h1 class="text-purple text-center"><iconify-icon icon="material-symbols:add-circle-outline" class="greenicon"></iconify-icon>&nbsp;Add a new Post:</h1>
 <p class="text-center">Ensure to complete all fields</p>          
 

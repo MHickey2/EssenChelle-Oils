@@ -162,44 +162,6 @@ footer {
     margin-right: auto;
 }
 
-/* .home-newsletter {
-    padding: 40px 0;
-    background: #f84e77;
-} */
-
-/* .home-newsletter .single {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
-    position: relative;
-    z-index: 2;
-} */
-
-/* .home-newsletter .single h2 {
-    font-size: 20px;
-    color: white;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-
-.home-newsletter .single .form-control {
-    height: 50px;
-    background: rgba(255, 255, 255, 0.6);
-    border-color: transparent;
-    border-radius: 20px 0 0 20px;
-} */
-
-/* .home-newsletter .single .form-control:focus {
-    box-shadow: none;
-    border-color: #243c4f;
-}
-
-.home-newsletter .single .btn {
-    min-height: 50px;
-    border-radius: 0 20px 20px 0;
-    background: #243c4f;
-    color: #fff; 
-}*/
 /*styling for images in cards*/
 .card-img-top {
     object-fit: cover;
@@ -339,7 +301,6 @@ input[name='q']::placeholder {
 
 /* Blogs */
 
-
 .card {
     border: none;
     background-color: transparent;
@@ -376,14 +337,17 @@ input[name='q']::placeholder {
     background-color: darkorchid;
     padding: 15px;
     color: white;
+    width: 400px;
+    float: left;
 }
 
 .contactform {
     padding: 10px;
-    text-align: center;
+    /* text-align: center; */
     border: 1px solid black;
     border-radius: 25px;
     color: black;
+    float: right;
 }
 
 .faveproducts {
@@ -428,9 +392,7 @@ ol li::before {
 
 /*Styling for text content */
 .content {
-    line-height: 1.5;
-    /* font-family: 'Roboto', sans-serif;
-    color: #313131; */
+    line-height: 1.5;    
     font-size: 1rem;
     text-align: left;
 }

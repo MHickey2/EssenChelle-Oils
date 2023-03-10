@@ -43,6 +43,7 @@ It includes user authentication and Full CRUD functionality for the products. Th
     - [3. Imagery    ](#3-imagery----)
     - [4. Website Structure    ](#4-website-structure----)
     - [5. Wireframes    ](#5-wireframes----)
+      - [Return to Table of Contents](#return-to-table-of-contents-2)
   - [Web Marketing](#web-marketing)
     - [1. E-Commerce Application Type](#1-e-commerce-application-type)
     - [2. Marketing Strategy](#2-marketing-strategy)
@@ -76,20 +77,20 @@ It includes user authentication and Full CRUD functionality for the products. Th
     - [24. Custom Error Pages  ](#24-custom-error-pages--)
     - [25. Admin Panel  ](#25-admin-panel--)
     - [26. Security Measures  ](#26-security-measures--)
-      - [Return to Table of Contents](#return-to-table-of-contents-2)
-  - [7. Future Implementation  ](#7-future-implementation--)
       - [Return to Table of Contents](#return-to-table-of-contents-3)
+  - [7. Future Implementation  ](#7-future-implementation--)
+      - [Return to Table of Contents](#return-to-table-of-contents-4)
   - [8. Tools and Technology  ](#8-tools-and-technology--)
     - [Language Used:](#language-used)
     - [Technology Used:](#technology-used)
     - [Django Packages](#django-packages)
-      - [Return to Table of Contents](#return-to-table-of-contents-4)
-  - [9. Testing  ](#9-testing--)
       - [Return to Table of Contents](#return-to-table-of-contents-5)
+  - [9. Testing  ](#9-testing--)
+      - [Return to Table of Contents](#return-to-table-of-contents-6)
   - [10. Bugs and Issues  ](#10-bugs-and-issues--)
     - [Resolved ](#resolved-)
     - [Unresolved ](#unresolved-)
-      - [Return to Table of Contents](#return-to-table-of-contents-6)
+      - [Return to Table of Contents](#return-to-table-of-contents-7)
   - [11. Deployment ](#11-deployment-)
     - [How to make a local Clone ](#how-to-make-a-local-clone-)
     - [How to fork a GitHub Repository ](#how-to-fork-a-github-repository-)
@@ -97,11 +98,11 @@ It includes user authentication and Full CRUD functionality for the products. Th
     - [Django Framework    ](#django-framework----)
     - [Deploying to Heroku ](#deploying-to-heroku-)
     - [Final Deployment](#final-deployment)
-      - [Return to Table of Contents](#return-to-table-of-contents-7)
-  - [Credits ](#credits-)
       - [Return to Table of Contents](#return-to-table-of-contents-8)
-  - [Acknowledgements ](#acknowledgements-)
+  - [Credits ](#credits-)
       - [Return to Table of Contents](#return-to-table-of-contents-9)
+  - [Acknowledgements ](#acknowledgements-)
+      - [Return to Table of Contents](#return-to-table-of-contents-10)
 
 ----
 
@@ -321,11 +322,200 @@ The Wireframes for the site were created in Figma, I concentrated on the standar
   <summary>1. Home Page Wireframes</summary>
   <br/>
   <p align="center">
-     <img src="assets/readme/wireframes/Home Page Wireframes.png"  alt="Home Page Wireframe" />    
+     <img src="assets/readme/wireframes/home pages.png"  alt="Home Page Wireframes" />    
 </p>
 </details>
+
+<details>
+  <summary>2. Products Page Wireframe</summary>
+  <br/>
+<p align="center">
+  <img src="assets/readme/wireframes/product pages.png" alt="Product Page Wireframe"/>
+</p>
 </details>
 
+<details>
+  <summary>3. EssenChelle Product Page Wireframe</summary>
+  <br/>
+<p align="center">
+  <img src="assets/readme/wireframes/essenchelle product pages.png" alt="Essenchelle Product Page Wireframe" />
+</p>
+</details>
+
+<details>
+  <summary>4. Product Details Page Wireframe</summary>
+  <br/>
+<p align="center">
+  <img src="assets/readme/wireframes/product details page.png" alt="Product Details Page Wireframe" />
+</p>
+</details>
+
+<details>
+  <summary>5. AboutPage</summary>
+  <br/>
+<p align="center">
+  <img src="assets/readme/wireframes/about Pages.png" alt="About Page Wireframe" />
+</p>
+</details>
+
+<details>
+  <summary>6. Our Products Page</summary>
+  <br/>
+<p align="center">
+  <img src="assets/readme/wireframes/our products pages.png" alt="Our Products Page Wireframe" />
+</p>
+</details>
+
+<details>
+  <summary>7. Blog Page</summary>
+  <br/>
+<p align="center">
+  <img src="assets/readme/wireframes/blog pages.png" alt="Blog Page Wireframe" />
+</p>
+</details>
+
+<details>
+  <summary>8. Blog Details Page</summary>
+  <br/>
+<p align="center">
+  <img src="assets/readme/wireframes/blogdetails.png" alt="Blog Details Page Wireframe" />
+</p>
+</details>
+
+<details>
+  <summary>9. Contact Page</summary>
+  <br/>
+<p align="center">
+  <img src="assets/readme/wireframes/contact pages.png" alt="Contact Page Wireframe" />
+</p>
+</details>
+
+<details>
+  <summary>10. My Profile Page</summary>
+  <br/>
+<p align="center">
+  <img src="assets/readme/wireframes/my profile pages.png" alt="My Profile Page Wireframe" />
+</p>
+</details>
+
+<details>
+  <summary>11. Favourites Page</summary>
+  <br/>
+<p align="center">
+  <img src="assets/readme/wireframes/favourites page.png" alt="Favourites Page Wireframe" />
+</p>
+</details>
+
+<details>
+  <summary>12. Shopping Bag Page</summary>
+  <br/>
+<p align="center">
+  <img src="assets/readme/wireframes/shopping bag pages.png" alt="Shopping Bag Page Wireframe" />
+</p>
+</details>
+
+<details>
+  <summary>13. Checkout Page</summary>
+  <br/>
+<p align="center">
+  <img src="assets/readme/wireframes/checkout pages.png" alt="Checkout Page Wireframe" />
+</p>
+</details>
+
+<details>
+  <summary>14. Checkout Success Page</summary>
+
+  <br/>
+<p align="center">
+  <img src="assets/readme/wireframes/checkoutsuccess.png" alt="Checkout Success Page Wireframe" />
+</p>
+</details>
+
+<details>
+  <summary>15. Add Products Page</summary>
+
+  <br/>
+<p align="center">
+  <img src="assets/readme/wireframes/product management pages.png" alt="Product Management Page Wireframe" />
+</p>
+</details>
+
+<details>
+  <summary>16. Edit Product Page</summary>
+  <br/>
+<p align="center">
+  <img src="assets/readme/wireframes/edit product pages.png" alt="Edit Product Page Wireframe" />
+</p>
+</details>
+
+<details>
+  <summary>17. Delete Products Page</summary>
+
+  <br/>
+<p align="center">
+  <img src="assets/readme/wireframes/delete product pages.png" alt="Delete Product Page Wireframe" />
+</p>
+</details>
+
+<details>
+  <summary>18. Add Blog Page</summary>
+
+  <br/>
+<p align="center">
+  <img src="assets/readme/wireframes/addblog pages.png" alt="Add Blog Page Wireframe" />
+</p>
+</details>
+
+<details>
+  <summary>19. Edit a Blog Page</summary>
+
+  <br/>
+<p align="center">
+  <img src="assets/readme/wireframes/edit blog page.png" alt="Edit Blog Page Wireframe" />
+</p>
+</details>
+
+<details>
+  <summary>20. Delete a Blog Page</summary>
+
+  <br/>
+<p align="center">
+  <img src="assets/readme/wireframes/delete blog pages.png" alt="Delete Blog Page Wireframe" />
+</p>
+</details>
+
+<details>
+  <summary>21. Registration Page</summary>
+
+  <br/>
+<p align="center">
+  <img src="assets/readme/wireframes/register pages.png" alt="Registration Page Wireframe" />
+</p>
+</details>
+
+<details>
+  <summary>22. Log In Page</summary>
+
+  <br/>
+<p align="center">
+  <img src="assets/readme/wireframes/login pages.png" alt="Login Page Wireframe" />
+</p>
+</details>
+
+<details>
+  <summary>23. Logout Page</summary>
+
+  <br/>
+<p align="center">
+  <img src="assets/readme/wireframes/logout pages.png" alt="Logout Page Wireframe" />
+</p>
+</details>
+
+</details>
+
+<br>
+
+ #### [Return to Table of Contents](#toc)
 ----
 
 <br>

@@ -47,4 +47,49 @@ cursor: pointer;
 box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 
-.
+ /*Styling for titles*/
+ .card-title {
+    text-align: center;
+    color: rgb(95, 7, 95);
+    text-transform: capitalize;
+    min-height: 20px;
+}
+
+/* alignment of images in blogs */
+#centerimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post-subtitle {
+    text-align: center;
+    color: purple;
+}
+
+.card-body2 {
+    min-height: 200px;
+    line-height: 1;
+    padding: 5px;
+    width: 60vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    line-height: 1.5;
+
+}
+
+.display-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Styling for back buttons on pages*/
+/* .backbutton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}   */

@@ -2,13 +2,13 @@
 {% load static %}
 
 
-{% block page_header %}
+<!-- {% block page_header %}
 <div class="container header-container">
     <div class="row">
         <div class="col"></div>
     </div>
 </div>
-{% endblock %}
+{% endblock %} -->
 
 {% load crispy_forms_tags %}
 
@@ -34,7 +34,7 @@
 <!-- Contact Information -->
 <div class="row">
     <div class="contactbox">
-        <div class="m-5 t-2 col-md-4 float-left mx-auto">
+        <div class="ml-5 mt-5  col-md-4 float-left mx-auto">
             <div class="contact-information text-center">
                 <h2 class="text-center text-purple">Contact Information</h2>
                 <h5 class="font-weight-bold">Address</h5>
@@ -51,14 +51,16 @@
             </div>
         </div>
     </div>
+    
 
 
     <!-- Contact Form -->
-    <section class="mt-4 col-md-5 float-right contactform" style="background-color:#e90dd3; color: black">
-        <h2 class="text-black">Contact Us </h2>
-        <p class="">We are always happy to hear from you
+     <div class="mt-4 col-md-5 float-right contactform" style="background-color:#e90dd3; color: black">
+        
+        <h2 class="text-black text-center">Contact Us </h2>
+        <p class="text-center">We are always happy to hear from you
             , just fill out the form below. We will get back to you asap.</p>
-        <div class="text-center">
+        <div class="">
             <form method="post">
                 {% csrf_token %}
                 <!-- {{form.as_p}} -->
@@ -67,7 +69,7 @@
             </form>
         </div>
 
-    </section>
+    </div>
 
 </div>
 

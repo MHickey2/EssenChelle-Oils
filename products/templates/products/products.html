@@ -91,12 +91,7 @@
                                                     <a href="{% url 'edit_product' product.id %}">Edit</a> | 
                                                     <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
                                                 </div>
-                                            {% endif %}
-                                            <!-- <form action="{% url 'favourite_add' product.pk %}" method="post">
-                                            {% csrf_token %}
-                                            <button type="submit" class="btn-sm btn-outline-primary float-right">
-                                            {% if product.favourite_add %}Un-favourite Product{% else %}Add to Favourites{% endif %}</button>
-                                            </form>   -->
+                                            {% endif %}                                            
                                         </div>
                                     </div>
                                 </div>
@@ -127,9 +122,9 @@
             </div>
         </div>
     </div>
-
-    <a href="{% url 'add_product'  %}" class="btn btn-success btnstyle">Add Product</a>
-
+    <br>
+    <a href="{% url 'add_product'  %}" class="btn btn-success btnstyle mb-3 ml-5">Add Product</a>
+<br>
     <div class="btt-button shadow-sm rounded-0 border border-black">
         <a class="btt-link d-flex h-100">
             <i class="fas fa-arrow-up text-black mx-auto my-auto"></i>

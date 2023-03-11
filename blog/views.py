@@ -47,7 +47,7 @@ class PostDetails(View):
         comment_form = CommentForm(data=request.POST)
         if comment_form.is_valid():
             comment_form.instance.email = request.user.email
-            comment_form.instance.name = request.user.username            
+            comment_form.instance.name = request.user.username
             comment = comment_form.save(commit=False)
             comment.post = post
             comment.save()
@@ -63,7 +63,6 @@ class PostDetails(View):
                 "comments": comments,
                 "commented": True,
                 "comment_form": comment_form,
-
             },
         )
 
@@ -108,6 +107,6 @@ class DeletePostView(generic.DeleteView):
 class LatestPostView(generic.ListView):
     """ user can see the latest 5 blog titles """
     model = Post
-    queryset = Post.objects.filter(status=1).order_by("-created_on")[:5]
+    queryset = Post.objects.filter(status=1).order_by("-created_on")[:4]
     template_name = "blog/blog.html"
     context_object_name = 'post_list'

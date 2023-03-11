@@ -10,4 +10,3 @@ admin.site.register(UserProfile)
 
 #     list_display = ('user',  'profile_pic')
 #     search_fields = ['user']
-   

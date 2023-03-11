@@ -36,7 +36,7 @@
                         {% if product.favourite_add %}Un-favourite Product{% else %}Add to Favourites{% endif %}</button>
                 </form>  
                 <h4 class="mb-0">{{ product.name }}</h4>               
-                <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
                 {% if product.category %}
                 <p class="small mt-1 mb-0">
                     <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
@@ -115,7 +115,7 @@
 </div>
 
 <div class="row">
-    <div class=" col-md-8 card mb-4  mt-3">
+    <div class=" col-md-8 card1 mb-4  mt-3">
         <h3 class="text-purple ml-2">Reviews:</h3>
         <div class="reviewsection">
             <!-- loop inside the empty control tags to iterate through each comment in comments -->
@@ -158,7 +158,7 @@
             {% endfor %}
         </div>
     </div>
-    <div class="col-md-4 card mb-4 mt-3 ">
+    <div class="col-md-4 card1 mb-4 mt-3 ">
         <div class="card-body">
             {% if reviewed %}
             <div class="alert alert-success" role="alert">

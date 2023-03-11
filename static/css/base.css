@@ -26,11 +26,12 @@ body {
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
+    color: purple !important;
 }
 
 /*Colour for headings and some text */
 .text-purple {
-    color: rgb(226, 55, 226);
+    color: rgb(163, 27, 163);
 }
 
 .main-logo-link {
@@ -38,7 +39,7 @@ body {
 }
 
 .shop-now-button {
-    background: rgb(226, 55, 226);
+    background: rgb(189, 13, 95);
     color: white;
     min-width: 260px;
 }
@@ -339,6 +340,7 @@ input[name='q']::placeholder {
     color: white;
     width: 400px;
     float: left;
+    margin-left: 20px;
 }
 
 .contactform {
@@ -348,11 +350,13 @@ input[name='q']::placeholder {
     border-radius: 25px;
     color: black;
     float: right;
+    width: 500px;
 }
 
 .faveproducts {
     border: 5px solid purple;
     border-radius: 15px;
+    
 }
 
 /*Styling for content i blogs */

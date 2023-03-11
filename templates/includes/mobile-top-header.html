@@ -1,6 +1,6 @@
 <ul>
 <li class="list-inline-item">
-    <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Search Button">
         <div class="text-center">
             <div><i class="fas fa-search fa-lg text-purple"></i></div>
             <p class="my-0 text-purple">Search</p>
@@ -33,21 +33,21 @@
     <div class="dropdown-menu border-0" aria-labelledby="user-options">
         {% if request.user.is_authenticated %}
             {% if request.user.is_superuser %}
-                <a href="{% url 'add_product' %}" class="dropdown-item text-purple">Product Management</a>
+                <a href="{% url 'add_product' %}" class="dropdown-item text-purple" aria-label="Product Management button">Product Management</a>
             {% endif %}
-            <a href="{% url 'profile' %}" class="dropdown-item text-purple">My Profile</a>
-            <a href="{% url 'favourite_list' %}" class="dropdown-item text-purple">My Favourites</a>            
-            <a href="{% url 'account_logout' %}" class="dropdown-item text-purple">Logout</a>
+            <a href="{% url 'profile' %}" class="dropdown-item text-purple" aria-label="Profile button">My Profile</a>
+            <a href="{% url 'favourite_list' %}" class="dropdown-item text-purple" aria-label="Favourite Products Button">My Favourites</a>            
+            <a href="{% url 'account_logout' %}" class="dropdown-item text-purple" aria-label="Log out button">Logout</a>
         {% else %}
-            <a href="{% url 'account_signup' %}" class="dropdown-item text-purple">Register</a>
-            <a href="{% url 'account_login' %}" class="dropdown-item text-purple">Login</a>
+            <a href="{% url 'account_signup' %}" class="dropdown-item text-purple" aria-label="Sign up button">Register</a>
+            <a href="{% url 'account_login' %}" class="dropdown-item text-purple" aria-label="Login button">Login</a>
         {% endif %}
     </div>
 </li>
 </ul>
 <ul>
 <li class="list-inline-item">
-    <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_bag' %}">
+    <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_bag' %}" aria-label="Shopping button">
         <div class="text-center">
             <div><iconify-icon inline icon="ic:round-shopping-bag" class="text-purple" width="30"></iconify-icon></div>
             <p class="my-0 text-purple">

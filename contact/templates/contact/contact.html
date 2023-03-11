@@ -1,40 +1,55 @@
 {% extends "base.html" %}
 {% load static %}
 
-
-<!-- {% block page_header %}
-<div class="container header-container">
-    <div class="row">
-        <div class="col"></div>
-    </div>
-</div>
-{% endblock %} -->
-
 {% load crispy_forms_tags %}
+
+
+<style>
+.contact-information {
+    background-color: darkorchid;
+    padding: 10px;
+    color: white;
+    width: 400px;
+    float: left;
+    
+}
+
+.contactform {
+    padding: 10px;   
+    border: 1px solid black;
+    border-radius: 25px;
+    color: black;
+    float: right;
+    width: 400px;
+}
+
+</style>
 
 {% block content %}
 
 <div class="overlay"></div>
 
 <!--Map of location-->
-<section class="mapsection">
-    <div class="container">
+<section class="mt-4 mapsection">
+    <div class="container-fluid">
         <h2 class="text-center text-purple">Our Location</h2>
         <div id="map">
             <div class="google-maps mx-auto text-center">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2384.9220939063202!2d-6.140272484720981!3d53.290930586562574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4867062695f6c295%3A0xeb057e3d7308c96b!2s28%20Patrick%20St%2C%20D%C3%BAn%20Laoghaire%2C%20Dublin%2C%20A96%20V822!5e0!3m2!1sen!2sie!4v1677176126929!5m2!1sen!2sie"
-                    width="600" height="500" allowfullscreen="" loading="lazy"
+                    width="500" height="500" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>
 </section>
 
+
 <!-- Contact Information -->
 <div class="row">
+    <div class="container-fluid">
     <div class="contactbox">
-        <div class="ml-5 mt-5  col-md-4 float-left mx-auto">
+        <div class="ml-4 mt-5  col-md-4 float-left mx-auto">
             <div class="contact-information text-center">
                 <h2 class="text-center text-purple">Contact Information</h2>
                 <h5 class="font-weight-bold">Address</h5>
@@ -52,10 +67,10 @@
         </div>
     </div>
     
-
+    
 
     <!-- Contact Form -->
-     <div class="mt-4 col-md-5 float-right contactform" style="background-color:#e90dd3; color: black">
+     <div class=" mt-5 col-md-4  float-right contactform  mx-auto" >
         
         <h2 class="text-black text-center">Contact Us </h2>
         <p class="text-center">We are always happy to hear from you
@@ -72,7 +87,7 @@
     </div>
 
 </div>
-
+</div>
 <br>
 
 

@@ -1,13 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
-{% endblock %}
 
 {% block content %}
     <div class="overlay"></div>
@@ -69,7 +62,7 @@
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
                                     <div class="row">
                                         <div class="col">
-                                            <p class="lead mb-0 font-weight-bold text-center">${{ product.price }}</p>
+                                            <p class="lead mb-0 font-weight-bold text-center">€{{ product.price }}</p>
                                             {% if product.category %}
                                             <p class="small mt-1 mb-0 text-center">
                                                 <a class="text-muted text-center" href="{% url 'products' %}?category={{ product.category.name }}">

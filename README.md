@@ -2,21 +2,20 @@
 
 
 <p align ="center">      
-   <img src="assets/readme/images/responsive.png"  alt="AmIResponsive" />       
+   <img src="assets/readme/images/essenchelle-responsive.png"  alt="AmIResponsive" />       
 </p>
 <br/>  
 
  
 # Introduction <a name="introduction"></a>
 
-The EssenChelle Oils site is my 5th Project for the Code Institute and it is a full stack Ecommerce site using the Django Framework and using Python, JavaScript, CSS, Bootstrap5 and it utilizes Stripe payments.
-It includes user authentication and Full CRUD functionality for the products. The website is an ecommerce site dealing with the sale of essential oils and accessories, but the website has been built for project purposes only and the payment transactions are purely for demonstration only.
+The EssenChelle Oils site is my 5th Project for the Code Institute and it is a full stack E-commerce site using the Django Framework and it includes Python, JavaScript, CSS, Bootstrap5 and it utilizes Stripe payments. It has user authentication and Full CRUD functionality for the products and Blogs. The website deals with the sale of essential oils and their byproducts The website has been built for educational purposes and the payment transactions are purely for demonstration only.
 
 <br/>
 
 [Visit the EssenChelle Oils Site]() 
 
-[Visit the EssenChelle Repository]()
+[Visit the EssenChelle Repository](https://github.com/MHickey2/EssenChelle-Oils)
 
 <br/> 
 
@@ -113,7 +112,7 @@ It includes user authentication and Full CRUD functionality for the products. Th
 
 ### 1. The Business Goals of the Website: <a name="businessgoals"></a>      
 
-- The website is an Ecommerce site so a goal would be be to make a commerical from sales within the site.
+- The website is an E-commerce site so a goal would be be to make a commerical from sales within the site.
 - Expand the customer base for the EssenChelle Oil company.
 - Promote repeat customers and ensure the present customers have a good user experience.
 - Use Social Media to increase awareness of the Site and strategically plan future growth of the Brand.
@@ -158,33 +157,115 @@ It includes user authentication and Full CRUD functionality for the products. Th
 ## 2. User Stories  <a name="userstories"></a>
 
 <br>
-<br>
 
 ####  As a website User I can...<a name="websiteuser"></a>
 
+1. Log in and access more features on the site.
+[As a user or staff member I can log in so that I can access the relevant features of the site](https://github.com/MHickey2/EssenChelle-Oils/issues/1)
 
-  
-  <br/>
+2. Find the purpose of the site easily by reviewing the content.
+[As a User I can easily find the site's purpose so that I know whether the site fits my needs.](https://github.com/MHickey2/EssenChelle-Oils/issues/2)
+
+3. View a collection of Products that are available for sale.
+[As a User I can view a selection of Products so that I can choose some to purchase](https://github.com/MHickey2/EssenChelle-Oils/issues/3)
+
+4. Select an individual item to see the full details for the product. 
+[As a Site User I can choose an individual Product so that I can see required details](https://github.com/MHickey2/EssenChelle-Oils/issues/4)
+
+5. View categories aqccording to their category type.
+[As a Site User I can view specific categories of Products so that I can easily find the product I am looking for.](https://github.com/MHickey2/EssenChelle-Oils/issues/5)
+
+6. Easily be able to identify the cheapest or most highly rated products.
+[As a Site User I can sort Products so that I can quickly identify the cheapest or most highly rated products within categories](https://github.com/MHickey2/EssenChelle-Oils/issues/6)
+
+7. Sort products against a number of sorting critera.
+[As a Site User I can sort multiple categories so that I can view all products within a sorting function ](https://github.com/MHickey2/EssenChelle-Oils/issues/7)
+
+8. Informed about the progress of my actions and interactions within the site.
+[The Site User will be updated with messages confirming their actions on the site.](https://github.com/MHickey2/EssenChelle-Oils/issues/12)
+
+9. Be able to attain and view my profile within in the site.
+[As a User, when I register I will have my own Profile which will include all my information.](https://github.com/MHickey2/EssenChelle-Oils/issues/15)
+
+10. Receive an email when I register for the site.
+[When registering a User will receive a welcome email.](https://github.com/MHickey2/EssenChelle-Oils/issues/16)
+
+11. Will be able to contact the site owner with the contact form.
+[User can use the contact form so they can message the site owner with queries or requests.](https://github.com/MHickey2/EssenChelle-Oils/issues/21)
+
+12.  View a collection of Blogs in the blog Section.
+[User can view a selection of blogs with information on the range of products.](https://github.com/MHickey2/EssenChelle-Oils/issues/22)
+
+13. User can select a blog and see the full details for that individual blog.
+[User can select individual blogs and see the full details on the blog details page.](https://github.com/MHickey2/EssenChelle-Oils/issues/24)
+
+<br>
+
 
 ####  As a logged in User I can... <a name="loggedinuser"></a> 
 
+1. Select products and these will be included in my shopping bag.
+[The Shopper will be able to select various products and these will be added to their shopping Bag.](https://github.com/MHickey2/EssenChelle-Oils/issues/8)
+
+2. View the Total of my purchases on the site.
+[The Shopper can view the total of their purchases as they shop on the site.](https://github.com/MHickey2/EssenChelle-Oils/issues/9)
+
+3. Select products in different sizes where available.
+[The Shopper will be able to choose products in a range of sizes.](https://github.com/MHickey2/EssenChelle-Oils/issues/10)
+
+4. Choose to remove or adjust the items in my shopping bag.
+[The Shopper will be able to adjust or remove items from their shopping bag.](https://github.com/MHickey2/EssenChelle-Oils/issues/11)
+
+5. Checkout the products in my shopping bag.
+[The Shopper will be able to checkout the products they have added to their shopping bag.](https://github.com/MHickey2/EssenChelle-Oils/issues/13)
+
+6. Make a secure payment for my purchases.
+[The Shopper will be taken to a secure payment screen so they can safely make their purchase.](https://github.com/MHickey2/EssenChelle-Oils/issues/14)
+
+7. Add a review for products on the site.
+[As a registered User I can add reviews for product available on the site.](https://github.com/MHickey2/EssenChelle-Oils/issues/20)
+
+8. Select my favourite products on the site and save them to my product favourites.
+[As a logged in user I can select my favourite products and be able to see them later.](https://github.com/MHickey2/EssenChelle-Oils/issues/27)
+
+9. Leave a comment for a blog in the blog section.
+[Logged in user can add comments to blogs in the site.](https://github.com/MHickey2/EssenChelle-Oils/issues/28)
+
+10. Sign up for a newsletter so I can receive special offers and the latest product information.
+[User can sign up for the newsletter and receive special offers and the latest information from the site.](https://github.com/MHickey2/EssenChelle-Oils/issues/29)
 
  
  <br/>
 
 #### As a website superuser, I can …..    <a name="superuser"></a>
 
-[User Story: Admin Access for Admin Features #4]()
+1. Add Products to the Database.
+[As an Admin I can add products to the database](https://github.com/MHickey2/EssenChelle-Oils/issues/17)
+
+2. Edit Products in the Database.
+[The Admin will be able to edit products in the database.](https://github.com/MHickey2/EssenChelle-Oils/issues/18)
+
+3. Delete Products in the Database.
+[The Admin will be able to delete products from the database. ](https://github.com/MHickey2/EssenChelle-Oils/issues/19)
+
+4. Add Blogs to highlight products on the site.
+[Superuser can add blogs which will highlight the Essenchelle product range available on the site.](https://github.com/MHickey2/EssenChelle-Oils/issues/23)
+
+5. Edit Blogs on the site.
+[The Superuser can edit existing blogs on the site.](https://github.com/MHickey2/EssenChelle-Oils/issues/25)
+
+6. Delete Blogs on the site.
+[The Superuser can delete existing blogs on the site.](https://github.com/MHickey2/EssenChelle-Oils/issues/26)
+
 
 The Admin can do the full range of admin functionality within the admin panel.
-
 User Story Testing can be found in the [TESING.md](TESTING.md)
 
   <br/> 
 
 ## 3. Agile Methodology
 
-The project was developed using Agile Methodology and it was by use of the GitHub Projects functionality within the GitHub Repository. The issues can be found [Here]() and this is the link for the []()
+The project was developed using Agile Methodology and it was by use of the GitHub Projects functionality within the GitHub Repository. The issues can be found [Here](https://github.com/MHickey2/EssenChelle-Oils/issues) and this is the link for the [Essential Oils Project Board](https://github.com/users/MHickey2/projects/2)
 
 <br/> 
 

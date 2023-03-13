@@ -8,7 +8,7 @@ class ProductForm(forms.ModelForm):
     class Meta:
         model = Product
         # fields = '__all__'
-        fields = ['category', 'sku', 'name', 'description', 'has_sizes', 'price',
+        fields = ['category', 'sku', 'name', 'description', 'has_sizes', 'price',  # noqa
                   'rating', 'image_url', 'image', 'is_featured']
 
     image = forms.ImageField(
@@ -27,4 +27,4 @@ class ProductForm(forms.ModelForm):
 class ReviewForm(forms.ModelForm):
     class Meta:
         model = Review
-        fields = ("review_date", "stars", "body", )
+        fields = ("stars", "body", )

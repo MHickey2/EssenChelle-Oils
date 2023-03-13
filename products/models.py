@@ -28,7 +28,7 @@ class Product(models.Model):
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)  # noqa
     favourites = models.ManyToManyField(User, related_name='favourites', default=None, blank=True)  # noqa
     image_url = models.URLField(max_length=1024, null=True, blank=True)
-    image = CloudinaryField('image', default='placeholder')    
+    image = CloudinaryField('image', default='placeholder1')
     is_featured = models.BooleanField(default=False)
 
     def __str__(self):
@@ -39,9 +39,8 @@ class Product(models.Model):
 
 
 class Review(models.Model):  
-    name = models.CharField(max_length=80)  
+    name = models.CharField(max_length=80)
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name="reviews")  # noqa
-    review_date = models.DateTimeField(default=timezone.now)
     rate_choices = (
         (1, 1),
         (2, 2),
@@ -49,7 +48,7 @@ class Review(models.Model):
         (4, 4),
         (5, 5)
     )
-    stars = models.IntegerField(choices=rate_choices, default="1")
+    stars = models.IntegerField(choices=rate_choices, default=1)
     body = models.TextField(max_length=4000)
     created_on = models.DateTimeField(auto_now_add=True)
     approved = models.BooleanField(default=False)
@@ -59,7 +58,6 @@ class Review(models.Model):
 
     def __str__(self):
         return f"Review {self.body} by {self.name}"
-        
 
     def get_absolute_url(self):
         """ Returns review with primary key"""

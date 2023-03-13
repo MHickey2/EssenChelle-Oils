@@ -2,7 +2,6 @@
 {% block title %}EssenchelleOils/Delete Product{% endblock %}
 
 
-
 {% block content %}
 
 {% load crispy_forms_tags %}
@@ -12,7 +11,7 @@
 
 <div class="overlay"></div>
 
-<h2 class="text-center text-purple"><iconify-icon inline icon="material-symbols:delete-outline-rounded" class="text-purple"></iconify-icon>&nbsp;Delete this Product:</h2>
+<h2 class="text-center text-purple mt-4"><iconify-icon inline icon="material-symbols:delete-outline-rounded" class="text-purple"></iconify-icon>&nbsp;Delete this Product:</h2>
 <div class="container-fluid">
     <div class="row">
         <section class="display-block">            
@@ -21,8 +20,8 @@
                     <div class="c"> 
                         <br>  
                         <p>Are you sure you want to Delete this product?</p>                     
-                        <h4 class="text-purple">Delete the Product: </h4>
-                        <h5 class="text-purple">{{ product.name }}</h5>
+                        <h4 class="text-danger">Delete the Product: </h4>
+                        <h5 class="text-danger">{{ product.name }}</h5>
                         <br>                        
                         <form class="form text-muted" method="post">
                             {% csrf_token %}
@@ -44,7 +43,7 @@
 {% endif %}
 
 
-<div class="center">
+<div class="center mt-4">
     <a href="{% url 'products' %}" class="btn btn-primary">BACK</a>
 </div>
 <br>

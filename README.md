@@ -263,6 +263,8 @@ The user is really anyone who has an interest in holistic health. They either ha
 6. Delete Blogs on the site.
 [The Superuser can delete existing blogs on the site #26](https://github.com/MHickey2/EssenChelle-Oils/issues/26)
 
+7. Approve reviews for Products and comments for Blogs in the admin Panel
+
 
 The Admin can do the full range of admin functionality within the admin panel.
 User Story Testing can be found in the [TESING.md](TESTING.md)

@@ -1,23 +1,12 @@
 {% extends "base.html" %}
 {% load static %}
 
-{# block page_header #}
-<div class="container header-container">
-  <div class="row">
-    <div class="col"></div>
-  </div>
-</div>
-{# endblock #}
-
 {% block content %}
-
-
-
 <div id="top"></div>
 <div class="overlay background"></div>
 <div class="white-background">
-  <br>
-  <h2 class="logo-font text-purple text-center">More About Our Products</h2>
+  
+  <h2 class="logo-font text-purple text-center mt-3">More About Our Products</h2>
   <div class="row row-cols-1 row-cols-md-3 g-4 ">
 
     <div class="productinformation ">
@@ -35,7 +24,6 @@
             user.
           </p>
         </div>
-
       </div>
     </div>
     <div class="col">
@@ -55,7 +43,6 @@
         </div>
       </div>
     </div>
-
     <div class="col">
       <div class="card h-100">
         <br>
@@ -73,21 +60,18 @@
             space with a soothing or uplifting atmosphere.
           </p>
         </div>
-
       </div>
     </div>
   </div>
-
-
   <section class="testsection">
     <div class="row d-flex justify-content-center">
       <div class="col-md-10 col-xl-8 text-center">
-        <h2 class="mb-4 text-purple mt-3 logo-font">Testimonials</h2>
+        <h2 class="mb-4 text-purple mt-3 mb-3 logo-font">Testimonials</h2>
         <p class="mb-4 pb-2 mb-md-5 pb-md-0">
           But don't just take our word for it, instead have a look at our testimonials from happy customers, who have
-          already availed of our products. We love hearing from our customers and value your experience. Please share your
+          already availed of our products. We love hearing from our customers and value your experience. Please share
+          your
           experiences with us and maybe your testimonial will be featured in the future.
-
         </p>
       </div>
     </div>
@@ -152,11 +136,15 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> 
+  </div>   
     <hr>
   </section>
-
-</div>
+  
+  <br>
+<a id="top-button" class="text-purple" href="#top" aria-label="Going to top of page">Top of Screen &nbsp; <iconify-icon inline
+    icon="mdi:arrow-up" class="greenicon" width="18"></iconify-icon>
+</a>
 
 
 {% endblock %}

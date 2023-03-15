@@ -1,0 +1,19 @@
+<!-- Sidebar Widgets Column -->
+<div class="col-md-4 float-right ">
+    <div class="card1 my-4">
+       
+        <div class="card-body">
+            <h2 class="text-purple">Our Blog</h2>
+            <p class="card-text"> This blog highlights the benefits and uses for using our EssenChelle product range,
+                and includes our favorite recipes for individual products.
+                You can used the following link to find more indepth knowledge for our essential and massage oils
+            </p>
+            <a href="" class="btn btn-danger">Learn more!</a>
+
+                <h3 class=" mt-4 text-purple">Latest Posts</h3>
+                {% for post in post_list %}
+                <p>{{ post.title}}</p>
+                {% endfor %}
+        </div>
+    </div>
+</div>

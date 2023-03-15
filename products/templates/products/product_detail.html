@@ -12,6 +12,7 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
+<div id="top"></div>
 <div class="overlay"></div>
 <div class="container-fluid">
     <div class="row">
@@ -172,7 +173,7 @@
             <form method="post" style="margin-top: 1.3em;">
                 {{ form | crispy }}
                 {% csrf_token %}
-                <button type="submit" class="btn btn-signup btn-lg">Submit</button>
+                <button type="submit" class="btn btn-signup btn-success btn-lg">Submit</button>
             </form>
             <!-- {% endif %} -->
 
@@ -180,7 +181,13 @@
         </div>
     </div>
 </div>
-
+<div class="text-center">
+<a href="{% url 'products'  %}" class="btn btn-primary mb-3">Back</a>
+</div>
+<br>
+<a id="top-button" class="text-purple" href="#top" aria-label="Going to top of page">Top of Screen &nbsp; <iconify-icon inline
+    icon="mdi:arrow-up" class="greenicon" width="18"></iconify-icon>
+</a>
 
 {% endblock content %}
 

@@ -18,10 +18,10 @@ class PostList(generic.ListView):
     paginate_by = 6
 
 
-class PostDetails(View):    
+class PostDetails(View):
     """ allows user to a full blog post """
     def get(self, request, slug, *args, **kwargs):
-        """ Presents the details of individual blogs on the Blog Detail Page """  # noqa     
+        """ Presents the details of individual blogs on the Blog Detail Page """  # noqa
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(approved=True).order_by("-created_on")
@@ -90,7 +90,7 @@ class EditPostView(generic.UpdateView):
     form_class = PostForm
     template_name = 'blog/edit_blog.html'
 
-    def get_success_url(self):        
+    def get_success_url(self):
         slug = self.kwargs["slug"]
         msg = 'The Blog has been edited successfully'
         messages.add_message(self.request, messages.SUCCESS, msg)
@@ -107,6 +107,7 @@ class DeletePostView(generic.DeleteView):
 class LatestPostView(generic.ListView):
     """ user can see the latest 5 blog titles """
     model = Post
-    queryset = Post.objects.filter(status=1).order_by("-created_on")[:4]
+    latest = Post.objects.filter(status=1).order_by("-created_on")[:5]
     template_name = "blog/blog.html"
-    context_object_name = 'post_list'
+    context_object_name = 'latest'
+    print(latest)

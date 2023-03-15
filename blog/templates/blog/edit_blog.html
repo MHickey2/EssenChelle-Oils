@@ -1,8 +1,8 @@
 {% extends "base.html" %}
-{% block content %}
-
+{% load static %}
 {% load crispy_forms_tags %}
 
+{% block content %}
 {% if user.is_authenticated %}
 {% if request.user.is_superuser %}
 
@@ -33,9 +33,11 @@
         </div>
     </div>
 </div>
+
 {% else %}
+<div class="overlay"></div>
 <br>
-<h4 class="green">Sorry, you are not allowed to edit this Blog</h4>
+<h4 class="text-black">Sorry, you are not allowed to edit this Blog</h4>
 {% endif %}
 {% endif %}
 
@@ -44,4 +46,4 @@
 </div>
 <br>
 
-{%endblock%}
+{% endblock %}

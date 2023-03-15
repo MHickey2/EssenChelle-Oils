@@ -1,41 +1,20 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block content %}
+
 {% block extracss %}    
     <link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
 {% endblock %}
 
-{% block content %}
-
+<div id="top"></div>
 <div class="overlay"></div>
 <br>
 <h1 class="text-center mx-auto text-purple">Product Spotlight</h1>
 
 {% block sidebar %}
 
-
-
-<!-- Sidebar Widgets Column -->
-<div class="col-md-4 float-right ">
-    <div class="card1 my-4">
-       
-        <div class="card-body">
-            <h2 class="text-purple">Our Blog</h2>
-            <p class="card-text"> This blog highlights the benefits and uses for using our EssenChelle product range,
-                and includes our favorite recipes for individual products.
-                You can used the following link to find more indepth knowledge for our essential and massage oils
-            </p>
-            <a href="" class="btn btn-danger">Learn more!</a>
-
-                <h3 class=" mt-4 text-purple">Latest Posts</h3>
-                {% for post in post_list %}
-                <p>{{ post.title}}</p>
-                {% endfor %}
-        </div>
-    </div>
-</div>
-
-
+{% include 'includes/sidebar.html' %}
 
 {% endblock sidebar %}
 
@@ -59,21 +38,17 @@
                         <img class="card-img-top img-fluid" src=" {{ post.blog_image.url }}" width="200" height="150"
                             alt="{{ post.title }} photo">
                         {% endif %}
-                        <p class="created-text text-muted">{{ post.created_on }}</p>
-                        <p class="card-text text-justify-center minheight">{{ post.excerpt }}</p>
-                        <hr>
-                        <div class="">
-                            <p class="card-text text-muted text-purple">{{ post.author }}</p>
-                        </div>
-                        <p>
-                        <iconify-icon inline icon="fa-regular:comments"
-                                    width="23" class="btn-comment">
+                        <p class="created-text text-center text-muted">{{ post.created_on }}</p>
+                        <p class="card-text text-justify-center excerpt">{{ post.excerpt }}</p>
+                        <hr class="text-purple">                        
+                        <p class="card-text text-purple">{{ post.author }}
+                        <iconify-icon inline icon="fa-regular:comments" width="23" class="btn-comment ml-3">
                                 </iconify-icon>&nbsp;{{ post.number_of_comments }}</p>                                                                                            
                         <a href="{% url 'blog_details' post.slug %}" class="btn btn-primary">Read More &rarr;</a>
                         {% if request.user.is_superuser %}
-                        <small class="ml-3">
-                            <a href="{% url 'edit_blog' post.slug %}">Edit</a> 
-                            <a class="text-danger" href="{% url 'delete_blog' post.slug %}">Delete</a>
+                        <small class="ml-4">
+                            <a href="{% url 'edit_blog' post.slug %}" class="text-success">Edit</a>                           
+                            <a href="{% url 'delete_blog' post.slug %}" class="text-danger ml-2">Delete</a>
                         </small>
                         {% endif %}
                     </div>
@@ -81,13 +56,17 @@
             </div>
             {% endfor %}
         </div>
-    </div>
+    </div>    
 </div>
 
-<br>
-<a href="{% url 'add_blog'  %}" class="btn btn-success btnstyle">Add Blog</a>
 
 <br>
-
+{% if request.user.is_superuser %}
+<a href="{% url 'add_blog'  %}" class="btn btn-success btnstyle ml-5 mb-3">Add Blog</a>
+{% endif %}
+<br>
+<a id="top-button" class="text-purple" href="#top" aria-label="Going to top of page">Top of Screen &nbsp; <iconify-icon inline
+    icon="mdi:arrow-up" class="greenicon" width="18"></iconify-icon>
+</a>
 
 {% endblock %}

@@ -3,10 +3,11 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
+{% if user.is_authenticated %}
 {% if user.is_superuser %}
 
 <div class="overlay"></div>
-<h1 class="text-purple text-center"><iconify-icon icon="material-symbols:add-circle-outline" class="greenicon"></iconify-icon>&nbsp;Add a new Post:</h1>
+<h1 class="text-purple text-center mt-3"><iconify-icon icon="material-symbols:add-circle-outline" class="greenicon"></iconify-icon>&nbsp;Add a new Post:</h1>
 <p class="text-center">Ensure to complete all fields</p>          
 
 <div class="container-fluid">
@@ -30,12 +31,13 @@
 </div>
 
 {% else %}
+<div class="overlay"></div>
 <br>
-       <h4 class="green">Sorry, you are not allowed to add a Post</h4>
+       <h4 class="text-black ml-3">Sorry, you are not allowed to add a Blog Post</h4>
     {% endif %}   
-
+    {% endif %} 
 <div class="center">
-    <a href="{% url 'blog' %}" class="btn btn-primary">BACK</a>
+    <a href="{% url 'blog' %}" class="btn btn-primary ml-3">BACK</a>
 </div>
 <br>
 

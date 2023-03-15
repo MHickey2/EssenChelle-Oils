@@ -42,7 +42,7 @@ Testing has taken place continuously throughout the development of the project. 
    <br/>
 
    <p align ="center">      
-      <img src="assets/readme/images/responsive.png" width="600" alt="AmIResponsive results"/>   
+      <img src="assets/readme/images/essenchelle-responsive.png" width="600" alt="AmIResponsive results"/>   
    </p>
 
    <br/> 

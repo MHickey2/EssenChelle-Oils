@@ -653,11 +653,12 @@ The logo was the first asset I created, and I developed it with a view of promot
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/logotitle.png"  alt="Logo and Title" />    
+     <img src="assets/readme/images/essenchelle-logo.png"  alt="Logo with Title" />    
 </p>
 
 <br/> 
-There is a searcbar, where the user can put in their search criteria term. There is an Account Icon, which contains a dropdown menu:
+
+There is a searchbar, where the user can put in their search criteria term. There is an Account Icon, which contains a dropdown menu:
 
 Account Icon - Register, Log In (Before Log in or registering)
 Account Icon - Product Management, My Profile, Product Favourites, Log Out. (If logged in)
@@ -676,25 +677,18 @@ Contact - Contact Form.
   <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/nav.png"  alt="Navbar not logged in" />    
+     <img src="assets/readme/images/navigation.png"  alt="Navbar options" />    
 </p>
 
 <br/> 
 
-
-
-<p align ="center">      
-     <img src="assets/readme/images/navbar.png"  alt="Navbar logged in" />    
-</p>
-
-<br/> 
 
 On smaller screens, there is a hamburger menu where the navigation items appear in a collapsable dropdown menu. The image is included in this menu.
 
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/navmobile.png"  width="300" height="250" alt="navbar mobile" />    
+     <img src="assets/readme/images/mobile navbar.png"  width="300" height="250" alt="navbar mobile" />    
 </p>
 
 <br/> 
@@ -729,7 +723,7 @@ The products page shows the the full collection within the EssenChelle range inc
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/"  width="700" height="700" alt="products page" />    
+     <img src="assets/readme/images/allproducts.png"  width="700" height="700" alt="products page" />    
 </p>
 
 <br/> 
@@ -739,8 +733,10 @@ The products page shows the the full collection within the EssenChelle range inc
 <br>
 This Page shows products in the category of Essential, Massage and Burners. You can select to see products within just one category by choosing the option in the dropdown menu or by selecting the relevant button at the top of the page. You can view the number of products and there is a facility for sorting at the top of the page. The options include price, rating, name and category.
 
+<br>
+
 <p align ="center">      
-     <img src="assets/readme/images/editprofile.jpg" width="500" alt="Edit Profile Page" />    
+     <img src="assets/readme/images/essenchelleprod.png" width="500" alt="Essenchelle product Page" />    
 </p>
 
 <br>
@@ -751,7 +747,7 @@ The Page shows the full details of an individual product including an image. The
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/"  width="700" height="700" alt="products page" />    
+     <img src="assets/readme/images/proddetailpage.jpg"  width="500" height="700" alt="product detail page" />    
 </p>
 
 <br/>
@@ -763,7 +759,7 @@ The About Page provides information on EssenChelle Oil, gives information of bac
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/"  width="700" height="700" alt="products page" />    
+     <img src="assets/readme/images/aboutpage.jpg"  width="500" height="700" alt="about page" />    
 </p>
 
 <br/> 
@@ -776,7 +772,7 @@ testimonials on why to choose a product in the EssenChelle Product Range.
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/"  width="700" height="700" alt="our products page" />    
+     <img src="assets/readme/images/ourprod.jpg"  width="500" height="700" alt="our products page" />    
 </p>
 
 <br/> 
@@ -788,7 +784,7 @@ The Blog Page shows a collection of blogs with a spotlight on products being sol
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/"  width="700" height="700" alt="products page" />    
+     <img src="assets/readme/images/blogpage.jpg"  width="500" height="700" alt="blog page" />    
 </p>
 
 <br/>
@@ -799,7 +795,7 @@ The Blog Detail page shows the full blog which has information pertaining to pro
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/"  width="700" height="700" alt="products page" />    
+     <img src="assets/readme/images/blogdetail.jpg"  width="500" height="700" alt="products page" />    
 </p>
 
 <br/>

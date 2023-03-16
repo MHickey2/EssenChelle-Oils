@@ -7,7 +7,7 @@ html {
 body {
     height: calc(100vh - 164px);
     color: #313131;
-    font-family: 'Roboto';
+    font-family: 'Roboto';    
 }
 
 .logo-font {
@@ -332,31 +332,11 @@ input[name='q']::placeholder {
 .fa-star {
     color: #f3da35 !important;
 }
-/***STYLING FOR CONTACT PAGE***/
 
-.contact-information {
-    background-color: darkorchid;
-    padding: 15px;
-    color: white;
-    width: 400px;
-    float: left;
-    margin-left: 20px;
-}
-
-.contactform {
-    padding: 10px;
-    /* text-align: center; */
-    border: 1px solid black;
-    border-radius: 25px;
-    color: black;
-    float: right;
-    width: 500px;
-}
-
+/***STYLING FOR FAVE PRODUCTS PAGE***/
 .faveproducts {
     border: 5px solid purple;
-    border-radius: 15px;
-    
+    border-radius: 15px;    
 }
 
 /*Styling for content i blogs */

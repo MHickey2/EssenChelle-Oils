@@ -648,7 +648,7 @@ There are features common to all pages in the site and these are found in the ba
 
 - The Logo and Site Title:
   
-The logo was the first asset I created, and I developed it with a view of promoting the healthy lifestyle vibe, it conveys a simple image with healthy food and a simple tag line. The Title is used to further promote the Wannabe Brand.
+The logo was the first asset I created in Logo maker it depicts a simple female image with the main colours displayed in the site. The Logo includes the name of the site, so the logo is synonomous with the brand. Using the name in the logo meant I had a readymade image for the packaging of the products in the range. The image relates to the area of health and Beauty, as essential oils are strongly related to the promotion of health and beauty benefits. 
 
 <br>
 
@@ -699,7 +699,7 @@ The Footer contains a blurb on the site, some contact details and social media i
  <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/footer.png"  alt="footer" />    
+     <img src="assets/readme/images/footer.png"  width="600px" alt="footer" />    
 </p>
 
 <br>
@@ -723,7 +723,7 @@ The products page shows the the full collection within the EssenChelle range inc
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/allproducts.png"  width="700" height="700" alt="products page" />    
+     <img src="assets/readme/images/allproducts.png"  width="500"  alt="products page" />    
 </p>
 
 <br/> 
@@ -747,7 +747,7 @@ The Page shows the full details of an individual product including an image. The
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/proddetailpage.jpg"  width="500" height="700" alt="product detail page" />    
+     <img src="assets/readme/images/proddetailpage.jpg"  width="500"  alt="product detail page" />    
 </p>
 
 <br/>
@@ -759,7 +759,7 @@ The About Page provides information on EssenChelle Oil, gives information of bac
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/aboutpage.jpg"  width="500" height="700" alt="about page" />    
+     <img src="assets/readme/images/aboutpage.jpg"  width="500"  alt="about page" />    
 </p>
 
 <br/> 
@@ -772,7 +772,7 @@ testimonials on why to choose a product in the EssenChelle Product Range.
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/ourprod.jpg"  width="500" height="700" alt="our products page" />    
+     <img src="assets/readme/images/ourprod.jpg"  width="500"  alt="our products page" />    
 </p>
 
 <br/> 
@@ -784,7 +784,7 @@ The Blog Page shows a collection of blogs with a spotlight on products being sol
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/blogpage.jpg"  width="500" height="700" alt="blog page" />    
+     <img src="assets/readme/images/blogpage.jpg"  width="500"  alt="blog page" />    
 </p>
 
 <br/>
@@ -795,7 +795,7 @@ The Blog Detail page shows the full blog which has information pertaining to pro
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/blogdetail.jpg"  width="500" height="700" alt="products page" />    
+     <img src="assets/readme/images/blogdetail.jpg"  width="500"  alt="blog details page" />    
 </p>
 
 <br/>
@@ -807,7 +807,7 @@ The contact page has a map showing the location of the Company, contact informat
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/"  width="700" height="700" alt="products page" />    
+     <img src="assets/readme/images/contactpage.jpg"  width="500"  alt="contact page" />    
 </p>
 
 <br/>
@@ -817,7 +817,7 @@ The Profile page contains a form to update your default delivery information and
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/"  width="700" height="700" alt="products page" />    
+     <img src="assets/readme/images/myprofile.jpg"  width="500"  alt="profile page" />    
 </p>
 
 <br/>
@@ -828,7 +828,7 @@ The Page shows a collection of the user's product favourites
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/"  width="700" height="700" alt="products page" />    
+     <img src="assets/readme/images/"  width="500"  alt="product favourites page" />    
 </p>
 
 <br/>
@@ -838,7 +838,7 @@ The Page shows the products that the user has currently in their shopping bag.
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/"  width="700" height="700" alt="products page" />    
+     <img src="assets/readme/images/bagpage.jpg"  width="500"  alt="shopping bag page" />    
 </p>
 
 <br/>
@@ -848,7 +848,7 @@ The Checkout Page shows the form to complete the order and the order summary. Yo
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/"  width="700" height="700" alt="products page" />    
+     <img src="assets/readme/images/checkoutpage.jpg"  width="500"  alt="checkout page" />    
 </p>
 
 <br/>
@@ -859,7 +859,7 @@ The Page is shown to the user when their order has been processed. It contains a
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/"  width="700" height="700" alt="products page" />    
+     <img src="assets/readme/images/checkoutsuccess.jpg"  width="500"  alt="checkout success page" />    
 </p>
 
 <br/>
@@ -872,7 +872,7 @@ This Page is also the product management page. The superuser can add a product i
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/"  width="700" height="700" alt="products page" />    
+     <img src="assets/readme/images/addproduct.jpg"  width="500"  alt="add product page" />    
 </p>
 
 <br/>
@@ -883,7 +883,7 @@ The Page has a form which allows the superuser to edit product details for indiv
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/"  width="700" height="700" alt="products page" />    
+     <img src="assets/readme/images/editproduct.jpg"  width="500"  alt="edit product page" />    
 </p>
 
 <br/>
@@ -893,7 +893,7 @@ The Page has a form which allows the superuser to delete products.
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/"  width="700" height="700" alt="products page" />    
+     <img src="assets/readme/images/deleteproduct.jpg"  width="400"  alt="delete product page" />    
 </p>
 
 <br/>
@@ -904,7 +904,7 @@ The Page has a form which allows the superuser to add a blog to the blog collect
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/"  width="700" height="700" alt="products page" />    
+     <img src="assets/readme/images/addblog.jpg"  width="500" alt="add blog page" />    
 </p>
 
 <br/>
@@ -915,7 +915,7 @@ The Page has a form which allows the superuser to edit an existing blog. The lin
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/"  width="700" height="700" alt="products page" />    
+     <img src="assets/readme/images/editblog.jpg"  width="500"  alt="edit blog page" />    
 </p>
 
 <br/>
@@ -926,7 +926,7 @@ The Page has a form which allows the superuser to delete an existing blog. The l
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/"  width="700" height="700" alt="products page" />    
+     <img src="assets/readme/images/deleteblog.jpg"  width="400"  alt="products page" />    
 </p>
 
 <br/>
@@ -939,7 +939,7 @@ On the Signup Page, a new user can sign up for the Wannabe Healthy website by fi
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/registerpage.jpg" width="500" alt="Registration Page" />    
+     <img src="assets/readme/images/signup.jpg" width="400"  alt="Registration Page" />    
 </p>
 
 <br/>
@@ -952,7 +952,7 @@ A registered User can log in to the website by inputting their username and pass
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/loginpage.jpg" width="500" alt="Login Page" />    
+     <img src="assets/readme/images/login.jpg" width="400" alt="Login Page" />    
 </p>
 
 <br/> 
@@ -964,7 +964,7 @@ In the Logout Page, the User can confirm that they want to exit the website.
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/logout.jpg" width="500" alt="Logout Page" />    
+     <img src="assets/readme/images/logout.jpg" width="400"  alt="Logout Page" />    
 </p>
 
 <br/> 
@@ -976,7 +976,7 @@ I have included custom Error Pages in the error folder within the templates fold
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/error.jpg" width="500" alt="Sample Error Page" />    
+     <img src="assets/readme/images/error.jpg" width="500" height="700" alt="Sample Error Page" />    
 </p>
 
 <br/> 
@@ -988,13 +988,13 @@ The admin panel allows the admin/superuser to perform a wide range of functional
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/" width="300" alt="Admin Panel" />    
+     <img src="assets/readme/images/adminsignin.png" width="200" alt="Admin sign in" />    
 </p>
 
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/adminpanel.png" width="900" alt="Admin Panel" />    
+     <img src="assets/readme/images/adminpanel.jpg" width="900" alt="Admin Panel" />    
 </p>
 
 <br/> 

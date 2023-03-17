@@ -1,6 +1,7 @@
 .message {
-    border: 1px solid purple;        
+    border: 3px solid purple;        
     padding: 10px;
+    background: rgb(229, 159, 238);
 }
 
 .mapsection {

@@ -9,7 +9,7 @@
  
 # Introduction <a name="introduction"></a>
 
-The EssenChelle Oils site is my 5th Project for the Code Institute and it is a full stack E-commerce site using the Django Framework and it includes Python, JavaScript, CSS, Bootstrap5 and it utilizes Stripe payments. It has user authentication and Full CRUD functionality for the products and Blogs. The website deals with the sale of essential oils and their byproducts. The webiste would appeal to people who use or want to know more about Essential Oils. This website has been built for educational purposes and the payment transactions are purely for demonstration only.
+The EssenChelle Oils site is my 5th Project for the Code Institute and it is a full stack E-commerce site using the Django Framework and it includes Python, JavaScript, CSS and Bootstrap5. It utilizes Stripe payments. It has user authentication and Full CRUD functionality for the products and Blogs for the Superuser. The website deals with the sale of essential oils and their byproducts. The website would appeal to people who use or want to know more about Essential Oils and are interested in buying these products. This website has been built for educational purposes and the payment transactions are purely for demonstration only.
 
 <br/>
 
@@ -43,12 +43,12 @@ The EssenChelle Oils site is my 5th Project for the Code Institute and it is a f
     - [4. Website Structure    ](#4-website-structure----)
     - [5. Wireframes    ](#5-wireframes----)
       - [Return to Table of Contents](#return-to-table-of-contents-2)
-  - [Web Marketing](#web-marketing)
+  - [5. Web Marketing](#5-web-marketing)
     - [1. E-Commerce Application Type](#1-e-commerce-application-type)
     - [2. Marketing Strategy](#2-marketing-strategy)
+      - [**Facebook Page**](#facebook-page)
     - [3. Search Engine Optimization(SEO)](#3-search-engine-optimizationseo)
     - [4. XML Sitemap](#4-xml-sitemap)
-      - [**Facebook Page**](#facebook-page)
   - [6. Features  ](#6-features--)
     - [1. Home Page   ](#1-home-page---)
     - [2. Products Page     ](#2-products-page-----)
@@ -117,11 +117,13 @@ The EssenChelle Oils site is my 5th Project for the Code Institute and it is a f
 - Promote repeat customers and ensure the present customers have a good user experience.
 - Use Social Media to increase awareness of the Site and strategically plan future growth of the Brand.
 - Increased customer satisfaction for the site users.
-- Improved retention of customers
+- Improved retention of customers.
 - Effective use of discounts and value offers. 
 - Create content that will engage the users and encourage them to return for more.
 - Make the shopping experience easy to manage for the Shopper.
-- Attract visitors and convert them into customers 
+- Attract visitors and convert them into customers.
+- Encourage customers and visitors to communicate with the business and respond effectively to their requests.
+- Use customer feedback to address any outstanding shortcomings and use the knowledge gained to possibly expand the current range of products.
   
   <br/> 
 
@@ -132,13 +134,15 @@ The EssenChelle Oils site is my 5th Project for the Code Institute and it is a f
 - Anyone who wishes to buy EssenChelle Oil Products.  
 - Anyone who has interest in joining the EssenCHelle Oil community and wants to learn more about our range of products. 
 - anyone who wants to use essential oils in their home and are looking for essential oil burners.  
-- anyone who wants to use massage techniques and wants massage oils that will be therapeutic.  
+- anyone who wants to offer massage services or use massage oils for personal use and are looking for specific blends for therapeutic uses.
+- anyone who would want to avail of special offer products which are related to essential oils.
+
 
  <br/>  
 
 ### 3. Site User Profile
 
-The user is really anyone who has an interest in holistic health. They either have had some experience with essential oils or are new to Essential Oils and want to learn more about them and how to integrate them into their lives. They may want to buy products from the site or read blogs that have a focus on the benefits and the uses for the featured oils.
+The user is really anyone who has an interest in holistic health. They either have had some experience with essential oils or are new to Essential Oils and want to learn more about them and how to integrate them into their lives. They may want to buy products from the site or read blogs that have a focus on the benefits and the uses for the featured oils. They may also be interested in special offers related to essential oils and would like to browse the site for current deals within the site.
 
 <br/>
 
@@ -147,12 +151,14 @@ The user is really anyone who has an interest in holistic health. They either ha
 - The theme of the site is easy to understand and it is easy to navigate through the site content easily.
   
 - The user will be able to use the search facility to find specific products by category or word search.
-- The user when logged in will be able to buy Products in the EssenChelle range.
-- The user will be able to maintain a profile on the site and can update their Profile details.
+- The user will be able to buy Products in the EssenChelle range.
+- The user will be able to maintain a profile on the site and can update their Profile details easily.
 - The user will be able to avail of discount and offers within the site.
 - The user will be able to view blogs and can add comments for individual blogs.
 - The user can see full details for individual products and if logged in they can leave reviews.
-- The user can contact the site owner with queries and suggestions. 
+- The user can contact the site owner with queries and suggestions.
+- The user when logged in can choose their favourite products and these can be stored within the site.
+- The user will be able to sign up for a regular newsletter. 
 
 <br>
 
@@ -286,44 +292,38 @@ The project was developed using Agile Methodology and it was by use of the GitHu
 
 ### 1. Colour  Scheme  <a name="colourscheme"></a>
 
-The colour scheme was inspired by essential oils, in particular lavender oil, so the website uses this colour throughout the site. The color Lavender represents holistic wellness and it is known for its tranquility and calming effects. Lavender Oil is also one of the most popular oils and very versatile so it made sense to utilize it's popularity and use a colour most holistic users would be familiar with. There is not a lot of colour and the backgrounds are either white or lavendender where suitable. Headings, borders and the footer are purple. In this project I wanted to only have a subtle use of colour, so that there would be little distraction to the user, when making their purchases on the site.
+The colour scheme was inspired by essential oils, in particular lavender oil, so the website uses a darker shade of this colour throughout the site. The color Lavender represents holistic wellness and it is known for its tranquility and calming effects. Lavender Oil is also one of the most popular oils and very versatile so it made sense to utilize it's popularity and use a colour most holistic users would be familiar with. The background of the site pages are either white or lavendender where suitable. Headings, borders and the footer are purple. In this project I wanted to only have a subtle use of colour, so that there would be little distraction to the user, when making their purchases on the site.
 
 <br>
 <p align ="center">      
-   <img src="assets/readme/images/"  alt="Colour Combo" />        
+   <img src="assets/readme/images/colourcombo.png"  alt="Colour Combo" />
+        
 </p>
 <p align ="center">      
-       
+   colors=#800080, #E83E86, #9037E4, #E9AFE9, #2D023D
+        
 </p>
+
+
 <br/> 
 
 ### 2. Typography    <a name="typography"></a>
 
-Google Fonts were used within the website. The 'Roboto' font is the main font used for the whole project, both for regular text and headings. Sans serif is the fallback font in case the other font is not available. See below for example of font in use on the site. The font color is #313131, which is a good font to help counter eye strain.
+Google Fonts were used within the website. The 'Roboto' font is the main font used for the whole project.. Sans serif is the fallback font in case the other font is not available. See below for example of font in use on the site. The font color is #313131, which is a good font to help counter eye strain.
 
 <br>
 <p align ="center">      
-   <img src="assets/readme/images/"  alt="general font for site" />        
+   <img src="assets/readme/images/313131.png"  alt="general font colour for site" />        
 </p>
 
 <br>
 
-The main title for the site a
+The main title for the site, the navigaton items and the headings for the site use the Courgette Font, which is a google font. It is a medium-contrast, brushy, italic-script typeface, which has been made for the web. It adds a decorative flair but is also very legible on a screen. 
 
 <br>
 <p align ="center">      
-   <img src="assets/readme/images/"  alt="wannabe title" />        
+   <img src="assets/readme/images/courgettefont.png"  alt="courgette font" />        
 </p>
-
-<br>
-
-<p align ="center">      
-   <img src="assets/readme/images/"  alt="" />        
-</p>
-
-<br>
-
-font stuff here
 
 <br>
 
@@ -331,28 +331,18 @@ font stuff here
    <img src="assets/readme/images/"  alt="" />        
 </p>
 
-
 <br>
+
 
 ### 3. Imagery    <a name="imagery"></a>
 
-The Logo was created with [LogoMaker](https://www.logomaker.com/), as the theme was health related, I used predominantly green in the logo iteself and the logo had a strong influence on the overall website colour scheme going forward.
+The Logo was created with [LogoMaker](https://www.logomaker.com/), I used a health and beauty related theme for the logo, as essential oils are synonymous with health and beauty benefits. The logo features a beautiful woman's face which has the EssenChelle Oil Brand prominant in its design. The colour used fits the colours displayed in the website.
 
-The imagery of the site focuses on essential oils and their byproducts, the images were sourced from the Pexels site and supplement the content. The images for the site are hosted in [Cloudinary](https://cloudinary.com/). I had used AWS for a while but was not comfortable using aws, as it was unpredictable in regards to pricing, and chose to revert to cloudinary as I trusted this platform.
+The imagery of the site focuses on essential oils and their byproducts, the images were sourced from the Pexels site and supplement the content. The images for the site are hosted in [Cloudinary](https://cloudinary.com/). I had used AWS for a while but was not comfortable using aws, as it was unpredictable in regards to pricing, and I chose to revert to cloudinary as I trusted this platform, from my previous use.
 
-There are also images sporadically placed throughout the site, There is a background image which highlights the nature of the site on the index page, the product was initially a template with no packaging, so I used it in photoshop to apply the packaging for the different products in the essential and massage oil range. The aromatherapy burners were sourced on a shopping site platorm, as it did not have to have the essenchelle branding.
-
-There are also various icons used within the site, the icons were sourced at [Iconify.Design](https://iconify.design/) and font-awesome in some cases, and they were used as a graphical representation for pertinent information on the site, they were used in conjunction with Forms or headings and were a subtle way to incorporate imagery on a limited scale, examples can be found in the image below.
-
-I also created the favicon for the site with [Favicon.io](https://favicon.io)
+There are also images sporadically placed throughout the site, There is a background image of a massage which highlights the nature of the site on the index page, the product was initially a template with blank packaging detail, so I used photoshop to apply the EssenChelle brand image for the different products in the essential and massage oil range. The aromatherapy burners were sourced on a shopping site platorm, as it did not have to have the essenchelle branding. The Items in the special offer section were also sourced in the Pexels site.
 
 <br>
-
-<p align ="center">      
-     <img src="assets/readme/images/essenchelle-logo.png" width="150" alt="Logo for Site" />    
-</p>
-
-<br/>
 
 <p align="center">
   <img src="assets/readme/images/collage.png" width="600" alt="Images for Site"/>
@@ -360,20 +350,35 @@ I also created the favicon for the site with [Favicon.io](https://favicon.io)
 
 <br/>
 
-<p align="center">
-  <img src="assets/readme/images/" width="600" alt="Icons for Site"/>
-</p>
+There are also various icons used within the site, the icons were sourced at [Iconify.Design](https://iconify.design/) and font-awesome in some cases, and they were used as a graphical representation for pertinent information on the site, they were used in conjunction with Forms or headings and were a subtle way to incorporate imagery on a limited scale, examples can be found in the image below.
 
 <br>
 
+<p align ="center">      
+     <img src="assets/readme/images/icons.png"  alt="icons for Site" />    
+</p>
+
+<br/>
+
+I also created the favicon for the site with [Favicon.io](https://favicon.io)
+
+<br>
+
+<p align ="center">      
+     <img src="assets/readme/images/android.png" width="100px" alt="Favicon for Site" />    
+</p>
+
+<br/>
+
+
 ### 4. Website Structure    <a name="structure"></a>
 
-The website follows the standard website structure. The Logo and the website name are on the left hand side, and the naigation to the right, on the top of all pages. Within the Account Nav Link the user can either Signup or login to the site. When the user logs in they can see the Profile link and the logout button. The logged in user's image will also be visible. When the website is on smaller screens, there is a hamburger meu, with dropdown navigation items. The footer element is also available on all pages, with site information, contact details and social media icons.
+The website follows the standard website structure. The Logo and the website name are on the left hand side, and the naigation to the right, on the top of all pages. Within the Account Nav top Link the user can either Signup or login to the site. When the user logs in they can see the Profile link, The favourite products and the logout button. The Shopping Bag Link takes the User to the Shopping Bag Page.When the website is on smaller screens, there is a hamburger meu, with dropdown navigation items. The footer element is also available on all pages, with site information, contact details, social media icons and the newsletter sign up form.
 
 The website consists of the following Pages:
  - The Home Page, with a hero image and a button connecting to the Shop. It has a search bar and links to
   all areas in the site. There is is also a profile and shopping back link.
- - The Proucts page is available in a number of formations, it can be sorted by pricing, ratings and category and you can see all products in the EssenChelle Range.
+ - The Products page is available in a number of formations, it can be sorted by pricing, ratings and category and you can see all products in the EssenChelle Range.
  - The Essenchelle Products can be configured to show different categories of products. The products include Essential Oils, Massage Oils and Oil Burners, or you can view all categories at once.
  - The Product Details Page, shows the information for individual Products.
  - The Add Product Page, which is a form that allows the superuser to add a Product.
@@ -391,7 +396,7 @@ The website consists of the following Pages:
  - The Edit Blog Page, which is a form that allows the superuser to edit a Blog.
  - The Delete Blog Page, which is a form that allows the superuser to delete a Blog.
  - The Profile Page, which contains profile information and  product history for the logged in user.
- - The User Favourites Page, which shows the users favourite products.
+ - The User Product Favourites Page, which shows the users favourite products.
  - The Sign Up Page, consists of a form where a new user can register for the site.
  - The Login Page, consists of a form where the user can login to the site.
  - The logout Page, consists of a form where the user can logout of the site.
@@ -401,12 +406,13 @@ The website consists of the following Pages:
 
 ### 5. Wireframes    <a name="wireframes"></a>
 
-The Wireframes for the site were created in Figma, I concentrated on the standard websize and the mobile size. The midlevel sizes were generally in keeping with the main websize but just on a smaller scale. The Wireframes can be found below:
+The Wireframes for the site were created in Figma, I concentrated on the standard websize and the mobile size. The mid-level sizes were generally in keeping with the main websize but just on a smaller scale. The Wireframes can be found below:
 
 <details><summary>Figma Wireframes</summary>
 
 
 <details>
+
 
   <summary>1. Home Page Wireframes</summary>
   <br/>
@@ -488,7 +494,7 @@ The Wireframes for the site were created in Figma, I concentrated on the standar
 </details>
 
 <details>
-  <summary>11. Favourites Page</summary>
+  <summary>11. Favourite Products Page</summary>
   <br/>
 <p align="center">
   <img src="assets/readme/wireframes/favourites page.png" alt="Favourites Page Wireframe" />
@@ -609,22 +615,67 @@ The Wireframes for the site were created in Figma, I concentrated on the standar
 
 <br>
 
-## Web Marketing
+
+
+## 5. Web Marketing
+
+<br>
 
 ### 1. E-Commerce Application Type
-EssenChelle Oil is a B2C E-Commerce Application. It deal with seling directly to its customer. There is a great emphasis in promoting a good user experience for the customer. The aim is to retain current customers and at the same time grow the customer base by organic means. 
+EssenChelle Oil is a B2C E-Commerce Application. It deal with seling directly to its customer. There is a great emphasis in promoting a good user experience for the customer. The aim is to retain current customers and at the same time grow the customer base by organic means. Because it is online it can reach a wide audience and is not dependent on location. Overhead and operational costs are reduced because there is no physical premises. The Direct to consumer business model has the advantage of being able to charge lower prices, which is a great incentive for customers. The business can run 24 hours a day and this allows flexibility for the business owner as they are not confined to normal business hours.
+
+<br>
 
 ### 2. Marketing Strategy
 Essenchelle Oils is a fledgling company, with a limited budget for marketing, so decisions need to be cost effective and practical. That being said the company has come up with a range of marketing strategies, ie content marketing, utilizing social media platforms, digital promotions, and highlighting events that will promote the products firsthand. The goal is is to increase project sales, create a following online and concentrate on building brand awareness.
 
-Social Media will play a big part in the marketing strategy, research into the different platforms has highligted ways that can be cost effective and easy to implement. Facebook is a great way to fuild up followers and share information with a wide range of customers. A Facebook page was created to share pertinent information with the users, and promotes the latest great deal, that should entice new customers to the EssenChelle site. The image below shows the Facebook page [EssenChelle Oils]().
+<br>
 
-Google Ads : This option is out of reach at the moment, as the budget is small, but with enough experience and analysis I hope to be able to plan a campaign in the future that will be cost effective and will earn results.
+Social Media will play a big part in the marketing strategy, research into the different platforms has highligted ways that can be cost effective and easy to implement. Facebook is a great way to build up followers and share information with a wide number of customers. A Facebook page was created to share pertinent information with the users, and will be used to promote the latest deals, that should entice new customers to the EssenChelle site. The image below shows the Facebook page, it is active currently but not sure if it will remain so, so have included screencapture below and here is the link: [EssenChelle Oils](https://www.facebook.com/profile.php?id=100090771283240)
 
-There is a large industry dealing with essesntial oils and aromatherapy in Irelan, and indeed worldwide. In this regard you can tap into existing events that are used to promote the industry and that are very accessible to the public. One of the largest event, occurs yearly in the RDS in the Body Mind Spirit fair where a range of companies, mostly smaller companies have the opportunity to highlight their products to a very involved and motivated audience. You have the opporuity to mingle with and sell directly to the public and grow a valuable network which will pay dividents for future business. This would play a major
-part in growing the brand and linking with a potentially large customer base. But this occurs later in the year, and meantime smaller events, in this vein are held in venues throughtout the country and would be an excellent way to connect with the right clientele. As well as growing a customer base it wold be good to network with other business's and there may be some mutual gains in forging such alliances.
+#### **Facebook Page**
 
-The website itself offers users the chance to sign up for a regular newsletter. This newsletter would be a good way to promote new products, provide articles which highlight the benefits of using certain products, offer special offers and highlight new arrival products. This will be a great way to grow the Essenchelle community and keep the customers in the loop. The newsletter functionality utilizes mailchimp, who will keep track of users and with their extensive capabilities, the company would seek to utilize more of their services in the future.
+<br>
+
+<p align="center">
+  <img src="assets/readme/images/facebookpage.jpg" alt="EssenChelle Facebook Page" />
+</p>
+
+<br>
+
+Content Marketing: the process of publishing written and visual material online with the purpose of attracting more leads to your business is the essence of content marketing. In this case the website has a blog section which highlighs the products in the EssenChelle range. The main focus is on showing the customer the benefits of specific oils to the customers, why they should buy them and how they can use them. This should drive more sales and funnel the user to the products page. Selected blogs can also be shared on various social media channels, furthering the reach of the created content.
+
+<br>
+
+<p align="center">
+  <img src="assets/readme/images/blogposts.png" alt="Blog Section" />
+</p>
+
+<br>
+
+Google Ads : This option is out of reach at the moment, as the budget is small, but with enough experience and analysis I hope to be able to plan a campaign in the future that will be cost effective and will pay long lasting dividents.
+
+<br>
+
+Events: There is a large industry dealing with essential oils and aromatherapy in Ireland, and indeed worldwide. In this regard you can tap into existing events that are used to promote the industry and that are very accessible to the public. One of the largest event, occurs yearly in the RDS in the Body Mind Spirit fair where a range of companies, mostly smaller companies have the opportunity to highlight their products to a very involved and motivated audience. You have the opporuity to mingle with and sell directly to the public and grow a valuable network which will be a great boost for future business. This would play a major part in growing the brand and linking with a potentially large customer base. But this occurs later in the year, and meantime smaller events, in this vein are held in venues throughtout the country and would be an excellent way to connect with the right clientele. As well as growing a customer base it wold be good to network with other business's and there may be some mutual gains in forging such alliances. The image below shows the Expo details:
+
+<br>
+
+<p align="center">
+  <img src="assets/readme/images/bodymindspirit.png" alt="Body Mind Spirit Expo" />
+</p>
+
+<br>
+
+The website itself offers users the chance to sign up for a regular newsletter. This measure allows you communicate directly with your prospects and customers in a personalized way by serving valuable content and relevant promotions straight to their inboxes. This newsletter would be a good way to promote new products, provide articles highlighting the benefits of using certain products, offer special offers and highlight new arrival products. This will be a great way to grow the Essenchelle community and keep the customers in the loop. The newsletter functionality utilizes mailchimp, this service will help keep track of users. Mailchimp offers a number of tools that will be explored further as the company develops.
+
+<br>
+
+<p align="center">
+  <img src="assets/readme/images/newsletter.png" alt="Mailchimp Newsletter" />
+</p>
+
+<br>
 
 
 ###  3. Search Engine Optimization(SEO)
@@ -636,8 +687,7 @@ Additionally to help the search engines crawl the site, I've added an XML sitema
 
 A robots.txt file has also added to indicate to the search engine crawlers which URLs the crawler can access on this ste, used mainly to avoid overloading the site with requests.
 
-#### **Facebook Page**
-![Facebook Page]()
+
 
 ---
 
@@ -828,7 +878,7 @@ The Page shows a collection of the user's product favourites
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/"  width="500"  alt="product favourites page" />    
+     <img src="assets/readme/images/productfavourites.jpg"  width="500"  alt="product favourites page" />    
 </p>
 
 <br/>

@@ -679,15 +679,15 @@ The website itself offers users the chance to sign up for a regular newsletter. 
 
 
 ###  3. Search Engine Optimization(SEO)
-SEO research will help drive pople to our site more efficiently. Inititally finding the right keywords will help send our site further up in the rankings. Finding the right words involved looking at present sites, previous research finding and analysing which words were suggested when searching for essential oils and aromatherapy in particular. I then picked the top words ad phrased and ensured they were integrated into the site via meta-tags or by ensuring they were included in headings, image names and content. There were also links included for bother internal pages and external sites of good standing that are in a similar industry.
+SEO research will help drive pople to our site more efficiently. Inititally finding the right keywords will help send our site further up in the rankings. Finding the right words involved looking at present sites, previous research finding and analysing which words were suggested when searching for essential oils and aromatherapy in particular. I then picked the top words ad phrased and ensured they were integrated into the site via meta-tags or by ensuring they were included in headings, image names and content. There were also links included for both internal pages and external sites of good standing that are in a similar industry.
 
 
 ### 4. XML Sitemap
-Additionally to help the search engines crawl the site, I've added an XML sitemap file to the main root directory. 
+Additionally to help the search engines crawl the site, I've added an XML sitemap file to the main root directory. This was generated using [xml-sitemaps](https://www.xml-sitemaps.com/)
 
-A robots.txt file has also added to indicate to the search engine crawlers which URLs the crawler can access on this ste, used mainly to avoid overloading the site with requests.
+A robots.txt file has also added to allow the search engine crawlers to know which URLs the crawler can access on this ste, this was used mainly to avoid overloading the site with requests.
 
-
+<br>
 
 ---
 
@@ -698,7 +698,7 @@ There are features common to all pages in the site and these are found in the ba
 
 - The Logo and Site Title:
   
-The logo was the first asset I created in Logo maker it depicts a simple female image with the main colours displayed in the site. The Logo includes the name of the site, so the logo is synonomous with the brand. Using the name in the logo meant I had a readymade image for the packaging of the products in the range. The image relates to the area of health and Beauty, as essential oils are strongly related to the promotion of health and beauty benefits. 
+The logo was the first asset I created in Logo maker, it depicts a simple female face image using the main colours displayed in the site. The Logo includes the name of the site, so the logo is synonomous with the brand. Using the name in the logo meant I had a readymade image for the packaging of the products in the range. The image relates to the area of health and Beauty, as essential oils are strongly related to the promotion of health and beauty benefits. 
 
 <br>
 
@@ -733,7 +733,7 @@ Contact - Contact Form.
 <br/> 
 
 
-On smaller screens, there is a hamburger menu where the navigation items appear in a collapsable dropdown menu. The image is included in this menu.
+On smaller screens, there is a hamburger menu where the navigation items appear in a collapsible dropdown menu. The image below shows the collapsible menu for smaller screens.
 
 <br>
 
@@ -756,7 +756,7 @@ The Footer contains a blurb on the site, some contact details and social media i
 
 ### 1. Home Page   <a name="homepage"></a>
 
-The home page has an introductory image and a shop button, that can bring you directly to the product page.
+The home page has a Hero image depicting a massage session, which is a strong indicator to the type of productss available within the site. There is some textual content describing the site purpose. There is also a shop button, that can bring the user directly to the product page, so that the user can begin shopping right away.
   
 <br>
 
@@ -768,7 +768,7 @@ The home page has an introductory image and a shop button, that can bring you di
 
 ### 2. Products Page     <a name="productpage"></a>
 
-The products page shows the the full collection within the EssenChelle range including the special offers. These products can be arranged according to specified criteria, such as by price, by rating and by category. 
+The products page shows the the full collection within the EssenChelle range including the special offers. These products can be arranged according to specified criteria, such as by price, by rating and by category. The number of items is shown to the user and the user can further sort the products by means of the sorting bar. Each of the products shows the title, an image, the price, the category, the star rating and will show users if there are any associated reviews for the product.
 
 <br>
 
@@ -781,7 +781,7 @@ The products page shows the the full collection within the EssenChelle range inc
 ### 3. EssenChelle Products Page     <a name="essenchelleproductpage"></a>
 
 <br>
-This Page shows products in the category of Essential, Massage and Burners. You can select to see products within just one category by choosing the option in the dropdown menu or by selecting the relevant button at the top of the page. You can view the number of products and there is a facility for sorting at the top of the page. The options include price, rating, name and category.
+This Page shows products in the category of Essential, Massage and Burners. You can select to see products within just one category by choosing the option in the dropdown menu or by selecting the relevant link at the top of the page. You can view the number of products and there is a facility for sorting at the top of the page. The options for sorting includes price, rating, name and category.
 
 <br>
 
@@ -792,7 +792,7 @@ This Page shows products in the category of Essential, Massage and Burners. You 
 <br>
 
 ### 4. Product Details Page     <a name="productdetailspage"></a>
-The Page shows the full details of an individual product including an image. There is a review form, where a product user can leave a review for others, there is also a review section showing existing reviews.
+The Page shows the full details of an individual product including an image. There is a review form, where a product user who is logged in can leave a review for others. This review will need to be approved by the superuser before it is published to the review section. the review section shows existing reviews.
 
 <br>
 
@@ -804,7 +804,7 @@ The Page shows the full details of an individual product including an image. The
 
 ### 5. About Page     <a name="aboutpage"></a>
 
-The About Page provides information on EssenChelle Oil, gives information of background and what services the company offers. It also features a carousel with information on the different categories on offer in the site.
+The About Page provides the background information on the EssenChelle Oil Company, It also features a carousel with information on the different categories of products on offer in the site.
 
 <br>
 
@@ -816,8 +816,7 @@ The About Page provides information on EssenChelle Oil, gives information of bac
 
 ### 6. Our Products Page     <a name="ourproductpage"></a>
 
-The our products page shows information of each category in the product range. It also provides customer
-testimonials on why to choose a product in the EssenChelle Product Range.
+The our products page shows more indepth information on each category in the product range. It also provides customer testimonials on why a potential customer should choose a product in the EssenChelle Product Range.
 
 <br>
 
@@ -829,7 +828,7 @@ testimonials on why to choose a product in the EssenChelle Product Range.
 
 ### 7. Blog Page     <a name="blogpage"></a>
 
-The Blog Page shows a collection of blogs with a spotlight on products being sold on the site. The sidebar gives a brief introduction to the blogs. There is a link with more comprehensive information on individual essential oils. It also shows the titles for the 5 latest blogs available.
+The Blog Page shows a collection of blogs with a spotlight on products being sold on the site. The sidebar gives a brief introduction to the blogs. There is a link to an accredited site with more comprehensive information on individual essential oils. It also shows the titles for the 5 latest blogs available.
 
 <br>
 

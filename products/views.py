@@ -104,7 +104,7 @@ def edit_product(request, product_id):
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
-        #return redirect(reverse('products'))
+        return redirect(reverse('products'))
 
     template = 'products/edit_product.html'
     context = {

@@ -792,7 +792,7 @@ This Page shows products in the category of Essential, Massage and Burners. You 
 <br>
 
 ### 4. Product Details Page     <a name="productdetailspage"></a>
-The Page shows the full details of an individual product including an image. There is a review form, where a product user who is logged in can leave a review for others. This review will need to be approved by the superuser before it is published to the review section. the review section shows existing reviews.
+The Page shows the full details of an individual product including an image. There is a review form, where a product user who is logged in can leave a review for others. This review will need to be approved by the superuser before it is published to the review section. the review section shows existing reviews. There is a add to favourites button to the right of the product title, when this is clicked, the product is saved to the user's favourites. Any product which has been selected as a favourite, can be viewed in the product favourites page (can be found using the account icon when user is logged in).
 
 <br>
 
@@ -828,7 +828,7 @@ The our products page shows more indepth information on each category in the pro
 
 ### 7. Blog Page     <a name="blogpage"></a>
 
-The Blog Page shows a collection of blogs with a spotlight on products being sold on the site. The sidebar gives a brief introduction to the blogs. There is a link to an accredited site with more comprehensive information on individual essential oils. It also shows the titles for the 5 latest blogs available.
+The Blog Page shows a collection of blogs with a spotlight on products being sold on the site. The sidebar gives a brief introduction to the blogs. There is a link within the sidebar to an accredited site with more comprehensive information on individual essential oils. It also shows the titles for the 5 latest blogs available.
 
 <br>
 
@@ -839,7 +839,7 @@ The Blog Page shows a collection of blogs with a spotlight on products being sol
 <br/>
 
 ### 8. Blog Details Page     <a name="blogdetailspage"></a>
-The Blog Detail page shows the full blog which has information pertaining to products on the site. It will either concentrate on an indivual oil, or a selection of products, it may also include internal links to products within the site. There is also a comment form, for logged in users to leave a comment and there is a comment section for existing comments.
+The Blog Detail page shows the full blog which has information pertaining to selected products on the site. It will either concentrate on an individual oil(lavender oil), or a selection of products(top 5 massage oils), it may also include internal links to the highligted products within the site . There is also a comment form, for logged in users to leave a comment and there is a comment section for existing comments.
 
 <br>
 
@@ -851,7 +851,7 @@ The Blog Detail page shows the full blog which has information pertaining to pro
 
 
 ### 9. Contact Page     <a name="contactpage"></a>
-The contact page has a map showing the location of the Company, contact information and a contact form so that the user can send a message to the company.
+The contact page has a map showing the location of the Company and a contact form so that the user can send a message to the company. This will aid communication between the user and the EssenChelle Oil Co. this could include queries on the sales process, more information on specific properties of products or questions in relation to delivery issues.
 
 <br>
 
@@ -862,7 +862,7 @@ The contact page has a map showing the location of the Company, contact informat
 <br/>
 
 ### 10. Profile Page    <a name="profile page"></a>
-The Profile page contains a form to update your default delivery information and order history.
+The Profile page contains a form to update the customer's default delivery information and order history. It also allows the user to enter their credit/debit card details and there is a checkbox where the user can tick if they want this information to be saved on the site.
 <br>
 
 <p align ="center">      
@@ -872,7 +872,7 @@ The Profile page contains a form to update your default delivery information and
 <br/>
 
 ### 11. Product Favourites Page     <a name="favouritespage"></a>
-The Page shows a collection of the user's product favourites
+The Page shows a collection of the user's product favourites. The details and image of each product are displayed. There is a button with remove below each product and when this is selected that product will be removed from the user's favourites.
 
 <br>
 
@@ -883,8 +883,8 @@ The Page shows a collection of the user's product favourites
 <br/>
 
 ### 12. Shopping Bag Page     <a name="shoppingbagpage"></a>
-The Page shows the products that the user has currently in their shopping bag.
-<br>
+The Page shows the products that the user has currently in their shopping bag. This will initially display no products, but as products are added, they will be displayed on the page. There is a keep shopping button and this allows the user to return to shop for more products.
+<br
 
 <p align ="center">      
      <img src="assets/readme/images/bagpage.jpg"  width="500"  alt="shopping bag page" />    
@@ -903,7 +903,7 @@ The Checkout Page shows the form to complete the order and the order summary. Yo
 <br/>
 
 ### 14. Checkout Success Page     <a name="checkoutsuccesspage"></a>
-The Page is shown to the user when their order has been processed. It contains a Thank you message and includes the order information, and a link to the new arrival products on the site.
+The Page is shown to the user when their order has been processed. It contains a Thank you message and includes the order information, order details, delivery details and billing information,  and a link to the new arrival products on the site. There is also a success message displayed advising the user that their order has been processed successfully and a confirmation email will be sent to them.
 
 <br>
 
@@ -916,7 +916,7 @@ The Page is shown to the user when their order has been processed. It contains a
 The following pages are also available, but only to the superuser on the site.
 
 ### 15. Add Product Page     <a name="addproductpage"></a>
-This Page is also the product management page. The superuser can add a product in the frontend as well as in admin. It can be accessed via the account icon or with a button at the bottom of the products page.
+This Page is also the product management page. The superuser can add a product in the frontend as well as in the admin panel. It can be accessed via the account icon or with a button at the left and bottom of the products page.(which I found more intutive to user)
 
 <br>
 
@@ -927,7 +927,7 @@ This Page is also the product management page. The superuser can add a product i
 <br/>
 
 ### 16. Edit Product Page     <a name="editproductpage"></a>
-The Page has a form which allows the superuser to edit product details for individual products.
+The Page has a form which allows the superuser to edit product details for individual products. It can be found below the product details in the products page and on the product detail page.
 
 <br>
 
@@ -938,7 +938,7 @@ The Page has a form which allows the superuser to edit product details for indiv
 <br/>
 
 ### 17. Delete Product Page     <a name="deleteproductpage"></a>
-The Page has a form which allows the superuser to delete products.
+The Page has a form which allows the superuser to delete products. It can be found below the product details in the products page and on the product detail page.
 <br>
 
 <p align ="center">      
@@ -948,7 +948,7 @@ The Page has a form which allows the superuser to delete products.
 <br/>
 
 ### 18. Add Blog Page     <a name="addblogpage"></a>
-The Page has a form which allows the superuser to add a blog to the blog collection. The button is available on the bottom of the blog page.
+The Page has a form which allows the superuser to add a blog to the blog collection. The button is available on the bottom and left of the blog page.
 
 <br>
 
@@ -959,7 +959,7 @@ The Page has a form which allows the superuser to add a blog to the blog collect
 <br/>
 
 ### 19. Edit Blog Page     <a name="editblogpage"></a>
-The Page has a form which allows the superuser to edit an existing blog. The link is available under the blog excerpt in individual blogs in the blog page.
+The Page has a form which allows the superuser to edit an existing blog. The link to edit a blog can be found at the bottom of individual blogs in the blog page.
 
 <br>
 
@@ -970,7 +970,7 @@ The Page has a form which allows the superuser to edit an existing blog. The lin
 <br/>
 
 ### 20. Delete Blog Page     <a name="deleteblogpage"></a>
-The Page has a form which allows the superuser to delete an existing blog. The link is available under the blog excerpt in individual blogs in the blog page.
+The Page has a form which allows the superuser to delete an existing blog. The link is available at the bottom of individual blogs in the blog page.
 
 <br>
 
@@ -983,7 +983,7 @@ The Page has a form which allows the superuser to delete an existing blog. The l
 
 ###  21. Signup Page   <a name="signuppage"></a>
 
-On the Signup Page, a new user can sign up for the Wannabe Healthy website by filling out and submitting the form. On registering they will be assigned a Profile for the site.
+On the Signup Page, a new user can sign up for the EssenChelle Oils website by filling out and submitting the form. On registering they will be assigned a Profile for the site. On registering they will be sent an email confirming their registration. 
 
 <br>
 
@@ -995,7 +995,7 @@ On the Signup Page, a new user can sign up for the Wannabe Healthy website by fi
 
 ###  22. Login Page   <a name="loginpage"></a>
 
-A registered User can log in to the website by inputting their username and password and they will have full access to all the features within the site. 
+A registered User can log in to the website by inputting their username and password and they will have full access to all the logged in features within the site. 
 
 
 <br>
@@ -1032,7 +1032,7 @@ I have included custom Error Pages in the error folder within the templates fold
 
 ### 25. Admin Panel  <a name="adminpanel"></a>
 
-The admin panel allows the admin/superuser to perform a wide range of functionalities within the site. The admin can add, delete, edit product, blog, users. The admin can also approve reviews for individual products and comments for individual blogs.
+The admin panel allows the admin/superuser to perform a wide range of functionalities within the site. The admin can add, delete, edit products, blogs, users. The admin can also approve reviews for individual products and comments for individual blogs.
 
 <br>
 
@@ -1072,11 +1072,15 @@ To ensure security on the site, only logged in users can access certain features
 
  In relation to the products, I would like to expand the information relating to the product. Besides the description, I would ike to include directions for use and cautions. You could also sort products according to the health conditions that can be addressed by using them i.e. insomnia, anxiety, respiratory issues.
 
- In regards to the blogs I have just added a few basic blogs, with heavy emphasis on product spotlighting for marketing purposes. These blogs could also be broken down into further categories, outside fo this remit. You can add a do it yourself section, where you could provide simple instructions for users to use the products in creative ways, this is incorporated into the present blog in a small way, but would be a great way for users to learn to integrate the products into their lives. I would also include a recipe category where you could provide the user with recipes using the essential oils. This could be a good way to get users to interact with the site. you could ask the users to contribute their own recipes via the social media channels or by contacting the company directly with the contact form. User's recipes could then be featured on the site. Healthy Living could also be a category and you could give advice on how to use oils in the home and provide tips for everyday living in relation to EssenChelle Oils. These measures should not only drive sales, but should create a a thriving community with a shared interest in essential oil and their byproducts.
+ In regards to the blogs I have just added a few basic blogs, with heavy emphasis on product spotlighting for marketing purposes. These blogs could also be broken down into further categories. I could add a do it yourself section, where you could provide simple instructions for users to use the products in creative ways, this is incorporated into the present blog in a small way, but would be a great way for users to learn to integrate the products into their lives. I would also include a recipe category where you could provide the user with recipes using the essential oils. This could be a good way to get users to interact with the site. you could ask the users to contribute their own recipes via the social media channels or by contacting the company directly with the contact form. User's recipes could then be featured on the site. Healthy Living could also be a category and you could give advice on how to use oils in the home and provide tips for everyday living in relation to EssenChelle Oils. These measures should not only drive sales, but should help to create a a thriving community with a shared interest in essential oil and their byproducts.
 
- In regard to the profiles, I would customise it more for the user, in the previous project I had an image for the profile user, but would rather ensure I meet all the project criteria first, and if there is time at the end I could explore this possibility, but if not will introduce this in a future iteration.
+ In regard to the profiles, I would customise it more for the user, in the previous project I had an image for the profile user, but would rather ensure I meet all the project criteria first, and if there is time at the end I could explore this possibility, but would hope to introduce this in a future iteration.
 
- In regard to the review, I had looked into the idea of using the ratings in the reviews in the product rating, again this is still a possibility, but time restraints this may not be possible at this time.
+ In regard to the review, I had looked into the idea of using the ratings in the reviews in the product rating, again this is still a possibility, but time restraints this may not make this possible at this time. It would be easier at this time to use existing ratings, as it would take time to generate actual ratings and with this restraint new products would not have any rating, and this would not be ideal. i
+
+ In regards to logging in, I would also include logging in from a social network provider like Facebook, Twitter, or Google to facilitate the user further.
+
+ In regards to deals I would introduce deals to encourage the user to buy multiple products at a special rate, as a meaure I feel this would be conducive to more sales. In the long term I would also introdue a loyalty scheme, so that users would be rewarded for their consumer buying behaviour.
 
 
  
@@ -1116,6 +1120,7 @@ To ensure security on the site, only logged in users can access certain features
 -   [Code Institute Python Linter](https://pep8ci.herokuapp.com/) - used to validate Python in Project.
 -   [Accesibility Test](https://accessibilitytest.org/) - free accessibility testing tool.
 -   [Dr Link Checker](https://www.drlinkcheck.com/) - used in conjunction with manual testing of links.
+-   [XML- Sitempap](https://www.xml-sitemaps.com/) - used to create a sitemap for the site.
 
 ### Django Packages
 
@@ -1145,9 +1150,12 @@ Go to the [TESTING DOCUMENT](TESTING.md)
 
  There have been a number of issues during development. Initially there was major issues with images, both sourcing assets and resizing them so they are uniform on the site. I wanted the products to carry the brand of the site, so this meant they had to be customised within photoshop. The special offer section are different in that they have a coloured background, but the sizing is the same, so I could live with that.
 
+ 
 <br>
 
  ### Resolved <a name="resolved"></a>
+
+ The webhooks were problematic at times mostly in relation to the URLS for the endpoints and making sure the secret keys are in place and the endpoint is activated on the stripe dashboard. Without being able to test with the testhooks earlier it was hard to know why they are not working and how to fix them when they were not working. Again when the project is deploayed going through this procedure again and testing a seperate endpoint. I had thought I had kept the code close to the stripe code in the walkthrough project but did have an issue with the code, I had added an extra return which meant although the order was processing correctly it never triggered the success page or the confirmation email after an order was processed and needed help from tutor support to resolved the issue, which was done with a series of print statements. There was at the same time an issue with an extra blank line in the header of the confirmation_email_subject, when these issues were fixed I finally managed to get the email message confirmation printing in the terminal within gitpod and I received email confirmation with the deployed site.
 
  <br>
 
@@ -1199,7 +1207,7 @@ Code Institute
 
 ### Django Framework    <a name="djangoframework"></a>
 
-I used the Resources and Lessons within the Full Stack Frameworks Module to get familiar with the concepts involved in creating the present Project. In particular I did the walkthroughs for 'Hello Django' and 'I Think Therefore I Blog', and I used the cheatsheet, [Django Blog Cheat Sheet](https://docs.google.com/document/d/1P5CWvS5cYalkQOLeQiijpSViDPogtKM7ZGyqK-yehhQ/edit), which helped me set up the basic Django Project. I also looked at the 'Boutique Ado' walkthrough, as when I was creating the profile app, I wanted to see how it was handled within this project, It also helped me solidify some concepts that I had not grasped in the previous walkthrough.
+I used the Resources and Lessons within the Building an E-Commerce Module to get familiar with the concepts involved in building an Ecommerce site. In particular I did the walkthroughs for 'Boutique Ado' and I covered the E-Commerce Apllication types, Introduction to Search Engine Optimization and Web Marketing Modules. I also referred back to my previous project and the 'I think therefore I blog' walkthrough. I also referred to the Django documentation for the occasional query.
 
 <br>
 
@@ -1261,7 +1269,7 @@ time you push to your Repository. (Option Taken)
 ----
  ## Acknowledgements <a name="acknowledgements"></a>
 
- 
+ [Animated Collapsibles](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible_animate) - used for collapsible sections in the FAQ Page
 
 <br>
 

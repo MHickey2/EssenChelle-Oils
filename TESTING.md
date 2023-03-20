@@ -61,7 +61,7 @@ Using [https://validator.w3.org/](https://validator.w3.org/) All Pages were test
 <br/>
 
 <p align ="center">      
-     <img src="assets/readme/images/html validation.png"  width="700" alt="HTML Validation results"/>   
+     <img src="assets/readme/images/htmlvalidated.png"  width="700" alt="HTML Validation results"/>   
 </p>
 <br/>  
   
@@ -77,12 +77,18 @@ The result can be seen below:
 <br/>
 
 3. Python Validation   <a name="python"></a>
-  Python testing was done without the use of Pep8 as the site was down, instead an extension was added which highlighted errors and showed them in the problems panel within gitpod. Most errors during the build related to long lines, which I rectified. I also used [Code Institute Python Linter](https://pep8ci.herokuapp.com/)
+  Python testing was done without the use of Pep8 as the site was down, instead an extension was added which highlighted errors and showed them in the problems panel within gitpod. Most errors during the build related to long lines, which I rectified. I also used [Code Institute Python Linter](https://pep8ci.herokuapp.com/). I found no faults from the gitpod linter testing and have included sample results from the Code Institute Linter
 
   <br/>
 
   <p align ="center">      
-     <img src="assets/readme/images/pep8.png" width="600" alt="python validation"/>   
+     <img src="assets/readme/images/pep8ci1.png" width="600" alt="python validation1"/>   
+  </p>
+  
+  <br>
+
+   <p align ="center">      
+     <img src="assets/readme/images/pep8ci2.png" width="600" alt="python validation2"/>   
   </p>
   
   <br>
@@ -100,18 +106,18 @@ The result can be seen below:
 Used this tool, [Accesibility Test](https://accessibilitytest.org/) which carries out a range of tests on the site and the score can be seen below:
 
 <p align ="center">      
-     <img src="assets/readme/images/" width="700" alt="accessabilty testing specs" />    
+     <img src="assets/readme/images/accessabilityscore.png" width="700" alt="accessabilty testing specs" />    
 </p>
 
 <br/> 
 
 6. Contrast Checker  <a name="contrastchecker"></a>
   
-  Using [https://color.a11y.com/](https://color.a11y.com/)   See images Below.
+Used [https://color.a11y.com/](https://color.a11y.com/) to check for any contrast issues. I did detect an issue with an asterisk but just gave it a class of text-danger and changed colour to darker version by using !important and this seemed to resolve the issue.  See images Below for evidence of good contrast on the site.
 
 <br/>
   <p align ="center">      
-     <img src="assets/readme/images/colourcontrast.png"  width="700" alt="contrast results"/>   
+     <img src="assets/readme/images/contrastresults.png"  width="700" alt="contrast results"/>   
   </p>
   
   <br>

@@ -1,4 +1,9 @@
 /* Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none !important;
+}
 
 html {
     height: 100%;
@@ -7,7 +12,7 @@ html {
 body {
     height: calc(100vh - 164px);
     color: #313131;
-    font-family: 'Roboto';    
+    font-family: 'Roboto';        
 }
 
 .logo-font {
@@ -47,6 +52,10 @@ body {
 .btn-black {
     background: black;
     color: white;
+}
+
+.text-danger {
+    color: #8F0A0A !important;
 }
 
 .btn-outline-black {
@@ -140,7 +149,7 @@ footer {
     bottom: 0;
     background-color: purple;
     color: white;
-    padding: 10px;
+    padding: 10px;            
 }
 
 
@@ -157,7 +166,7 @@ footer {
 
 .about-image {
     padding: 10px;
-    position: cover-fit;
+    /* position: cover-fit; */
     display: block;
     margin-left: auto;
     margin-right: auto;

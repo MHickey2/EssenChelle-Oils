@@ -38,7 +38,7 @@ class Product(models.Model):
         return self.reviews.count()
 
 
-class Review(models.Model):  
+class Review(models.Model):
     name = models.CharField(max_length=80)
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name="reviews")  # noqa
     rate_choices = (

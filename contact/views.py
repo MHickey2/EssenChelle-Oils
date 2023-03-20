@@ -6,7 +6,6 @@ from django.core.mail import send_mail
 
 # Create your views here.
 
-
 def contact(request):
     """ A view to show the contact form for the user """
 

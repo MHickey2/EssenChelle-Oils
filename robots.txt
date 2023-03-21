@@ -1,7 +1,5 @@
 User-agent: *
 Disallow: /accounts/
-Disallow: /admin/
-Disallow: /shoppingcart/
-Disallow: /summernote/
-Disallow: /profile/
-Sitemap:  # put in site inke for sitemap when created
+Disallow: /bag/
+Disallow: /checkout/
+Sitemap:  https://essenchelle-oils.herokuapp.com/sitemap/xml

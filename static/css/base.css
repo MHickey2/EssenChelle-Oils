@@ -58,11 +58,16 @@ body {
     color: #8F0A0A !important;
 }
 
+.btn-outline-success {
+    /* color: #034111!important; */
+    border-color: #034111!important;
+}
+
 .btn-outline-black {
     background: white;
     color: black !important;
     /* use important to override link colors for <a> elements */
-    border: 1px solid black;
+    border: 1px solid rgb(2, 63, 20);
 }
 
 .btn-outline-black:hover,

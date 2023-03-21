@@ -11,7 +11,7 @@
                 <h2 class="logo-font text-purple text-center">Products</h2>
                 {% for c in current_categories %}
                     <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
-                        <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
+                        <span class="p-2 mt-2 badge badge-white text-purple rounded-0 border border-dark">{{ c.friendly_name }}</span>
                     </a>
                 {% endfor %}
                 <hr class="w-50 mb-1">
@@ -38,7 +38,7 @@
                     <div class="col-12 col-md-6 order-md-first">
                         <p class="text-muted mt-3 text-center text-md-left">
                             {% if search_term or current_categories or current_sorting != 'None_None' %}
-                                <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
+                             <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
                             {% endif %}
                             {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
                         </p>
@@ -80,12 +80,12 @@
                                                 <small class="text-muted float-left">No Rating</small>                                                
                                             {% endif %}
                                             <br>
-                                            <p class="float-right"><iconify-icon inline icon="fa-regular:comments" width="23" >
+                                            <p class="float-right text-purple"><iconify-icon inline icon="fa-regular:comments" width="23" >
                                             </iconify-icon>&nbsp;{{ product.number_of_reviews }}</p> 
                                             {% if request.user.is_superuser %}
-                                                <div class="ml-3">
-                                                    <a href="{% url 'edit_product' product.id %}">Edit</a> | 
-                                                    <a class="text-danger" href="{% url 'delete_product' product.id %}">Delete</a>
+                                                <div class="ml-1">
+                                                    <a class="btn btn-outline-success btn-sm" href="{% url 'edit_product' product.id %}" aria="Goes to Edit Product">Edit</a>  
+                                                    <a class="btn btn-outline-danger btn-sm" href="{% url 'delete_product' product.id %}" aria="Goes to Delete Product">Delete</a>
                                                 </div>
                                             {% endif %}                                            
                                         </div>
@@ -120,7 +120,7 @@
     </div>
     <br>
     {% if request.user.is_superuser %}
-    <a href="{% url 'add_product'  %}" class="btn btn-success btnstyle mb-3 ml-5">Add Product</a>
+    <a href="{% url 'add_product'  %}" class="btn btn-success mb-3 ml-5">Add Product</a>
     {% endif %}
 <br>
 <a id="top-button" class="text-purple" href="#top" aria-label="Going to top of page">Top of Screen &nbsp; <iconify-icon inline

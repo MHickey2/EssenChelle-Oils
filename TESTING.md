@@ -72,7 +72,7 @@ The result can be seen below:
 
 <br/>
 <p align ="center">      
-     <img src="assets/readme/images/cssvalidation.png" width="700" alt="CSS Validation results"/>   
+     <img src="assets/readme/images/cssvalidated.png" width="700" alt="CSS Validation results"/>   
 </p>
 <br/>
 
@@ -513,6 +513,8 @@ All products were displayed the same way as the main products page, so all the i
 
 <br>
 
+</details>
+
 ### [Return to Table of Contents](#toc)
 ----
 
@@ -522,105 +524,182 @@ All products were displayed the same way as the main products page, so all the i
 
  <br/>
 
-#### As a Website User I can....
+**As a Website User I can....**
 
-1. Log in and access more features on the site.   
+**1. Log in and access more features on the site.**
+- User Account Login/Logout - As a User, I would like to be able to login or logout of my account, so that I can avail of the sites full functionality.
+- Receive Welcome Emails - As a user I would like to receive a welcome email after registering for the site.
+- When a User registers on the site, they have access to full functionality within the site. They can add a review for a product or comment on a blog in the blog section. They can see also see their product favourites.
 
+**Testing:**
+- Log in Button allows user to log in to the site.
+- User is able to see nav items available for the logged in user.
+- Log out Button allows user to log out of the site.
+- Email is sent to a newly registered user.
+    
+All Tests Passed &#x2611;
 
-2. Find the purpose of the site easily by reviewing the content.
+**2. Find the purpose of the site easily by reviewing the content.**
+- The Navbar is available on each page of the website, it contains links referring to the type of products available on the site. 
+- There is introductory text on the home page, which clearly indicates the theme of the site, and the type of content that will be available within the site. 
+- The title of the Site also gives an indication of the type of products that are being sold in the site.
 
+**Testing:**
+- The title, content and nav links reflect the theme of the site
 
-3. View a collection of Products that are available for sale.
+This is subjective in nature, I do believe this has been achieved though.
 
-
-4. Select an individual item to see the full details for the product. 
-
-
-5. View categories aqccording to their category type.
-
-
-6. Easily be able to identify the cheapest or most highly rated products.
-
-
-7. Sort products against a number of sorting critera.
-
-
-8. Informed about the progress of my actions and interactions within the site.
-
-
-9. Be able to attain and view my profile within in the site.
-
-
-10. Receive an email when I register for the site.
+**3. View a collection of Products that are available for sale.**
+- The Products for sale are displayed clearly on the product pages.
 
 
-11. Will be able to contact the site owner with the contact form.
+**Testing**
+- The Products are showing correctly in the product pages and they can be displayed using a host of different sorting criteria. 
+
+Test Passed &#x2611;
 
 
-12.  View a collection of Blogs in the blog Section.
+**4. Select an individual item to see the full details for the product.** 
+- When I click on any of the products I am taken to a products detail page where I can see all related information for the product.
+
+**Testing**
+- Clicked on the Product images of several produts in the product pages and was redirected to the product detail pages for each of the products.
+
+Tests Passed &#x2611;
+
+**5. View products according to their category type.**
+- Products can be displayed according to their category, the main categories in the EssenChelle range are essential, massage and oil burners, and within the special offers, they are broken down to arrivals deals and clearance items.
+- The all products nav dropdown menu has a link to arrange the products according to their category type.
+
+**Testing**
+- Tested by choosing different link items in both the essenchelle range dropdown menu and the special offer dropdown menu to ensure all items within a category are displaying correctly.
+- Tested by choosing selectors at the top of the screen to show the individual categorty types.
+- Within the allproducts dropdown menu you can choose the link to sort by category and the productss are displayed within their own categories in consecutive order.
+
+Tests Passed &#x2611;
+
+**6. Easily be able to identify the cheapest or most highly rated products.**
+- Products can be arranged according to the lowest or highest prices. This can be done for all products or within each product category by means of the sorting selector to the right top of the products page.
+
+**7. Sort products against a number of sorting critera.**
+- Products can also be arranged by thier rating. This can be done for all products or within each product category by means of the sorting selector to the right top of the products page.
 
 
-13. User can select a blog and see the full details for that individual blog.
+**8. Informed about the progress of my actions and interactions within the site.**
+- Throughout different processes on the site, the user will be informed by toast messaging when they are interacting with the site.
+- Implement Django messages and trigger them for user activityk.
 
+**9. Be able to attain and view my profile within in the site.**
+- When the user sign in they will be able to access their profile page within the account icon dropdown menu.
+
+
+**10. Receive an email when I register for the site.**
+- When a new User registers for the site, they will be sent an email to confirm their registration.
+
+**11.  Will be able to contact the site owner with the contact form.**
+- There is a contact form within the Contact Nav Item, where the user can send a message to the Company.
+
+**12.   View a collection of Blogs in the blog Section.**
+- A User can view a selection of blogs that have a spotlight on the products within the site.
+
+**13.  User can select a blog and see the full details for that individual blog.**
+- When a User choses a blog they will be taken to the blog detail page where they can see the full content for the specific blog.
+  
 <br>
 
-#### As a logged in User I can…... 
+**As a logged in User I can…...** 
 
 
-1. Select products and these will be included in my shopping bag.
+**1. Select products and these will be included in my shopping bag.**
+- When shopping on the site, you can add different products to your shopping bag, you can choose the quantity and if different sizes available you can choose the size required.
 
+**2. View the Total of my purchases on the site.**
+- As you shop on the site you can see the amount of your puchases under the shopping bag icon at the top of the screen, you will also be presented with a popup with the details of your purchase and a running total of your purchases.
 
-2. View the Total of my purchases on the site.
+**3. Select products in different sizes where available.**
+- When shopping on the site, if products have the option of different sizes available you can choose the size required.
 
+**4. Choose to remove or adjust the items in my shopping bag.**
+- As you go through the shopping process you can adjust your bag by adding more items, removing items or change the quantity of items being purchased.
 
-3. Select products in different sizes where available.
+**5. Checkout the products in my shopping bag.**
+- When you have completed purchasing your items, you can access the checkout page, where you can complete your form with all the details required to ensure delivery of your items.
 
+**6. Make a secure payment for my purchases.**
+- Within the secure checkout page form you can add your credit/debit card details.
+- User will be informed if there is any validation error in regards to their card information.
+- User will be told how much their card will be charged for their purchases.
+- Implemented Stripe payment functionality for inputting and processing card payments.
 
-4. Choose to remove or adjust the items in my shopping bag.
+**Testing**
+I tested the purchasing process by adding products to the shopping bag and choosing the secure checkout option, when I was directed to this page, I filled in my details, I tried adding the wrong details in the card detail section, and was advised I had made an error, when I correctly added the correct details, the spinner showed the shopping process was being processed and when completed I was redirected to the checkout success page. I also was advised that the process has been successful in a toast message. A confirmation email was also sent to the supplied email address.
 
+Tests Passed &#x2611;
 
-5. Checkout the products in my shopping bag.
+**7. Add a review for products on the site.**
+- When the User is logged in they will have access to the review form on the product details page.  They can then submit a review, they will be informed that their review will need to be approved by admin before it will be published in the review section.
 
+**Testing**
+The review form is not visible when a user is not logged in.
+When logged in a User can see and use the review form.
+Tested this form, and the review is saved to the database and when approved by admin, the reviews is pubished in the review section.
 
-6. Make a secure payment for my purchases.
+Tests Passed &#x2611;
 
+**8. Select my favourite products on the site and save them to my product favourites.**
+- The logged in user will be able to add products to favourites and will be able to see all products that have been saved as favourites in the favourites page, which can be found within the account icon dropdown at the top of the page.
+- The logged in user can remove items from favourites by using the remove button from below each product, within the favourite products page.
 
-7. Add a review for products on the site.
+**Testing**
+Tested to see if you could add product to favourites if not logged in, and you are redirected to the login page. When logged in the user can add product to favourites and you can access the product favourites page. Tested to see if the remove button works and this removed the relevant item from the favourites page.
 
+Tests Passed &#x2611;
 
-8. Select my favourite products on the site and save them to my product favourites.
+**9. Leave a comment for a blog in the blog section.**
+- When a User is logged in they will have access to the comment form in the blog details page. They can then submit a comment, they will be informed that their comment will need to be approved by admin before it will be published in the comment section.
 
+**Testing**
+The comment form is not visible when a user is not logged in.
+When logged in a User can see and use the comment form.
+Tested this form, and the comment is saved to the database and when approved by admin, the comment is pubished in the comment section.
 
-9. Leave a comment for a blog in the blog section.
+Tests Passed &#x2611;
 
+**10. Sign up for a newsletter so I can receive special offers and the latest product information.**
+- The newsletter form can be found in the footer section on all pages. This form has been sourced from mailchimp and all the logic and main styling has been imported from mailchimp. When the User enters their email and submits the form, their email will be saved to the mailing list using mailchimp. 
+- The newsletter is a fictional feature and is just for educational purposes.
 
-10. Sign up for a newsletter so I can receive special offers and the latest product information.
+**Testing**
+Tested by entering an email and submitting the details, and the email has been successfully added the User to the mailing list.
 
+Tests Passed &#x2611;
  
  <br/>
  
 
-#### As a Superuser/Admin I want to...
+**As a Superuser/Admin I want to...**
 
-1. Add Products to the Database.
-
-
-2. Edit Products in the Database.
+**1. Add Products to the Database.**
+- Add a product without needing to access the Admin page. This can be accessed
 
 
-3. Delete Products in the Database.
+
+**2. Edit Products in the Database.**
 
 
-4. Add Blogs to highlight products on the site.
+**3. Delete Products in the Database.**
 
 
-5. Edit Blogs on the site.
+**4. Add Blogs to highlight products on the site.**
 
 
-6. Delete Blogs on the site.
+**5. Edit Blogs on the site.**
 
 
-7. Approve reviews for Products and comments for Blogs in the admin Panel
+**6. Delete Blogs on the site.**
+
+
+**7. Approve reviews for Products and comments for Blogs in the admin Panel**
 
 
 

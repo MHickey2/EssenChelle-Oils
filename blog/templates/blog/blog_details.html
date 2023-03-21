@@ -21,11 +21,11 @@
     <!-- The featured image URL goes in the src attribute -->
     <div class="text-center">
         {% if "placeholder" in post.featured_image.url %}
-        <img src="https://res.cloudinary.com/dspwticaf/image/upload/v1664552676/po7sj5nr75pw0p9maekl.jpg"
+        <img src="https://res.cloudinary.com/dspwticaf/image/upload/v1664552676/po7sj5nr75pw0p9maekl.jpg" width="400" height="300"
             alt="{{ post.title }} generic">
 
         {% else %}
-        <img src=" {{ post.blog_image.url }}" alt="{{ post.title }} photo">
+        <img src=" {{ post.blog_image.url }}" width="400" height="300" alt="{{ post.title }} photo">
         {% endif %}
     </div>
 </div>
@@ -40,6 +40,12 @@
     </div>
 </div>
 </div>
+{% if request.user.is_superuser %}
+                        <small class="ml-4">
+                            <a href="{% url 'edit_blog' post.slug %}" class="btn btn-outline-success btn-sm">Edit</a>                           
+                            <a href="{% url 'delete_blog' post.slug %}" class="btn btn-outline-danger btn-sm ml-2">Delete</a>
+                        </small>
+                        {% endif %}
 <hr>
 
 <div class="row">

@@ -21,8 +21,7 @@
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Roboto:wght@400;900&display=swap" rel="stylesheet">    
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Roboto&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Roboto:wght@400;900&display=swap" rel="stylesheet">       
     <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
     {% endblock corecss %}
     <!-- FAVICON -->
@@ -68,23 +67,9 @@
     </style>
     {% endblock %}
 
-    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
-
+   
     {% block corejs %}
-    <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script> -->
-
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script> -->
+    <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>   
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -96,7 +81,9 @@
 
     <!-- Stripe -->
     <script src="https://js.stripe.com/v3/"></script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+
+    <!-- <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script> -->
     {% endblock corejs %}
 
     <title>EssenChelle Oils {% block extra_title %}{% endblock %}</title>
@@ -109,7 +96,7 @@
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
             <a href="{% url 'home' %}" class="nav-link main-logo-link" aria-label="home page link">
                 <img src="https://res.cloudinary.com/dspwticaf/image/upload/v1678732413/essenchelle/essenchelle-logo_m11wns.png"
-                    width="150" height="120" class="img-responsive" alt="essenchelle logo image">
+                    class="img-responsive" alt="essenchelle logo image" width="171" height="134">
             </a>
         </div>
 
@@ -120,7 +107,7 @@
                     <input class="form-control border border-black rounded-0" type="text" name="q"
                         placeholder="Search our site">
                     <div class="input-group-append">
-                        <button class="form-control btn btn-white border border-black rounded-0" name="search" type="submit">
+                        <button class="form-control btn btn-white border border-black rounded-0" name="search" type="submit" aria-label="Search">
                             <span class="icon">
                                 <iconify-icon inline icon="material-symbols:search" class="text-purple" width="30">
                                 </iconify-icon>
@@ -133,7 +120,7 @@
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
             <ul class="list-inline list-unstyled text-center text-lg-right my-0">
                 <li class="list-inline-item dropdown show">
-                    <a class="text-purple nav-link" href="" id="profile-options" data-toggle="dropdown"
+                    <a class="text-purple nav-link" href="#" id="profile-options" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">
                         <div class="text-center">
                             <div>
@@ -228,28 +215,8 @@
 
     <script>
         $('.toast').toast('show');
-    </script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
-    <script>
-        $(document).ready(function () {
-            $('.summernote').summernote({
-                height: 300
-            });
-        })
-    </script>   
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    <!-- SCRIPTS -->
-
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-        </script> -->
-
-
+    </script>    
+    
 
     {% endblock %}
 

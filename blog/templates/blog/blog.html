@@ -32,10 +32,10 @@
                         <!-- <a href="{# url 'post_detail' post.slug  #}"> -->
                         <h4 class="card-title text-purple mx-auto text-center">{{ post.title }}</h4>
                         {% if "placeholder" in post.blog_image.url %}
-                        <img class="card-img-top img-fluid" src="https://res.cloudinary.com/dspwticaf/image/upload/v1677333448/pa9lehu7vhb8pp5mvtyi.jpg" width="300" height="250"
+                        <img class="card-img-top img-fluid" src="https://res.cloudinary.com/dspwticaf/image/upload/v1677333448/pa9lehu7vhb8pp5mvtyi.jpg" width="400" height="300"
                             alt="{{ post.title }} generic">
                         {% else %}
-                        <img class="card-img-top img-fluid" src=" {{ post.blog_image.url }}" width="200" height="150"
+                        <img class="card-img-top img-fluid" src=" {{ post.blog_image.url }}" width="400" height="300"
                             alt="{{ post.title }} photo">
                         {% endif %}
                         <p class="created-text text-center text-muted">{{ post.created_on }}</p>
@@ -47,8 +47,8 @@
                         <a href="{% url 'blog_details' post.slug %}" class="btn btn-primary">Read More &rarr;</a>
                         {% if request.user.is_superuser %}
                         <small class="ml-4">
-                            <a href="{% url 'edit_blog' post.slug %}" class="text-success">Edit</a>                           
-                            <a href="{% url 'delete_blog' post.slug %}" class="text-danger ml-2">Delete</a>
+                            <a href="{% url 'edit_blog' post.slug %}" class="btn btn-outline-success btn-sm">Edit</a>                           
+                            <a href="{% url 'delete_blog' post.slug %}" class="btn btn-outline-danger btn-sm ml-2">Delete</a>
                         </small>
                         {% endif %}
                     </div>

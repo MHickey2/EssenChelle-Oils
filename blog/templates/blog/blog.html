@@ -27,9 +27,7 @@
             {% for post in post_list %}
             <div class="col-md-6 mt-3">
                 <div class="card ">
-                    <div class="card-body cardheight">
-
-                        <!-- <a href="{# url 'post_detail' post.slug  #}"> -->
+                    <div class="card-body cardheight">                        
                         <h4 class="card-title text-purple mx-auto text-center">{{ post.title }}</h4>
                         {% if "placeholder" in post.blog_image.url %}
                         <img class="card-img-top img-fluid" src="https://res.cloudinary.com/dspwticaf/image/upload/v1677333448/pa9lehu7vhb8pp5mvtyi.jpg" width="400" height="300"

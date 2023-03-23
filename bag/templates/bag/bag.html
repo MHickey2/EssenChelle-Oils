@@ -15,6 +15,7 @@
 
         <div class="row">
             <div class="col">
+                  <!--Shows any Items in Bag-->
                 {% if bag_items %}
                     <div class="d-block d-md-none">
                         <div class="row">
@@ -28,6 +29,7 @@
                                 <p class="text-muted mb-5">A summary of your bag contents is below</p>
                             </div>
                         </div>
+                        <!--show information for items in bag-->
                         {% for item in bag_items %}
                             <div class="row">
                                 <div class="col-12 col-sm-6 mb-2">
@@ -96,18 +98,20 @@
                         </table>
                     </div>
                 {% else %}
+                  <!--If no items in Bag, allow shopper to continue shopping-->
                     <p class="lead mb-5">Your bag is empty.</p>
                     <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
-                        <span class="text-uppercase">Keep Shopping</span>
+                        <span class="text-uppercase text-purple">Keep Shopping</span>
                     </a>
                 {% endif %}
             </div>
         </div>
     </div>
 {% endblock %}
+<br>
 
 {% block postloadjs %}
 {{ block.super }}

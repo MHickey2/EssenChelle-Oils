@@ -23,7 +23,6 @@
         {% if "placeholder" in post.featured_image.url %}
         <img src="https://res.cloudinary.com/dspwticaf/image/upload/v1664552676/po7sj5nr75pw0p9maekl.jpg" width="400" height="300"
             alt="{{ post.title }} generic">
-
         {% else %}
         <img src=" {{ post.blog_image.url }}" width="400" height="300" alt="{{ post.title }} photo">
         {% endif %}
@@ -40,6 +39,7 @@
     </div>
 </div>
 </div>
+<!--Superuser can edit or delete the post from here-->
 {% if request.user.is_superuser %}
                         <small class="ml-4">
                             <a href="{% url 'edit_blog' post.slug %}" class="btn btn-outline-success btn-sm">Edit</a>                           

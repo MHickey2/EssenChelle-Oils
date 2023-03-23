@@ -19,3 +19,8 @@ def faq(request):
     """ A view to return the ourproducts page """
 
     return render(request, 'story/faq.html')
+
+def copyright(request):
+    """ A view to return the copyright page """
+
+    return render(request, 'story/copyright.html')

@@ -1,7 +1,10 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils import timezone
+from django.core.files.storage import FileSystemStorage
 from cloudinary.models import CloudinaryField
+
+fs = FileSystemStorage(location='/media/photos')
 
 
 class Category(models.Model):

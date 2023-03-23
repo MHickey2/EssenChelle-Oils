@@ -58,8 +58,7 @@ body {
     color: #8F0A0A !important;
 }
 
-.btn-outline-success {
-    /* color: #034111!important; */
+.btn-outline-success {    
     border-color: #034111!important;
 }
 
@@ -229,7 +228,7 @@ footer {
 
 .product-details-container {
     padding: 10px;
-    background-color: #2d023d;
+    background-color: #330444;
     border: 5px solid rgb(224, 142, 224);
     border-radius: 15px;
     color: white;

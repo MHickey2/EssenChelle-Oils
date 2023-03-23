@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
 
-
 {% block content %}
     <div id="top"></div>
     <div class="overlay"></div>
@@ -50,14 +49,13 @@
                             <div class="card h-100 border-0">                               
                                 {% if "placeholder1" in product.image.url %}
                                 <a href="{% url 'product_detail' product.id %}">
-                                    <img class="card-img-top img-fluid" src="https://res.cloudinary.com/dspwticaf/image/upload/v1678718256/placeholder1_r50jax.png" alt="{{ product.name }}">
-                                </a>
-                                
+                                    <img class="card-img-top img-fluid" src="https://res.cloudinary.com/dspwticaf/image/upload/v1678718256/placeholder1_r50jax.png" alt="{{ product.name }} generic" width="465" height="800">
+                                </a>                                
                                 {% else %}
                                 <a href="{% url 'product_detail' product.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }} photo" width="465" height="800">
                                 </a>
-                                {% endif %}                                
+                                {% endif %}                       
                         
                                 <div class="card-body pb-0">
                                     <h5 class="mb-0 text-purple text-center">{{ product.name }}</h5>

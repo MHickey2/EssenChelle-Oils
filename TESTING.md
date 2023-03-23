@@ -670,7 +670,7 @@ Tests Passed &#x2611;
 - The newsletter is a fictional feature and is just for educational purposes.
 
 **Testing**
-Tested by entering an email and submitting the details, and the email has been successfully added the User to the mailing list.
+Tested by entering an email and submitting the details, and the email submitted has been successfully added to the mailing list.
 
 Tests Passed &#x2611;
  
@@ -680,24 +680,45 @@ Tests Passed &#x2611;
 **As a Superuser/Admin I want to...**
 
 **1. Add Products to the Database.**
-- Add a product without needing to access the Admin page. This can be accessed
+- Add a product without needing to access the Admin page. This can be accessed by using the product management link within the account icon at the top of the screen. As a superuser you can also access this feature by using the add product button on the bottom left of the products page. This button takes the superuser to the add product form page where they can add details for the new product.
 
+**Testing**
+As an ordinary user, you can not access this page, If you try to access this page as a user who is not logged in you will be redirected to the login page. If you are logged in but not a superuser you will be shown a message telling you only shopowner can add a product. The page itself can be reached by using either the add product button and the product management button. The form itself will take input and allow you to upload an image. If no image is uploaded, a generic image will be applied to the product. A message is shown to the user to let them know they have added the product, and the product will be displayed within the category that was included. I tested all these stages of the process and they worked as expected.
 
+Tests Passed &#2611;
 
 **2. Edit Products in the Database.**
+ Edit a product without needing to access the Admin page. This can be accessed by using the edit button link below the product in the products page and the product details page.  This button takes the superuser to the edit product form page where they can edit the details for an existing product.
 
+**Testing**
+As a superuser you can see the edit button below products on the product pages and within the product detail page below the product description. An ordinary user cannot see these options. If a unlogged user tries to access this option they will be redirected to the login page. If logged in but not a superuser, they will be shown an error message telling them that they can not edit the product. Followed all these routes and the application worked as expected.  Followed all these user routes and the application worked as expected.
+
+Tests Passed &#2611;
 
 **3. Delete Products in the Database.**
+Delete a product without needing to access the Admin page. This can be accessed by using the delete button link below the product in the products page and the product details page.  This button takes the superuser to the edit product form page where they can edit the details for an existing product.
 
+**Testing**
+As a superuser you can see the delete button below products on the product pages and within the product detail page below the product description. An ordinary user cannot see these options. If a unlogged user tries to access this option they will be redirected to the login page. If logged in but not a superuser, they will be shown an error message telling them that they can not delete the product. Followed all these routes and the application worked as expected.  Followed all these user routes and the application worked as expected.
+
+Tests Passed &#2611;
 
 **4. Add Blogs to highlight products on the site.**
+As a superuser you can access this feature by using the add blog button on the bottom left of the Blog page. This button takes the superuser to the add blog form page where they can add details for the new blog.
 
+**Testing**
+The form itself takes input and allows you to upload an image. If no image is uploaded, a generic image will be applied to the blog. A message is shown to the user to let them know they have added the blog, and the new blog will be displayed. I tested adding a blog as a supersuer and was successfully able to add a post. If I am not logged in I cannot access this functionality and if logged in and not a user am advised that you cannot do this. Tried to access as all types of user and it acted accordingly.
+
+Tests Passed &#2611;
 
 **5. Edit Blogs on the site.**
+As a superuser you can see the edit buttons below each blog in the blog page, you can also access by using the edit button on the blog detail page. You will be taken to the edit post page and you can amend an existing post, and the amended post will appear on the blog page.
+
+**Testing**
 
 
 **6. Delete Blogs on the site.**
-
+As a superuser you can see the delete buttons below each blog in the blog page, you can also access by using the delete button on the blog detail page. You will be taken to the delete post page and you will be asked if you are sure you want to delete the stated post, if you do the post will be removed and it will no longer be displayed on the blog page.
 
 **7. Approve reviews for Products and comments for Blogs in the admin Panel**
 

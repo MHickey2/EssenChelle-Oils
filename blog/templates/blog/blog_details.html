@@ -20,8 +20,8 @@
     <br>
     <!-- The featured image URL goes in the src attribute -->
     <div class="text-center">
-        {% if "placeholder" in post.featured_image.url %}
-        <img src="https://res.cloudinary.com/dspwticaf/image/upload/v1664552676/po7sj5nr75pw0p9maekl.jpg" width="400" height="300"
+        {% if post.blog_image|slugify == "placeholder" %}
+        <img src="https://res.cloudinary.com/dspwticaf/image/upload/v1677333448/pa9lehu7vhb8pp5mvtyi.jpg" width="400" height="300"
             alt="{{ post.title }} generic">
         {% else %}
         <img src=" {{ post.blog_image.url }}" width="400" height="300" alt="{{ post.title }} photo">

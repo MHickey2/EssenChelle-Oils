@@ -66,6 +66,7 @@ class PostDetails(View):
             },
         )
 
+
 class AddPostView(generic.CreateView):
     """ allows a superuser to add a Blog """
     model = Post

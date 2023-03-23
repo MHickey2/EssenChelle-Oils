@@ -699,7 +699,7 @@ Tests Passed &#2611;
 Delete a product without needing to access the Admin page. This can be accessed by using the delete button link below the product in the products page and the product details page.  This button takes the superuser to the edit product form page where they can edit the details for an existing product.
 
 **Testing**
-As a superuser you can see the delete button below products on the product pages and within the product detail page below the product description. An ordinary user cannot see these options. If a unlogged user tries to access this option they will be redirected to the login page. If logged in but not a superuser, they will be shown an error message telling them that they can not delete the product. Followed all these routes and the application worked as expected.  Followed all these user routes and the application worked as expected.
+As a superuser you can see the delete button below products on the product pages and within the product detail page below the product description. An ordinary user cannot see these options. If a unlogged user tries to access this option they will be redirected to the login page. If logged in but not a superuser, they will be shown an error message telling them that they can not delete the product. Followed all these user routes and the application worked as expected.  
 
 Tests Passed &#2611;
 
@@ -715,13 +715,20 @@ Tests Passed &#2611;
 As a superuser you can see the edit buttons below each blog in the blog page, you can also access by using the edit button on the blog detail page. You will be taken to the edit post page and you can amend an existing post, and the amended post will appear on the blog page.
 
 **Testing**
+As a superuser you can see the edit button below individual blogs on the blog page and within the product detail page below the blog content. An ordinary user cannot see these options.  If logged in but not a superuser, the user will be shown an error message telling them that they can not edit a blog. Followed all these routes and the application worked as expected.  
 
+Tests Passed &#2611;
 
 **6. Delete Blogs on the site.**
 As a superuser you can see the delete buttons below each blog in the blog page, you can also access by using the delete button on the blog detail page. You will be taken to the delete post page and you will be asked if you are sure you want to delete the stated post, if you do the post will be removed and it will no longer be displayed on the blog page.
 
-**7. Approve reviews for Products and comments for Blogs in the admin Panel**
+**Testing**
+As a superuser you can see the delete button below blogs on the blog pages and within the product detail page below the product description. An ordinary user cannot see these options. If logged in but not a superuser, they will be shown an error message telling them that they can not delete the product. Followed all these user routes and the application worked as expected.  
 
+Tests Passed &#2611;
+
+**7. Approve reviews for Products and comments for Blogs in the admin Panel**
+As a superuser you can log in to the admin panel and view a range of information on users, products, comments, reviews  and contacts. You can add information 
 
 
 

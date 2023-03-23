@@ -31,7 +31,8 @@ class Product(models.Model):
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, blank=True)  # noqa
     favourites = models.ManyToManyField(User, related_name='favourites', default=None, blank=True)  # noqa
     image_url = models.URLField(max_length=1024, null=True, blank=True)
-    image = CloudinaryField('image', default='placeholder1')
+    image = CloudinaryField('image',
+                            default='v1678718256/placeholder1_r50jax.png')
     is_featured = models.BooleanField(default=False)
 
     def __str__(self):

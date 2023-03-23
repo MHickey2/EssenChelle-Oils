@@ -42,4 +42,9 @@
             $('#filename').text(`Image will be set to: ${file.name}`);
         });
     </script>
+    <script defer>
+        if (document.getElementsByClassName("shadow-sm")[0].src == "https://res.cloudinary.com/dspwticaf/image/upload/placeholder1") {
+            document.getElementsByClassName("shadow-sm")[0].src = "https://res.cloudinary.com/dspwticaf/image/upload/v1677333448/pa9lehu7vhb8pp5mvtyi.jpg"
+        }
+    </script>
 {% endblock %}

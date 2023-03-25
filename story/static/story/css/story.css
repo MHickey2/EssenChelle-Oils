@@ -1,3 +1,35 @@
+/***STYLING FOR THE ABOUT PAGE***/
+
+/*Text for the about page*/
+.text-about {
+  width: 80%;
+  color: black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-image {
+  padding: 10px;
+  /* position: cover-fit; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Carousel styling */
+.carousel-caption {
+  vertical-align: middle;
+  color: purple;
+  font-size: 1.1rem;   
+  top: 0;
+  bottom: auto;    
+}
+
+.carousel-indicators {
+  color: purple;
+}
+
 .collapsible {
     background-color: #990c9e;
     color: white;
@@ -22,3 +54,28 @@
     background-color: #f1f1f1;
 
   }
+
+  /* Our Products Styling */
+.testsection {
+  background-color: white;
+}
+
+.testimonial-card .card-up {
+height: 120px;
+overflow: hidden;
+border-top-left-radius: 0.50rem;
+border-top-right-radius: 0.50rem;
+background-color: white;  
+}
+
+.testimonial-card .avatar {
+width: 110px;
+margin-top: -60px;
+overflow: hidden;
+border: 3px solid #fff;
+border-radius: 50%;
+}
+
+.white-background {
+background-color: white;
+}  

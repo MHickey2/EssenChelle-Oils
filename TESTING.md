@@ -547,14 +547,16 @@ All Tests Passed &#x2611;
 **Testing:**
 - The title, content and nav links reflect the theme of the site
 
-This is subjective in nature, I do believe this has been achieved though.
+This is subjective in nature, but I do believe this has been achieved though.
+
+Test Passed &#x2611;
 
 **3. View a collection of Products that are available for sale.**
 - The Products for sale are displayed clearly on the product pages.
 
 
 **Testing**
-- The Products are showing correctly in the product pages and they can be displayed using a host of different sorting criteria. 
+- The Products are showing correctly in the various product pages and they can be displayed using a host of different sorting criteria. (see future user story) 
 
 Test Passed &#x2611;
 
@@ -581,49 +583,113 @@ Tests Passed &#x2611;
 **6. Easily be able to identify the cheapest or most highly rated products.**
 - Products can be arranged according to the lowest or highest prices. This can be done for all products or within each product category by means of the sorting selector to the right top of the products page.
 
-**7. Sort products against a number of sorting critera.**
-- Products can also be arranged by thier rating. This can be done for all products or within each product category by means of the sorting selector to the right top of the products page.
+**Testing**
+Did a range of testing by selecting the desired sorting criteria and evaluating whether the products have been arranged by the selected criteria, these tests showed the correct responses.
 
+Tests Passed &#x2611;
+
+**7. Sort products against a number of sorting critera.**
+- Products can also be arranged by their rating. This can be done for all products or within each product category by means of the sorting selector to the right top of the products page.
+
+**Testing**
+Did a range of testing by selecting the desired sorting criteria and evaluating whether the products have been arranged by the selected criteria, these tests showed the correct responses.
+
+Tests Passed &#x2611;
 
 **8. Informed about the progress of my actions and interactions within the site.**
 - Throughout different processes on the site, the user will be informed by toast messaging when they are interacting with the site.
-- Implement Django messages and trigger them for user activityk.
+- Implement Django messages and trigger them for user activity.
+
+**Testing**
+Throughout user interaction in the site, messages are displayed to the user, and will remain until the user closes them. Examples would include when signing in to the site, when submitting a comment or a review, when selecting a favourite, when adding an item to the bag and when the user has successfully placed an order on the site. All messages were displayed in result to the user's actions.
+
+Tests Passed &#x2611;
 
 **9. Be able to attain and view my profile within in the site.**
 - When the user sign in they will be able to access their profile page within the account icon dropdown menu.
 
+**Testing**
+When the user signs in they can see their 'my profile' page within the account dropdown menu. This is not visible before they have logged in. Tested logging in and reviewing this page, it opens and you can see the default delivery information and a history for all previous orders within the site.
+
+Tests Passed &#x2611;
 
 **10. Receive an email when I register for the site.**
 - When a new User registers for the site, they will be sent an email to confirm their registration.
 
+**Testing**
+Tested this feature by registering for the site, while during development the welcome email was displayed in the terminal, but on the deployed site I used the temp email site to generate a temporary email and used this when registering, I then monitored that site to check that the email was sent successfully.
+
+Tests Passed &#x2611;
+
 **11.  Will be able to contact the site owner with the contact form.**
-- There is a contact form within the Contact Nav Item, where the user can send a message to the Company.
+- There is a contact form within the Contact Nav dropdown menu, where the user can send a message to the Company. This may be to enquire about products or with queries on deliveries or suggestions for further products for the site. The email will have fields for their name, their email, the subject details and the message itself.
+
+**Testing**
+I tested the form by inputting details, the form took the input correctly and the submit button submitted the message. While working in development mode, the message details were shown in the terminal window and can be seen within the admin panel.
+
+Tests Passed &#x2611;
 
 **12.   View a collection of Blogs in the blog Section.**
 - A User can view a selection of blogs that have a spotlight on the products within the site.
 
+**Testing**
+The Blogs are showing correctly in the blog section, the user can see the title, an excerpt and and image for each blog. In the sidebar there is also a list of the most recent blogs, so the user can see the titles for the most recent blogs in chronological order.
+
+Tests Passed &#x2611;
+
 **13.  User can select a blog and see the full details for that individual blog.**
 - When a User choses a blog they will be taken to the blog detail page where they can see the full content for the specific blog.
   
+**Testing**
+Tested by selecting an image in a product in the product page and it successfully sent you to the product detail page, with a full description of the product showing.
+
+Tests Passed &#x2611;
+
 <br>
 
 **As a logged in User I can…...** 
 
 
 **1. Select products and these will be included in my shopping bag.**
-- When shopping on the site, you can add different products to your shopping bag, you can choose the quantity and if different sizes available you can choose the size required.
+- When shopping on the site, you can add different products to your shopping bag. 
+- When you select a product you are redirected to the product detail page where you have the option to add the item
+- When you select the item, you can choose the quantity and if different sizes available you can choose the size required.
+- When you add the item to the bag you will be presented with a success message showing you the details of your purchase, the quantity and the cost excluding delivery.
+  
+**Testing**
+I tested this process by following the above steps, and I added a number of items in different quantities and in different sizes where available. The message displayed showed all the details for the products I had selected to purchase. Everything worked as it was supposed too.
+
+Tests Passed &#x2611;
 
 **2. View the Total of my purchases on the site.**
 - As you shop on the site you can see the amount of your puchases under the shopping bag icon at the top of the screen, you will also be presented with a popup with the details of your purchase and a running total of your purchases.
 
+**Testing**
+The shopping bag icon shows a 0 total before any purchases are made, but as you add items to your bag, the price will change to reflect your purchases. There is a delivery charge included if your purchases are under 50 and if over 50 the delivery charge is not applied.
+
+Tests Passed &#x2611;
+
 **3. Select products in different sizes where available.**
 - When shopping on the site, if products have the option of different sizes available you can choose the size required.
+
+**Testing**
+There are only a few items that have different sizes, but where this is possible the size selector shows the different sizes available. currently both sizes have the same prices but in future iterations I would hope to include different prices for different size items. As items would probably have different prices for different sizes, this would be a bug in the system, which will be included in the unsolved bug section in the readme.
 
 **4. Choose to remove or adjust the items in my shopping bag.**
 - As you go through the shopping process you can adjust your bag by adding more items, removing items or change the quantity of items being purchased.
 
+**Testing**
+Tested this by adding and removing items from the shopping bag and checking to see the purchase details show the changes that have been made.
+
+Tests Passed &#x2611;
+
 **5. Checkout the products in my shopping bag.**
-- When you have completed purchasing your items, you can access the checkout page, where you can complete your form with all the details required to ensure delivery of your items.
+- When you have completed purchasing your items, you can access the checkout page by clicking on the secure checkout button, you will be taken to the checkout page where you can complete your form with all the details required to ensure your purchase is successfully completed.
+
+**Testing**
+For testing, I completed the sequence above, when I opened the checkout page, I added my Billing and Delivery details and added my credit card details, and when the purchase process is completed I am shown the success page and am shown a message telling me my purchase was successful. While in development and my webhook is successful, my confirmation email is shown in my terminal, but in the deployed site a confirmation email is sent to my email address.
+
+Tests Passed &#x2611;
 
 **6. Make a secure payment for my purchases.**
 - Within the secure checkout page form you can add your credit/debit card details.
@@ -685,7 +751,7 @@ Tests Passed &#x2611;
 **Testing**
 As an ordinary user, you can not access this page, If you try to access this page as a user who is not logged in you will be redirected to the login page. If you are logged in but not a superuser you will be shown a message telling you only shopowner can add a product. The page itself can be reached by using either the add product button and the product management button. The form itself will take input and allow you to upload an image. If no image is uploaded, a generic image will be applied to the product. A message is shown to the user to let them know they have added the product, and the product will be displayed within the category that was included. I tested all these stages of the process and they worked as expected.
 
-Tests Passed &#2611;
+Tests Passed &#x2611;
 
 **2. Edit Products in the Database.**
  Edit a product without needing to access the Admin page. This can be accessed by using the edit button link below the product in the products page and the product details page.  This button takes the superuser to the edit product form page where they can edit the details for an existing product.
@@ -693,7 +759,7 @@ Tests Passed &#2611;
 **Testing**
 As a superuser you can see the edit button below products on the product pages and within the product detail page below the product description. An ordinary user cannot see these options. If a unlogged user tries to access this option they will be redirected to the login page. If logged in but not a superuser, they will be shown an error message telling them that they can not edit the product. Followed all these routes and the application worked as expected.  Followed all these user routes and the application worked as expected.
 
-Tests Passed &#2611;
+Tests Passed &#x2611;
 
 **3. Delete Products in the Database.**
 Delete a product without needing to access the Admin page. This can be accessed by using the delete button link below the product in the products page and the product details page.  This button takes the superuser to the edit product form page where they can edit the details for an existing product.
@@ -701,7 +767,7 @@ Delete a product without needing to access the Admin page. This can be accessed 
 **Testing**
 As a superuser you can see the delete button below products on the product pages and within the product detail page below the product description. An ordinary user cannot see these options. If a unlogged user tries to access this option they will be redirected to the login page. If logged in but not a superuser, they will be shown an error message telling them that they can not delete the product. Followed all these user routes and the application worked as expected.  
 
-Tests Passed &#2611;
+Tests Passed &#x2611;
 
 **4. Add Blogs to highlight products on the site.**
 As a superuser you can access this feature by using the add blog button on the bottom left of the Blog page. This button takes the superuser to the add blog form page where they can add details for the new blog.
@@ -709,7 +775,7 @@ As a superuser you can access this feature by using the add blog button on the b
 **Testing**
 The form itself takes input and allows you to upload an image. If no image is uploaded, a generic image will be applied to the blog. A message is shown to the user to let them know they have added the blog, and the new blog will be displayed. I tested adding a blog as a supersuer and was successfully able to add a post. If I am not logged in I cannot access this functionality and if logged in and not a user am advised that you cannot do this. Tried to access as all types of user and it acted accordingly.
 
-Tests Passed &#2611;
+Tests Passed &#x2611;
 
 **5. Edit Blogs on the site.**
 As a superuser you can see the edit buttons below each blog in the blog page, you can also access by using the edit button on the blog detail page. You will be taken to the edit post page and you can amend an existing post, and the amended post will appear on the blog page.
@@ -717,7 +783,7 @@ As a superuser you can see the edit buttons below each blog in the blog page, yo
 **Testing**
 As a superuser you can see the edit button below individual blogs on the blog page and within the product detail page below the blog content. An ordinary user cannot see these options.  If logged in but not a superuser, the user will be shown an error message telling them that they can not edit a blog. Followed all these routes and the application worked as expected.  
 
-Tests Passed &#2611;
+Tests Passed &#x2611;
 
 **6. Delete Blogs on the site.**
 As a superuser you can see the delete buttons below each blog in the blog page, you can also access by using the delete button on the blog detail page. You will be taken to the delete post page and you will be asked if you are sure you want to delete the stated post, if you do the post will be removed and it will no longer be displayed on the blog page.
@@ -725,10 +791,16 @@ As a superuser you can see the delete buttons below each blog in the blog page, 
 **Testing**
 As a superuser you can see the delete button below blogs on the blog pages and within the product detail page below the product description. An ordinary user cannot see these options. If logged in but not a superuser, they will be shown an error message telling them that they can not delete the product. Followed all these user routes and the application worked as expected.  
 
-Tests Passed &#2611;
+Tests Passed &#x2611;
 
 **7. Approve reviews for Products and comments for Blogs in the admin Panel**
-As a superuser you can log in to the admin panel and view a range of information on users, products, comments, reviews  and contacts. You can add information 
+As a superuser you can log in to the admin panel and view a range of information on users, products, comments, reviews  and contacts. You can add Products and Blogs, review orders, change user details, approve comments for blogs and reviews for products, and and when they are approved they are published on the site.
 
+**Testing**
+- Managed to create, update and delete data in all models, during the entire project, and all seems to be working as expected when logged in as the superuser. 
+- When a User comments on a post, Admin needs to approve before it is displayed on the site, this is working as expected, when logged in as the superuser. 
+- When a User submits a review on a product, the superuser needs to approve it before it is displayed on the site, this is working as expected, when logged in as the superuser.
+
+Tests Passed &#x2611;
 
 

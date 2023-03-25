@@ -1,4 +1,4 @@
-/* Universal Styles */
+/* Universal Styles for website as a whole*/
 * {
     margin: 0;
     padding: 0;
@@ -12,9 +12,16 @@ html {
 body {
     height: calc(100vh - 164px);
     color: #313131;
-    font-family: 'Roboto';        
+    font-family: 'Roboto'; 
+    max-width: 1500px; 
+    margin: 0px;         
 }
 
+/*Some of the styling came with the Boutique Ado Walkthrough, but has been modified
+to fit the new site's styling, but some elements are the same as they fitted the
+needs of the current project*/
+
+/*Styling for the headings for the site*/
 .logo-font {
     font-family: 'Courgette';
 }
@@ -43,6 +50,7 @@ body {
     width: fit-content;
 }
 
+/*Shop now button styling*/
 .shop-now-button {
     background: rgb(189, 13, 95);
     color: white;
@@ -54,10 +62,12 @@ body {
     color: white;
 }
 
+/*Needed to be modified as it had insufficient contast in places*/
 .text-danger {
     color: #8F0A0A !important;
 }
 
+/*Standard Bootstrap Buttons that needed to be modified*/
 .btn-outline-success {    
     border-color: #034111!important;
 }
@@ -86,6 +96,7 @@ body {
     color: white;
 }
 
+/*Used as a background colour*/
 .backlay {
     background: rgb(224, 142, 224, 0.7);
     padding: 10px;
@@ -114,6 +125,7 @@ body {
     background-color: purple !important;
 }
 
+/*content boxes that appears on top of a page and obscures the background content*/
 .overlay {
     height: 100%;
     width: 100%;
@@ -146,51 +158,28 @@ a.category-badge>span.badge:hover {
 }
 
 /*Styling for footer */
-footer {
-    position: relative;
-    width: 100%;
-    left: 0;
-    bottom: 0;
+footer {    
+    position: relative;    
     background-color: purple;
     color: white;
-    padding: 10px;            
+    padding: 10px; 
+    padding-right: 0;  
+    padding-left: 0;         
 }
 
-
-/***STYLING FOR THE ABOUT PAGE***/
-
-/*Text for the about page*/
-.text-about {
-    width: 80%;
-    color: black;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.about-image {
-    padding: 10px;
-    /* position: cover-fit; */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
+/*Styling for Card Elements*/
 
 /*styling for images in cards*/
 .card-img-top {
     object-fit: cover;
     width: 250px;
     height: auto;
-}
-
-.card-img-top {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
 /* Changing img holder position, so the overlay will be related to it */
-
 .card-image {
     position: relative;
 }
@@ -244,8 +233,7 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
-/* ------------------------------- bootstrap toasts */
-
+/* Bootstrap toasts */
 .message-container {
     position: fixed;
     top: 72px;
@@ -312,36 +300,7 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
-
-/* Blogs */
-
-.card {
-    border: none;
-    background-color: transparent;
-}
-
-.image-container {
-    position: relative;
-}
-
-.image-flash {
-    position: absolute;
-    bottom: 5%;
-    min-width: 30%;
-    left: -2px;
-    background-color: #23BBBB;
-}
-
-.card-title {
-    text-align: center;
-}
-
-.author {
-    color: purple;
-    margin: 4px;
-    text-transform: uppercase;
-}
-
+/*Used for rating stars*/
 .fa-star {
     color: #f3da35 !important;
 }
@@ -352,61 +311,7 @@ input[name='q']::placeholder {
     border-radius: 15px;    
 }
 
-/*Styling for content i blogs */
-/* Styling for unordered lists in blogs and Recipes */
-.unordered {
-    line-height: 1.5;
-    font-family: 'Marhey', cursive;
-    text-align: left;
-}
-
-/* Styling for ordered lists in blogs and Recipes */
-.ordered {
-    line-height: 1.5;
-    text-align: left;
-}
-
-/* Styling for List items in blogs and Recipes */
-ul li,
-ol li {
-    font-weight: 400;
-    font-size: 1rem;
-}
-
-ol {
-    list-style: none;
-    counter-reset: num;
-}
-
-ol li {
-    counter-increment: num;
-}
-
-ol li::before {
-    content: counter(num) ". ";
-    color: green;
-}
-
-/*Styling for text content */
-.content {
-    line-height: 1.5;    
-    font-size: 1rem;
-    text-align: left;
-}
-
-/* Carousel styling */
-.carousel-caption {
-    vertical-align: middle;
-    color: purple;
-    font-size: 1.1rem;   
-    top: 0;
-    bottom: auto;    
-  }
-
-  .carousel-indicators {
-    color: purple;
-  }
-
+/*Used to create the hover effect in cards within site*/
   .card{
     /* border-radius: 4px; */
     background: #fff;
@@ -421,32 +326,8 @@ ol li::before {
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }  
 
-/* Our Products Styling */
-.testsection {
-    background-color: white;
-  }
-
-  .testimonial-card .card-up {
-  height: 120px;
-  overflow: hidden;
-  border-top-left-radius: 0.50rem;
-  border-top-right-radius: 0.50rem;
-  background-color: white;  
-}
-
-.testimonial-card .avatar {
-  width: 110px;
-  margin-top: -60px;
-  overflow: hidden;
-  border: 3px solid #fff;
-  border-radius: 50%;
-}
-
-.white-background {
-  background-color: white;
-}  
-
-/* -------------------------------- Media Queries */
+/*****************  Media Queries *******************/
+/***************************************************/
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
@@ -455,8 +336,7 @@ ol li::before {
     }
 }
 
-/* Allauth form formatting */
-
+/* Allauth form formatting fairly supplied within boutique ado, not many changes if any*/
 .allauth-form-inner-content p {
     margin-top: 1.5rem;
     /* mt-4 */
@@ -548,7 +428,6 @@ ol li::before {
 }
 
 
-
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
@@ -563,8 +442,6 @@ ol li::before {
         padding-top: 164px;
     }
 }
-
-
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {

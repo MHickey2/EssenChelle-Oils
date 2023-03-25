@@ -6,21 +6,13 @@
     background-color: rgba(0, 0, 0, 0.2)
 }
 
-.card {
-    box-shadow: 0 16px 48px #E3E7EB;    
-}
-
-.card-title {
-    height: 50px;
-}
-
 .btn-danger {
     background-color: rgb(206, 29, 138) !important;
 }
 
+/* Blogs */
 .excerpt {
-    height: 120px;
-    
+    height: 120px;    
 }
 
 .cardheight {
@@ -35,24 +27,10 @@
     padding: 5px;
 }
 
-/* .card{
-border-radius: 4px;
-background: #fff;
-box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-padding: 14px 80px 18px 36px;
-cursor: pointer;
- margin: 10px;
-}
-
-.card:hover{
- transform: scale(1.05);
-box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
-} */
-
  /*Styling for titles*/
  .card-title {
-    text-align: center;
+    height: 50px;
+    text-align: center;   
     color: rgb(95, 7, 95);
     text-transform: capitalize;
     min-height: 20px;
@@ -80,7 +58,6 @@ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
     margin-right: auto;
     color: black;
     line-height: 1.5;
-
 }
 
 .display-block {
@@ -89,3 +66,60 @@ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
     margin-right: auto;
 }
 
+.card {
+    box-shadow: 0 16px 48px #E3E7EB; 
+    border: none;
+    background-color: transparent;
+}
+
+.image-container {
+    position: relative;
+}
+
+.author {
+    color: purple;
+    margin: 4px;
+    text-transform: uppercase;
+}
+
+/*Styling for content in blogs */
+/* Styling for unordered lists in blogs */
+.unordered {
+    line-height: 1.5;
+    font-family: 'Marhey', cursive;
+    text-align: left;
+}
+
+/* Styling for ordered lists in blogs */
+.ordered {
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* Styling for List items in blogs */
+ul li,
+ol li {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+ol {
+    list-style: none;
+    counter-reset: num;
+}
+
+ol li {
+    counter-increment: num;
+}
+
+ol li::before {
+    content: counter(num) ". ";
+    color: green;
+}
+
+/*Styling for text content */
+.content {
+    line-height: 1.5;    
+    font-size: 1rem;
+    text-align: left;
+}

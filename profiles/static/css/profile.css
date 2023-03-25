@@ -8,11 +8,7 @@
 	z-index: -1;
 }
 
-.order-history {
-    max-height: 416px; /* height of profile form + submit button */
-    overflow-y: auto;
-}
-
+/*Profile Update Form*/
 #profile-update-form .form-control {
     color: #000;
 }
@@ -28,5 +24,11 @@
 
 #id_default_country option:first-child {
     color: #aab7c4;
+}
+
+/*Styling for Order History*/
+.order-history {
+    max-height: 416px; /* height of profile form + submit button */
+    overflow-y: auto;
 }
 

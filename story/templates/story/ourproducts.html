@@ -2,10 +2,14 @@
 {% load static %}
 
 {% block content %}
+{% block extracss %}    
+    <link rel="stylesheet" href="{% static 'story/css/story.css' %}">
+{% endblock %}
+
 <div id="top"></div>
+<div class="white-background"> 
 <div class="overlay background"></div>
-<div class="white-background">
-  
+ 
   <h2 class="logo-font text-purple text-center mt-4">More About Our Products</h2>
   <div class="row row-cols-1 row-cols-md-3 g-4 ">
 
@@ -139,12 +143,9 @@
     </div> 
   </div>   
     <hr>
-  </section>
-  
+  </section>  
   <br>
 <a id="top-button" class="text-purple" href="#top" aria-label="Going to top of page">Top of Screen &nbsp; <iconify-icon inline
     icon="mdi:arrow-up" class="greenicon" width="18"></iconify-icon>
 </a>
-
-
 {% endblock %}

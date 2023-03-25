@@ -1080,7 +1080,7 @@ To ensure security on the site, only logged in users can access certain features
 
  In regards to logging in, I would also include logging in from a social network provider like Facebook, Twitter, or Google to facilitate the user further.
 
- In regards to deals I would introduce deals to encourage the user to buy multiple products at a special rate, as a meaure I feel this would be conducive to more sales. In the long term I would also introdue a loyalty scheme, so that users would be rewarded for their consumer buying behaviour.
+ In regards to deals I would introduce deals to encourage the user to buy multiple products at a special rate, from a marketing perspective I feel this would be conducive to more sales. In the long term I would also introduce a loyalty scheme, so that users would be rewarded for their consumer buying behaviour.
 
 
  
@@ -1121,6 +1121,7 @@ To ensure security on the site, only logged in users can access certain features
 -   [Accesibility Test](https://accessibilitytest.org/) - free accessibility testing tool.
 -   [Dr Link Checker](https://www.drlinkcheck.com/) - used in conjunction with manual testing of links.
 -   [XML- Sitempap](https://www.xml-sitemaps.com/) - used to create a sitemap for the site.
+-   [Diffchecker](https://www.diffchecker.com/) - which was useful for finding coding errors in development.
 
 ### Django Packages
 
@@ -1157,9 +1158,15 @@ Go to the [TESTING DOCUMENT](TESTING.md)
 
  The webhooks were problematic at times mostly in relation to the URLS for the endpoints and making sure the secret keys are in place and the endpoint is activated on the stripe dashboard. Without being able to test with the testhooks earlier it was hard to know why they are not working and how to fix them when they were not working. Again when the project is deploayed going through this procedure again and testing a seperate endpoint. I had thought I had kept the code close to the stripe code in the walkthrough project but did have an issue with the code, I had added an extra return which meant although the order was processing correctly it never triggered the success page or the confirmation email after an order was processed and needed help from tutor support to resolved the issue, which was done with a series of print statements. There was at the same time an issue with an extra blank line in the header of the confirmation_email_subject, when these issues were fixed I finally managed to get the email message confirmation printing in the terminal within gitpod and I received email confirmation with the deployed site.
 
+ There has been an issue with the webhooks in the gitpod site, the address has changed, which means I have been having to update the webhook url at times, when it stops working I review the address, and it usually has just changed by one number, and when it is updated it works ok again, not sure if I can prevent this happening again, but am looking into it. The Heroku webhook has no such problems, so the checkout should work as normal after submission.
+
+ I had an issue when updating the quantity selector so it works on both the desktop and mobile screens, for this I just used the fix advised during the walkthrough video, and although I updated the 3 files, it did not work, used the code diff application and found no difference, but it still did not work, so I got on to tutor support and explaied the issue, by the means of print statements, the problem was found in the script on the bag page, while updating the dollor signs to the euro signs throughout the site, when I wanted the currency to show euros instead of dollars, I had mistakenly added a euro in a query instead of the required dollor, so this had caused a 500 error, which displayed in the termnal, when this was replaced, it started to work as it was supposed to.
+
  <br>
 
  ### Unresolved <a name="unresolved"></a>
+
+ There is an issue in regards to sizes of products at the moment you will be offered different sizes within cerain products, which you can select successfully, there is an issue with applying 2 different prices to seperate sizes of the one product, which would need to be addressed. You can have either a small or large essential oil product in some items, but currently both products will be riced the same, now I could content the smaller bottle is of a higher quality and the larger bottle is a weaker solution and this could account for the pricing, but moving forward I would add additional functionality to offer a greater range of sizes for a greater range of products with a differing range of costs.  I really didnt want to deviate too much from the existing scripts, as I felt this might have a detrimental effect on the whole buying procedure and the inclusion of the Stripe functioning, but this would be an area that would need more of a deep dive for building E-Commerce sites in the future.
 
  <br>
 

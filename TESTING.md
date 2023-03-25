@@ -147,14 +147,21 @@ Besides manually checking links on the site I used this tool as an extra measure
  #### [Return to Table of Contents](#toc)
 ----  
 
+<br>
+
 ### 4. Manual Testing   <a name="manual"></a>
 
-I have broken the manual testing into 2 sections, the first gives an overview of how the site works and whether it does what is expected. In the second section I have more specific testing of different elements within each page and the subsequent results.
+<br>
+
+I have broken the manual testing into 2 sections, the first gives an overview of how the site works and whether it does what is expected. In the second section I have more specific testing of different elements within each page and the subsequent results.    
+
+<br>
 
 <h3 align ="center">      
     Manual Testing (Overview of how the Site works in general)   
 </h3>
 
+<br>
 
 ### On the Site:
 - Start Screen displays when Heroku link is used.   :heavy_check_mark:
@@ -192,12 +199,38 @@ I have broken the manual testing into 2 sections, the first gives an overview of
 - The Contact link in the navbar shows the dropdown menu with the contact form option available.  :heavy_check_mark:
 - The contact form opens up the contact page with the contact form for messaging.  :heavy_check_mark:
 - The Shop Button opens up the all products page successfully.  :heavy_check_mark:
+- The Privacy policy link will open the privacy policy page.  :heavy_check_mark:
+- The Faq link in the footer and within the Our Story dropdown menu will open the FAQ page.  :heavy_check_mark:
+- THe Copyright link will open the copyright page.  :heavy_check_mark:
 - The Facebook Icon when clicked takes you to a generic facebook page.  :heavy_check_mark:
 - The Twitter Icon when clicked takes you to a generic twitter page.  :heavy_check_mark:
 - The Instagram Icon when clicked takes you to a generic Instagram page.  :heavy_check_mark:
 - The Newsletter Mailchimp Form takes an email input and submits email to Mailchimp. :heavy_check_mark:
+- All required fields need to be filled in when posting a new product, and the user is advised on these requirements when filling these forms.  :heavy_check_mark:
+- The add product button displays correctly for the Superuser.  :heavy_check_mark:
+- The superuser can see the edit and delete buttons for any all existing products  :heavy_check_mark:
+- The edit product page displays correctly for the Superuser.  :heavy_check_mark:
+- The superuser can edit the details of the product with the edit form.  :heavy_check_mark:
+- The delete product page displays correctly for the Superuser.  :heavy_check_mark:
+- the superuser can delete a product with the delete product form.  :heavy_check_mark:
+- Clicking on the product image for each product will bring the user to the product-detail page for each product.  :heavy_check_mark:
+- The product_detail page displays correctly.  :heavy_check_mark:
+- All required fields need to be filled in when posting a new blog, and the user is advised on these requirements when filling these forms.  :heavy_check_mark:
+- The add blog button displays correctly for the Superuser.  :heavy_check_mark:
+- The superuser can see the edit and delete buttons for any all existing blogs  :heavy_check_mark:
+- Clicking on the read more button for each blog will bring the user to the blog-detail page for each blog.  :heavy_check_mark:
+- The blog_detail page displays correctly.  :heavy_check_mark:
+- The add to favourites button adds the product to the user's product favourites.  :heavy_check_mark:
+- On the product favourites page clicking on the removal button will remove item from favourites. :heavy_check_mark: 
+- The add to bag button adds an item to the users bag. :heavy_check_mark:
+- the quanity and sizes selector allows you to select the desired quantity or size.  :heavy_check_mark:
+- The return to shopping button allows you to continue shopping for items.  :heavy_check_mark:
+- The Checkout form displays when you click on the go to the secure checkout button.  :heavy_check_mark:
+### Admin Panel:
+- Managed to create, update and delete data in all models, during the entire project, and all seems to be working as expected when logged in as the admin.  :heavy_check_mark:
+- When a User comments on a post, Admin needs to approve before it is displayed on the site, this is working as expected, when logged in as the admin.  :heavy_check_mark:
 
-
+<br>
 
 <details>
   <summary>Manual Testing(part 2)</summary>
@@ -458,10 +491,11 @@ All products were displayed the same way, regardless of the category type so the
 
 ### Product Favourites Page
 
-All products were displayed the same way as the main products page, so all the individual elements are working properly.
+All products were displayed the same way as the main products page, so all the 
+individual elements are working properly.
 
-| Feature                   |  Expect              | Action    | Result|
-| --------------------      | -------------------- | --------  | ------| 
+| Feature       |  Expect                          | Action    | Result|
+| --------------| ----------------------------     |  ------   | ------| 
 | Remove Button | Removes Product from Favourites  | Click On  |   ✔   |
 | Back Button   | Go to ? Page                     | Click On  |   ✔   | 
 
@@ -478,6 +512,30 @@ All products were displayed the same way as the main products page, so all the i
 | Keep Shopping Button      | Allows user to Keep Shoppig      | Click On  |   ✔   |
 | Add to Bag Button         | Adds Product to Shopping Bag     | Click On  |   ✔   |
 | Back Button               | Go to ? Page                     | Click On  |   ✔   | 
+
+<br>
+
+### The Checkout Page
+
+| Feature                   |  Expect                   | Action    | Result|
+| --------------------      | --------------------      | --------  | ------| 
+| Input Fields              | Accepts Input             | Input     |   ✔   |
+| Adjust Bag Button         | Brings you to Bag Page    | Click On  |   ✔   |
+| Complete Order Button     | Order to be processed     | Click On  |   ✔   |
+| Displays Order Summary    | Displays to User          | Automatic |   ✔   |
+| Spinner                   | Displays during processing| Automatic |   ✔   |
+
+<br>
+
+### The Checkout Success Page
+
+| Feature                   |  Expect                   | Action    | Result|
+| --------------------      | --------------------      | --------  | ------|
+| Order Information         | Displays to User          | Automatic |   ✔   |
+| Order Details             | Displays to User          | Automatic |   ✔   |
+| Delivery Address          | Displays to User          | Automatic |   ✔   | 
+| Billing Information       | Displays to User          | Automatic |   ✔   |
+| Latest Deal Buttons       | Takes you to latest Deals | Click On  |   ✔   |
 
 <br>
 
@@ -514,6 +572,8 @@ All products were displayed the same way as the main products page, so all the i
 <br>
 
 </details>
+
+<br>
 
 ### [Return to Table of Contents](#toc)
 ----

@@ -124,17 +124,23 @@
 
 <script>
     // Update quantity on click
+
+    console.log("Script connected");
     $('.update-link').click(function(e) {
         var form = $(this).prev('.update-form');
         form.submit();
     })
 
     // Remove item and reload on click
+
+    // console.log($('.remove-item'));
     $('.remove-item').click(function(e) {
+        // console.log("remove button click");
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
         var size = $(this).data('product_size');
-        var url = `/bag/remove/€{itemId}/`;
+        var url = `/bag/remove/${itemId}/`;
+        console.log(url);
         var data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
 
         $.post(url, data)

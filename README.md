@@ -679,7 +679,7 @@ The website itself offers users the chance to sign up for a regular newsletter. 
 
 
 ###  3. Search Engine Optimization(SEO)
-SEO research will help drive pople to our site more efficiently. Inititally finding the right keywords will help send our site further up in the rankings. Finding the right words involved looking at present sites, previous research finding and analysing which words were suggested when searching for essential oils and aromatherapy in particular. I then picked the top words ad phrased and ensured they were integrated into the site via meta-tags or by ensuring they were included in headings, image names and content. There were also links included for both internal pages and external sites of good standing that are in a similar industry.
+SEO research will help drive pople to our site more efficiently. Inititally finding the right keywords will help send our site further up in the rankings. Finding the right words involved looking at present sites, previous research finding and analysing which words were suggested when searching for essential oils and aromatherapy in particular. I then picked the top words ad phrased and ensured they were integrated into the site via meta-tags or by ensuring they were included in headings, image names and content. There were also links included for both internal pages and external sites of good standing that are in a similar industry. I have an external link in the blog page in the sidebar, the site is not information heavy so I linked to a reputable site, that had more detailed information on safety precautions
 
 <br>
 
@@ -1183,7 +1183,7 @@ Go to the [TESTING DOCUMENT](TESTING.md)
 
  ## 11. Deployment <a name="deployment"></a>
 
- The Project used Heroku for deployment. I used GitPod for development within the project and pushed to the GitHub Repository. This in turn updated the Project in Heroku. I used DEBUG = 'DEV' in os.environ, during development and other than when testing, had it configured so that I could work both locally and could also test the deployed Project on an ongoing basis.
+ The Project used Heroku for deployment. I used GitPod for development within the project and pushed to the GitHub Repository. This in turn updated the Project in Heroku. I used DEBUG = 'DEV' in os.environ, during development and other than when testing, had it configured so that I could work both locally and could also test the deployed Project on an ongoing basis. I added all the config vars for Stripe, AWS, The Database URL, and the creds for email. I had originally has disable collectstatic and the creds for AWS but removed these when I added cloudinary.
 
  <br>
 
@@ -1221,7 +1221,7 @@ Code Institute
 
 ### Django Framework    <a name="djangoframework"></a>
 
-I used the Resources and Lessons within the Building an E-Commerce Module to get familiar with the concepts involved in building an Ecommerce site. In particular I did the walkthroughs for 'Boutique Ado' and I covered the E-Commerce Apllication types, Introduction to Search Engine Optimization and Web Marketing Modules. I also referred back to my previous project and the 'I think therefore I blog' walkthrough. I also referred to the Django documentation for the occasional query.
+I used the Resources and Lessons within the Building an E-Commerce Module to get familiar with the concepts involved in building an Ecommerce site. In particular I did the walkthroughs for 'Boutique Ado' and I covered the E-Commerce Application types, Introduction to Search Engine Optimization and Web Marketing Modules. I also referred back to my previous project and the 'I think therefore I blog' walkthrough. I also referred to the Django documentation for the occasional query.
 
 <br>
 
@@ -1240,7 +1240,7 @@ in this case I added 'PORT' into the key field and added '8000' into the value f
 - Next you go to the Deploy tab and you select 'github' and confirm connection to your GitHub Account.
 - You search for your project repository and click to 'connect'.
 - Under the deploy options, you can chose automatic deploys, this allow you to automatically deploy each
-time you push to your Repository. (Option Taken)
+time you push to your Repository or you can manually deploy which is the option I opted for.
 - To deploy, you would choose what branch you want to deploy and click on 'Deploy Branch'.
 - It takes a little time to build your app but when it is ready you can open your app by using the link provided.
 
@@ -1249,9 +1249,9 @@ time you push to your Repository. (Option Taken)
 ### Final Deployment 
 
 - When development is complete change the debug setting to: `DEBUG = False` in settings.py
--  In this project the summernote editor was used so for this to work in Heroku, so you need to add: `X_FRAME_OPTIONS = SAMEORIGIN ` to Settings.py.
-- In Heroku settings, delete the config vars for `DISABLE_COLLECTSTATIC = 1` (I had disabled these earlier in the project development)
-- You can manually deploy your branch in the deploy section in Heroku, but I had automatic deployment chosen so the Site was updated everytime I pushed to GitHub.
+-  In this project the summernote editor was used so for this to work in Heroku, you needed to add: `X_FRAME_OPTIONS = SAMEORIGIN ` to Settings.py.
+- In Heroku settings, delete the config vars for `DISABLE_COLLECTSTATIC = 1`, when I was using AWS, I used 2 different settings for gitpod and for the deployed site, to ensure costs were kept low, but nearer the end of the project when I was not using AWS, I did not worry as much about deploying.
+- I had automatic deployment chosen originally, but changed this to manual deployment, as I deployed less in this project to keep costs low on AWS.
 
 <br>
 
@@ -1265,7 +1265,7 @@ time you push to your Repository. (Option Taken)
  The logo and Favicon were built with the online tools: [LogoMaker](https://www.logomaker.com/) and 
  [Favicon.io](https://favicon.io/)
 
- he Project began with the basic code used in the 'Boutique Ado' walkthrough Project, but was modified according to my own needs within the Project. As the Project developed, I sought out various Tutorials and consulted documentation for Django.
+ he Project began with the basic code used in the 'Boutique Ado' walkthrough Project, but was modified according to my own needs within the Project. As the Project developed, I sought out various Tutorials and consulted documentation for Django and Stripe.
 
  I also used the following online resources:
 
@@ -1274,18 +1274,22 @@ time you push to your Repository. (Option Taken)
 - [Stack OverFlow](https://stackoverflow.com)
 - [YouTube](https://www.youtube.com/)
 - [Card Zoom Hover Effect video on YouTube](https://www.youtube.com/watch?v=KAHjf1Xj0SU)
-- [W3Schools.com](https://www.w3schools.com/)
+- [W3Schools.com columns tutorial](https://www.w3schools.com/howto/howto_css_three_columns.asp)
 - [Ordinary Coders: Bootstrap Card Hover Effects](https://ordinarycoders.com/blog/article/codepen-bootstrap-card-hovers)
 - [Used to test different cards](https://blog.devgenius.io/what-test-cards-can-i-use-to-test-stripe-integration-1252f46b050f)
+- [Animated Collapsibles for FAQ](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible_animate) - used for collapsible sections in the FAQ Page
 
 <br>
 
 #### [Return to Table of Contents](#toc)
 ----
  ## Acknowledgements <a name="acknowledgements"></a>
+My link to the external site on the blog page with great information on using Essential Oils 
+ [everydayhealth.com](https://www.everydayhealth.com/wellness/what-are-essential-oils-a-complete-guide-on-aromatherapy-and-its-potential-health-benefits/)
 
- [Animated Collapsibles](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible_animate) - used for collapsible sections in the FAQ Page
+Everyone in Code Institute who contributed to my Projects, in particular Ed from Tutor Support, who shared his vast knowledge with me, but also every other Tutor who helped me along the way.
 
+Thank you to my Mentor Brian Macharia for all your help and guidance for all my Projects.
 <br>
 
  #### [Return to Table of Contents](#toc) 

@@ -20,6 +20,7 @@ def faq(request):
 
     return render(request, 'story/faq.html')
 
+
 def copyright(request):
     """ A view to return the copyright page """
 

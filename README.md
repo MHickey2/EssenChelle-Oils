@@ -1269,6 +1269,7 @@ time you push to your Repository. (Option Taken)
 - [Card Zoom Hover Effect video on YouTube](https://www.youtube.com/watch?v=KAHjf1Xj0SU)
 - [W3Schools.com](https://www.w3schools.com/)
 - [Ordinary Coders: Bootstrap Card Hover Effects](https://ordinarycoders.com/blog/article/codepen-bootstrap-card-hovers)
+- [Used to test different cards](https://blog.devgenius.io/what-test-cards-can-i-use-to-test-stripe-integration-1252f46b050f)
 
 <br>
 

@@ -1,26 +1,24 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
+<div class="overlay"></div>
+
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 my-auto form-container text-center rounded mx-auto my-2 py-2">
+            <h2 class="text-center logo-font text-purple mt-2">Error 403: Forbidden</h2>           
+            <h4 class = "text-center">Sorry! Access Denied :( </h4>
+            <br>
+            <img class="img-fluid" alt="Zen Moment"
+            src="https://res.cloudinary.com/dspwticaf/image/upload/v1672231541/zenmoment_nmxpad.jpg" width="200" height="200"/>
+            <br>
+            <br>
+            <a href="{% url 'home' %}" class="btn btn-light pink-button">Back</a>
+            <h5 class="text-purple">Explore here instead</h5>
+            <br>            
         </div>
     </div>
-    <div class="container h-100">
-        <div class="row h-100">
-            <div class="col-7 col-md-6 my-auto">
-                <h1 class="display-4 logo-font text-purple">
-                    Error 403: Forbidden
-                </h1>
-                <div class="my-5">
-                    <h4>
-                        <a href="{% url 'products' %}" 
-                            class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">
-                                Return to shop
-                        </a>
-                    </h4>
-                </div>
-            </div>
-        </div>
-    </div>
+</div>
+    
 {% endblock %}

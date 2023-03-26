@@ -1,8 +1,12 @@
 {% extends "base.html" %}
 {% load static %}
 
-
 {% block content %}
+
+{% block extracss %}    
+    <link rel="stylesheet" href="{% static 'story/css/story.css' %}">
+{% endblock %}
+
 
 <div class="overlay"></div>
 <h2 class="text-center logo-font text-purple mt-2">About Us</h2>

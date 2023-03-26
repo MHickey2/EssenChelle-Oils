@@ -9,7 +9,7 @@
  
 # Introduction <a name="introduction"></a>
 
-The EssenChelle Oils site is my 5th Project for the Code Institute and it is a full stack E-commerce site using the Django Framework and it includes Python, JavaScript, CSS and Bootstrap5. It utilizes Stripe payments. It has user authentication and Full CRUD functionality for the products and Blogs for the Superuser. The website deals with the sale of essential oils and their byproducts. The website would appeal to people who use or want to know more about Essential Oils and are interested in buying these products. This website has been built for educational purposes and the payment transactions are purely for demonstration only.
+The EssenChelle Oils site is my 5th Project for the Code Institute and it is a full stack E-commerce site using the Django Framework and it includes Python, JavaScript, CSS and Bootstrap5. It utilizes Stripe payments. It has user authentication and Full CRUD functionality for the products and Blogs for the Superuser. The website deals with the sale of essential oils and their byproducts. The website would appeal to people who use or want to know more about Essential Oils and are interested in buying these products. This website has been built for educational purposes and the payment transactions are purely for demonstration only. If you want to test the payment functionality, you can use: Card number: 4242 4242 4242 4242  Exp: Future Date i.e. 05/25 and CVC can be any 3 numbers.
 
 <br/>
 
@@ -49,6 +49,7 @@ The EssenChelle Oils site is my 5th Project for the Code Institute and it is a f
       - [**Facebook Page**](#facebook-page)
     - [3. Search Engine Optimization(SEO)](#3-search-engine-optimizationseo)
     - [4. XML Sitemap](#4-xml-sitemap)
+    - [5. Robots.Txt File](#5-robotstxt-file)
   - [6. Features  ](#6-features--)
     - [1. Home Page   ](#1-home-page---)
     - [2. Products Page     ](#2-products-page-----)
@@ -64,6 +65,7 @@ The EssenChelle Oils site is my 5th Project for the Code Institute and it is a f
     - [12. Shopping Bag Page     ](#12-shopping-bag-page-----)
     - [13. Checkout Page     ](#13-checkout-page-----)
     - [14. Checkout Success Page     ](#14-checkout-success-page-----)
+  - [The following pages are also available, but only to the superuser on the site.](#the-following-pages-are-also-available-but-only-to-the-superuser-on-the-site)
     - [15. Add Product Page     ](#15-add-product-page-----)
     - [16. Edit Product Page     ](#16-edit-product-page-----)
     - [17. Delete Product Page     ](#17-delete-product-page-----)
@@ -96,12 +98,14 @@ The EssenChelle Oils site is my 5th Project for the Code Institute and it is a f
     - [Student Template ](#student-template-)
     - [Django Framework    ](#django-framework----)
     - [Deploying to Heroku ](#deploying-to-heroku-)
+    - [Changes in Heroku  ](#changes-in-heroku--)
     - [Final Deployment](#final-deployment)
       - [Return to Table of Contents](#return-to-table-of-contents-8)
   - [Credits ](#credits-)
       - [Return to Table of Contents](#return-to-table-of-contents-9)
   - [Acknowledgements ](#acknowledgements-)
       - [Return to Table of Contents](#return-to-table-of-contents-10)
+  - [Author Info](#author-info)
 
 ----
 
@@ -662,7 +666,7 @@ Events: There is a large industry dealing with essential oils and aromatherapy i
 <br>
 
 <p align="center">
-  <img src="assets/readme/images/bodymindspirit.png" alt="Body Mind Spirit Expo" />
+  <img src="assets/readme/images/bodymindspirit.png" width="700" alt="Body Mind Spirit Expo" />
 </p>
 
 <br>
@@ -679,12 +683,22 @@ The website itself offers users the chance to sign up for a regular newsletter. 
 
 
 ###  3. Search Engine Optimization(SEO)
-SEO research will help drive pople to our site more efficiently. Inititally finding the right keywords will help send our site further up in the rankings. Finding the right words involved looking at present sites, previous research finding and analysing which words were suggested when searching for essential oils and aromatherapy in particular. I then picked the top words ad phrased and ensured they were integrated into the site via meta-tags or by ensuring they were included in headings, image names and content. There were also links included for both internal pages and external sites of good standing that are in a similar industry. I have an external link in the blog page in the sidebar, the site is not information heavy so I linked to a reputable site, that had more detailed information on safety precautions
+SEO research will help drive pople to our site more efficiently. Inititally finding the right keywords will help send our site further up in the rankings. Finding the right words involved looking at present sites, previous research finding and analysing which words were suggested when searching for essential oils and aromatherapy in particular. I used [wordtracker.com](https://www.wordtracker.com/) and various other free tools to find keywords, the factors that determined the ones chosen include search volume, relevance and conversion value. I then picked the top words and phrases and integrated them into the site via meta-tags or by ensuring they were included in headings, image names and content. It was important not to overdo the use of these words as this would have been counterproductive to the end goal. The following image shows a sample of the results found and used in the site:
 
 <br>
 
 <p align="center">
-  <img src="assets/readme/images/keywordsearches.png" alt="Keyword Search" />
+  <img src="assets/readme/images/keywordsearches.png" width="700" alt="Keyword Search" />
+</p>
+
+<br>
+
+There were also links included for both internal pages and external sites of good standing that are in a similar industry. I have an external link in the blog page in the sidebar, the site is not information heavy so I linked to a reputable site, that had more detailed information on safety precautions. The site used can be found [here](https://www.everydayhealth.com/wellness/what-are-essential-oils-a-complete-guide-on-aromatherapy-and-its-potential-health-benefits/) 
+
+<br>
+
+<p align="center">
+  <img src="assets/readme/images/externallinksite.png"  width="600" alt="External Site on Health and Benefits" />
 </p>
 
 <br>
@@ -692,6 +706,9 @@ SEO research will help drive pople to our site more efficiently. Inititally find
 ### 4. XML Sitemap
 Additionally to help the search engines crawl the site, I've added an XML sitemap file to the main root directory. This was generated using [xml-sitemaps](https://www.xml-sitemaps.com/)
 
+<br>
+
+### 5. Robots.Txt File
 A robots.txt file has also added to allow the search engine crawlers to know which URLs the crawler can access on this ste, this was used mainly to avoid overloading the site with requests.
 
 <br>
@@ -764,11 +781,12 @@ The Footer contains a blurb on the site, some contact details and social media i
 ### 1. Home Page   <a name="homepage"></a>
 
 The home page has a Hero image depicting a massage session, which is a strong indicator to the type of productss available within the site. There is some textual content describing the site purpose. There is also a shop button, that can bring the user directly to the product page, so that the user can begin shopping right away.
+There was an issue with getting a screencap of the page, because of the background, so its a little off.(It looks better in real life)
   
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/" width="400" alt="Home Page" />    
+     <img src="assets/readme/images/homepage.png" width="400" alt="Home Page" />    
 </p>
 
 <br/> 
@@ -780,7 +798,7 @@ The products page shows the the full collection within the EssenChelle range inc
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/allproducts.png"  width="500"  alt="products page" />    
+     <img src="assets/readme/images/productsPage.png"  width="500"  alt="products page" />    
 </p>
 
 <br/> 
@@ -920,7 +938,11 @@ The Page is shown to the user when their order has been processed. It contains a
 
 <br/>
 
-The following pages are also available, but only to the superuser on the site.
+<p align ="center"> 
+  ## The following pages are also available, but only to the superuser on the site. ##
+</p>
+
+<br>
 
 ### 15. Add Product Page     <a name="addproductpage"></a>
 This Page is also the product management page. The superuser can add a product in the frontend as well as in the admin panel. It can be accessed via the account icon or with a button at the left and bottom of the products page.(which I found more intutive to user)
@@ -1032,7 +1054,7 @@ I have included custom Error Pages in the error folder within the templates fold
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/error.jpg" width="500" height="700" alt="Sample Error Page" />    
+     <img src="assets/readme/images/errorpage.png" width="500"  alt="Sample Error Page" />    
 </p>
 
 <br/> 
@@ -1062,7 +1084,7 @@ To ensure security on the site, only logged in users can access certain features
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/sorry.png"  alt="Can't Access Message" />    
+     <img src="assets/readme/images/security.png"  alt="Can't Access Message" />    
 </p>
 
 <br/> 
@@ -1129,6 +1151,7 @@ To ensure security on the site, only logged in users can access certain features
 -   [Dr Link Checker](https://www.drlinkcheck.com/) - used in conjunction with manual testing of links.
 -   [XML- Sitempap](https://www.xml-sitemaps.com/) - used to create a sitemap for the site.
 -   [Diffchecker](https://www.diffchecker.com/) - which was useful for finding coding errors in development.
+-   [Temp Email Site](https://temp-mail.org/en/) - used to test emails for registering and purchasing on site.
 
 ### Django Packages
 
@@ -1246,6 +1269,18 @@ time you push to your Repository or you can manually deploy which is the option 
 
 <br>
 
+### Changes in Heroku  <a name="herokuchanges"></a>
+
+ Because of the changes in Heroku I used Eco Dynos and used ElephantSQL instead of the postgres database which is offered by Heroku. To ensure this was done successfully, I followed the same procedure as I had used in the prior project and referred to the following documents.
+
+[Sign up for ElephantSQL](https://code-institute-students.github.io/deployment-docs/02-elephantsql/elephantsql-01-sign-up)
+  
+[Migrating Databases](https://code-institute-students.github.io/deployment-docs/80-migrating-databases-for-heroku/)
+ 
+[Changing Dynos](https://code-institute-students.github.io/deployment-docs/01-heroku-signup/heroku-03-converting-dynos) 
+
+<br>
+
 ### Final Deployment 
 
 - When development is complete change the debug setting to: `DEBUG = False` in settings.py
@@ -1273,11 +1308,11 @@ time you push to your Repository or you can manually deploy which is the option 
 - [Slack](https://slack.com/intl/en-ie/) 
 - [Stack OverFlow](https://stackoverflow.com)
 - [YouTube](https://www.youtube.com/)
-- [Card Zoom Hover Effect video on YouTube](https://www.youtube.com/watch?v=KAHjf1Xj0SU)
+- [Card Zoom Hover Effect in cards video on YouTube](https://www.youtube.com/watch?v=KAHjf1Xj0SU)
 - [W3Schools.com columns tutorial](https://www.w3schools.com/howto/howto_css_three_columns.asp)
 - [Ordinary Coders: Bootstrap Card Hover Effects](https://ordinarycoders.com/blog/article/codepen-bootstrap-card-hovers)
-- [Used to test different cards](https://blog.devgenius.io/what-test-cards-can-i-use-to-test-stripe-integration-1252f46b050f)
-- [Animated Collapsibles for FAQ](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible_animate) - used for collapsible sections in the FAQ Page
+- [Used to test different cards for payment](https://blog.devgenius.io/what-test-cards-can-i-use-to-test-stripe-integration-1252f46b050f)
+- [Animated Collapsibles for FAQ sections](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible_animate) - used for collapsible sections in the FAQ Page
 
 <br>
 
@@ -1294,3 +1329,13 @@ Thank you to my Mentor Brian Macharia for all your help and guidance for all my 
 
  #### [Return to Table of Contents](#toc) 
 ----
+
+## Author Info
+
+Michelle Hickey, Full Stack Software Developer.
+- [Linkedin](https://www.linkedin.com/in/michellehickey1/)
+- [Portfolio](https://michellehickey.crevado.com/)
+- [UX Portfolio](https://www.behance.net/michellehickey2)
+
+
+[Back to the Top](#table-of-contents)

@@ -681,6 +681,13 @@ The website itself offers users the chance to sign up for a regular newsletter. 
 ###  3. Search Engine Optimization(SEO)
 SEO research will help drive pople to our site more efficiently. Inititally finding the right keywords will help send our site further up in the rankings. Finding the right words involved looking at present sites, previous research finding and analysing which words were suggested when searching for essential oils and aromatherapy in particular. I then picked the top words ad phrased and ensured they were integrated into the site via meta-tags or by ensuring they were included in headings, image names and content. There were also links included for both internal pages and external sites of good standing that are in a similar industry.
 
+<br>
+
+<p align="center">
+  <img src="assets/readme/images/keywordsearches.png" alt="Keyword Search" />
+</p>
+
+<br>
 
 ### 4. XML Sitemap
 Additionally to help the search engines crawl the site, I've added an XML sitemap file to the main root directory. This was generated using [xml-sitemaps](https://www.xml-sitemaps.com/)

@@ -200,7 +200,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-DISABLE_COLLECTSTATIC = 0  # for charges in aws keepin g them down
+# DISABLE_COLLECTSTATIC = 0  # for charges in aws keepin g them down
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

@@ -854,7 +854,7 @@ As a superuser you can see the delete button below blogs on the blog pages and w
 Tests Passed &#x2611;
 
 **7. Approve reviews for Products and comments for Blogs in the admin Panel**
-As a superuser you can log in to the admin panel and view a range of information on users, products, comments, reviews  and contacts. You can add Products and Blogs, review orders, change user details, approve comments for blogs and reviews for products, and and when they are approved they are published on the site.
+The Admin can do the full range of admin functionality within the admin panel. As a superuser you can log in to the admin panel and view a range of information on users, products, comments, reviews  and contacts. You can add Products and Blogs, review orders, change user details, approve comments for blogs and reviews for products, and and when they are approved they are published on the site.
 
 **Testing**
 - Managed to create, update and delete data in all models, during the entire project, and all seems to be working as expected when logged in as the superuser. 

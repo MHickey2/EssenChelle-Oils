@@ -2,19 +2,21 @@
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none !important;
+    border: none;
 }
 
 html {
-    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;   
+    color: #313131;
+    scroll-behavior: smooth;
+    font-size: 1rem;   
 }
 
 body {
-    height: calc(100vh - 164px);
-    color: #313131;
-    font-family: 'Roboto'; 
-    max-width: 1500px; 
-    margin: 0px;         
+    height: calc(100vh - 164px);    
+    max-width: 1500px;  
+    margin: auto;         
 }
 
 /*Some of the styling came with the Boutique Ado Walkthrough, but has been modified
@@ -24,6 +26,13 @@ needs of the current project*/
 /*Styling for the headings for the site*/
 .logo-font {
     font-family: 'Courgette';
+}
+
+.main-nav {
+    position: relative;
+    padding-right: 0;  
+    padding-left: 0; 
+    width: auto;   
 }
 
 .nav-link {
@@ -159,12 +168,14 @@ a.category-badge>span.badge:hover {
 
 /*Styling for footer */
 footer {    
-    position: relative;    
+    /* position: relative;     */
     background-color: purple;
     color: white;
     padding: 10px; 
     padding-right: 0;  
-    padding-left: 0;         
+    padding-left: 0;  
+    margin: auto;      
+           
 }
 
 /*Styling for Card Elements*/

@@ -634,8 +634,11 @@ The Wireframes for the site were created in Figma, I concentrated on the standar
 
 <details>
   <summary>Database ER Diagram</summary>
+
+<br>
+
 <p align ="center">      
-     <img src="assets/readme/images/.png"  alt="Database ER diagram" />    
+     <img src="assets/readme/images/database.png"  alt="Database ER diagram" />    
 </p>
 </details>
 
@@ -714,7 +717,7 @@ SEO research will help drive pople to our site more efficiently. Inititally find
 <br>
 
 <p align="center">
-  <img src="assets/readme/images/keywordsearches.png" width="700" alt="Keyword Search" />
+  <img src="assets/readme/images/keywordsearches.png" width="300" alt="Keyword Search" />
 </p>
 
 <br>

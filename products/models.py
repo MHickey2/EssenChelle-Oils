@@ -33,7 +33,7 @@ class Product(models.Model):
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = CloudinaryField('image',
                             default='v1678718256/placeholder1_r50jax.png')
-    
+
     def __str__(self):
         return self.name
 

@@ -281,7 +281,7 @@ The user is really anyone who has an interest in holistic health. They either ha
 [As a staff member I can log in so that I can access the relevant features of the site #1](https://github.com/MHickey2/EssenChelle-Oils/issues/1)
 
 
-User Story Testing can be found in the [TESING.md Document](TESTING.md)  [User Story Testing](#userstorytesting) 
+User Story Testing can be found in the [TESING.md Document](TESTING.md)  
 
   <br/> 
 

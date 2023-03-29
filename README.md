@@ -66,22 +66,27 @@ The EssenChelle Oils site is my 5th Project for the Code Institute and it is a f
     - [9. Contact Page     ](#9-contact-page-----)
     - [10. Profile Page    ](#10-profile-page----)
     - [11. Product Favourites Page     ](#11-product-favourites-page-----)
-    - [12. Shopping Bag Page     ](#12-shopping-bag-page-----)
-    - [13. Checkout Page     ](#13-checkout-page-----)
-    - [14. Checkout Success Page     ](#14-checkout-success-page-----)
+    - [12. FAQ Page     ](#12-faq-page-----)
+    - [13. Privacy Policy Page    ](#13-privacy-policy-page----)
+    - [14. Copyright Page    ](#14-copyright-page----)
+    - [15. Shopping Bag Page     ](#15-shopping-bag-page-----)
+    - [16. Checkout Page     ](#16-checkout-page-----)
+    - [17. Checkout Success Page     ](#17-checkout-success-page-----)
   - [The following pages are also available, but only to the superuser on the site.](#the-following-pages-are-also-available-but-only-to-the-superuser-on-the-site)
-    - [15. Add Product Page     ](#15-add-product-page-----)
-    - [16. Edit Product Page     ](#16-edit-product-page-----)
-    - [17. Delete Product Page     ](#17-delete-product-page-----)
-    - [18. Add Blog Page     ](#18-add-blog-page-----)
-    - [19. Edit Blog Page     ](#19-edit-blog-page-----)
-    - [20. Delete Blog Page     ](#20-delete-blog-page-----)
-    - [21. Signup Page   ](#21-signup-page---)
-    - [22. Login Page   ](#22-login-page---)
-    - [23. Logout Page   ](#23-logout-page---)
-    - [24. Custom Error Pages  ](#24-custom-error-pages--)
-    - [25. Admin Panel  ](#25-admin-panel--)
-    - [26. Security Measures  ](#26-security-measures--)
+    - [18. Add Product Page     ](#18-add-product-page-----)
+    - [19. Edit Product Page     ](#19-edit-product-page-----)
+    - [20. Delete Product Page     ](#20-delete-product-page-----)
+    - [21. Add Blog Page     ](#21-add-blog-page-----)
+    - [22. Edit Blog Page     ](#22-edit-blog-page-----)
+    - [23. Delete Blog Page     ](#23-delete-blog-page-----)
+  - [The following pages are also available, to all users on the site.](#the-following-pages-are-also-available-to-all-users-on-the-site)
+    - [24. Signup Page   ](#24-signup-page---)
+    - [25. Login Page   ](#25-login-page---)
+    - [26. Logout Page   ](#26-logout-page---)
+    - [27. Custom Error Pages  ](#27-custom-error-pages--)
+  - [The following page is available to the superuser.](#the-following-page-is-available-to-the-superuser)
+    - [28. Admin Panel  ](#28-admin-panel--)
+    - [29. Security Measures  ](#29-security-measures--)
       - [Return to Table of Contents](#return-to-table-of-contents-3)
   - [8. Future Implementation  ](#8-future-implementation--)
       - [Return to Table of Contents](#return-to-table-of-contents-4)
@@ -144,7 +149,6 @@ The EssenChelle Oils site is my 5th Project for the Code Institute and it is a f
 - Anyone who wants to use essential oils in their home and are looking for essential oil burners.  
 - Anyone who wants to offer massages or use massage oils for personal use and are looking for specific blends for therapeutic uses.
 - Anyone who would want to avail of special offers on products related to essential oils.
-
 
  <br/>  
 
@@ -253,7 +257,6 @@ The user is really anyone who has an interest in holistic health. They either ha
 
 10. Sign up for a newsletter so I can receive special offers and the latest product information.
 [User can sign up for the newsletter and receive special offers and the latest information from the site #29](https://github.com/MHickey2/EssenChelle-Oils/issues/29)
-
  
  <br/>
 
@@ -333,7 +336,7 @@ Google Fonts were used within the website. The 'Roboto' font is the main font us
 
 <br>
 
-The main title for the site, the navigaton items and the headings for the site use the Courgette Font, which is a google font. It is a medium-contrast, brushy, italic-script typeface, which has been made for the web. It adds a decorative flair but is also very legible on a screen. 
+The main title for the site, the navigation items and the headings for the site use the Courgette Font, which is a google font. It is a medium-contrast, brushy, italic-script typeface, which has been made for the web. It adds a decorative flair but is also very legible on a screen. 
 
 <br>
 <p align ="center">      
@@ -418,7 +421,7 @@ The website consists of the following Pages:
 
 ### 5. Wireframes    <a name="wireframes"></a>
 
-The Wireframes for the site were created in Figma, I concentrated on the standard websize and the mobile size. The mid-level sizes were generally in keeping with the main websize but just on a smaller scale. The Wireframes can be found below:
+The Wireframes for the site were created in Figma, I concentrated on the standard websize and the mobile size. The mid-level sizes were generally in keeping with the main websize but just on a smaller scale. There have been modifications and changes since the initial wireframes design. The Wireframes can be found below:
 
 <details><summary>Figma Wireframes</summary>
 
@@ -690,7 +693,7 @@ Google Ads : This option is out of reach at the moment, as the budget is small, 
 
 <br>
 
-Events: There is a large industry dealing with essential oils and aromatherapy in Ireland, and indeed worldwide. In this regard you can tap into existing events that are used to promote the industry and that are very accessible to the public. One of the largest event, occurs yearly in the RDS in the Body Mind Spirit fair where a range of companies, mostly smaller companies have the opportunity to highlight their products to a very involved and motivated audience. You have the opporuity to mingle with and sell directly to the public and grow a valuable network which will be a great boost for future business. This would play a major part in growing the brand and linking with a potentially large customer base. But this occurs later in the year, and meantime smaller events, in this vein are held in venues throughtout the country and would be an excellent way to connect with the right clientele. As well as growing a customer base it wold be good to network with other business's and there may be some mutual gains in forging such alliances. The image below shows the Expo details:
+Events: There is a large industry dealing with essential oils and aromatherapy in Ireland, and indeed worldwide. In this regard you can tap into existing events that are used to promote the industry and that are very accessible to the public. One of the largest event, occurs yearly in the RDS in the Body Mind Spirit fair where a range of companies, mostly smaller companies have the opportunity to highlight their products to a very involved and motivated audience. You have the opporuity to mingle with and sell directly to the public and grow a valuable network which will be a great boost for future business. This would play a major part in growing the brand and linking with a potentially large customer base. But this occurs later in the year, and meantime smaller events, in this vein are held in venues throughtout the country and would be an excellent way to connect with the right clientele. As well as growing a customer base it would be good to network with other business's and there may be some mutual gains in forging such alliances. The image below shows the Expo details:
 
 <br>
 
@@ -712,7 +715,7 @@ The website itself offers users the chance to sign up for a regular newsletter. 
 
 
 ###  3. Search Engine Optimization(SEO)
-SEO research will help drive pople to our site more efficiently. Inititally finding the right keywords will help send our site further up in the rankings. Finding the right words involved looking at present sites, previous research finding and analysing which words were suggested when searching for essential oils and aromatherapy in particular. I used [wordtracker.com](https://www.wordtracker.com/) and various other free tools to find keywords, the factors that determined the ones chosen include search volume, relevance and conversion value. I then picked the top words and phrases and integrated them into the site via meta-tags or by ensuring they were included in headings, image names and content. It was important not to overdo the use of these words as this would have been counterproductive to the end goal. The following image shows a sample of the results found and used in the site:
+SEO research will help drive people to our site more efficiently. Inititally finding the right keywords will help send our site further up in the rankings. Finding the right words involved looking at present sites, previous research finding and analysing which words were suggested when searching for essential oils and aromatherapy in particular in google searches. I used [wordtracker.com](https://www.wordtracker.com/) and various other free tools to find keywords, the factors that determined the ones chosen include search volume, relevance and conversion value. I then picked the top words and phrases and integrated them into the site via meta-tags or by ensuring they were included in headings, image names and content. It was important not to overdo the use of these words as this would have been counterproductive to the end goal. The following image shows a sample of the results found and that were used to comppile the keywords used in the site:
 
 <br>
 
@@ -733,12 +736,12 @@ There were also links included for both internal pages and external sites of goo
 <br>
 
 ### 4. XML Sitemap
-Additionally to help the search engines crawl the site, I've added an XML sitemap file to the main root directory. This was generated using [xml-sitemaps](https://www.xml-sitemaps.com/)
+ I've added an XML sitemap file to the main root directory, this is used to help search engines understand your website structure. It also enables Google to crawl every important page of your website. Sitemaps in general enhance the ranking of your website in search engine results, thus in turn will boost your SEO efforts.This page was generated using [xml-sitemaps](https://www.xml-sitemaps.com/)
 
 <br>
 
 ### 5. Robots.Txt File
-A robots.txt file has also added to allow the search engine crawlers to know which URLs the crawler can access on this ste, this was used mainly to avoid overloading the site with requests.
+A robots.txt file has also added to allow the search engine crawlers to know which URLs the crawler can access on this site, this was used to avoid overloading the site with requests.
 
 <br>
 
@@ -761,9 +764,9 @@ The logo was the first asset I created in Logo maker, it depicts a simple female
 
 <br/> 
 
-There is a searchbar, where the user can put in their search criteria term. There is an Account Icon, which contains a dropdown menu:
+There is a search bar, where the user can search for products by name or keyword. There is an Account Icon, which contains a dropdown menu:
 
-Account Icon - Register, Log In (Before Log in or registering)
+Account Icon - Register, Log In. (Before Log in or registering)
 Account Icon - Product Management, My Profile, Product Favourites, Log Out. (If logged in)
 
 Shopping Bag Icon - Takes you to the Shopping Bag Page.
@@ -774,9 +777,10 @@ The navigation consists of the following options: All Products, EssenChelle Prod
 
 All Products - By Price, By Rating, By Category and All Products.
 EssenChelle Products - Essential Oils, Massage Oils, Oil Burners and All Products.
-Our Story - About Us, Our Products and Blog.
+Our Story - About Us, Our Products and Blog and FAQ.
 Special Offers - New Arrivals, Deals, Clearance and All Specials.
 Contact - Contact Form.
+
   <br>
 
 <p align ="center">      
@@ -784,7 +788,6 @@ Contact - Contact Form.
 </p>
 
 <br/> 
-
 
 On smaller screens, there is a hamburger menu where the navigation items appear in a collapsible dropdown menu. The image below shows the collapsible menu for smaller screens.
 
@@ -797,7 +800,7 @@ On smaller screens, there is a hamburger menu where the navigation items appear 
 <br/> 
 
 - The Footer:
-The Footer contains a blurb on the site, some contact details and social media icons, also the copyright information on the EssenChelle Oils site. THe footer also includes a newsletter sign up form provided by mailchimp.
+The Footer contains a blurb on the site, some contact details and social media icons, also the copyright information, the privacy policy and the faq for the EssenChelle Oils site. The footer also includes a newsletter sign up form provided by mailchimp.
 
  <br>
 
@@ -809,8 +812,7 @@ The Footer contains a blurb on the site, some contact details and social media i
 
 ### 1. Home Page   <a name="homepage"></a>
 
-The home page has a Hero image depicting a massage session, which is a strong indicator to the type of productss available within the site. There is some textual content describing the site purpose. There is also a shop button, that can bring the user directly to the product page, so that the user can begin shopping right away.
-There was an issue with getting a screencap of the page, because of the background, so its a little off.(It looks better in real life)
+The home page has a Hero image depicting a massage session, which is a strong indicator to the type of products available within the site. There is some textual content describing the site purpose. There is also a call to action button(shop button), that will take the user directly to the product page, so that the user can begin shopping right away. There was an issue with getting a screencap of the page, because of the background, so its a little off.(It looks better in real life)
   
 <br>
 
@@ -822,7 +824,7 @@ There was an issue with getting a screencap of the page, because of the backgrou
 
 ### 2. Products Page     <a name="productpage"></a>
 
-The products page shows the the full collection within the EssenChelle range including the special offers. These products can be arranged according to specified criteria, such as by price, by rating and by category. The number of items is shown to the user and the user can further sort the products by means of the sorting bar. Each of the products shows the title, an image, the price, the category, the star rating and will show users if there are any associated reviews for the product.
+The products page shows the the full collection within the EssenChelle range including the special offers. These products can be arranged according to specified criteria, such as by price, by rating or by category. The number of all items available is shown to the user and the user can further sort the products by means of the sorting bar on the right of the screen. Each of the products shows the title, an image, the price, the category and the star rating and it will also show users if there are any associated reviews for the product.
 
 <br>
 
@@ -835,7 +837,7 @@ The products page shows the the full collection within the EssenChelle range inc
 ### 3. EssenChelle Products Page     <a name="essenchelleproductpage"></a>
 
 <br>
-This Page shows products in the category of Essential, Massage and Burners. You can select to see products within just one category by choosing the option in the dropdown menu or by selecting the relevant link at the top of the page. You can view the number of products and there is a facility for sorting at the top of the page. The options for sorting includes price, rating, name and category.
+This Page shows products in the category of Essential, Massage and Oil Burners. You can select to see products within just one category by choosing the option in the dropdown menu or by selecting the relevant badges at the top of the page. You can view the number of products and there is a facility for sorting at the top of the page. The options for sorting includes price, rating, name and category.
 
 <br>
 
@@ -846,7 +848,7 @@ This Page shows products in the category of Essential, Massage and Burners. You 
 <br>
 
 ### 4. Product Details Page     <a name="productdetailspage"></a>
-The Page shows the full details of an individual product including an image. There is a review form, where a product user who is logged in can leave a review for others. This review will need to be approved by the superuser before it is published to the review section. the review section shows existing reviews. There is a add to favourites button to the right of the product title, when this is clicked, the product is saved to the user's favourites. Any product which has been selected as a favourite, can be viewed in the product favourites page (can be found using the account icon when user is logged in).
+The Page shows the full details of an individual product including the image. There is a review form, where a product user who is logged in can leave a review for a product. This review will need to be approved by the superuser before it is published to the review section. The review section shows existing reviews. There is an add to favourites button to the right of the product title, when this is clicked, the product is saved to the user's favourites. Any product which has been selected as a favourite, can be viewed in the product favourites page (can be found in the dropdown menu within the account icon when the user is logged in).
 
 <br>
 
@@ -858,7 +860,7 @@ The Page shows the full details of an individual product including an image. The
 
 ### 5. About Page     <a name="aboutpage"></a>
 
-The About Page provides the background information on the EssenChelle Oil Company, It also features a carousel with information on the different categories of products on offer in the site.
+The About Page provides the background information on the EssenChelle Oil Company, It also features a carousel with information on the different categories of products on offer within the site.
 
 <br>
 
@@ -870,7 +872,7 @@ The About Page provides the background information on the EssenChelle Oil Compan
 
 ### 6. Our Products Page     <a name="ourproductpage"></a>
 
-The our products page shows more indepth information on each category in the product range. It also provides customer testimonials on why a potential customer should choose a product in the EssenChelle Product Range.
+The our products page shows more in-depth information on each category in the product range. It also provides customer testimonials on why a potential customer should choose a product in the EssenChelle Product Range. This also plays a part in the marketing strategy, as it uses client recommendations to promote the brand. 
 
 <br>
 
@@ -882,7 +884,7 @@ The our products page shows more indepth information on each category in the pro
 
 ### 7. Blog Page     <a name="blogpage"></a>
 
-The Blog Page shows a collection of blogs with a spotlight on products being sold on the site. The sidebar gives a brief introduction to the blogs. There is a link within the sidebar to an accredited site with more comprehensive information on individual essential oils. It also shows the titles for the 5 latest blogs available.
+The Blog Page shows a collection of blogs with a spotlight on products being sold on the site. This would hopefully encourage readers to view the products page (using the content to drive sales, which is a part of the marketing strategy). The sidebar gives a brief introduction to the blogs. There is a link within the sidebar to an accredited site with more comprehensive information on individual essential oils. It also shows the titles for the latest available Blogs.
 
 <br>
 
@@ -893,7 +895,7 @@ The Blog Page shows a collection of blogs with a spotlight on products being sol
 <br/>
 
 ### 8. Blog Details Page     <a name="blogdetailspage"></a>
-The Blog Detail page shows the full blog which has information pertaining to selected products on the site. It will either concentrate on an individual oil(lavender oil), or a selection of products(top 5 massage oils), it may also include internal links to the highligted products within the site . There is also a comment form, for logged in users to leave a comment and there is a comment section for existing comments.
+The Blog Detail page shows the full blog which has information pertaining to selected products on the site. It will either concentrate on an individual oil(lavender oil), or a selection of products(top 5 massage oils), it may also include internal links to the highligted products within the site . For logged in users there is a comment form, for users to leave a comment. When a comment is added, it need's to be approved by a superuser before it will be published in the comment section. There is a comment section for existing comments.
 
 <br>
 
@@ -905,7 +907,7 @@ The Blog Detail page shows the full blog which has information pertaining to sel
 
 
 ### 9. Contact Page     <a name="contactpage"></a>
-The contact page has a map showing the location of the Company and a contact form so that the user can send a message to the company. This will aid communication between the user and the EssenChelle Oil Co. this could include queries on the sales process, more information on specific properties of products or questions in relation to delivery issues.
+The contact page has a map showing the location of the Company(which is a fictional address) and a contact form so that the user can send a message to the company. This will aid communication between the user and the EssenChelle Oil Co. this could include queries on the sales process, more information on specific properties of products or questions in relation to delivery issues. When a message is sent a confirmation email will be sent to the message sender. You do not have to be logged in to make an enquiry, as those who send a message could be a potential customer and it would be important to ensure the communication lines are open for all users.
 
 <br>
 
@@ -916,7 +918,7 @@ The contact page has a map showing the location of the Company and a contact for
 <br/>
 
 ### 10. Profile Page    <a name="profile page"></a>
-The Profile page contains a form to update the customer's default delivery information and order history. It also allows the user to enter their credit/debit card details and there is a checkbox where the user can tick if they want this information to be saved on the site.
+The Profile page contains a form to update the customer's default delivery information and it will also show the user's order history. It also allows the user to enter their credit/debit card details and there is a checkbox where the user can tick if they want this information to be saved on the site. The user needs to be logged in in order to save this information to their account.
 <br>
 
 <p align ="center">      
@@ -926,7 +928,7 @@ The Profile page contains a form to update the customer's default delivery infor
 <br/>
 
 ### 11. Product Favourites Page     <a name="favouritespage"></a>
-The Page shows a collection of the user's product favourites. The details and image of each product are displayed. There is a button with remove below each product and when this is selected that product will be removed from the user's favourites.
+The Page shows a collection of the user's product favourites. The details and image of each product are displayed. There is a remove button below each product and when this is selected the product will be removed from the user's favourites.
 
 <br>
 
@@ -936,9 +938,43 @@ The Page shows a collection of the user's product favourites. The details and im
 
 <br/>
 
-### 12. Shopping Bag Page     <a name="shoppingbagpage"></a>
-The Page shows the products that the user has currently in their shopping bag. This will initially display no products, but as products are added, they will be displayed on the page. There is a keep shopping button and this allows the user to return to shop for more products.
-<br
+### 12. FAQ Page     <a name="faqpage"></a>
+The page gives a brief introduction to content of the page and there are 3 sections: Ordering, Dispatch and Delivery and Returns and Refunds. Each section shows frequently asked questions and answers. It can be accessed in the dropdown menu for the our story link, but also can be accessed by a link in the footer, this link will open the page in a seperate footer.
+
+<br>
+
+<p align ="center">      
+     <img src="assets/readme/images/faq.jpg"  width="500"  alt="product favourites page" />    
+</p>
+
+<br/>
+
+### 13. Privacy Policy Page    <a name="privacypolicypage"></a>
+This page shows the Privacy Policy for the EssenChelle Oil Company. The link to the page can be found in the footer section. When used it will open the page in a new tab.
+
+<br>
+
+<p align ="center">      
+     <img src="assets/readme/images/privacypolicy.jpg"  width="500"  alt="product favourites page" />    
+</p>
+
+<br/>
+
+### 14. Copyright Page    <a name="copyrightpage"></a>
+This page shows the copyright information for the EssenChelle Oil Company. The link to the page can be found in the footer section. When used it will open the page in a new tab.
+
+<br>
+
+<p align ="center">      
+     <img src="assets/readme/images/copyright.jpg"  width="500"  alt="product favourites page" />    
+</p>
+
+<br/>
+
+### 15. Shopping Bag Page     <a name="shoppingbagpage"></a>
+The Page shows the products that the user has currently in their shopping bag. This will initially display no products, but as products are added, they will be displayed on the page. There is a keep shopping button and this allows the user to return to shop for more products. There is also a go to secure checout button, and this will send the user to the checkout page where they can complete their purchase.
+
+<br>
 
 <p align ="center">      
      <img src="assets/readme/images/bagpage.jpg"  width="500"  alt="shopping bag page" />    
@@ -946,8 +982,9 @@ The Page shows the products that the user has currently in their shopping bag. T
 
 <br/>
 
-### 13. Checkout Page     <a name="checkoutpage"></a>
-The Checkout Page shows the form to complete the order and the order summary. You can adjust your bag or you can complete your order.
+### 16. Checkout Page     <a name="checkoutpage"></a>
+The Checkout Page shows the form to complete the order and the order summary. You can adjust your bag or you can complete your order. When the user has successfully entered all their details correctly, a spinner feature will show while the purchase is being processed. In some cases a popup will show in order to save your details.
+
 <br>
 
 <p align ="center">      
@@ -956,8 +993,8 @@ The Checkout Page shows the form to complete the order and the order summary. Yo
 
 <br/>
 
-### 14. Checkout Success Page     <a name="checkoutsuccesspage"></a>
-The Page is shown to the user when their order has been processed. It contains a Thank you message and includes the order information, order details, delivery details and billing information,  and a link to the new arrival products on the site. There is also a success message displayed advising the user that their order has been processed successfully and a confirmation email will be sent to them.
+### 17. Checkout Success Page     <a name="checkoutsuccesspage"></a>
+The Page is shown to the user when their order has been processed. It contains a Thank you message and includes the order information, order details, delivery details and billing information, and a link to the new arrival page on the site. There is also a success message displayed(toast) advising the user that their order has been processed successfully and a confirmation email will be sent to them.
 
 <br>
 
@@ -973,7 +1010,7 @@ The Page is shown to the user when their order has been processed. It contains a
 
 <br>
 
-### 15. Add Product Page     <a name="addproductpage"></a>
+### 18. Add Product Page     <a name="addproductpage"></a>
 This Page is also the product management page. The superuser can add a product in the frontend as well as in the admin panel. It can be accessed via the account icon or with a button at the left and bottom of the products page.(which I found more intutive to user)
 
 <br>
@@ -984,8 +1021,8 @@ This Page is also the product management page. The superuser can add a product i
 
 <br/>
 
-### 16. Edit Product Page     <a name="editproductpage"></a>
-The Page has a form which allows the superuser to edit product details for individual products. It can be found below the product details in the products page and on the product detail page.
+### 19. Edit Product Page     <a name="editproductpage"></a>
+If you are a Superuser you can find the button to edit a product below the product Title in the products page and on the product detail page below the product information.The Edit Product Page has a form which allows the superuser to edit product details for individual products. When the product details have been edited and the form is submitted the superuser will be redirected to the product detail page for that product.
 
 <br>
 
@@ -995,8 +1032,9 @@ The Page has a form which allows the superuser to edit product details for indiv
 
 <br/>
 
-### 17. Delete Product Page     <a name="deleteproductpage"></a>
-The Page has a form which allows the superuser to delete products. It can be found below the product details in the products page and on the product detail page.
+### 20. Delete Product Page     <a name="deleteproductpage"></a>
+If you are a Superuser you can find the button to delete a product below the product Title in the products page and on the product detail page below the product information.The Delete Product Page has a form which allows the superuser to delete individual products.  
+
 <br>
 
 <p align ="center">      
@@ -1005,8 +1043,8 @@ The Page has a form which allows the superuser to delete products. It can be fou
 
 <br/>
 
-### 18. Add Blog Page     <a name="addblogpage"></a>
-The Page has a form which allows the superuser to add a blog to the blog collection. The button is available on the bottom and left of the blog page.
+### 21. Add Blog Page     <a name="addblogpage"></a>
+The Page has a form which allows the superuser to add a blog to the blog collection. The button is visible on the bottom and left of the blog page, only for the superuser.
 
 <br>
 
@@ -1016,8 +1054,8 @@ The Page has a form which allows the superuser to add a blog to the blog collect
 
 <br/>
 
-### 19. Edit Blog Page     <a name="editblogpage"></a>
-The Page has a form which allows the superuser to edit an existing blog. The link to edit a blog can be found at the bottom of individual blogs in the blog page.
+### 22. Edit Blog Page     <a name="editblogpage"></a>
+ The link to edit a blog can be found at the bottom of individual blogs in the blog page and the bottom left side of the page below the blog in the blog detail page. The Edit Blog Page has a form which allows the superuser to edit an existing blog. A Toast will tell the user that they are editing the blog. When the blog is edited, the changes will be updated in the blog on the blog page. 
 
 <br>
 
@@ -1027,8 +1065,8 @@ The Page has a form which allows the superuser to edit an existing blog. The lin
 
 <br/>
 
-### 20. Delete Blog Page     <a name="deleteblogpage"></a>
-The Page has a form which allows the superuser to delete an existing blog. The link is available at the bottom of individual blogs in the blog page.
+### 23. Delete Blog Page     <a name="deleteblogpage"></a>
+The link to delete a blog can be found at the bottom of individual blogs in the blog page and the bottom left side of the page below the blog in the blog detail page.The Delete Page has a form which allows the superuser to delete an existing blog. 
 
 <br>
 
@@ -1037,9 +1075,15 @@ The Page has a form which allows the superuser to delete an existing blog. The l
 </p>
 
 <br/>
+
+<p align ="center"> 
+  ## The following pages are also available, to all users on the site. ##
+</p>
+
+<br>
  
 
-###  21. Signup Page   <a name="signuppage"></a>
+###  24. Signup Page   <a name="signuppage"></a>
 
 On the Signup Page, a new user can sign up for the EssenChelle Oils website by filling out and submitting the form. On registering they will be assigned a Profile for the site. On registering they will be sent an email confirming their registration. 
 
@@ -1051,9 +1095,9 @@ On the Signup Page, a new user can sign up for the EssenChelle Oils website by f
 
 <br/>
 
-###  22. Login Page   <a name="loginpage"></a>
+###  25. Login Page   <a name="loginpage"></a>
 
-A registered User can log in to the website by inputting their username and password and they will have full access to all the logged in features within the site. 
+A registered User can log in to the website by inputting their username and password and they will have full access to all the logged in features within the site. If they are logged in and are a superuser they will have extra functionality enabled. 
 
 
 <br>
@@ -1064,9 +1108,9 @@ A registered User can log in to the website by inputting their username and pass
 
 <br/> 
 
-###  23. Logout Page   <a name="logoutpage"></a>
+###  26. Logout Page   <a name="logoutpage"></a>
 
-In the Logout Page, the User can confirm that they want to exit the website.
+In the Logout Page, the User can confirm that they want to exit the website and they can log out of the site.
 
 <br>
 
@@ -1076,7 +1120,7 @@ In the Logout Page, the User can confirm that they want to exit the website.
 
 <br/> 
 
-### 24. Custom Error Pages  <a name="error pages"></a>
+### 27. Custom Error Pages  <a name="error pages"></a>
 
 I have included custom Error Pages in the error folder within the templates folder(403,404,405,500), Below is the image from the 404 page, but they all look similar, barring the fault lines.
 
@@ -1088,9 +1132,15 @@ I have included custom Error Pages in the error folder within the templates fold
 
 <br/> 
 
-### 25. Admin Panel  <a name="adminpanel"></a>
+<p align ="center"> 
+  ## The following page is available to the superuser. ##
+</p>
 
-The admin panel allows the admin/superuser to perform a wide range of functionalities within the site. The admin can add, delete, edit products, blogs, users. The admin can also approve reviews for individual products and comments for individual blogs.
+<br>
+
+### 28. Admin Panel  <a name="adminpanel"></a>
+
+The admin panel allows the admin/superuser to perform a wide range of functionalities within the site. The admin can add, delete, edit products and they can review and add or change details in all admin areas. The admin can also approve reviews for individual products and comments for individual blogs.
 
 <br>
 
@@ -1106,7 +1156,7 @@ The admin panel allows the admin/superuser to perform a wide range of functional
 
 <br/> 
 
-### 26. Security Measures  <a name="security"></a>
+### 29. Security Measures  <a name="security"></a>
 
 To ensure security on the site, only logged in users can access certain features on the site. A logged in user can add a product review or comment for a blog in the blog section. A superuser can add, updata and delete products within the admin panel. The superuser also has access to add, edit and delete products within the product pages. The superuser can add, edit and delete blogs in the admin panel but they can also access these capabilities within the blog page. Only the Admin/Superuser can access the admin Panel(would need sign in credentials).The Database URL and secret key are stored in the env.py file to prevent unwanted connections to the Database. As I was following the boutique ado walkthrough, I had not realised the secret key was commited in the early stages of the development, after doing my research into the issue and with the advice from CI, I generated a new key, and this was immediately put in the env.py file, making the other key obselete. All secret keys were included in the env.py file. Cross-Site Request Forgery (CSRF) Tokens are used on all Forms within the App for added protection. All keys needed for the inclusion of AWS, CLoudinary and Stripe were concealed for security purposes.
 

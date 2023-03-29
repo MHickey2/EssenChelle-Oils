@@ -25,3 +25,9 @@ def copyright(request):
     """ A view to return the copyright page """
 
     return render(request, 'story/copyright.html')
+
+
+def privacypolicy(request):
+    """ A view to return the copyright page """
+
+    return render(request, 'story/privacypolicy.html')

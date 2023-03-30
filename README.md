@@ -1289,7 +1289,14 @@ Go to the [TESTING DOCUMENT](TESTING.md)
 
  There is an issue in regards to sizes of products at the moment you will be offered different sizes within cerain products, which you can select successfully, there is an issue with applying 2 different prices to seperate sizes of the one product, which would need to be addressed. You can have either a small or large essential oil product in some items, but currently both products will be riced the same, now I could content the smaller bottle is of a higher quality and the larger bottle is a weaker solution and this could account for the pricing, but moving forward I would add additional functionality to offer a greater range of sizes for a greater range of products with a differing range of costs.  I really didnt want to deviate too much from the existing scripts, as I felt this might have a detrimental effect on the whole buying procedure and the inclusion of the Stripe functioning, but this would be an area that would need more of a deep dive for building E-Commerce sites in the future.
 
+While doing testing with lighthouse and page speed, the scores were affected by the inclusion of third party code essential for the site, this was mainly in the area of Boostrap, Jquery and mailchimp. I did try to some mnor fixes for these issues. In regards to the JQuery I did try to change to a newer JQuery but it stopped the functionality I had in regards to the navigation, so left as it was. The mailchimp is included in every page, and the functionality of the newsletter subscription is provided by mailchimp, so was not in a position to alter this code. I did change my images to new generation webp formats, as the platform was suggesting this would be beneficial for the site. The Javascript in the site was provided by code institute and I did not want to make any alterations in case the Stripe payments could have been badly effected. 
  <br>
+
+<p align ="center">      
+     <img src="assets/readme/images/renderblocking.png" width="600" alt="Rendering Blocking Issues" />    
+</p>
+
+<br>
 
  #### [Return to Table of Contents](#toc)
 ----

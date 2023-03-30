@@ -95,11 +95,26 @@ The result can be seen below:
 
 
 4. Lighthouse Testing   <a name="lighthouse"></a>
+I have been experiencing issues with Lighouse testing, although I have been working in incognitor there are still issues with getting accurate results (had same issues with previous projects). On many occassions it does not work at all and if it does work it encounters issues, I have removed extensions from incognito and tested other sites to esatablish a baseline, but tends to act the same way no matter what website I test, so I looked to alternatives that may work better, I have provided a sample score from Lighthouse and have used Page Speed Insights which I have had no problems with using and have provided scores to supplement the Lighthouse scores. There were errors in rendering third party code mainly bootstrap, JQuery,Stripe and MailChimp, but cannot really adjust or remove these as they are essential for functionality within the site. I will refer to this in the unsolved bugs in the readme.
 
+<br>
 
 <p align ="center">      
-     <img src=assets/readme/images/ width="600"  alt="lighouse testing specs" />    
+     <img src=assets/readme/images/lighthouseDesktop.png width="600"  alt="lighouse testing specs Desktop" />    
 </p>
+
+<br/> 
+
+<p align ="center">      
+     <img src=assets/readme/images/pagespeeddesktop.png width="600"  alt="pagespeed Desktop" />    
+</p>
+
+<br/> 
+
+<p align ="center">      
+     <img src=assets/readme/images/pagespeedmobile.png width="600"  alt="pagespeed testing mobile" />    
+</p>
+
 <br/> 
 
 5. Accessability Testing   <a name="accessability"></a>

@@ -11,7 +11,7 @@
 
 The EssenChelle Oils site is my 5th Project for the Code Institute and it is a full stack E-commerce site using the Django Framework, it includes Python, JavaScript, CSS and Bootstrap5. It utilizes Stripe payments. It has user authentication and Full CRUD functionality for the products and Blogs for the Superuser. The website deals with the sale of essential oils and their byproducts. The website would appeal to people who use or want to know more about Essential Oils and are interested in buying these products. This website has been built for educational purposes and the payment transactions are purely for demonstration only. If you want to test the payment functionality, you can use: 
 <p align ="center"> 
-<mark style="background-color:#fff">Card number: 4242 4242 4242 4242  Exp: Future Date i.e. 05/25 and CVC can be any 3 numbers.</mark>
+<mark style="background-color:#f6c7eb">Card number: 4242 4242 4242 4242  Exp: Future Date i.e. 05/25 and CVC can be any 3 numbers.</mark>
 </p>
 
 <br/>
@@ -290,7 +290,7 @@ User Story Testing can be found in the [TESING.md Document](TESTING.md)
 
 ## 3. Agile Methodology
 
-The project was developed using Agile Methodology by using the GitHub Projects functionality within the GitHub Repository. The issues can be found [Here](https://github.com/MHickey2/EssenChelle-Oils/issues) and this is the link for the [Essential Oils Project Board](https://github.com/users/MHickey2/projects/2)
+The project was developed using Agile Methodology by using the GitHub Projects functionality within the GitHub Repository. Each issue has a defined acceptance criteria and includes tasks to accomplish this goal. The 29 issues can be found [Here](https://github.com/MHickey2/EssenChelle-Oils/issues) and this is the link for the [Essential Oils Project Board](https://github.com/users/MHickey2/projects/2)
 
 <br/> 
 
@@ -698,17 +698,22 @@ Events: There is a large industry dealing with essential oils and aromatherapy i
 <br>
 
 <p align="center">
-  <img src="assets/readme/images/bodymindspirit.png" width="700" alt="Body Mind Spirit Expo" />
+  <img src="assets/readme/images/bodymindspirit.png"  alt="Body Mind Spirit Expo" />
 </p>
 
 <br>
 
-The website itself offers users the chance to sign up for a regular newsletter. This measure allows you communicate directly with your prospects and customers in a personalized way by serving valuable content and relevant promotions straight to their inboxes. This newsletter would be a good way to promote new products, provide articles highlighting the benefits of using certain products, offer special offers and highlight new arrival products. This will be a great way to grow the Essenchelle community and keep the customers in the loop. The newsletter functionality utilizes mailchimp, this service will help keep track of users. Mailchimp offers a number of tools that will be explored further as the company develops.
-
+The website itself offers users the chance to sign up for a regular newsletter. This measure allows you communicate directly with your prospects and customers in a personalized way by serving valuable content and relevant promotions straight to their inboxes. This newsletter would be a good way to promote new products, provide articles highlighting the benefits of using certain products, offer special offers and highlight new arrival products. This will be a great way to grow the Essenchelle community and keep the customers in the loop. The newsletter functionality utilizes mailchimp, this service will help keep track of users. Mailchimp offers a number of tools that will be explored further as the company develops. You can visit the mailchimp dashboard to find user emails that have been added to your subsciber list. The newsletter itself would include the latest articles, special promotional offers and promotional deals. Sending a newsletter on a regular basis will build brand awareness and should lead to more purchases on the site.
 <br>
 
 <p align="center">
   <img src="assets/readme/images/newsletter.png" alt="Mailchimp Newsletter" />
+</p>
+
+<br>
+
+<p align="center">
+  <img src="assets/readme/images/subscribers.png" alt="subscribers list" />
 </p>
 
 <br>
@@ -720,7 +725,13 @@ SEO research will help drive people to our site more efficiently. Inititally fin
 <br>
 
 <p align="center">
-  <img src="assets/readme/images/keywordsearches.png" width="300" alt="Keyword Search" />
+  <img src="assets/readme/images/googlekeywords.png" width="650" alt="Keyword Search" />
+</p>
+
+<br>
+
+<p align="center">
+  <img src="assets/readme/images/ukbusinessdirectory.png" width="400" alt="Keyword Search" />
 </p>
 
 <br>
@@ -1211,7 +1222,7 @@ To ensure security on the site, only logged in users can access certain features
 
 -   [Am I Responsive](http://ami.responsivedesign.is/) - was used to create the multi-device mock-up above.
 -   [Bootstrap v5.2.3](https://getbootstrap.com/)
--   [Git:](https://git-scm.com/) - used for version control, updated and commited changes (this in turn updated site in Heroku). 
+-   [Git:](https://git-scm.com/) - used for version control, updated and commited changes. 
 -   [GitHub:](https://github.com/) - is the respository for all the git pushes.
 -   [Gitpod](https://gitpod.io/) - was the IDE Editor.
 -   [Heroku:](https://heroku.com) - used to deploy the application.
@@ -1231,6 +1242,7 @@ To ensure security on the site, only logged in users can access certain features
 -   [XML- Sitempap](https://www.xml-sitemaps.com/) - used to create a sitemap for the site.
 -   [Diffchecker](https://www.diffchecker.com/) - which was useful for finding coding errors in development.
 -   [Temp Email Site](https://temp-mail.org/en/) - used to test emails for registering and purchasing on site.
+-   [Page Speed Insights](https://pagespeed.web.dev/) - used to test speed and performance of website.
 
 ### Django Packages
 

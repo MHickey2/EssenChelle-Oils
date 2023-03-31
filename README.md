@@ -108,6 +108,7 @@ The EssenChelle Oils site is my 5th Project for the Code Institute and it is a f
     - [Django Framework    ](#django-framework----)
     - [Deploying to Heroku ](#deploying-to-heroku-)
     - [Changes in Heroku  ](#changes-in-heroku--)
+      - [Add Stripe keys to Heroku](#add-stripe-keys-to-heroku)
     - [Final Deployment](#final-deployment)
       - [Return to Table of Contents](#return-to-table-of-contents-8)
   - [Credits ](#credits-)
@@ -1304,7 +1305,7 @@ While doing testing with lighthouse and page speed, the scores were affected by 
 
  ## 12. Deployment <a name="deployment"></a>
 
- The Project used Heroku for deployment. I used GitPod for development within the project and pushed to the GitHub Repository. This in turn updated the Project in Heroku. I used DEBUG = 'DEV' in os.environ, during development and other than when testing, had it configured so that I could work both locally and could also test the deployed Project on an ongoing basis. I added all the config vars for Stripe, AWS, The Database URL, and the creds for email. I had originally has disable collectstatic and the creds for AWS but removed these when I added cloudinary.
+ The Project used Heroku for deployment. I used GitPod for development within the project and pushed to the GitHub Repository. This in turn updated the Project in Heroku. I used DEBUG = 'DEV' in os.environ, during development and other than when testing, had it configured so that I could work both locally and could also test the deployed Project on an ongoing basis. I added all the config vars for Stripe, AWS, The Database URL, and the creds for email. I  originally has disable collectstatic and the creds for AWS but removed these when I added cloudinary.
 
  <br>
 
@@ -1377,7 +1378,54 @@ time you push to your Repository or you can manually deploy which is the option 
  
 [Changing Dynos](https://code-institute-students.github.io/deployment-docs/01-heroku-signup/heroku-03-converting-dynos) 
 
+- I had already signed up for ElephantSQl so just needed to create a new instance, I gave my plan a name, chose the tiny turtle(free plan) and selected the region as Ireland. I ensured all data was entered correctly and created my instance.
+- I then found the name of the newly created instance in the Dashboard. I copied the database url, you can add the config var DATABASE_URL to your other config vars in your Heroku settings and then you have to alter some of your existing code in your project. 
+- You need to install dj_database_url and psycopg2 and update your requirements.txt to include these packages. You need to import these into your settings file. You need to add
+
+ ````
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    }
+ 
+  ````
+
+  - It's important not to commit the actual database string for security reasons.
+  - In the terminal, run the showmigrations command to confirm you are connected to the external database.
+  - You should see a list of migrations, you should now be able to migrate your database models to your new database with the following command, and then follow up with categories and products (important to load categories first):
+  
+  ````
+   python3 manage.py migrate
+   python3 manage.py loaddata categories
+   python3 manage.py loaddata products
+
+  ````
+  - Create a new Superuser for the new database
+  - To prevent exposing the database when pushing to GitHub delete it from the settings.py (this will be reset as an environment variable)
+  - You can check if your migrations have been successful by going back to your ElephantSQL dashboard and you need to select the browser option.
+  - Click the Table queries button, select auth_user. When you execute you wil be able to see the details for your new superuser.
+
 <br>
+
+#### Add Stripe keys to Heroku
+- Sign into your stripe account and click 'Developers' located in the top right of the navbar.
+- You can select the webhook tab and on the page you can add an endpoint.you will need to input the link to your heroku app followed by /checkout/wh/. 
+- You can click '+ Select events' and check the 'Select all events' checkbox at the top before clicking 'Add events' at the bottom. Once this is done finish the form by clicking 'Add endpoint'.
+- Your webhook is now created and you should see that it has generated a secret key. You will need this to add to your heroku config vars.
+- Go to your heroku account and navigate to the config vars section in your settings tab. You will need the secret key you just generated for your webhook, in addition to your Publishable key and secret key that you can find in the API keys section back in stripe.
+- Add these values under these keys:
+
+````
+- STRIPE_PUBLIC_KEY = 'insert your stripe publishable key'
+- STRIPE_SECRET_KEY = 'insert your secret key'
+- STRIPE_WH_SECRET = 'insert your webhooks secret key'
+- In your setting.py file in django, insert the following near the bottom of the file:
+
+- STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
+- STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
+- STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')    
+````
+
+When you go through the purchasing process on your site, you can check on your webhooks to see if they have succeeded. I enabled a webhook for the gitpod site and the deployed site. Every so often in the gitpod webhook, it would fail and you would have to check if the url had changed, it changes now and again usually by just one number, but it is enough to make it fail. In the early stages, I had not noticed the url change and figured it was an issue with the code, but as time went on and if there was an issue I just updated the endpoint address and it would work again. The endpoint for the deployed site does not change, but if the url changes after submission, the url in the gitpod site may be updated again and the webhook may fail(in gitpod site).
 
 ### Final Deployment 
 

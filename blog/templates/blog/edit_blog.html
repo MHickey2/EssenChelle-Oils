@@ -7,32 +7,36 @@
 {% if request.user.is_superuser %}
 
 <div class="overlay"></div>
-<br>
-<h1 class="text-center  text-purple">
-    <iconify-icon inline icon="material-symbols:edit-document-outline-rounded" class="greenicon"></iconify-icon>
+<h1 class="text-center mt-3 text-purple">
+    <iconify-icon inline icon="material-symbols:edit-document-outline-rounded" class="text-purple"></iconify-icon>
     &nbsp;Edit your Post:
 </h1>
-<p class="text-center">Ensure to complete all fields</p>
-<div class="container-fluid">
-    <div class="row">
-        <div class="py-5 min-vh-50">
-            <div class="container" id="newpost">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <br>
-                        <form class="form text-muted" method="post" enctype="multipart/form-data">
-                            {% csrf_token %}
-                            {{ form | crispy }}
-                            <br>                            
-                            <br>
-                            <button type="submit" class="btn btn-success btn-lg btn-block">Update</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
+<div class="container">
+    <div class="row ">
+        <div class="col-12 col-md-6">
+            <h2 class="logo-font mb-6 text-purple mt-4">Blog Management</h2>
+            <h5 class="text-muted">Edit a Blog</h5>
+            <hr>
+        </div>
+    </div>
+    <p>Ensure to complete all fields</p>
+    <div class="container">
+        <div class="min-vh-50">            
+                <br>
+                <form class="form text-muted form mb-2" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form | crispy }}
+                    <br>
+
+                    <button type="submit" class="btn btn-success btn-lg btn-block">Update</button>
+                </form>
+           
+
         </div>
     </div>
 </div>
+
+
 
 {% else %}
 <div class="overlay"></div>
@@ -52,6 +56,6 @@
             height: 300
         });
     })
-</script>  
+</script>
 
 {% endblock %}

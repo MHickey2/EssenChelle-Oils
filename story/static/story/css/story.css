@@ -1,9 +1,8 @@
-/***STYLING FOR THE ABOUT PAGE***/
+/***STYLING FOR OUR STORY PAGES TO SUPPLEMENT EXISTING CSS FROM BASE PAGE***/
 
 /*Text for the about page*/
 .text-about {
-  width: 80%;
-  color: black;
+  width: 80%;  
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -16,7 +15,7 @@
   margin-right: auto;
 }
 
-/* Carousel styling */
+/* Carousel styling on the about us page*/
 .carousel-caption {
   vertical-align: middle;
   color: purple;
@@ -27,6 +26,15 @@
 
 .carousel-indicators {
   color: purple;
+}
+
+.backlay {
+  background: rgb(224, 142, 224, 0.4);
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+    
 }
 
 .collapsible {
@@ -51,7 +59,6 @@
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
-
   }
 
   /* Our Products Styling */

@@ -11,7 +11,7 @@
 
 The EssenChelle Oils site is my 5th Project for the Code Institute and it is a full stack E-commerce site using the Django Framework, it includes Python, JavaScript, CSS and Bootstrap5. It utilizes Stripe payments. It has user authentication and Full CRUD functionality for the products and Blogs for the Superuser. The website deals with the sale of essential oils and their byproducts. The website would appeal to people who use or want to know more about Essential Oils and are interested in buying these products. This website has been built for educational purposes and the payment transactions are purely for demonstration only. If you want to test the payment functionality, you can use: 
 <p align ="center"> 
-<mark style="background-color:#f6c7eb">Card number: 4242 4242 4242 4242  Exp: Future Date i.e. 05/25 and CVC can be any 3 numbers.</mark>
+<mark>Card number: 4242 4242 4242 4242  Exp: Future Date i.e. 05/25 and CVC can be any 3 numbers.</mark>
 </p>
 
 <br/>
@@ -108,6 +108,7 @@ The EssenChelle Oils site is my 5th Project for the Code Institute and it is a f
     - [Django Framework    ](#django-framework----)
     - [Deploying to Heroku ](#deploying-to-heroku-)
     - [Changes in Heroku  ](#changes-in-heroku--)
+      - [Cloudinary for Images](#cloudinary-for-images)
       - [Add Stripe keys to Heroku](#add-stripe-keys-to-heroku)
     - [Final Deployment](#final-deployment)
       - [Return to Table of Contents](#return-to-table-of-contents-8)
@@ -1406,6 +1407,49 @@ time you push to your Repository or you can manually deploy which is the option 
   - Click the Table queries button, select auth_user. When you execute you wil be able to see the details for your new superuser.
 
 <br>
+
+#### Cloudinary for Images
+- Sign up for Cloudinary(I already had an account after working with it on 4th project)
+- Install Cloudinary's module into your project
+- Go to Media Library and create a folder for your images
+- Upload your images to that folder
+- Click the three dots and copy the URL
+- Paste the URL to your workspace where you want your images to appear
+- Add your cloudinary URL to your ENV.py
+- Add Cloudinary URL to Heroku Config Vars
+- Add DISABLE_COLLECTSTATIC to Heroku Config Vars(temporarily, must be removed before deployment)
+- Add cloudinary to the list of INSTALLED_APPS in settings.py
+- Add the following code in the settings file to tell Cloudinary to store media and static files
+````
+STATIC_URL = '/static/'
+STATICFILES_STORAGE =
+'cloudinary_storage.storage.StaticHashedCloudinaryS
+torage'
+STATICFILES_DIRS = [os.path.join(BASE_DIR,
+'static')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+MEDIA_URL = '/media/'
+DEFAULT_FILE_STORAGE =
+'cloudinary_storage.storage.MediaCloudinaryStorage'
+````
+
+- Link file to the templates directory in Heroku Place under the BASE_DIR line
+````  
+TEMPLATES_DIR = os.path.join(BASE_DIR,
+'templates')
+````
+
+- Change the templates directory to TEMPLATES_DIR Place within the 
+```` 
+TEMPLATES array 'DIRS': [TEMPLATES_DIR]
+````
+
+- Add Heroku Hostname to
+````  
+ALLOWED_HOSTS =
+["PROJ_NAME.herokuapp.com", "localhost"
+````
+
 
 #### Add Stripe keys to Heroku
 - Sign into your stripe account and click 'Developers' located in the top right of the navbar.

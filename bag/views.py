@@ -93,7 +93,7 @@ def remove_from_bag(request, item_id):
             messages.success(request, f'Removed size {size.upper()} {product.name} from your bag')  # noqa
         else:
             bag.pop(item_id)
-            messages.success(request, f'Removed {product.name} from your bag')            
+            messages.success(request, f'Removed {product.name} from your bag')
 
         request.session['bag'] = bag
         return HttpResponse(status=200)

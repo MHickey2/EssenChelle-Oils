@@ -10,41 +10,34 @@
 {% if request.user.is_superuser %}
 
 <div class="overlay"></div>
-<h2 class="text-center text-purple mt-4">
-    <iconify-icon inline icon="material-symbols:delete-outline-rounded" class="text-purple"></iconify-icon>&nbsp;Delete
-    this Product:
-</h2>
 <div class="container">
     <div class="row">
         <div class="col-12 col-md-6">
-            <h2 class="logo-font mb-4 text-purple mt-4">Product Management</h2>
+            <h2 class="logo-font mb-4 text-purple mt-5">Product Management</h2>
             <h5 class="text-muted">Delete a Product</h5>
             <hr>
             <br>
-            <h5 class="text-danger mb-3">Are you sure you want to Delete this product?</h5>
-            <h6>{{ product.name }}</h6>
-            <br>
+            <h6 class="text-danger mb-3">Are you sure you want to Delete this product?</h6>
+            <h6>{{ product.name }}</h6>           
             <form class="form text-muted" method="post">
                 {% csrf_token %}
                 {{ form | crispy }}
                 <br>
                 <button type="submit" class="btn btn-danger btn-lg center">Delete</button>
             </form>
+            <hr>
         </div>
     </div>
 </div>
 
 
 {% else %}
+<div class="overlay"></div>
 <br>
-<h4 class="ml-3">Sorry, you are not allowed to delete this Product</h4>
+<h6 class="ml-3 text-purple">Sorry, you are not allowed to delete this Product</h6>
 {% endif %}
 {% endif %}
 
-
-<div class="center mt-4 ml-3">
-    <a href="{% url 'products' %}" class="btn btn-primary">BACK</a>
-</div>
-<br>
+    <a href="{% url 'products' %}" class="btn btn-dark ml-5 mb-3">BACK</a>
 
 {%endblock%}

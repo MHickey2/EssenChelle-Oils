@@ -2,7 +2,8 @@
 * {
     margin: 0;
     padding: 0;
-    border: none;
+    box-sizing: border-box;
+   
 }
 
 html {
@@ -10,14 +11,18 @@ html {
     font-weight: 400;   
     color: #313131;
     scroll-behavior: smooth;
-    font-size: 1rem;   
+    font-size: 1rem; 
+    height: 100%;  
 }
 
-body {    
+body {  
+    background: url('https://res.cloudinary.com/dspwticaf/image/upload/v1680017191/massageoil_hboa7n.webp') no-repeat center center fixed;
     height: calc(100vh - 164px);    
-    max-width: 1500px;  
-    margin: auto;         
+    /* max-width: 1500px;     */
+    margin: auto;  
+    margin: auto;        
 }
+
 
 /*Some of the styling came with the Boutique Ado Walkthrough, but has been modified
 to fit the new site's styling, but some elements are the same as they fitted the
@@ -69,6 +74,11 @@ needs of the current project*/
 .btn-black {
     background: black;
     color: white;
+}
+
+
+.btn-dark {    
+    background-color: rgb(236, 11, 143)!important;
 }
 
 /*Needed to be modified as it had insufficient contast in places*/
@@ -162,20 +172,20 @@ needs of the current project*/
 
 
 a.category-badge>span.badge:hover {
-    background: #212529 !important;
+    background: #630cf0 !important;
     color: #fff !important;
 }
 
 /*Styling for footer */
 footer {    
-    /* position: relative;     */
+    position: relative;      
     background-color: purple;
     color: white;
     padding: 10px; 
     padding-right: 0;  
     padding-left: 0;  
-    margin: auto;      
-           
+    margin: auto;
+                     
 }
 
 /*Styling for Card Elements*/
@@ -343,9 +353,9 @@ input[name='q']::placeholder {
     color: purple;
     align-content: center;
     clear: left;
-    font: 14px Helvetica, Arial, sans-serif;
+    font: 12px Helvetica, Arial, sans-serif;
     padding: 0;
-    width: 360px;            
+    width: 240px;            
 }
 
 #mc_embed_signup .button {

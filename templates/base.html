@@ -2,12 +2,12 @@
 
 <!doctype html>
 <html lang="en">
-
 <head>
+
     {% block meta %}
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Discover how essential oils can transform your health">
     <meta name="keywords" content="ecommerce, essential oils, oil diffusers, massage oils, Highest quality essential oils, 
     certified organic oils,holistic health, natural health, revive essential oils, essential oils near me, aromatherapy, 
@@ -17,13 +17,12 @@
     {% endblock meta %}
 
     {% block corecss %}
-    <!-- <link rel="preload" as="image"
-        href="https://res.cloudinary.com/dspwticaf/image/upload/v1679770255/essenchelle/massageoil_aj94h7_ddyzbq.webp"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Roboto:wght@400;900&display=swap" rel="stylesheet">       
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Roboto:wght@400;900&display=swap"
+        rel="stylesheet">
     <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
     <link rel="preload" as="style" href="{% static 'css/base.css' %}">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
@@ -35,19 +34,8 @@
     <link rel="icon" type="image/png" sizes="192x192" href="{% static 'favicon/favicon-192x192.png' %}">
     <link rel="manifest" href="{% static 'favicon/site.webmanifest' %}">
 
-    {% block extracss %}
-    <style>
-        body {
-            background: url('https://res.cloudinary.com/dspwticaf/image/upload/v1680017191/massageoil_hboa7n.webp') no-repeat center center fixed;
-             background-size: cover;  
-        }
-    </style>
-    {% endblock %}
-    
-
-   
     {% block corejs %}
-    <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>   
+    <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -60,18 +48,20 @@
     <!-- Stripe -->
     <script src="https://js.stripe.com/v3/"></script>
     <!--Mail Chimp Link-->
-    
+
     <!--Iconify-->
-    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>    
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
     {% endblock corejs %}
 
     <title>EssenChelle Oils {% block extra_title %}{% endblock %}</title>
 
 </head>
+
 <body>
     <!-- Navbar -->
-       
-    <div id="topnav" class="row bg-white d-none d-lg-flex">
+    
+
+    <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
             <a href="{% url 'home' %}" class="nav-link main-logo-link" aria-label="home page link">
                 <img src="https://res.cloudinary.com/dspwticaf/image/upload/v1679770988/essenchelle/essenchelle-logo_m11wns_ejct1t.webp"
@@ -86,8 +76,9 @@
                     <label for="siteSearch" class="sr-only">Search</label>
                     <input class="form-control border border-black rounded-0" type="text" name="q" id="siteSearch"
                         placeholder="Search our site">
-                    <div class="input-group-append">                        
-                        <button class="form-control btn btn-white border border-black rounded-0" name="search" type="submit" aria-label="Search">
+                    <div class="input-group-append">
+                        <button class="form-control btn btn-white border border-black rounded-0" name="search"
+                            type="submit" aria-label="Search">
                             <span class="icon">
                                 <iconify-icon inline icon="material-symbols:search" class="text-purple" width="30">
                                 </iconify-icon>
@@ -115,7 +106,7 @@
                         {% if request.user.is_superuser %}
                         <a href="{% url 'add_product' %}" class="dropdown-item logo-font nav-link">Product
                             Management</a>
-                        <a href="{% url 'add_blog' %}" class="dropdown-item logo-font nav-link">Blog Management</a>    
+                        <a href="{% url 'add_blog' %}" class="dropdown-item logo-font nav-link">Blog Management</a>
                         {% endif %}
                         <a href="{% url 'profile' %}" class="dropdown-item logo-font nav-link">My Profile</a>
                         <a href="{% url 'favourite_list' %}" class="dropdown-item logo-font nav-link">Product
@@ -197,9 +188,10 @@
 
     <script>
         $('.toast').toast('show');
-    </script>    
+    </script>
 
     {% endblock %}
 
 </body>
+
 </html>

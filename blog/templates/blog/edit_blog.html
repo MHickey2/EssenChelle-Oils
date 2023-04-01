@@ -7,10 +7,6 @@
 {% if request.user.is_superuser %}
 
 <div class="overlay"></div>
-<h1 class="text-center mt-3 text-purple">
-    <iconify-icon inline icon="material-symbols:edit-document-outline-rounded" class="text-purple"></iconify-icon>
-    &nbsp;Edit your Post:
-</h1>
 <div class="container">
     <div class="row ">
         <div class="col-12 col-md-6">
@@ -28,7 +24,7 @@
                     {{ form | crispy }}
                     <br>
 
-                    <button type="submit" class="btn btn-success btn-lg btn-block">Update</button>
+                    <button type="submit" class="btn btn-success btn-lg ">Update</button>
                 </form>
            
 
@@ -45,8 +41,8 @@
 {% endif %}
 {% endif %}
 
-<div class="center">
-    <a href="{% url 'blog' %}" class="btn btn-primary btn-sm">BACK</a>
+<div class="text-center">
+    <a href="{% url 'blog' %}" class="btn btn-dark ml-3 mx-auto">Back</a>
 </div>
 <br>
 

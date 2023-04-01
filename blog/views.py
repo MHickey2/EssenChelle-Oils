@@ -107,7 +107,6 @@ class DeletePostView(generic.DeleteView):
 class LatestPostView(generic.ListView):
     """ user can see the latest 5 blog titles """
     model = Post
-    latest = Post.objects.filter(status=1).order_by("-created_on")[:5]
+    latest = Post.objects.filter(status=1).order_by("-created_on")[:5]    
     template_name = "blog/blog.html"
     context_object_name = 'latest'
-    print(latest)

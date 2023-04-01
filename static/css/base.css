@@ -538,14 +538,9 @@ input[name='q']::placeholder {
     }
 }
 
-/* @media only screen and (max-width: 479px) {
-    body {
-      background:none;
-      display: none;
-     }
-} */
 
 @media (min-width: 320px) and (max-width: 449px) {
+    
     html {
         font-size: 0.9375rem;
     }

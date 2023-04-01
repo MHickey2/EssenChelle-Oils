@@ -9,9 +9,8 @@
   margin-right: auto;
 }
 
-.about-image {
-  padding: 10px;
-  /* position: cover-fit; */
+.about-image {  
+  position: cover-fit; 
   display: block;
   margin-left: auto;
   margin-right: auto;

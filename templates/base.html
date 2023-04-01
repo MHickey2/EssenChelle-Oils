@@ -115,6 +115,7 @@
                         {% if request.user.is_superuser %}
                         <a href="{% url 'add_product' %}" class="dropdown-item logo-font nav-link">Product
                             Management</a>
+                        <a href="{% url 'add_blog' %}" class="dropdown-item logo-font nav-link">Blog Management</a>    
                         {% endif %}
                         <a href="{% url 'profile' %}" class="dropdown-item logo-font nav-link">My Profile</a>
                         <a href="{% url 'favourite_list' %}" class="dropdown-item logo-font nav-link">Product

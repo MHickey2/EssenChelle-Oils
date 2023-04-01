@@ -779,7 +779,8 @@ The logo was the first asset I created in Logo maker, it depicts a simple female
 There is a search bar, where the user can search for products by name or keyword. There is an Account Icon, which contains a dropdown menu:
 
 Account Icon - Register, Log In. (Before Log in or registering)
-Account Icon - Product Management, My Profile, Product Favourites, Log Out. (If logged in)
+Account Icon - Product Management, Blog Management, My Profile, Product Favourites, Log Out. (If logged in and Superuser)
+Account Icon - My Profile, Product Favourites, Log Out (If logged in and ordinary User)
 
 Shopping Bag Icon - Takes you to the Shopping Bag Page.
 

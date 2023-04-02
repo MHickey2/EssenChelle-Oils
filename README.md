@@ -108,8 +108,8 @@ The EssenChelle Oils site is my 5th Project for the Code Institute and it is a f
     - [Django Framework    ](#django-framework----)
     - [Deploying to Heroku ](#deploying-to-heroku-)
     - [Changes in Heroku  ](#changes-in-heroku--)
-      - [Cloudinary for Images](#cloudinary-for-images)
-      - [Add Stripe keys to Heroku](#add-stripe-keys-to-heroku)
+    - [Cloudinary for Images](#cloudinary-for-images)
+    - [Add Stripe keys to Heroku](#add-stripe-keys-to-heroku)
     - [Final Deployment](#final-deployment)
       - [Return to Table of Contents](#return-to-table-of-contents-8)
   - [Credits ](#credits-)
@@ -749,7 +749,7 @@ There were also links included for both internal pages and external sites of goo
 <br>
 
 ### 4. XML Sitemap
- I've added an XML sitemap file to the main root directory, this is used to help search engines understand your website structure. It also enables Google to crawl every important page of your website. Sitemaps in general enhance the ranking of your website in search engine results, thus in turn will boost your SEO efforts.This page was generated using [xml-sitemaps](https://www.xml-sitemaps.com/)
+ I've added an XML sitemap file to the main root directory, this is used to help search engines understand your website structure. It also enables Google to crawl every important page of your website. Sitemaps in general enhance the ranking of your website in search engine results, thus in turn will boost your SEO efforts. Besides being a requirement for the project, it was a good idea to add a sitemap when your site is new and has few external links. Googlebot and other web crawlers crawl the web by following links from one page to another. As a result, Googlebot might not discover your pages if no other sites links to your site. This page was generated using [xml-sitemaps](https://www.xml-sitemaps.com/)
 
 <br>
 
@@ -921,7 +921,7 @@ The Blog Detail page shows the full blog which has information pertaining to sel
 
 
 ### 9. Contact Page     <a name="contactpage"></a>
-The contact page has a map showing the location of the Company(which is a fictional address) and a contact form so that the user can send a message to the company. This will aid communication between the user and the EssenChelle Oil Co. this could include queries on the sales process, more information on specific properties of products or questions in relation to delivery issues. When a message is sent a confirmation email will be sent to the message sender. You do not have to be logged in to make an enquiry, as those who send a message could be a potential customer and it would be important to ensure the communication lines are open for all users.
+ A contact form is included so that the user can send a message to the company. This will aid communication between the user and the EssenChelle Oil Co. this could include queries on the sales process, more information on specific properties of products or questions in relation to delivery issues. When a message is sent a confirmation email will be sent to the message sender. You do not have to be logged in to make an enquiry, as those who send a message could be a potential customer and it would be important to ensure the communication lines are open for all users. The contact page has a map showing the location of the Company(which is a fictional address, although it is an ecommerce business, it allows customers to know their proximity to the base of operations, and it may be useful later on for special events organised by the company ie market research activities) It will also help customers to determine the cost of delivery, as some of the cost will be effected by the distance for delivery. Although contact details can be found in the footer, it is also included on the contact page for convenience sake.
 
 <br>
 
@@ -1204,6 +1204,8 @@ To ensure security on the site, only logged in users can access certain features
 
  In regards to deals I would introduce deals to encourage the user to buy multiple products at a special rate, from a marketing perspective I feel this would be conducive to more sales. In the long term I would also introduce a loyalty scheme, so that users would be rewarded for their consumer buying behaviour.
 
+ To increase CRUD capabilities in the frontend for the superuser I would like to allow them to approve reviews for products and comments for blogs without needing to access the admin panel by allowing the superuser to see the comments and reviews on pages within the application, much in the same way as they can use the CRUD for products and blogs. This could also be done for the contact messages, currently these messages are saved in the database and can be accessed in the panel and the message is sent to the admin/staff user, but it would good to have the option to access this information freely in the site.
+
 
  
  <br>
@@ -1408,7 +1410,7 @@ time you push to your Repository or you can manually deploy which is the option 
 
 <br>
 
-#### Cloudinary for Images
+### Cloudinary for Images
 - Sign up for Cloudinary(I already had an account after working with it on 4th project)
 - Install Cloudinary's module into your project
 - Go to Media Library and create a folder for your images
@@ -1451,7 +1453,7 @@ ALLOWED_HOSTS =
 ````
 
 
-#### Add Stripe keys to Heroku
+### Add Stripe keys to Heroku
 - Sign into your stripe account and click 'Developers' located in the top right of the navbar.
 - You can select the webhook tab and on the page you can add an endpoint.you will need to input the link to your heroku app followed by /checkout/wh/. 
 - You can click '+ Select events' and check the 'Select all events' checkbox at the top before clicking 'Add events' at the bottom. Once this is done finish the form by clicking 'Add endpoint'.

@@ -37,8 +37,7 @@ Testing has taken place continuously throughout the development of the project. 
 ----
 ## Responsive Testing<a name="responsivetesting"></a>
 
-   I regularly tested the responsiveness of the site using Google Chrome Developer tools, information on this can be found [here](https://developer.chrome.com/docs/devtools/). I did have issues with this tool near the end of the project for some reason if I used it I would lose internet (not sure why it was doing that) but had to find another alternative for testing, so I found [Responsive Test Tool Site](https://responsivetesttool.com/), which allowed me to test the site in a range of different devices. My site works well up to 5120 x 2880 screen 
-   I also used Window Resizer and a Responsive Design Tester Application available in the Google Chrome Store. I also used the Am I responsive site to test the site and the image below is from that Testing:
+   I regularly tested the responsiveness of the site using Google Chrome Developer tools, information on this can be found [here](https://developer.chrome.com/docs/devtools/). I did have issues with this tool near the end of the project for some reason if I used it I would lose internet (not sure why it was doing that) but had to find another alternative for testing, so I found [Responsive Test Tool Site](https://responsivetesttool.com/), which allowed me to test the site in a range of different devices. My site works well up to 5120 x 2880 screen size.  I also used Window Resizer and a Responsive Design Tester Application available in the Google Chrome Store. I also used the Am I responsive site to test the site and the image below is from that Testing:
 
    <br/>
 

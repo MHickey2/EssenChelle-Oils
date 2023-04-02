@@ -34,24 +34,29 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-    
+  color:#fff;
+  position: absolute;  
+  text-align:center;
+  z-index: 10;  
 }
 
 .collapsible {
-    background-color: #990c9e;
+    background-color: #990c9e;    
     color: white;
     cursor: pointer;
     padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
+    width: 90%;
+    border: 3px solid white;;
+    text-align: center;
     outline: none;
     font-size: 15px;
+   
   }
   
   .active, .collapsible:hover {
     background-color: rgb(240, 119, 240);
   }
+
   
   .content {
     padding: 0 18px;

@@ -34,7 +34,7 @@
         {% if request.user.is_authenticated %}
             {% if request.user.is_superuser %}
                 <a href="{% url 'add_product' %}" class="dropdown-item text-purple" aria-label="Product Management button">Product Management</a>
-                <a href="{% url 'add_blog' %}" class="dropdown-item text-purple" aria-label="Blog Management button">Product Management</a>
+                <a href="{% url 'add_blog' %}" class="dropdown-item text-purple" aria-label="Blog Management button">Blog Management</a>
             {% endif %}
             <a href="{% url 'profile' %}" class="dropdown-item text-purple" aria-label="Profile button">My Profile</a>
             <a href="{% url 'favourite_list' %}" class="dropdown-item text-purple" aria-label="Favourite Products Button">My Favourites</a>            

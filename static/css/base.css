@@ -2,25 +2,26 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-   
+    box-sizing: border-box;   
 }
 
 html {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;   
     color: #313131;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
     font-size: 1rem; 
-    height: 100%;  
+    height: 100%;   
 }
 
 body {  
-    background: url('https://res.cloudinary.com/dspwticaf/image/upload/v1680017191/massageoil_hboa7n.webp') no-repeat center center fixed;
-    height: calc(100vh - 164px);    
-    /* max-width: 1500px;     */
-    margin: auto;  
-    margin: auto;        
+    background: url('https://res.cloudinary.com/dspwticaf/image/upload/v1680017191/massageoil_hboa7n.webp') no-repeat top center fixed;    
+    height: calc(100vh - 164px);     
+    max-width: 1500px;     
+    margin-left: auto; 
+    margin-right: auto;        
+    width: auto!important;
+    overflow-x: hidden !important;
 }
 
 
@@ -68,7 +69,8 @@ needs of the current project*/
 .shop-now-button {
     background: rgb(189, 13, 95);
     color: white;
-    min-width: 260px;
+    min-width: 240px;
+    
 }
 
 .btn-black {
@@ -172,7 +174,7 @@ needs of the current project*/
 
 
 a.category-badge>span.badge:hover {
-    background: #630cf0 !important;
+    background: #e80cf0 !important;
     color: #fff !important;
 }
 
@@ -185,6 +187,7 @@ footer {
     padding-right: 0;  
     padding-left: 0;  
     margin: auto;
+    width: 100%;
                      
 }
 
@@ -267,7 +270,7 @@ input[name='q']::placeholder {
 }
 
 .toast-capper {
-    height: 2px;
+    height: 2px;    
 }
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
@@ -337,8 +340,7 @@ input[name='q']::placeholder {
     /* border-radius: 4px; */
     background: #fff;
     box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-    /* padding: 14px 80px 18px 36px; */
+      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);   
     cursor: pointer;
 }
 
@@ -450,7 +452,6 @@ input[name='q']::placeholder {
 }
 
 /* Product Form */
-
 .btn-file {
     position: relative;
     overflow: hidden;

@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
-
 {% block content %}
 
 <div class="overlay"></div>
+<div id="top"></div>
 <h2 class="text-center logo-font text-purple mt-2">Copyright Notice</h2>
 <br>
     <p class="text-center">© 2023 EssenChelle Oils. All rights reserved.</p>
@@ -16,11 +16,7 @@
         <p>
             Subject to the provisions of this notice, this website and all its content, information, or material is the copyright of EssenChelle Oils, 
             together with its licensors. Accordingly, your use of our website or its services does not constitute any license to use the copyright in our website.
-        </p>
-        <p>
-            Subject to the provisions of this notice, this website and all its content, information, or material is the copyright of EssenChelle Oils, 
-            together with its licensors. Accordingly, your use of our website or its services does not constitute any license to use the copyright in our website.
-        </p>
+        </p>        
         <p>
             You may not, except otherwise with prior permission and express written consent by the EssenChelle Oils, copy, download, print, extract, exploit, adapt, 
             edit, modify, republish, reproduce, rebroadcast, duplicate, distribute, or publicly display any of the content, information, or material on this website 
@@ -29,11 +25,7 @@
         <p>
             You may also not transmit, host, or store any such content, information, or material in any form or through any means, including but not limited to photocopying, 
             recording, or in any print, electronic or digital form, or on any other website.
-        </p>
-        <p>
-            You may also not transmit, host, or store any such content, information, or material in any form or through any means, including but not limited to photocopying, 
-            recording, or in any print, electronic or digital form, or on any other website.
-        </p>
+        </p>        
         <p>
             Subject to our terms & conditions, you are not permitted to post information or add content copyrighted by third parties. Pursuant to the Digital Millennium Copyright 
             Act (DMCA), EssenChelle Oils will respond to takedown notices or abuse reports by copyright owners to remove any abusive or infringing content on this website. 
@@ -44,5 +36,10 @@
     </div>     
   </div>
 </section>
+<br>
+<a id="top-button" class="text-purple" href="#top" aria-label="Going to top of page">Top of Screen &nbsp; <iconify-icon
+    inline icon="mdi:arrow-up" class="text-purple" width="18"></iconify-icon>
+</a>
+<br>
 
-  {% endblock %}
+{% endblock %}

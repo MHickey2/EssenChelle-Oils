@@ -46,10 +46,11 @@
                         </small>
                         {% endif %}
 <hr>
-
 <div class="row">
     <div class="col-md-8 card1 ">
-        <h3 class="text-purple">Comments:{{post.number_of_comments}}</h3>
+        <h3 class="text-purple ml-2">Comment Section</h3>
+        <p class="ml-2 text-muted">Current Reviews: {{post.number_of_comments}} comments</p>
+        <p class="ml-2">Log in to add a comment for this Blog</p>
         <div class="commentsection">
             <!-- loop inside the empty control tags to iterate through each comment in comments -->
             {% for comment in comments %}
@@ -76,9 +77,9 @@
             </div>
             {% else %}
             {% if user.is_authenticated %}
-            <h3 class="text-purple">Leave a comment:</h3>
-            <p>Posting as: {{ user.username }}</p>
-            <form method="post" style="margin-top: 1.3em;">
+            <h3 class="text-purple ml-2">Leave a comment:</h3>
+            <p class="ml-2">Posting as: {{ user.username }}</p>
+            <form method="post" class="ml-2" style="margin-top: 1.3em;">
                 {{ comment_form | crispy }}
                 {% csrf_token %}
                 <br>

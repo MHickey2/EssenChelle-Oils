@@ -2,14 +2,14 @@
 
 /*Text for the about page*/
 .text-about {
-  width: 80%;  
+  width: 80%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.about-image {  
-  position: cover-fit; 
+.about-image {
+  position: cover-fit;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -18,75 +18,89 @@
 /* Carousel styling on the about us page*/
 .carousel-caption {
   vertical-align: middle;
-  color: purple;
-  font-size: 1.1rem;   
+  color: rgb(63, 18, 63);
   top: 0;
-  bottom: auto;    
+  bottom: auto;
 }
 
 .carousel-indicators {
-  color: purple;
+  color: rgb(75, 11, 75);
+  font-weight: bold;
 }
 
 .backlay {
-  background: rgb(224, 142, 224, 0.4);
-  width: 400px;
+  background: rgba(241, 99, 241, 0.5);
   display: block;
   margin-left: auto;
   margin-right: auto;
-  color:#fff;
-  position: absolute;  
-  text-align:center;
-  z-index: 10;  
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  width: 35vw;
+  font-size: 1.1rem;
+  font-weight: bold;
+
 }
 
 .collapsible {
-    background-color: #990c9e;    
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    width: 90%;
-    border: 3px solid white;;
-    text-align: center;
-    outline: none;
-    font-size: 15px;
-   
-  }
+  align-content: center;
+  background-color: #990c9e;;
+  color: white;
+  cursor: pointer;
+  padding: 13px;
+  width: 100%;
+  border: none;
+  text-align: left; 
+  outline: none;
+  font-size: 14px;
   
-  .active, .collapsible:hover {
-    background-color: rgb(240, 119, 240);
-  }
+}
 
-  
-  .content {
-    padding: 0 18px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    background-color: #f1f1f1;
-  }
+.active,
+.collapsible:hover {
+  background-color: rgb(240, 119, 240);
+}
 
-  /* Our Products Styling */
+.content {
+  padding: 0 18px;
+  max-height: 0;  
+  overflow: hidden;   
+  transition: max-height 0.3s ease-out;
+  background-color: #f1f1f1;  
+}
+
+/* Our Products Styling */
 .testsection {
   background-color: white;
 }
 
 .testimonial-card .card-up {
-height: 120px;
-overflow: hidden;
-border-top-left-radius: 0.50rem;
-border-top-right-radius: 0.50rem;
-background-color: white;  
+  height: 120px;
+  overflow: hidden;
+  border-top-left-radius: 0.50rem;
+  border-top-right-radius: 0.50rem;
+  background-color: white;
 }
 
 .testimonial-card .avatar {
-width: 110px;
-margin-top: -60px;
-overflow: hidden;
-border: 3px solid #fff;
-border-radius: 50%;
+  width: 110px;
+  margin-top: -60px;
+  overflow: hidden;
+  border: 3px solid #fff;
+  border-radius: 50%;
 }
 
 .white-background {
-background-color: white;
-}  
+  background-color: white;
+}
+
+ul {  
+  padding-left: 2rem;
+}
+
+/*On smaller screens the carousel element is not shown*/
+@media (max-width: 992px) {
+  #myCarousel {
+    display: none;
+  }
+}

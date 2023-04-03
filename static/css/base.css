@@ -1,26 +1,28 @@
+/*BASE CSS HOLDS STYLING FOR WHOLE SITE, INDIVIDUAL APPS WILL HAVE THEIR OWN CSS STYLING WHERE NEEDED*/
+
 /* Universal Styles for website as a whole*/
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;   
+    box-sizing: border-box;
 }
 
 html {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;   
+    font-weight: 400;
     color: #313131;
-    scroll-behavior: smooth; 
-    font-size: 1rem; 
-    height: 100%;   
+    scroll-behavior: smooth;
+    font-size: 1rem;
+    height: 100%;
 }
 
-body {  
-    background: url('https://res.cloudinary.com/dspwticaf/image/upload/v1680017191/massageoil_hboa7n.webp') no-repeat top center fixed;    
-    height: calc(100vh - 164px);     
-    max-width: 1500px;     
-    margin-left: auto; 
-    margin-right: auto;        
-    width: auto!important;
+body {
+    background: url('https://res.cloudinary.com/dspwticaf/image/upload/v1680017191/massageoil_hboa7n.webp') no-repeat top center fixed;
+    height: calc(100vh - 164px);
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto !important;
     overflow-x: hidden !important;
 }
 
@@ -36,9 +38,9 @@ needs of the current project*/
 
 .main-nav {
     position: relative;
-    padding-right: 0;  
-    padding-left: 0; 
-    width: auto;   
+    padding-right: 0;
+    padding-left: 0;
+    width: auto;
 }
 
 .nav-link {
@@ -70,7 +72,6 @@ needs of the current project*/
     background: rgb(189, 13, 95);
     color: white;
     min-width: 240px;
-    
 }
 
 .btn-black {
@@ -78,9 +79,8 @@ needs of the current project*/
     color: white;
 }
 
-
-.btn-dark {    
-    background-color: rgb(236, 11, 143)!important;
+.btn-dark {
+    background-color: rgb(236, 11, 143) !important;
 }
 
 /*Needed to be modified as it had insufficient contast in places*/
@@ -89,8 +89,8 @@ needs of the current project*/
 }
 
 /*Standard Bootstrap Buttons that needed to be modified*/
-.btn-outline-success {    
-    border-color: #034111!important;
+.btn-outline-success {
+    border-color: #034111 !important;
 }
 
 .btn-outline-black {
@@ -172,23 +172,21 @@ needs of the current project*/
     background-color: rgb(230, 198, 209);
 }
 
-
 a.category-badge>span.badge:hover {
     background: #e80cf0 !important;
     color: #fff !important;
 }
 
 /*Styling for footer */
-footer {    
-    position: relative;      
+footer {
+    position: relative;
     background-color: purple;
     color: white;
-    padding: 10px; 
-    padding-right: 0;  
-    padding-left: 0;  
+    padding: 10px;
+    padding-right: 0;
+    padding-left: 0;
     margin: auto;
     width: 100%;
-                     
 }
 
 /*Styling for Card Elements*/
@@ -270,7 +268,7 @@ input[name='q']::placeholder {
 }
 
 .toast-capper {
-    height: 2px;    
+    height: 2px;
 }
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
@@ -332,32 +330,32 @@ input[name='q']::placeholder {
 /***STYLING FOR FAVE PRODUCTS PAGE***/
 .faveproducts {
     border: 5px solid purple;
-    border-radius: 15px;    
+    border-radius: 15px;
 }
 
 /*Used to create the hover effect in cards within site*/
-  .card{
+.card {
     /* border-radius: 4px; */
     background: #fff;
-    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);   
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
     cursor: pointer;
 }
 
-    .card:hover{
+.card:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
-}  
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+}
 
 /*Mailchimp styling*/
-#mc_embed_signup {            
+#mc_embed_signup {
     background: #f8f6f6;
     color: purple;
     align-content: center;
     clear: left;
     font: 12px Helvetica, Arial, sans-serif;
     padding: 0;
-    width: 240px;            
+    width: 240px;
 }
 
 #mc_embed_signup .button {
@@ -365,13 +363,13 @@ input[name='q']::placeholder {
 }
 
 .asterisk {
-    color: #A21C02;           
+    color: #A21C02;
     font-weight: 800;
 }
 
 .pink-button {
-    background-color: rgb(190, 18, 113)!important;
-    color: white!important;
+    background-color: rgb(190, 18, 113) !important;
+    color: white !important;
 }
 
 #newpost {
@@ -485,7 +483,6 @@ input[name='q']::placeholder {
     align-items: center;
 }
 
-
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
@@ -551,7 +548,7 @@ input[name='q']::placeholder {
 
 
 @media (min-width: 320px) and (max-width: 449px) {
-    
+
     html {
         font-size: 0.9375rem;
     }

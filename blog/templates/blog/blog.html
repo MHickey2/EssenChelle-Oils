@@ -20,7 +20,6 @@
 
 
 <div class="container-fluid">
-
     <!--Blog Entries Column -->
     <div class="container-fluid">
         <div class="row">
@@ -42,7 +41,7 @@
                         <p class="card-text text-purple">{{ post.author }}
                         <iconify-icon inline icon="fa-regular:comments" width="23" class="btn-comment ml-3">
                                 </iconify-icon>&nbsp;{{ post.number_of_comments }}</p>                                                                                            
-                        <a href="{% url 'blog_details' post.slug %}" class="btn btn-primary">Read More &rarr;</a>
+                        <a href="{% url 'blog_details' post.slug %}" class="btn btn-danger">Read More &rarr;</a>
                         {% if request.user.is_superuser %}
                         <small class="ml-4">
                             <a href="{% url 'edit_blog' post.slug %}" class="btn btn-outline-success btn-sm">Edit</a>                           
@@ -56,8 +55,6 @@
         </div>
     </div>    
 </div>
-
-
 <br>
 {% if request.user.is_superuser %}
 <a href="{% url 'add_blog'  %}" class="btn btn-success btnstyle ml-5 mb-3">Add Blog</a>

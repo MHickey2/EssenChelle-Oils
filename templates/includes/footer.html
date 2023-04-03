@@ -8,17 +8,16 @@
                     <p class="footer-text">EssenChelle Oils is an online ecommerce site that sells essential oils,
                         massage oils and oil burners and includes a blog with information on how to use Essential Oils.
                     </p>
-                    <p><a href="{% url 'privacypolicy' %}"
-                            style="color: white;" target="_blank" rel="noopener noreferrer"
-                            aria-label="View our Private Policy (opens in a new tab)" role="button">Privacy Policy</a>
-                    </p>
-                    <p><a href="{% url 'faq' %}" style="color: white;" target="_blank" rel="noopener noreferrer"
-                            aria-label="View Frequently Asked Questions (opens in a new tab)" role="button">Frequently
-                            Asked Questions</a></p>
+                    <div><a href="{% url 'privacypolicy' %}" style="color: white;" aria-label="View our Private Policy" 
+                        role="button">Privacy Policy</a>
+                    </div>
+                    <div><a href="{% url 'faq' %}" style="color: white;" aria-label="View Frequently Asked Questions" role="button">Frequently
+                        Asked Questions</a>
+                    </div>               
+                    <div><a href="{% url 'copyright' %}" style="color: white;" aria-label="View Copyright Information" role="button">Copyright Information</a>
+                    </div>
+                    <br>
                 </div>
-                    <p><a href="{% url 'copyright' %}" style="color: white;" target="_blank" rel="noopener noreferrer"
-                            aria-label="View Copyright Information (opens in a new tab)" role="button">Copyright Information
-                            </a></p>
             </div>
             <div class="col-md-4">
                 <div class="contact">
@@ -43,17 +42,17 @@
                     <!--a href="https://www.facebook.com/profile.php?id=100090771283240" this is the facebok address
                     for the essenchelle site, but not sure it will remain active, so just added the generic facebook
                     page just in case, but it may still be active so included it above-->
-                    <a href="https://www.facebook.com" style="color: #3b5998;" target="_blank" rel="noopener"
+                    <a href="https://www.facebook.com" style="color: #3b5998;" target="_blank" rel="noopener noreferrer"
                         aria-label="Visit us at our facebook page (opens in a new tab)" role="button">
                         <iconify-icon icon="logos:facebook" width="36"></iconify-icon>
                     </a>&nbsp;
                     <!-- Twitter -->
-                    <a style="color: #55acee;" href="https://twitter.com" target="_blank" rel="noopener"
+                    <a style="color: #55acee;" href="https://twitter.com" target="_blank" rel="noopener noreferrer"
                         aria-label="Visit us at our twitter page (opens in a new tab)" role="button">
                         <iconify-icon icon="logos:twitter" width="36"></iconify-icon>
                     </a>&nbsp;
                     <!-- Instagram -->
-                    <a style="color: #458eff;" href="https://instagram.com" target="_blank" rel="noopener"
+                    <a style="color: #458eff;" href="https://instagram.com" target="_blank" rel="noopener noreferrer"
                         aria-label="Visit us at our instagram page (opens in a new tab)" role="button">
                         <iconify-icon inline icon="icon-park:instagram" width="39"></iconify-icon>
                     </a>                    
@@ -126,8 +125,7 @@
             </script>
             <!--End mc_embed_signup-->
         </div>
-    </div>
-    
+    </div>    
     <hr>
     <p class="m-0 text-center text-white">&copy; EssenChelle Oils 2023 </p>
 </footer>

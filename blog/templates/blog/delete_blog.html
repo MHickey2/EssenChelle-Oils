@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 {# block title #}EssenchelleOils/Delete Post{# endblock #}
 
-
 {% block content %}
 
 {% load crispy_forms_tags %}
@@ -39,20 +38,15 @@
         </div>
     </div>
 </div>
-
-
 {% else %}
 <div class="overlay"></div>
 <br>
 <h6 class="text-purple">Sorry, you are not allowed to delete this Post</h6>
 {% endif %}
 {% endif %}
-
-
     <div class="mt-3 mb-3">
         <a href="{% url 'blog' %}" class="btn btn-dark ml-5">Back</a>
     </div>
-
 <br>
 
 {% endblock %}

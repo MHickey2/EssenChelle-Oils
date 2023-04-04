@@ -64,7 +64,7 @@
 .content {
   padding: 0 18px;
   max-height: 0;  
-  overflow: hidden;   
+  overflow: scroll;   
   transition: max-height 0.3s ease-out;
   background-color: #f1f1f1;  
 }

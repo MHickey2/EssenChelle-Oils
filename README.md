@@ -9,9 +9,10 @@
  
 # Introduction <a name="introduction"></a>
 
-The EssenChelle Oils site is my 5th Project for the Code Institute and it is a full stack E-commerce site using the Django Framework, it includes Python, JavaScript, CSS and Bootstrap5. It utilizes Stripe payments. It has user authentication and Full CRUD functionality for the products and Blogs for the Superuser. The website deals with the sale of essential oils and their byproducts. The website would appeal to people who use or want to know more about Essential Oils and are interested in buying these products. This website has been built for educational purposes and the payment transactions are purely for demonstration only. If you want to test the payment functionality, you can use: 
+The EssenChelle Oils site is my 5th Project for the Code Institute and it is a full stack E-commerce site using the Django Framework, it includes Python, JavaScript, CSS and Bootstrap5. It utilizes Stripe payments. It has user authentication and Full CRUD functionality for the products and Blogs for the Superuser. The website deals with the sale of essential oils and associated products. The website would appeal to people who use or want to know more about Essential Oils and are interested in buying these products. This website has been built for educational purposes and the payment transactions are purely for demonstration only. If you want to test the payment functionality, you can use: 
+
 <p align ="center"> 
-<mark>Card number: 4242 4242 4242 4242  Exp: Future Date i.e. 05/25 and CVC can be any 3 numbers.</mark>
+<mark style="background-color:violet">Card number: 4242 4242 4242 4242  Exp: Future Date i.e. 05/25 and CVC can be any 3 numbers.</mark>
 </p>
 
 <br/>
@@ -34,19 +35,21 @@ The EssenChelle Oils site is my 5th Project for the Code Institute and it is a f
     - [4.  Site Goals](#4--site-goals)
       - [Return to Table of Contents](#return-to-table-of-contents)
   - [2. User Stories  ](#2-user-stories--)
-      - [As a website User I can...](#as-a-website-user-i-can)
-      - [As a logged in User I can... ](#as-a-logged-in-user-i-can-)
-      - [As a website superuser, I can …..    ](#as-a-website-superuser-i-can-----)
-  - [3. Agile Methodology](#3-agile-methodology)
+    - [As a website User I can...](#as-a-website-user-i-can)
+    - [As a logged in User I can... ](#as-a-logged-in-user-i-can-)
+    - [As a website superuser, I can …..    ](#as-a-website-superuser-i-can-----)
       - [Return to Table of Contents](#return-to-table-of-contents-1)
+  - [3. Agile Methodology](#3-agile-methodology)
+      - [Return to Table of Contents](#return-to-table-of-contents-2)
   - [4. Design  ](#4-design--)
     - [1. Colour  Scheme  ](#1-colour--scheme--)
     - [2. Typography    ](#2-typography----)
     - [3. Imagery    ](#3-imagery----)
     - [4. Website Structure    ](#4-website-structure----)
     - [5. Wireframes    ](#5-wireframes----)
+      - [Return to Table of Contents](#return-to-table-of-contents-3)
   - [5. Data Model    ](#5-data-model----)
-      - [Return to Table of Contents](#return-to-table-of-contents-2)
+      - [Return to Table of Contents](#return-to-table-of-contents-4)
   - [6. Web Marketing](#6-web-marketing)
     - [1. E-Commerce Application Type](#1-e-commerce-application-type)
     - [2. Marketing Strategy](#2-marketing-strategy)
@@ -87,20 +90,20 @@ The EssenChelle Oils site is my 5th Project for the Code Institute and it is a f
   - [The following page is available to the superuser.](#the-following-page-is-available-to-the-superuser)
     - [28. Admin Panel  ](#28-admin-panel--)
     - [29. Security Measures  ](#29-security-measures--)
-      - [Return to Table of Contents](#return-to-table-of-contents-3)
+      - [Return to Table of Contents](#return-to-table-of-contents-5)
   - [8. Future Implementation  ](#8-future-implementation--)
-      - [Return to Table of Contents](#return-to-table-of-contents-4)
+      - [Return to Table of Contents](#return-to-table-of-contents-6)
   - [9. Tools and Technology  ](#9-tools-and-technology--)
     - [Language Used:](#language-used)
     - [Technology Used:](#technology-used)
     - [Django Packages](#django-packages)
-      - [Return to Table of Contents](#return-to-table-of-contents-5)
+      - [Return to Table of Contents](#return-to-table-of-contents-7)
   - [10. Testing  ](#10-testing--)
-      - [Return to Table of Contents](#return-to-table-of-contents-6)
+      - [Return to Table of Contents](#return-to-table-of-contents-8)
   - [11. Bugs and Issues  ](#11-bugs-and-issues--)
     - [Resolved ](#resolved-)
     - [Unresolved ](#unresolved-)
-      - [Return to Table of Contents](#return-to-table-of-contents-7)
+      - [Return to Table of Contents](#return-to-table-of-contents-9)
   - [12. Deployment ](#12-deployment-)
     - [How to make a local Clone ](#how-to-make-a-local-clone-)
     - [How to fork a GitHub Repository ](#how-to-fork-a-github-repository-)
@@ -111,11 +114,11 @@ The EssenChelle Oils site is my 5th Project for the Code Institute and it is a f
     - [Cloudinary for Images](#cloudinary-for-images)
     - [Add Stripe keys to Heroku](#add-stripe-keys-to-heroku)
     - [Final Deployment](#final-deployment)
-      - [Return to Table of Contents](#return-to-table-of-contents-8)
-  - [Credits ](#credits-)
-      - [Return to Table of Contents](#return-to-table-of-contents-9)
-  - [Acknowledgements ](#acknowledgements-)
       - [Return to Table of Contents](#return-to-table-of-contents-10)
+  - [Credits ](#credits-)
+      - [Return to Table of Contents](#return-to-table-of-contents-11)
+  - [Acknowledgements ](#acknowledgements-)
+      - [Return to Table of Contents](#return-to-table-of-contents-12)
   - [Author Info](#author-info)
 
 ----
@@ -138,7 +141,7 @@ The EssenChelle Oils site is my 5th Project for the Code Institute and it is a f
 - Make the shopping experience easy to manage for the Shopper.
 - Attract visitors and convert them into customers.
 - Encourage customers and visitors to communicate with the Business and respond effectively to their requests.
-- Use customer feedback to address any outstanding shortcomings and use the knowledge gained to possibly expand the current range of products.
+- Use customer feedback to address any perceived shortcomings and use the knowledge gained to possibly expand the current range of products.
   
   <br/> 
 
@@ -148,7 +151,7 @@ The EssenChelle Oils site is my 5th Project for the Code Institute and it is a f
     
 - Anyone who wishes to buy EssenChelle Oil products.  
 - Anyone who has interest in joining the EssenChelle Oil community and wants to learn more about our range of products. 
-- Anyone who wants to use essential oils in their home and are looking for essential oil burners.  
+- Anyone who wants to experience essential oils in their home and are looking for essential oil burners.  
 - Anyone who wants to offer massages or use massage oils for personal use and are looking for specific blends for therapeutic uses.
 - Anyone who would want to avail of special offers on products related to essential oils.
 
@@ -156,7 +159,7 @@ The EssenChelle Oils site is my 5th Project for the Code Institute and it is a f
 
 ### 3. Site User Profile
 
-The user is really anyone who has an interest in holistic health. They either have had some experience with essential oils or are new to Essential Oils and want to learn more about them and how to integrate them into their lives. They may want to buy products from the site or read blogs that have a focus on the benefits and the uses for featured oils. They may also be interested in special offers related to essential oils and would like to browse the site for current deals within the site.
+The user is really anyone who has an interest in holistic health. They either have had some experience with essential oils or are new to Essential Oils and want to learn more about them and how to integrate them into their lives. They may want to buy products from the site or read blogs that have a focus on the benefits and the uses for featured oils. They may also be interested in special offers related to essential oils and would like to browse the site for the current deals within the site.
 
 <br/>
 
@@ -184,7 +187,7 @@ The user is really anyone who has an interest in holistic health. They either ha
 
 <br>
 
-####  As a website User I can...<a name="websiteuser"></a>
+###  As a website User I can...<a name="websiteuser"></a>
 
 1. Log in and access more features on the site.   
 [As a user or staff member I can log in so that I can access the relevant features of the site #1](https://github.com/MHickey2/EssenChelle-Oils/issues/1)
@@ -227,8 +230,7 @@ The user is really anyone who has an interest in holistic health. They either ha
 
 <br>
 
-
-####  As a logged in User I can... <a name="loggedinuser"></a> 
+###  As a logged in User I can... <a name="loggedinuser"></a> 
 
 1. Select products and these will be included in my shopping bag.
 [The Shopper will be able to select various products and these will be added to their shopping Bag #8](https://github.com/MHickey2/EssenChelle-Oils/issues/8)
@@ -262,7 +264,7 @@ The user is really anyone who has an interest in holistic health. They either ha
  
  <br/>
 
-#### As a website superuser, I can …..    <a name="superuser"></a>
+### As a website superuser, I can …..    <a name="superuser"></a>
 
 1. Add Products to the Database.
 [As an Admin I can add products to the database #17](https://github.com/MHickey2/EssenChelle-Oils/issues/17)
@@ -288,11 +290,13 @@ The user is really anyone who has an interest in holistic health. They either ha
 
 User Story Testing can be found in the [TESING.md Document](TESTING.md)  
 
-  <br/> 
+  <br/>   
+
+ #### [Return to Table of Contents](#toc)
 
 ## 3. Agile Methodology
 
-The project was developed using Agile Methodology by using the GitHub Projects functionality within the GitHub Repository. Each issue has a defined acceptance criteria and includes tasks to accomplish this goal. The 29 issues can be found [Here](https://github.com/MHickey2/EssenChelle-Oils/issues) and this is the link for the [Essential Oils Project Board](https://github.com/users/MHickey2/projects/2)
+The project was developed using Agile Methodology by using the GitHub Projects functionality within the GitHub Repository. Each issue has a defined acceptance criteria and includes tasks needed to accomplish the goals. The 29 issues can be found [Here](https://github.com/MHickey2/EssenChelle-Oils/issues) and this is the link for the [Essential Oils Project Board](https://github.com/users/MHickey2/projects/2)
 
 <br/> 
 
@@ -305,56 +309,55 @@ The project was developed using Agile Methodology by using the GitHub Projects f
 
 ### 1. Colour  Scheme  <a name="colourscheme"></a>
 
-The colour scheme was inspired by essential oils, in particular lavender oil, so the website uses a darker shade of this colour throughout the site. The color Lavender represents holistic wellness and it is known for its tranquility and calming effects. Lavender Oil is also one of the most popular oils and very versatile so it made sense to utilize it's popularity by using a colour most holistic people would be familiar with. The background of the site pages are either white or lavender where appropriate. Headings, borders and the footer are mostly purple. In this project I wanted to only have a subtle use of colour, so that there would be little distraction to the user, when making their purchases on the site.
+The colour scheme was inspired by essential oils, in particular lavender oil, so the website uses a darker shade of this colour throughout the site. The color Lavender represents holistic wellness and it is known for its tranquility and calming effects. Lavender Oil is also one of the most popular oils and very versatile so it made sense to capitalize on it's popularity by using a colour most holistic people would be familiar with. The background colour for the site is white and this provides a good contrast for the content. Headings, borders and the footer are mostly purple. In this project I wanted to only have a subtle use of colour, so that there would be little distraction to the user, when making their purchases on the site. The following image shows the most prominent colours used in the site, this was made with [Colour Combos](https://www.colorcombos.com/):
 
 <br>
 <p align ="center">      
    <img src="assets/readme/images/colourcombo.png"  alt="Colour Combo" />        
 </p>
 <p align ="center">      
-   <mark style="background-color:#FFFFFF">colours=#800080, #E83E86, #9037E4, #E9AFE9, #2D023D</mark>        
+   <mark style="background-color:white">colours: #800080, #E83E86, #9037E4, #E9AFE9, #2D023D</mark>        
 </p>
 
 <br/> 
 
-The branding is an aspect of the overall design and it used in conjunction with the marketing strategy. It consists of the logo, the colour scheme, the font and the buttons, and this would be used in social media, packaging, brochures, the stationary and advertising. The brand(logo) has been included in the EssenChelle range of Essential and Massage Oils. This is a simple mood board for EssenChelle Oils.
+The branding is an aspect of the overall design and it used in conjunction with the marketing strategy. It consists of the logo, the colour scheme, the font and the buttons, and this would be used in social media, packaging, brochures, the stationary and the advertising materials. The brand(logo) has been included in the EssenChelle range of Essential and Massage Oils. I took the blank bottle templates and added the logo and identifying information to all the bottles featured in the EssenChelle Oil range. This is a simple mood board for EssenChelle Oils branding, highlighting the main characterics featured:
 
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/branding.png" width="700" alt="Branding" />     
+     <img src="assets/readme/images/branding.png" width="550" alt="Branding" />     
 </p>
 
 <br/> 
 
 ### 2. Typography    <a name="typography"></a>
 
-Google Fonts were used within the website. The 'Roboto' font is the main font used for the whole project. Sans serif is the fallback font in case the other font is not available. See below for example of fonts in use on the site. The font color is #313131, which is a good font to help counter eye strain, and I usually try to include it in all my projects.
+Google Fonts were used within the website. The 'Roboto' font is the main font used for the whole project. Sans serif is the fallback font in case the other font is not available. See below for examples of fonts in use on the site. The font color is #313131, which is a good font to help counter eye strain, and I usually try to include it in all of my projects. THe following are details for this font:
 
 <br>
 <p align ="center">      
-   <img src="assets/readme/images/313131.png"  alt="general font colour for site" />        
+   <img src="assets/readme/images/313131.png"  width="350" alt="general font colour for site" />        
 </p>
 
 <br>
 
-The main title for the site, the navigation items and the headings for the site use the Courgette Font, which is a google font. It is a medium-contrast, brushy, italic-script typeface, which has been made for the web. It adds a decorative flair but is also very legible on a screen. 
+The main title for the site, the navigation items and the headings for the site use the Courgette Font, which is a google font. It is a medium-contrast, brushy, italic-script typeface, which has been made for the web. It adds a decorative flair but is also very legible on a screen. The following are examples of the courgettefont in use:
 
 <br>
 <p align ="center">      
-   <img src="assets/readme/images/courgettefont.png"  alt="courgette font" />        
+   <img src="assets/readme/images/courgettefont.png" width="400" alt="courgette font" />        
 </p>
 
 <br>
-
 
 ### 3. Imagery    <a name="imagery"></a>
 
-The Logo was created with [LogoMaker](https://www.logomaker.com/), I used a health and beauty related theme for the logo, as essential oils are synonymous with health and beauty benefits. The logo features a beautiful woman's face which has the EssenChelle Oil Title prominent in its design. The colours included fits the colours displayed in the website, to ensure brand conformity across the site.
+The Logo was created with [LogoMaker](https://www.logomaker.com/), I used a health and beauty related theme for the logo, as essential oils are synonymous with health and beauty benefits. The logo features a beautiful woman's face which has the EssenChelle Oil Title prominent in its design. The colours included fit the colours displayed in the website, to ensure brand conformity across the site.
 
-The images in the site focuses on essential oils and their byproducts, the images were sourced from the [Pexels site](https://www.pexels.com/) and supplement the site's overall theme. The images for the site are hosted in [Cloudinary](https://cloudinary.com/). I had used AWS for a while but was not comfortable using AWS, as it was unpredictable in regards to pricing, and I chose to revert to cloudinary as I trusted this platform, from my previous project. I did have the experience of setting up the Bucket in S3 and uploading the images and having them show on the site, so I can say I used the platform, and I may apply what I have learned in future projects. 
+The images in the site focuses on essential oils and related products, the images were sourced from the [Pexels site](https://www.pexels.com/) and supplement the site's overall theme. The images for the site are hosted in [Cloudinary](https://cloudinary.com/). I had used AWS for a while but was not comfortable using AWS, as it was unpredictable in regards to pricing, and I chose to revert to cloudinary as I trusted this platform, from my previous project. I did have the experience of setting up the Bucket in S3 and uploading the images and having them show on the site, so I can say I have used the platform, and I may apply what I have learned in future projects going forward. 
 
-There are also images sporadically placed throughout the site, There is a background image of a massage which highlights the nature of the site on the index page, the product was initially a template with blank packaging detail, so I used photoshop to apply the EssenChelle brand image for the different products in the essential and massage oil range. The aromatherapy burners were sourced on a shopping site platorm, as it did not have to have the essenchelle branding. The Items in the special offer section were also sourced in the Pexels site.
+There are also images sporadically placed throughout the site, There is a background image of a massage which highlights the nature of the site on the index page, the product was initially a template with blank packaging detail, so I used photoshop to apply the EssenChelle brand image for the different products in the essential and massage oil range. The aromatherapy burners were sourced on a shopping site platorm, as they did not have to have the essenchelle branding. The Items in the special offer section were also sourced in the Pexels site. The following image show a sample of the images contained on the site:
 
 <br>
 
@@ -364,17 +367,17 @@ There are also images sporadically placed throughout the site, There is a backgr
 
 <br/>
 
-There are also various icons used within the site, the icons were sourced at [Iconify.Design](https://iconify.design/) and font-awesome in some cases, and they were used as a graphical representation for pertinent information on the site, they were used in conjunction with Forms or headings and were a subtle way to incorporate imagery on a limited scale, examples can be found in the image below.
+There are also various icons used within the site, the icons were sourced at [Iconify.Design](https://iconify.design/) and font-awesome in some cases, and they were used as a graphical representation for pertinent information on the site, they were used in conjunction with identifying icons such as the account and shopping icons as well as the social media icons within the footer, and their use was a subtle way to incorporate imagery on a limited scale, examples can be found in the image below:
 
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/icons.png"  alt="icons for Site" />    
+     <img src="assets/readme/images/icons.png"  width="400" alt="icons for Site" />    
 </p>
 
 <br/>
 
-I also created the favicon for the site with [Favicon.io](https://favicon.io).
+I also created the favicon for the site with [Favicon.io](https://favicon.io). These were just smaller versions of the logo in various sizes, they are another form of branding for your website. Its main purpose is to help visitors locate your page easier when they have multiple tabs open. The following image shows a favicon for an android.
 
 <br>
 
@@ -384,14 +387,12 @@ I also created the favicon for the site with [Favicon.io](https://favicon.io).
 
 <br/>
 
-
 ### 4. Website Structure    <a name="structure"></a>
 
-The website follows the standard website structure. The Logo and the website name are on the left hand side, and the naigation to the right, on the top of all pages. Within the Account Nav top Link the user can either Signup or login to the site. When the user logs in they can see the Profile link, The favourite products and the logout button. The Shopping Bag Link takes the User to the Shopping Bag Page.When the website is on smaller screens, there is a hamburger meu, with dropdown navigation items. The footer element is also available on all pages, with site information, contact details, social media icons and the newsletter sign up form.
+The website follows the standard website structure. The Logo and the website name are on the left hand side, and the naigation to the right, on the top of all pages. Within the Account Nav top Link the user can either Signup or login to the site. When the user logs in they can see the Profile link, The favourite products and the logout button. If they are a superuser they can also see product and blog management options. The Shopping Bag Link takes the User to the Shopping Bag Page. When the website is on smaller screens, there is a hamburger meu, with the navigation items in a dropdown menu. The footer element is also available on all pages, with site information, contact details, social media icons and the newsletter sign up form.
 
 The website consists of the following Pages:
- - The Home Page, with a hero image and a button connecting to the Shop. It has a search bar and links to
-  all areas in the site. There is is also a profile and shopping bag link.
+ - The Home Page, with a hero image and a button connecting to the Shop. It has a search bar and links to all areas in the site. There is is also a profile and shopping bag link.
  - The Products page is available in a number of formations, it can be sorted by pricing, ratings and category and you can see all products from all categories.
  - The Essenchelle Products can be configured to show the different categories within the EssenChelle range of products. The products include Essential Oils, Massage Oils and Oil Burners, or you can view all categories at once.
  - The Product Details Page, shows the information for individual Products.
@@ -399,7 +400,7 @@ The website consists of the following Pages:
  - The Edit Product Page, which is a form that allows the superuser to edit a Product.
  - The Delete Product Page, which is a form that allows the superuser to delete a Product.
  - The Bag Page which shows the details of the products presently in the Bag.
- - The Checkout Page, which shows the details of their order and the user details form and the checkout       submission button.
+ - The Checkout Page, which shows the details of their order and the user details form and the checkout submission button.
  - The Checkout Success page, which shows the order details and price and the Thank you message.
  - The About Page, which gives more information on the site 
  - The Our Products Page, with an introduction to the EssenChelle Products by category and it includes customer testimonials who have bought products on the site.
@@ -415,15 +416,18 @@ The website consists of the following Pages:
  - The Login Page, consists of a form where the user can login to the site.
  - The logout Page, consists of a form where the user can logout of the site.
  - There are also custom error pages for errors 403,404,405 and 500.
+ - The Product Favourites page which shows the logged in user all their favourite products.
+ - The Special Offer pages can be configured to show the different categories within the Special Offers. The special offers include new arrivals, deals and clearance items or you can view all categories at once.
+ - The Contact Us page which has a contact form, a location map and details.
  - There is a FAQ page with answers to questions Customers may have about the site.
  - There is a Privacy Policy Page which can be accessed in the footer.
- - There is a Copyright Page with copyright information.
+ - There is a Copyright Page with copyright information which can be accesed in the footer.
 
 <br/>
 
 ### 5. Wireframes    <a name="wireframes"></a>
 
-The Wireframes for the site were created in Figma, I concentrated on the standard websize and the mobile size. The mid-level sizes were generally in keeping with the main websize but just on a smaller scale. There have been modifications and changes since the initial wireframes design. The Wireframes can be found below:
+The Wireframes for the site were created in Figma, I concentrated on the standard websize and the mobile size. The mid-level sizes were generally in keeping with the main websize but just on a smaller scale. There have been modifications and changes since the initial wireframes design. Some of the pages introduced at the later stages of development may not be included, as there had been no plan to include them in the project initially. The Wireframes can be found below:
 
 <details><summary>Figma Wireframes</summary>
 
@@ -633,6 +637,10 @@ The Wireframes for the site were created in Figma, I concentrated on the standar
 
 <br>
 
+#### [Return to Table of Contents](#toc)  
+----
+
+
 ## 5. Data Model    <a name="datamodel"></a>
 
 <br>
@@ -654,7 +662,6 @@ The Wireframes for the site were created in Figma, I concentrated on the standar
 
 <br>
 
-
 ## 6. Web Marketing
 
 <br>
@@ -669,14 +676,14 @@ Essenchelle Oils is a fledgling company, with a limited budget for marketing, so
 
 <br>
 
-Social Media will play a big part in the marketing strategy, research into the different platforms has highligted ways that can be cost effective and easy to implement. Facebook is a great way to build up followers and share information with a wide number of customers. A Facebook page was created to share pertinent information with the users, and will be used to promote the latest deals, that should entice new customers to the EssenChelle site. The image below shows the Facebook page, it is active currently but not sure if it will remain so, so have included screencapture below and here is the link: [EssenChelle Oils](https://www.facebook.com/profile.php?id=100090771283240)
+Social Media will play a big part in the marketing strategy, research into the different platforms has highligted ways that can be cost effective and easy to implement. Facebook is a great way to build up followers and share information with a wide number of customers. A Facebook page was created to share pertinent information with the users, and will be used to promote the latest deals, that should entice new customers to the EssenChelle site. The image below shows the Facebook page, it is active currently but not sure if it will remain so, so have included a screencapture below and here is the live link: [EssenChelle Oils](https://www.facebook.com/profile.php?id=100090771283240)
 
 #### **Facebook Page**
 
 <br>
 
 <p align="center">
-  <img src="assets/readme/images/facebookpage.jpg" alt="EssenChelle Facebook Page" />
+  <img src="assets/readme/images/facebookpage.jpg" width="800" alt="EssenChelle Facebook Page" />
 </p>
 
 <br>
@@ -686,7 +693,7 @@ Content Marketing: the process of publishing written and visual material online 
 <br>
 
 <p align="center">
-  <img src="assets/readme/images/blogposts.png" alt="Blog Section" />
+  <img src="assets/readme/images/blogposts.png" width="500" alt="Blog Section" />
 </p>
 
 <br>
@@ -700,12 +707,13 @@ Events: There is a large industry dealing with essential oils and aromatherapy i
 <br>
 
 <p align="center">
-  <img src="assets/readme/images/bodymindspirit.png"  alt="Body Mind Spirit Expo" />
+  <img src="assets/readme/images/bodymindspirit.png" width="900" alt="Body Mind Spirit Expo" />
 </p>
 
 <br>
 
 The website itself offers users the chance to sign up for a regular newsletter. This measure allows you communicate directly with your prospects and customers in a personalized way by serving valuable content and relevant promotions straight to their inboxes. This newsletter would be a good way to promote new products, provide articles highlighting the benefits of using certain products, offer special offers and highlight new arrival products. This will be a great way to grow the Essenchelle community and keep the customers in the loop. The newsletter functionality utilizes mailchimp, this service will help keep track of users. Mailchimp offers a number of tools that will be explored further as the company develops. You can visit the mailchimp dashboard to find user emails that have been added to your subsciber list. The newsletter itself would include the latest articles, special promotional offers and promotional deals. Sending a newsletter on a regular basis will build brand awareness and should lead to more purchases on the site.
+
 <br>
 
 <p align="center">
@@ -722,7 +730,7 @@ The website itself offers users the chance to sign up for a regular newsletter. 
 
 
 ###  3. Search Engine Optimization(SEO)
-SEO research will help drive people to our site more efficiently. Inititally finding the right keywords will help send our site further up in the rankings. Finding the right words involved looking at present sites, previous research finding and analysing which words were suggested when searching for essential oils and aromatherapy in particular in google searches. I used [wordtracker.com](https://www.wordtracker.com/) and various other free tools to find keywords, the factors that determined the ones chosen include search volume, relevance and conversion value. I then picked the top words and phrases and integrated them into the site via meta-tags or by ensuring they were included in headings, image names and content. It was important not to overdo the use of these words as this would have been counterproductive to the end goal. The following image shows a sample of the results found and that were used to comppile the keywords used in the site:
+SEO research will help drive people to our site more efficiently. Inititally finding the right keywords will help send our site further up in the rankings. Finding the right words involved looking at present sites, previous research finding and analysing which words were suggested when searching for essential oils and aromatherapy in particular in google searches. I used [wordtracker.com](https://www.wordtracker.com/) and various other free tools to find keywords, the factors that determined the ones chosen include search volume, relevance and conversion value. I then picked the top words and phrases and integrated them into the site via meta-tags or by ensuring they were included in headings, image names and content. It was important not to overdo the use of these words as this would have been counterproductive to the end goal. The following image shows a sample of the research findings and that were used to devise the keywords used in the site:
 
 <br>
 
@@ -733,12 +741,12 @@ SEO research will help drive people to our site more efficiently. Inititally fin
 <br>
 
 <p align="center">
-  <img src="assets/readme/images/ukbusinessdirectory.png" width="400" alt="Keyword Search" />
+  <img src="assets/readme/images/ukbusinessdirectory.png" width="400" alt="Keyword Search2" />
 </p>
 
 <br>
 
-There were also links included for both internal pages and external sites of good standing that are in a similar industry. I have an external link in the blog page in the sidebar, the site is not information heavy so I linked to a reputable site, that had more detailed information on safety precautions. The site used can be found [here](https://www.everydayhealth.com/wellness/what-are-essential-oils-a-complete-guide-on-aromatherapy-and-its-potential-health-benefits/) 
+There were also links included for internal pages and a link to an external site of good standing that are in a similar industry. I have an external link in the blog page in the sidebar, the site is not information heavy so I linked to a reputable site, that had more detailed information on safety precautions. The site used can be found [here](https://www.everydayhealth.com/wellness/what-are-essential-oils-a-complete-guide-on-aromatherapy-and-its-potential-health-benefits/). The following is a heading from the site used: 
 
 <br>
 

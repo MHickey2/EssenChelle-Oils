@@ -3,7 +3,6 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-
 from .models import Product, Category, Review
 from .forms import ProductForm, ReviewForm
 from django.contrib.auth.models import User
@@ -70,8 +69,8 @@ def add_product(request):
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Successfully added product!')
-            return redirect(reverse('add_product'))
+            messages.success(request, 'Successfully added product!')            
+            return redirect('products')
         else:
             messages.error(request, 'Failed to add product. Please ensure the form is valid.')  # noqa
     else:
@@ -104,7 +103,6 @@ def edit_product(request, product_id):
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
-        # return redirect(reverse('products'))
 
     template = 'products/edit_product.html'
     context = {
@@ -151,8 +149,7 @@ def product_detail(request, product_id):
     form = ReviewForm()
 
     if request.method == 'POST':
-        form = ReviewForm(data=request.POST)
-        # form = ReviewForm(request.POST, request.FILES)
+        form = ReviewForm(data=request.POST)        
         if form.is_valid():
             review = form.save(commit=False)
             review.user = request.user
@@ -160,10 +157,8 @@ def product_detail(request, product_id):
             review.product = product
             review.save()
             messages.success(
-                request, 'Your Review has been added and awaits approval!')
+                request, 'Your Review has been added and awaits approval!')           
             return redirect(reverse('product_detail', args=[product.id]))
-        else:
-            form = ReviewForm()
 
     context = {
         'product': product,

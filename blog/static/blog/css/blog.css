@@ -1,4 +1,4 @@
-/***STYLING FOR CHECKOUT PAGES TO SUPPLEMENT EXISTING CSS FROM BASE PAGE***/
+/***STYLING FOR BLOG PAGES TO SUPPLEMENT EXISTING CSS FROM BASE PAGE***/
 
 /*Styling for buttons on pages*/
 .btn-danger {
@@ -26,7 +26,7 @@
 .card-title {
     height: 50px;
     text-align: center;
-    color: rgb(95, 7, 95);
+    color: rgb(146, 23, 146);    
     text-transform: capitalize;
     min-height: 20px;
 }
@@ -74,7 +74,7 @@
 .author {
     color: purple;
     margin: 4px;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 /*Styling for content in blogs */

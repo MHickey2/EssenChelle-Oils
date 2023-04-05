@@ -8,13 +8,15 @@
                     <p class="footer-text">EssenChelle Oils is an online ecommerce site that sells essential oils,
                         massage oils and oil burners and includes a blog with information on how to use Essential Oils.
                     </p>
-                    <div><a href="{% url 'privacypolicy' %}" style="color: white;" aria-label="View our Private Policy" 
-                        role="button">Privacy Policy</a>
+                    <div><a href="{% url 'privacypolicy' %}" style="color: white;" aria-label="View our Private Policy"
+                            role="button">Privacy Policy</a>
                     </div>
-                    <div><a href="{% url 'faq' %}" style="color: white;" aria-label="View Frequently Asked Questions" role="button">Frequently
-                        Asked Questions</a>
-                    </div>               
-                    <div><a href="{% url 'copyright' %}" style="color: white;" aria-label="View Copyright Information" role="button">Copyright Information</a>
+                    <div><a href="{% url 'faq' %}" style="color: white;" aria-label="View Frequently Asked Questions"
+                            role="button">Frequently
+                            Asked Questions</a>
+                    </div>
+                    <div><a href="{% url 'copyright' %}" style="color: white;" aria-label="View Copyright Information"
+                            role="button">Copyright Information</a>
                     </div>
                     <br>
                 </div>
@@ -55,26 +57,26 @@
                     <a style="color: #458eff;" href="https://instagram.com" target="_blank" rel="noopener noreferrer"
                         aria-label="Visit us at our instagram page (opens in a new tab)" role="button">
                         <iconify-icon inline icon="icon-park:instagram" width="39"></iconify-icon>
-                    </a>                    
+                    </a>
                 </div>
             </div>
-            <div class="col-md-3 footer-box text-white">
+            <div class="col-md-4">
 
                 <div class="newsletter mx-auto">
-                    <h3 class="footer-text logo-font">Subscribe!</h3>
-                    <p class="footer-text">Get exclusive offers by subscribing to our monthly newsletter</p>
+                    <h3 class="footer-text logo-font">Subscribe</h3>
+                    <p class="footer-text">Get exlusive offers by Subscribing to our monthly newsletter</p>
                     <!-- Mailchimp signup form here -->
-
-                    <div id="mc_embed_signup" class="container mt-4 mb-3 text-center">
-                        <form action="https://herokuapp.us9.list-manage.com/subscribe/post?u=8e05fc9a0fa3a9ef76a5c700f&amp;id=02d34d1f65&amp;f_id=00362de1f0"
+                    <div id="mc_embed_signup">
+                        <form
+                            action="https://herokuapp.us9.list-manage.com/subscribe/post?u=8e05fc9a0fa3a9ef76a5c700f&amp;id=02d34d1f65&amp;f_id=00362de1f0"
                             method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                            class="validate" target="_blank" novalidate>
+                            class="validate" target="_self">
                             <div id="mc_embed_signup_scroll">
-                                <div class="indicates-required"><span class="asterisk text-danger">*</span> indicates required</div>
+                                <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
                                 <div class="mc-field-group">
-                                    <label for="mce-EMAIL">Email Address <span class="asterisk text-danger">*</span>
+                                    <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
                                     </label>
-                                    <input type="email" value="email" name="EMAIL" class="required email" id="mce-EMAIL"
+                                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"
                                         required>
                                     <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
                                 </div>
@@ -88,42 +90,43 @@
                                 <div class="optionalParent">
                                     <div class="clear foot">
                                         <input type="submit" value="Subscribe" name="subscribe"
-                                            id="mc-embedded-subscribe" class="button bm-1">                                            
-                                        <p class="brandingLogo">                                            
-                                            <a href="http://eepurl.com/il9CcA"
-                                                title="Mailchimp - email marketing made easy and fun">                                               
-                                                <img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"
-                                                    alt="mailchimp logo" width="80" height="40"></a></p>
+                                            id="mc-embedded-subscribe" class="button btn-dark">
+                                        <p class="brandingLogo"><a href="http://eepurl.com/il9CcA"
+                                                title="Mailchimp - email marketing made easy and fun"><img
+                                                    src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"
+                                                    width="130" alt="mailchimp branding"></a></p>
                                     </div>
                                 </div>
                             </div>
                         </form>
+                        <!--End mc_embed_signup-->
                     </div>
                 </div>
-            </div>
-            <script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-            <script>
-                (function ($) {
-                    window.fnames = new Array();
-                    window.ftypes = new Array();
-                    fnames[0] = 'EMAIL';
-                    ftypes[0] = 'email';
-                    fnames[1] = 'FNAME';
-                    ftypes[1] = 'text';
-                    fnames[2] = 'LNAME';
-                    ftypes[2] = 'text';
-                    fnames[3] = 'ADDRESS';
-                    ftypes[3] = 'address';
-                    fnames[4] = 'PHONE';
-                    ftypes[4] = 'phone';
-                    fnames[5] = 'BIRTHDAY';
-                    ftypes[5] = 'birthday';
-                }(jQuery));
-                var $mcj = jQuery.noConflict(true);
-            </script>
-            <!--End mc_embed_signup-->
+            </div>           
         </div>
-    </div>    
+    </div>
     <hr>
     <p class="m-0 text-center text-white">&copy; EssenChelle Oils 2023 </p>
 </footer>
+
+{% block postloadjs %}
+<script>
+    (function ($) {
+        window.fnames = new Array();
+        window.ftypes = new Array();
+        fnames[0] = 'EMAIL';
+        ftypes[0] = 'email';
+        fnames[1] = 'FNAME';
+        ftypes[1] = 'text';
+        fnames[2] = 'LNAME';
+        ftypes[2] = 'text';
+        fnames[3] = 'ADDRESS';
+        ftypes[3] = 'address';
+        fnames[4] = 'PHONE';
+        ftypes[4] = 'phone';
+        fnames[5] = 'BIRTHDAY';
+        ftypes[5] = 'birthday';
+    }(jQuery));
+    var $mcj = jQuery.noConflict(true);
+</script>
+{% endblock %}

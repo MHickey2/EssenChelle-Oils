@@ -31,6 +31,11 @@ body {
 to fit the new site's styling, but some elements are the same as they fitted the
 needs of the current project*/
 
+.row {
+    margin-left: 0;
+    margin-right: 0;
+
+}
 /*Styling for the headings for the site*/
 .logo-font {
     font-family: 'Courgette';
@@ -62,6 +67,8 @@ needs of the current project*/
 .text-purple {
     color: rgb(163, 27, 163);
 }
+
+
 
 .main-logo-link {
     width: fit-content;

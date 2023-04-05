@@ -12,7 +12,7 @@
 The EssenChelle Oils site is my 5th Project for the Code Institute and it is a full stack E-commerce site using the Django Framework, it includes Python, JavaScript, CSS and Bootstrap5. It utilizes Stripe payments. It has user authentication and Full CRUD functionality for the products and Blogs for the Superuser. The website deals with the sale of essential oils and associated products. The website would appeal to people who use or want to know more about Essential Oils and are interested in buying these products. This website has been built for educational purposes and the payment transactions are purely for demonstration only. If you want to test the payment functionality, you can use: 
 
 <p align ="center"> 
-<mark style="background-color:violet">Card number: 4242 4242 4242 4242  Exp: Future Date i.e. 05/25 and CVC can be any 3 numbers.</mark>
+`Card number: 4242 4242 4242 4242  Exp: Future Date i.e. 05/25 and CVC can be any 3 numbers.`
 </p>
 
 <br/>
@@ -57,12 +57,13 @@ The EssenChelle Oils site is my 5th Project for the Code Institute and it is a f
     - [3. Search Engine Optimization(SEO)](#3-search-engine-optimizationseo)
     - [4. XML Sitemap](#4-xml-sitemap)
     - [5. Robots.Txt File](#5-robotstxt-file)
+      - [Return to Table of Contents](#return-to-table-of-contents-5)
   - [7. Features  ](#7-features--)
     - [1. Home Page   ](#1-home-page---)
     - [2. Products Page     ](#2-products-page-----)
     - [3. EssenChelle Products Page     ](#3-essenchelle-products-page-----)
     - [4. Product Details Page     ](#4-product-details-page-----)
-    - [5. About Page     ](#5-about-page-----)
+    - [5. About Us Page     ](#5-about-us-page-----)
     - [6. Our Products Page     ](#6-our-products-page-----)
     - [7. Blog Page     ](#7-blog-page-----)
     - [8. Blog Details Page     ](#8-blog-details-page-----)
@@ -82,28 +83,26 @@ The EssenChelle Oils site is my 5th Project for the Code Institute and it is a f
     - [21. Add Blog Page     ](#21-add-blog-page-----)
     - [22. Edit Blog Page     ](#22-edit-blog-page-----)
     - [23. Delete Blog Page     ](#23-delete-blog-page-----)
-  - [The following pages are also available, to all users on the site.](#the-following-pages-are-also-available-to-all-users-on-the-site)
     - [24. Signup Page   ](#24-signup-page---)
     - [25. Login Page   ](#25-login-page---)
     - [26. Logout Page   ](#26-logout-page---)
     - [27. Custom Error Pages  ](#27-custom-error-pages--)
-  - [The following page is available to the superuser.](#the-following-page-is-available-to-the-superuser)
     - [28. Admin Panel  ](#28-admin-panel--)
     - [29. Security Measures  ](#29-security-measures--)
-      - [Return to Table of Contents](#return-to-table-of-contents-5)
-  - [8. Future Implementation  ](#8-future-implementation--)
       - [Return to Table of Contents](#return-to-table-of-contents-6)
+  - [8. Future Implementation  ](#8-future-implementation--)
+      - [Return to Table of Contents](#return-to-table-of-contents-7)
   - [9. Tools and Technology  ](#9-tools-and-technology--)
     - [Language Used:](#language-used)
     - [Technology Used:](#technology-used)
     - [Django Packages](#django-packages)
-      - [Return to Table of Contents](#return-to-table-of-contents-7)
-  - [10. Testing  ](#10-testing--)
       - [Return to Table of Contents](#return-to-table-of-contents-8)
+  - [10. Testing  ](#10-testing--)
+      - [Return to Table of Contents](#return-to-table-of-contents-9)
   - [11. Bugs and Issues  ](#11-bugs-and-issues--)
     - [Resolved ](#resolved-)
     - [Unresolved ](#unresolved-)
-      - [Return to Table of Contents](#return-to-table-of-contents-9)
+      - [Return to Table of Contents](#return-to-table-of-contents-10)
   - [12. Deployment ](#12-deployment-)
     - [How to make a local Clone ](#how-to-make-a-local-clone-)
     - [How to fork a GitHub Repository ](#how-to-fork-a-github-repository-)
@@ -114,11 +113,11 @@ The EssenChelle Oils site is my 5th Project for the Code Institute and it is a f
     - [Cloudinary for Images](#cloudinary-for-images)
     - [Add Stripe keys to Heroku](#add-stripe-keys-to-heroku)
     - [Final Deployment](#final-deployment)
-      - [Return to Table of Contents](#return-to-table-of-contents-10)
-  - [Credits ](#credits-)
       - [Return to Table of Contents](#return-to-table-of-contents-11)
-  - [Acknowledgements ](#acknowledgements-)
+  - [Credits ](#credits-)
       - [Return to Table of Contents](#return-to-table-of-contents-12)
+  - [Acknowledgements ](#acknowledgements-)
+      - [Return to Table of Contents](#return-to-table-of-contents-13)
   - [Author Info](#author-info)
 
 ----
@@ -717,7 +716,7 @@ The website itself offers users the chance to sign up for a regular newsletter. 
 <br>
 
 <p align="center">
-  <img src="assets/readme/images/newsletter.png" alt="Mailchimp Newsletter" />
+  <img src="assets/readme/images/newsletter.png"  width="300" alt="Mailchimp Newsletter" />
 </p>
 
 <br>
@@ -766,21 +765,21 @@ A robots.txt file has also added to allow the search engine crawlers to know whi
 
 <br>
 
----
-
+#### [Return to Table of Contents](#toc)
+----
 
 ## 7. Features  <a name="features"></a>
 
-There are features common to all pages in the site and these are found in the base.html page. These include:
+There are features common to all pages in the site. These include:
 
 - The Logo and Site Title:
   
-The logo was the first asset I created in Logo maker, it depicts a simple female face image using the main colours displayed in the site. The Logo includes the name of the site, so the logo is synonomous with the brand. Using the name in the logo meant I had a readymade image for the packaging of the products in the range. The image relates to the area of health and Beauty, as essential oils are strongly related to the promotion of health and beauty benefits. 
+The logo was the first asset I created in Logo maker, it depicts a simple female face image using the main colours displayed in the site. The Logo includes the name of the site, so the logo is synonomous with the brand. Using the name in the logo meant I had a readymade image for the packaging of the products in the range. The image relates to the area of health and Beauty, as essential oils are strongly related to the promotion of health and beauty benefits. The below image shows the logo image:
 
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/essenchelle-logo.png"  alt="Logo with Title" />    
+     <img src="assets/readme/images/essenchelle-logo.png" width="200" alt="Logo with Title" />    
 </p>
 
 <br/> 
@@ -801,22 +800,22 @@ All Products - By Price, By Rating, By Category and All Products.
 EssenChelle Products - Essential Oils, Massage Oils, Oil Burners and All Products.
 Our Story - About Us, Our Products and Blog and FAQ.
 Special Offers - New Arrivals, Deals, Clearance and All Specials.
-Contact - Contact Form.
+Contact - Contact Us.
 
   <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/navigation.png"  alt="Navbar options" />    
+     <img src="assets/readme/images/navigation.png" width="800px" alt="Navbar options" />    
 </p>
 
 <br/> 
 
-On smaller screens, there is a hamburger menu where the navigation items appear in a collapsible dropdown menu. The image below shows the collapsible menu for smaller screens.
+On smaller screens, there is a hamburger menu where the navigation items appear in a collapsible dropdown menu. The image below shows the collapsible menu for smaller screens:
 
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/mobile navbar.png"  width="300" height="250" alt="navbar mobile" />    
+     <img src="assets/readme/images/mobile navbar.png"  width="300"  alt="navbar mobile" />    
 </p>
 
 <br/> 
@@ -834,19 +833,19 @@ The Footer contains a blurb on the site, some contact details and social media i
 
 ### 1. Home Page   <a name="homepage"></a>
 
-The home page has a Hero image depicting a massage session, which is a strong indicator to the type of products available within the site. There is some textual content describing the site purpose. There is also a call to action button(shop button), that will take the user directly to the product page, so that the user can begin shopping right away. There was an issue with getting a screencap of the page, because of the background, so its a little off.(It looks better in real life)
+The home page has a Hero image depicting a massage session, which is a strong indicator of the type of products available within the site. There is some textual content describing the site's purpose. There is also a call to action button(shop button), that will take the user directly to the product page, so that the user can begin shopping right away. 
   
 <br>
 
 <p align ="center">      
-     <img src="assets/readme/images/homepage.png" width="400" alt="Home Page" />    
+     <img src="assets/readme/images/homepage.png" width="500" alt="Home Page" />    
 </p>
 
 <br/> 
 
 ### 2. Products Page     <a name="productpage"></a>
 
-The products page shows the the full collection within the EssenChelle range including the special offers. These products can be arranged according to specified criteria, such as by price, by rating or by category. The number of all items available is shown to the user and the user can further sort the products by means of the sorting bar on the right of the screen. Each of the products shows the title, an image, the price, the category and the star rating and it will also show users if there are any associated reviews for the product.
+The products page shows the the full collection within the EssenChelle range including the special offers. These products can be arranged according to specified criteria, such as by price, by rating or by category. The number of all items available is shown to the user and the user can further sort the products by means of the sorting bar on the right of the screen. Each of the products shows the title, an image, the price, the category and the star rating and it will also show users if there are any associated reviews for the product. The image below shows the full product range available in the products page.
 
 <br>
 
@@ -858,7 +857,6 @@ The products page shows the the full collection within the EssenChelle range inc
 
 ### 3. EssenChelle Products Page     <a name="essenchelleproductpage"></a>
 
-<br>
 This Page shows products in the category of Essential, Massage and Oil Burners. You can select to see products within just one category by choosing the option in the dropdown menu or by selecting the relevant badges at the top of the page. You can view the number of products and there is a facility for sorting at the top of the page. The options for sorting includes price, rating, name and category.
 
 <br>
@@ -880,9 +878,9 @@ The Page shows the full details of an individual product including the image. Th
 
 <br/>
 
-### 5. About Page     <a name="aboutpage"></a>
+### 5. About Us Page     <a name="aboutpage"></a>
 
-The About Page provides the background information on the EssenChelle Oil Company, It also features a carousel with information on the different categories of products on offer within the site.
+The About Us Page provides the background information on the EssenChelle Oil Company, It also features a carousel with information on the different categories of products on offer within the site. This feature is hidden in smaller screens.
 
 <br>
 
@@ -894,7 +892,7 @@ The About Page provides the background information on the EssenChelle Oil Compan
 
 ### 6. Our Products Page     <a name="ourproductpage"></a>
 
-The our products page shows more in-depth information on each category in the product range. It also provides customer testimonials on why a potential customer should choose a product in the EssenChelle Product Range. This also plays a part in the marketing strategy, as it uses client recommendations to promote the brand. 
+The our products page shows more in-depth information on each category in the product range. It also provides customer testimonials on why a potential customer should choose a product in the EssenChelle Product Range. This also plays a part in the marketing strategy, as it uses client recommendations to promote the brand. (this adds a personal touch and helps user relate to existing customers, it helps the user to visualise how buying a product will have a positive impact on their own lives).
 
 <br>
 
@@ -906,7 +904,7 @@ The our products page shows more in-depth information on each category in the pr
 
 ### 7. Blog Page     <a name="blogpage"></a>
 
-The Blog Page shows a collection of blogs with a spotlight on products being sold on the site. This would hopefully encourage readers to view the products page (using the content to drive sales, which is a part of the marketing strategy). The sidebar gives a brief introduction to the blogs. There is a link within the sidebar to an accredited site with more comprehensive information on individual essential oils. It also shows the titles for the latest available Blogs.
+The Blog Page shows a collection of blogs with a spotlight on products being sold on the site. This would hopefully encourage readers to view and potentially buy products from the products page (using the content to drive sales, which is a part of the marketing strategy). The sidebar gives a brief introduction to the blogs. There is a link within the sidebar to an accredited site with more comprehensive information on individual essential oils. It also shows the titles for the latest available Blogs.
 
 <br>
 
@@ -917,7 +915,7 @@ The Blog Page shows a collection of blogs with a spotlight on products being sol
 <br/>
 
 ### 8. Blog Details Page     <a name="blogdetailspage"></a>
-The Blog Detail page shows the full blog which has information pertaining to selected products on the site. It will either concentrate on an individual oil(lavender oil), or a selection of products(top 5 massage oils), it may also include internal links to the highligted products within the site . For logged in users there is a comment form, for users to leave a comment. When a comment is added, it need's to be approved by a superuser before it will be published in the comment section. There is a comment section for existing comments.
+The Blog Detail page shows the full blog which has information pertaining to selected products on the site. It will either concentrate on an individual oil(The Benefits of Lavender oil), or a selection of products(Our Top 5 best Massage Oils), it may also include internal links to the highligted products within the site . For logged in users there is a comment form, for users to leave a comment. When a comment is added, it need's to be approved by a superuser before it will be published in the comment section. There is a comment section for existing comments.
 
 <br>
 
@@ -929,7 +927,7 @@ The Blog Detail page shows the full blog which has information pertaining to sel
 
 
 ### 9. Contact Page     <a name="contactpage"></a>
- A contact form is included so that the user can send a message to the company. This will aid communication between the user and the EssenChelle Oil Co. this could include queries on the sales process, more information on specific properties of products or questions in relation to delivery issues. When a message is sent a confirmation email will be sent to the message sender. You do not have to be logged in to make an enquiry, as those who send a message could be a potential customer and it would be important to ensure the communication lines are open for all users. The contact page has a map showing the location of the Company(which is a fictional address, although it is an ecommerce business, it allows customers to know their proximity to the base of operations, and it may be useful later on for special events organised by the company ie market research activities) It will also help customers to determine the cost of delivery, as some of the cost will be effected by the distance for delivery. Although contact details can be found in the footer, it is also included on the contact page for convenience sake.
+ A contact form is included so that the user can send a message to the company. This will aid communication between the user and the EssenChelle Oil Co. this could include queries on the sales process, more information on specific properties of products or questions in relation to delivery issues. When a message is sent a confirmation email will be sent to the message sender. You do not have to be a logged in user to make an enquiry, as an unregistered user who wishes to send a message could be a potential customer and it would be important to ensure the communication lines are open for everyone. The contact page has a map showing the location of the Company(which is a fictional address. Although it is an ecommerce business, this map allows customers to know their proximity to the base of operations, and it may be useful later on for special events organised by the company ie market research activities) It will also help customers to determine the cost of delivery, as some of the cost will be effected by the distance for delivery. Although contact details can be found in the footer, it is also included on the contact page for convenience sake.
 
 <br>
 
@@ -950,7 +948,7 @@ The Profile page contains a form to update the customer's default delivery infor
 <br/>
 
 ### 11. Product Favourites Page     <a name="favouritespage"></a>
-The Page shows a collection of the user's product favourites. The details and image of each product are displayed. There is a remove button below each product and when this is selected the product will be removed from the user's favourites.
+The Page shows a collection of the user's product favourites. The user can add their favourites by using the 'add to favourites button' above the product in the product details page. The details and image of each product are displayed. There is a remove button below each product and when this is selected the product will be removed from the user's favourites.
 
 <br>
 
@@ -961,7 +959,7 @@ The Page shows a collection of the user's product favourites. The details and im
 <br/>
 
 ### 12. FAQ Page     <a name="faqpage"></a>
-The page gives a brief introduction to content of the page and there are 3 sections: Ordering, Dispatch and Delivery and Returns and Refunds. Each section shows frequently asked questions and answers. It can be accessed in the dropdown menu for the our story link, but also can be accessed by a link in the footer, this link will open the page in a seperate footer.
+The page gives a brief introduction to the content of the page and the rest of the information is broken down into 3 main sections: Ordering, Dispatch and Delivery and Returns and Refunds. Each section shows frequently asked questions and answers. It can be accessed in the dropdown menu for the our story link, but also can be accessed by a link in the footer. I purposely did this as I wanted the user find the information easily within the nav, but adding it into the footer seemed to be appropriate as well as the company information documents are grouped together in a logical sequence under the blurb on the company.
 
 <br>
 
@@ -972,7 +970,7 @@ The page gives a brief introduction to content of the page and there are 3 secti
 <br/>
 
 ### 13. Privacy Policy Page    <a name="privacypolicypage"></a>
-This page shows the Privacy Policy for the EssenChelle Oil Company. The link to the page can be found in the footer section. When used it will open the page in a new tab.
+This page shows the Privacy Policy for the EssenChelle Oil Company. The link to the page can be found in the footer section. The Privacy Policy was generated with [The Privacy Policy Generator](https://www.privacypolicygenerator.info/)
 
 <br>
 
@@ -983,7 +981,7 @@ This page shows the Privacy Policy for the EssenChelle Oil Company. The link to 
 <br/>
 
 ### 14. Copyright Page    <a name="copyrightpage"></a>
-This page shows the copyright information for the EssenChelle Oil Company. The link to the page can be found in the footer section. When used it will open the page in a new tab.
+This page shows the copyright information for the EssenChelle Oil Company. The link to the page can be found in the footer section. When used it will open the page in a new tab. The Copyright Page was created with [EasyLegalDocs.com](https://easylegaldocs.com/templates/notices/copyright-notice/)
 
 <br>
 
@@ -994,7 +992,7 @@ This page shows the copyright information for the EssenChelle Oil Company. The l
 <br/>
 
 ### 15. Shopping Bag Page     <a name="shoppingbagpage"></a>
-The Page shows the products that the user has currently in their shopping bag. This will initially display no products, but as products are added, they will be displayed on the page. There is a keep shopping button and this allows the user to return to shop for more products. There is also a go to secure checout button, and this will send the user to the checkout page where they can complete their purchase.
+The Page shows the products that the user has currently in their shopping bag. This will initially display no products, but as products are added, they will be displayed on the page. Any products displayed will show an image, the price, a quantity selector for the number of items and the total price for all products in the bag. You can update the number of items or remove an item if neccessary. If the product amount exceeds 50 there is no delivery cost, but if it is lower a delivery cost will be applied. There is a keep shopping button and this allows the user to return to shop for more products. There is also a 'Go to secure checkout button' and this will send the user to the checkout page where they can complete the purchasing process.
 
 <br>
 
@@ -1005,7 +1003,7 @@ The Page shows the products that the user has currently in their shopping bag. T
 <br/>
 
 ### 16. Checkout Page     <a name="checkoutpage"></a>
-The Checkout Page shows the form to complete the order and the order summary. You can adjust your bag or you can complete your order. When the user has successfully entered all their details correctly, a spinner feature will show while the purchase is being processed. In some cases a popup will show in order to save your details.
+The Checkout Page shows the form to complete the order and the order summary. If you have previously clicked to save your delivery information on profile, this information will be already filled in. You can adjust your bag or you can complete your order. When the user has successfully entered all their details correctly, a spinner feature will show while the purchase is being processed. In some cases a popup will be shown to allow the user to authenthicate their card. With Stripe there is added validation to ensure the card details have been entered correctly.
 
 <br>
 
@@ -1016,7 +1014,7 @@ The Checkout Page shows the form to complete the order and the order summary. Yo
 <br/>
 
 ### 17. Checkout Success Page     <a name="checkoutsuccesspage"></a>
-The Page is shown to the user when their order has been processed. It contains a Thank you message and includes the order information, order details, delivery details and billing information, and a link to the new arrival page on the site. There is also a success message displayed(toast) advising the user that their order has been processed successfully and a confirmation email will be sent to them.
+The Page is shown to the user when their order has been processed. It contains a Thank you message and includes the order information, order details, delivery details and billing information, and there is a link to the latest deals page on the site. There is also a success message displayed(toast) advising the user that their order has been processed successfully and a confirmation email will be sent to them.
 
 <br>
 
@@ -1033,7 +1031,7 @@ The Page is shown to the user when their order has been processed. It contains a
 <br>
 
 ### 18. Add Product Page     <a name="addproductpage"></a>
-This Page is also the product management page. The superuser can add a product in the frontend as well as in the admin panel. It can be accessed via the account icon or with a button at the left and bottom of the products page.(which I found more intutive to user)
+This Page is also the product management page. The superuser can add a product in the frontend as well as in the admin panel. It can be accessed via the account icon or with a button at the left and bottom of the products page.(which I found more intutive to user). This page has a form where you can add product details and add a product image, if an image is not added a generic image will be applied. When the product is added the user is redirected to the products page.
 
 <br>
 
@@ -1044,7 +1042,7 @@ This Page is also the product management page. The superuser can add a product i
 <br/>
 
 ### 19. Edit Product Page     <a name="editproductpage"></a>
-If you are a Superuser you can find the button to edit a product below the product Title in the products page and on the product detail page below the product information.The Edit Product Page has a form which allows the superuser to edit product details for individual products. When the product details have been edited and the form is submitted the superuser will be redirected to the product detail page for that product.
+If you are a Superuser you can find the button to edit a product below the product Title in the products page and on the product detail page again below the product Title. The Edit Product Page has a form which allows the superuser to edit product details for individual products. When the product details have been edited and the form is submitted the superuser will be redirected to the product detail page for that specific product.
 
 <br>
 
@@ -1055,7 +1053,7 @@ If you are a Superuser you can find the button to edit a product below the produ
 <br/>
 
 ### 20. Delete Product Page     <a name="deleteproductpage"></a>
-If you are a Superuser you can find the button to delete a product below the product Title in the products page and on the product detail page below the product information.The Delete Product Page has a form which allows the superuser to delete individual products.  
+If you are a Superuser you can find the button to delete a product below the product Title in the products page and on the product detail page below again under the product Title.The Delete Product Page has a form which allows the superuser to delete individual products. If you select to delete the product you will be redirected to the products page, where the product will have been removed. 
 
 <br>
 
@@ -1066,7 +1064,7 @@ If you are a Superuser you can find the button to delete a product below the pro
 <br/>
 
 ### 21. Add Blog Page     <a name="addblogpage"></a>
-The Page has a form which allows the superuser to add a blog to the blog collection. The button is visible on the bottom and left of the blog page, only for the superuser.
+ The Blog Management page can be found in the account admin dropdown.The button to access the add blog page is visible on the bottom and left of the blog page, only for the superuser, I found this more accessible to use generally.The Page has a form which allows the superuser to add a blog to the blog collection. The blogs all have a general focus on highlighting products on the site. This feature is only available to the Superuser as the content is generated to promote sales. It is also hoped to provide engaging content to encourage users to come back for more. These blogs will also be shared in social media to draw followers.
 
 <br>
 
@@ -1088,7 +1086,7 @@ The Page has a form which allows the superuser to add a blog to the blog collect
 <br/>
 
 ### 23. Delete Blog Page     <a name="deleteblogpage"></a>
-The link to delete a blog can be found at the bottom of individual blogs in the blog page and the bottom left side of the page below the blog in the blog detail page.The Delete Page has a form which allows the superuser to delete an existing blog. 
+The link to delete a blog can be found at the bottom of individual blogs in the blog page and the bottom left side of the page below the blog in the blog detail page.The Delete Page has a form which allows the superuser to delete an existing blog. The user will be returned to the Blog page and their blog will have been removed.
 
 <br>
 
@@ -1098,8 +1096,8 @@ The link to delete a blog can be found at the bottom of individual blogs in the 
 
 <br/>
 
-<p align ="center"> 
-  ## The following pages are also available, to all users on the site. ##
+<p align ="center">
+The following pages are available to all users on the site.
 </p>
 
 <br>
@@ -1119,7 +1117,7 @@ On the Signup Page, a new user can sign up for the EssenChelle Oils website by f
 
 ###  25. Login Page   <a name="loginpage"></a>
 
-A registered User can log in to the website by inputting their username and password and they will have full access to all the logged in features within the site. If they are logged in and are a superuser they will have extra functionality enabled. 
+A registered User can log in to the website by inputting their username and password and they will have full access to all the logged in features within the site. If they are logged in and are a superuser they will have extra functionality enabled. If the user forgets their email they can choose the forget password link and they will be sent an email to reset their password. They can then login with their new password. They can use the checkout box to be remembered, to make it easier for them to log in the next time.
 
 
 <br>
@@ -1132,7 +1130,7 @@ A registered User can log in to the website by inputting their username and pass
 
 ###  26. Logout Page   <a name="logoutpage"></a>
 
-In the Logout Page, the User can confirm that they want to exit the website and they can log out of the site.
+In the Logout Page, the User can confirm that they want to exit the website and they can then log out of the site.
 
 <br>
 
@@ -1155,7 +1153,7 @@ I have included custom Error Pages in the error folder within the templates fold
 <br/> 
 
 <p align ="center"> 
-  ## The following page is available to the superuser. ##
+The following panel feature is available to the superuser.
 </p>
 
 <br>
@@ -1180,7 +1178,7 @@ The admin panel allows the admin/superuser to perform a wide range of functional
 
 ### 29. Security Measures  <a name="security"></a>
 
-To ensure security on the site, only logged in users can access certain features on the site. A logged in user can add a product review or comment for a blog in the blog section. A superuser can add, updata and delete products within the admin panel. The superuser also has access to add, edit and delete products within the product pages. The superuser can add, edit and delete blogs in the admin panel but they can also access these capabilities within the blog page. Only the Admin/Superuser can access the admin Panel(would need sign in credentials).The Database URL and secret key are stored in the env.py file to prevent unwanted connections to the Database. As I was following the boutique ado walkthrough, I had not realised the secret key was commited in the early stages of the development, after doing my research into the issue and with the advice from CI, I generated a new key, and this was immediately put in the env.py file, making the other key obselete. All secret keys were included in the env.py file. Cross-Site Request Forgery (CSRF) Tokens are used on all Forms within the App for added protection. All keys needed for the inclusion of AWS, CLoudinary and Stripe were concealed for security purposes.
+To ensure security on the site, only logged in users can access certain features on the site. A logged in user can add a product review or comment for a blog in the blog section. A superuser can add, updata and delete products within the admin panel. The superuser also has access to add, edit and delete products within the product pages. The superuser can add, edit and delete blogs in the admin panel but they can also access these capabilities within the blog page. Only the Admin/Superuser can access the admin Panel(would need sign in credentials).The Database URL and secret key are stored in the env.py file to prevent unwanted connections to the Database. As I was following the boutique ado walkthrough, I had not realised the secret key was commited in the early stages of the development, after doing my research into the issue and with the advice from CI, I generated a new key, and this was immediately put in the env.py file, making the other key obselete. All secret keys were included in the env.py file. Cross-Site Request Forgery (CSRF) Tokens are used on all Forms within the App for added protection. All keys needed for the inclusion of AWS, Cloudinary and Stripe were concealed for security purposes.
 
 <br>
 
@@ -1202,17 +1200,17 @@ To ensure security on the site, only logged in users can access certain features
 
  In relation to the products, I would like to expand the information relating to the product. Besides the description, I would ike to include directions for use and cautions. You could also sort products according to the health conditions that can be addressed by using them i.e. insomnia, anxiety, respiratory issues.
 
- In regards to the blogs I have just added a few basic blogs, with heavy emphasis on product spotlighting for marketing purposes. These blogs could also be broken down into further categories. I could add a do it yourself section, where you could provide simple instructions for users to use the products in creative ways, this is incorporated into the present blog in a small way, but would be a great way for users to learn to integrate the products into their lives. I would also include a recipe category where you could provide the user with recipes using the essential oils. This could be a good way to get users to interact with the site. you could ask the users to contribute their own recipes via the social media channels or by contacting the company directly with the contact form. User's recipes could then be featured on the site. Healthy Living could also be a category and you could give advice on how to use oils in the home and provide tips for everyday living in relation to EssenChelle Oils. These measures should not only drive sales, but should help to create a a thriving community with a shared interest in essential oil and their byproducts.
+ In regards to the blogs I have just added a few basic blogs, with heavy emphasis on product spotlighting for marketing purposes. These blogs could also be broken down into further categories. I could add a do it yourself section, where you could provide simple instructions for users to use the products in creative ways, this is incorporated into the present blog in a small way, but would be a great way for users to learn how to integrate the products into their lives. I would also include a recipe category where you could provide the user with recipes using the essential oils. This could be a good way to get users to interact with the site. you could ask the users to contribute their own recipes via the social media channels or by contacting the company directly with the contact form. User's recipes could then be featured on the site. Healthy Living could also be a category and you could give advice on how to use oils in the home and provide tips for everyday living in relation to EssenChelle Oils. These measures should not only drive sales, but should help to create a a thriving community with a shared interest in essential oils in general.
 
- In regard to the profiles, I would customise it more for the user, in the previous project I had an image for the profile user, but would rather ensure I meet all the project criteria first, and if there is time at the end I could explore this possibility, but would hope to introduce this in a future iteration.
+ In regard to the profiles, I would customise it more for the user, in the previous project I had an image for the profile user, but I would rather ensure I meet all the project criteria first, and if there was time at the end I could have explored this possibility, but I would hope to introduce this in a future iteration.
 
- In regard to the review, I had looked into the idea of using the ratings in the reviews in the product rating, again this is still a possibility, but time restraints this may not make this possible at this time. It would be easier at this time to use existing ratings, as it would take time to generate actual ratings and with this restraint new products would not have any rating, and this would not be ideal. i
+ In regard to the review, I had looked into the idea of using the ratings in the reviews in the product rating, but time restraints made this impossible at this time. It would be easier at this time to use existing ratings, as it would take time to generate actual ratings and with this restraint new products would not have any rating, and this would not be ideal. 
 
- In regards to logging in, I would also include logging in from a social network provider like Facebook, Twitter, or Google to facilitate the user further.
+ In regards to logging in, I would also include logging in from a social network provider like Facebook, Twitter, or Google to facilitate the user experience for users.
 
- In regards to deals I would introduce deals to encourage the user to buy multiple products at a special rate, from a marketing perspective I feel this would be conducive to more sales. In the long term I would also introduce a loyalty scheme, so that users would be rewarded for their consumer buying behaviour.
+ In regards to deals I would introduce a range of deals to encourage the user to buy multiple products at a special rate, from a marketing perspective I feel this would be conducive to driving more sales. In the long term I would also introduce a loyalty scheme, so that users would be rewarded for their consumer buying behaviour.
 
- To increase CRUD capabilities in the frontend for the superuser I would like to allow them to approve reviews for products and comments for blogs without needing to access the admin panel by allowing the superuser to see the comments and reviews on pages within the application, much in the same way as they can use the CRUD for products and blogs. This could also be done for the contact messages, currently these messages are saved in the database and can be accessed in the panel and the message is sent to the admin/staff user, but it would good to have the option to access this information freely in the site.
+ To increase CRUD capabilities in the frontend for the superuser I would like to allow them to approve reviews for products and comments for blogs without needing to access the admin panel by allowing the superuser to see the comments and reviews on pages within the application, much in the same way as they can use the CRUD for products and blogs. This could also be done for the contact messages, currently these messages are saved in the database and can be accessed in the panel and the message is sent to the admin/staff user, but it would good to have the option to access this information freely within the site's frontend.
 
 
  
@@ -1283,26 +1281,26 @@ Go to the [TESTING DOCUMENT](TESTING.md)
 
  ## 11. Bugs and Issues  <a name="bugs"></a>
 
- There have been a number of issues during development. Initially there was major issues with images, both sourcing assets and resizing them so they are uniform on the site. I wanted the products to carry the brand of the site, so this meant they had to be customised within photoshop. The special offer section are different in that they have a coloured background, but the sizing is the same, so I could live with that.
+ There have been a number of issues during development. Initially there was major issues with images, both sourcing assets and resizing them so they are uniform on the site. I wanted the products to carry the brand of the site, so this meant they had to be customised within photoshop. The special offer images are different in that they have a coloured background, but the sizing is the same, so I could live with that.
 
  
 <br>
 
  ### Resolved <a name="resolved"></a>
 
- The webhooks were problematic at times mostly in relation to the URLS for the endpoints and making sure the secret keys are in place and the endpoint is activated on the stripe dashboard. Without being able to test with the testhooks earlier it was hard to know why they are not working and how to fix them when they were not working. Again when the project is deploayed going through this procedure again and testing a seperate endpoint. I had thought I had kept the code close to the stripe code in the walkthrough project but did have an issue with the code, I had added an extra return which meant although the order was processing correctly it never triggered the success page or the confirmation email after an order was processed and needed help from tutor support to resolved the issue, which was done with a series of print statements. There was at the same time an issue with an extra blank line in the header of the confirmation_email_subject, when these issues were fixed I finally managed to get the email message confirmation printing in the terminal within gitpod and I received email confirmation with the deployed site.
+ The webhooks were problematic at times mostly in relation to the URLS for the endpoints and making sure the secret keys are in place and the endpoint is activated on the stripe dashboard. Without being able to test with the testhooks earlier it was hard to know why they are not working and how to fix them when they were not working. Again when the project is deploayed going through this procedure again and testing a seperate endpoint. I had thought I had kept the code close to the stripe code in the walkthrough project but did have an issue with the code, I had added an extra return which meant although the order was processing correctly it never triggered the success page or the confirmation email after an order was processed and received help from tutor support to resolve the issue, which was accomplished with a series of print statements. There was at the same time an issue with an extra blank line in the header of the confirmation_email_subject, when these issues were fixed I finally managed to get the email message confirmation printing in the terminal within gitpod and I subsequently could receive email confirmations with the deployed site.
 
- There has been an issue with the webhooks in the gitpod site, the address has changed, which means I have been having to update the webhook url at times, when it stops working I review the address, and it usually has just changed by one number, and when it is updated it works ok again, not sure if I can prevent this happening again, but am looking into it. The Heroku webhook has no such problems, so the checkout should work as normal after submission.
+ There has been an issue with the webhooks in the gitpod site, the address has changed, which means I have been having to update the webhook url at times, when it stops working I review the address, and it usually has just changed by one number, and when it is updated it works ok again, I now check for url changes if I experience any issues. The Heroku webhook has no such problems, so the checkout should work as normal after submission.
 
- I had an issue when updating the quantity selector so it works on both the desktop and mobile screens, for this I just used the fix advised during the walkthrough video, and although I updated the 3 files, it did not work, used the code diff application and found no difference, but it still did not work, so I got on to tutor support and explaied the issue, by the means of print statements, the problem was found in the script on the bag page, while updating the dollor signs to the euro signs throughout the site, when I wanted the currency to show euros instead of dollars, I had mistakenly added a euro in a query instead of the required dollor, so this had caused a 500 error, which displayed in the termnal, when this was replaced, it started to work as it was supposed to.
+ I had an issue when updating the quantity selector so it works on both the desktop and mobile screens, for this I just used the fix advised during the walkthrough video, and although I updated the 3 files, it did not work, so used the code diff application and found no difference, but it still did not work, so I got on to tutor support and explaied the issue, by the means of print statements, the problem was found in the script on the bag page, while updating the dollar signs to the euro signs throughout the site, when I wanted the currency to show euros instead of dollars, I had mistakenly added a euro in a query instead of the required dollar, so this had caused a 500 error, which displayed in the termnal, when this was replaced, it started to work as it was supposed to.
 
  <br>
 
  ### Unresolved <a name="unresolved"></a>
 
- There is an issue in regards to sizes of products at the moment you will be offered different sizes within cerain products, which you can select successfully, there is an issue with applying 2 different prices to seperate sizes of the one product, which would need to be addressed. You can have either a small or large essential oil product in some items, but currently both products will be riced the same, now I could content the smaller bottle is of a higher quality and the larger bottle is a weaker solution and this could account for the pricing, but moving forward I would add additional functionality to offer a greater range of sizes for a greater range of products with a differing range of costs.  I really didnt want to deviate too much from the existing scripts, as I felt this might have a detrimental effect on the whole buying procedure and the inclusion of the Stripe functioning, but this would be an area that would need more of a deep dive for building E-Commerce sites in the future.
+ There is an issue in regards to sizes of products at the moment you will be offered different sizes within cerain products, which you can select successfully, there is an issue with applying 2 different prices to seperate sizes of the one product, which would need to be addressed. You can have either a small or large essential oil product in some items, but currently both products will be priced the same, now I could content the smaller bottle is of a higher quality and the larger bottle is a weaker solution and this could account for the pricing, but moving forward I would add additional functionality to offer a greater range of sizes for a greater range of products with a differing range of costs.  I really didnt want to deviate too much from the existing scripts, as I felt this might have a detrimental effect on the whole buying procedure and the inclusion of the Stripe functioning, but this would be an area that would need more of a deep dive for building E-commerce sites in the future.
 
-While doing testing with lighthouse and page speed, the scores were affected by the inclusion of third party code essential for the site, this was mainly in the area of Boostrap, Jquery and mailchimp. I did try to some mnor fixes for these issues. In regards to the JQuery I did try to change to a newer JQuery but it stopped the functionality I had in regards to the navigation, so left as it was. The mailchimp is included in every page, and the functionality of the newsletter subscription is provided by mailchimp, so was not in a position to alter this code. I did change my images to new generation webp formats, as the platform was suggesting this would be beneficial for the site. The Javascript in the site was provided by code institute and I did not want to make any alterations in case the Stripe payments could have been badly effected. 
+While testing with lighthouse and page speed, the scores were affected by the inclusion of third party code essential for the site, this was mainly in the area of Boostrap, Jquery and mailchimp. I did try some minor fixes for these issues. In regards to the JQuery I did try to change to a newer JQuery version (3.4.1 to 3.5.1) but it stopped some functionality I had in regards to the navigation, so left it as it was. The mailchimp is included in every page, and the functionality of the newsletter subscription is provided by mailchimp, so I was not in a position to alter this code. I did change my images to new generation webp formats, as Lighhouse suggested this would be beneficial for the site. The Javascript in the site was provided by code institute and I did not want to make any alterations in case the Stripe payments could have been badly effected. 
  <br>
 
 <p align ="center">      
@@ -1317,11 +1315,11 @@ While doing testing with lighthouse and page speed, the scores were affected by 
 
  ## 12. Deployment <a name="deployment"></a>
 
- The Project used Heroku for deployment. I used GitPod for development within the project and pushed to the GitHub Repository. This in turn updated the Project in Heroku. I used DEBUG = 'DEV' in os.environ, during development and other than when testing, had it configured so that I could work both locally and could also test the deployed Project on an ongoing basis. I added all the config vars for Stripe, AWS, The Database URL, and the creds for email. I  originally has disable collectstatic and the creds for AWS but removed these when I added cloudinary.
+ The Project used Heroku for deployment. I used GitPod for development within the project and pushed to the GitHub Repository. This in turn updated the Project in Heroku. I used DEBUG = 'DEV' in os.environ, during development and other than when testing, had it configured so that I could work both locally and could also test the deployed Project on an ongoing basis. I added all the config vars for Stripe, AWS, The Database URL, and the creds for email. I originally has disabled collectstatic and the creds for AWS but removed these when I changed to cloudinary for static and media files.
 
  <br>
 
-Github
+GitHub
 
  ### How to make a local Clone <a name="clone"></a>
 1. Navigate to the main page of the repository.
@@ -1391,7 +1389,7 @@ time you push to your Repository or you can manually deploy which is the option 
 [Changing Dynos](https://code-institute-students.github.io/deployment-docs/01-heroku-signup/heroku-03-converting-dynos) 
 
 - I had already signed up for ElephantSQl so just needed to create a new instance, I gave my plan a name, chose the tiny turtle(free plan) and selected the region as Ireland. I ensured all data was entered correctly and created my instance.
-- I then found the name of the newly created instance in the Dashboard. I copied the database url, you can add the config var DATABASE_URL to your other config vars in your Heroku settings and then you have to alter some of your existing code in your project. 
+- I then found the name of the newly created instance in the Dashboard. I copied the database url, and added the config var DATABASE_URL to the other config vars in the Heroku settings and then you have to alter some of your existing code in your project. 
 - You need to install dj_database_url and psycopg2 and update your requirements.txt to include these packages. You need to import these into your settings file. You need to add
 
  ````
@@ -1430,6 +1428,7 @@ time you push to your Repository or you can manually deploy which is the option 
 - Add DISABLE_COLLECTSTATIC to Heroku Config Vars(temporarily, must be removed before deployment)
 - Add cloudinary to the list of INSTALLED_APPS in settings.py
 - Add the following code in the settings file to tell Cloudinary to store media and static files
+  
 ````
 STATIC_URL = '/static/'
 STATICFILES_STORAGE =
@@ -1444,20 +1443,24 @@ DEFAULT_FILE_STORAGE =
 ````
 
 - Link file to the templates directory in Heroku Place under the BASE_DIR line
+  
 ````  
 TEMPLATES_DIR = os.path.join(BASE_DIR,
 'templates')
 ````
 
 - Change the templates directory to TEMPLATES_DIR Place within the 
+  
 ```` 
 TEMPLATES array 'DIRS': [TEMPLATES_DIR]
 ````
 
-- Add Heroku Hostname to
+- Add Heroku Hostname to:
+
+
 ````  
 ALLOWED_HOSTS =
-["PROJ_NAME.herokuapp.com", "localhost"
+["PROJ_NAME.herokuapp.com", "localhost"]
 ````
 
 
@@ -1501,7 +1504,7 @@ When you go through the purchasing process on your site, you can check on your w
  The logo and Favicon were built with the online tools: [LogoMaker](https://www.logomaker.com/) and 
  [Favicon.io](https://favicon.io/)
 
- he Project began with the basic code used in the 'Boutique Ado' walkthrough Project, but was modified according to my own needs within the Project. As the Project developed, I sought out various Tutorials and consulted documentation for Django and Stripe.
+ The Project began with the basic code used in the 'Boutique Ado' walkthrough Project, but was modified according to my own needs within the Project. As the Project developed, I sought out various Tutorials and consulted documentation for Django and Stripe.
 
  I also used the following online resources:
 
@@ -1521,7 +1524,7 @@ When you go through the purchasing process on your site, you can check on your w
 ----
  ## Acknowledgements <a name="acknowledgements"></a>
 My link to the external site on the blog page with great information on using Essential Oils 
- [everydayhealth.com](https://www.everydayhealth.com/wellness/what-are-essential-oils-a-complete-guide-on-aromatherapy-and-its-potential-health-benefits/)
+[everydayhealth.com](https://www.everydayhealth.com/wellness/what-are-essential-oils-a-complete-guide-on-aromatherapy-and-its-potential-health-benefits/)
 
 Everyone in Code Institute who contributed to my Projects, in particular Ed from Tutor Support, who shared his vast knowledge with me, but also every other Tutor who helped me along the way.
 

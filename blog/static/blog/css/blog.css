@@ -26,7 +26,7 @@
 .card-title {
     height: 50px;
     text-align: center;
-    color: rgb(146, 23, 146);    
+    color: rgb(146, 23, 146);
     text-transform: capitalize;
     min-height: 20px;
 }
@@ -85,7 +85,7 @@
     text-align: left;
 }
 
-/* Styling for ordered lists in blogs */
+/* Styling for ordered lists in blogs in case you need it */
 .ordered {
     line-height: 1.5;
     text-align: left;
@@ -109,7 +109,7 @@ ol li {
 
 ol li::before {
     content: counter(num) ". ";
-    color: green;
+    color: rgb(187, 16, 202);
 }
 
 /*Styling for text content */
@@ -117,4 +117,12 @@ ol li::before {
     line-height: 1.5;
     font-size: 1rem;
     text-align: left;
+}
+
+/* hie the sidebar on smaller screns */
+@media (max-width: 991px) {
+    
+     #right-sidebar {
+        display: none; 
+    } 
 }

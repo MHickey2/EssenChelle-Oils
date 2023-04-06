@@ -15,9 +15,8 @@ Testing has taken place continuously throughout the development of the project. 
      3. [Python](#python)
      4. [Lighthouse](#lighthouse)
      5. [Accessabilty](#accessability)
-     6. [Contrast Checker](#contrastchecker)
-     7. [WAVE](#wave)
-     8. [Link Checker](#linkchecker)
+     6. [Contrast Checker](#contrastchecker)    
+     7. [Link Checker](#linkchecker)
 4. [Manual Testing](#manual)
 5. [User Story Testing](#userstorytesting)  
 
@@ -27,7 +26,7 @@ Testing has taken place continuously throughout the development of the project. 
 
 ## Cross Browser Testing<a name="browsertesting"></a>
 
-  The site was tested in Google Chrome, Microsoft Edge and Mozilla Firefox on the Desktop. The site was tested on a Lenovo Laptop, and a Xiomai Redmie Note 11. 
+  The site was tested in Google Chrome, Microsoft Edge and Mozilla Firefox on the Desktop. The site was also tested on a Lenovo Laptop, and a Xiomai Redmie Note 11. 
 
 <br/>
 
@@ -37,7 +36,7 @@ Testing has taken place continuously throughout the development of the project. 
 ----
 ## Responsive Testing<a name="responsivetesting"></a>
 
-   I regularly tested the responsiveness of the site using Google Chrome Developer tools, information on this can be found [here](https://developer.chrome.com/docs/devtools/). I did have issues with this tool near the end of the project for some reason if I used it I would lose internet (not sure why it was doing that) but had to find another alternative for testing, so I found [Responsive Test Tool Site](https://responsivetesttool.com/), which allowed me to test the site in a range of different devices. My site works well up to 5120 x 2880 screen size.  I also used Window Resizer and a Responsive Design Tester Application available in the Google Chrome Store. I also used the Am I responsive site to test the site and the image below is from that Testing:
+   I regularly tested the responsiveness of the site using Google Chrome Developer tools, information on this can be found [here](https://developer.chrome.com/docs/devtools/). I did have issues with this tool near the end of the project for some reason if I used it I would lose internet (not sure why it was doing that) but had to find another alternative for testing, so I found [Responsive Test Tool Site](https://responsivetesttool.com/), which allowed me to test the site in a range of different devices. My site works well up to 5120 x 2880 screen size. I have set the max size of screen at 1500px. I also used Window Resizer and a Responsive Design Tester Application available in the Google Chrome Store. I also used the Am I responsive site to test the site and the image below is from that Testing:
 
    <br/>
 
@@ -137,15 +136,6 @@ Used [https://color.a11y.com/](https://color.a11y.com/) to check for any contras
   
   <br>
 
-7. Wave (Web Accesability Evaluation tool)   <a name="wave"></a>
-  
-<br/>
-
-  <p align ="center">      
-     <img src="assets/readme/images/wave.png"  alt="wave test result"/>   
-  </p>
-  
-  <br>
 
 8. Link Checker   <a name="linkchecker"></a>
 Besides manually checking links on the site I used this tool as an extra measure for testing and the result can be seen below:
@@ -518,8 +508,8 @@ individual elements are working properly.
 
 ### Shopping Bag Page
 
-| Feature                   |  Expect              | Action    | Result|
-| --------------------      | -------------------- | --------  | ------| 
+| Feature                   |  Expect                          | Action    | Result|
+| --------------------      | -------------------------------  | --------- |-------| 
 | Remove Button             | Removes Product from Favourites  | Click On  |   ✔   |
 | Product Information       | Displays to User                 | Automatic |   ✔   |
 | Quantity Selector         | Can add or delete quantitiy      | Click On  |   ✔   |

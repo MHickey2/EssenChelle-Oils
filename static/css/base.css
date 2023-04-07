@@ -63,6 +63,7 @@ needs of the current project*/
     color: purple !important;
 }
 
+
 /*Colour for headings and some text */
 .text-purple {
     color: rgb(163, 27, 163);
@@ -199,8 +200,10 @@ footer {
 /*styling for images in cards*/
 .card-img-top {
     object-fit: cover;
-    width: 250px;
-    height: auto;
+    /* width: 250px;
+    height: auto;      */
+    width: 237px;
+    height: 411px;
     display: block;
     margin-left: auto;
     margin-right: auto;

@@ -15,10 +15,7 @@
 {% block sidebar %}
 
 {% include 'includes/sidebar.html' %}
-
 {% endblock sidebar %}
-
-
 
     <!--Blog Entries Column -->
     <div class="container-fluid">
@@ -27,7 +24,7 @@
             <div class="col-md-6 mt-3">
                 <div class="card ">
                     <div class="card-body cardheight">                        
-                        <h4 class="card-title text-purple mx-auto text-center">{{ post.title }}</h4>
+                        <h4 class="card-title text-purple mx-auto logo-font text-center">{{ post.title }}</h4>
                         {% if post.blog_image|slugify == "placeholder" %}
                         <img src="https://res.cloudinary.com/dspwticaf/image/upload/v1677333448/pa9lehu7vhb8pp5mvtyi.jpg" width="400" height="300" class="card-img-top img-fluid"
                             alt="{{ post.title }} generic">

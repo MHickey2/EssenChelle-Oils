@@ -9,11 +9,11 @@
 {% block content %}
 <div id="top"></div>
 <div class="overlay"></div>
-<h2 class="logo-font text-purple text-center mt-3">Blog Details</h2>
+<h1 class="logo-font text-purple text-center mt-3">Blog Details</h1>
 <hr>
 <div>
     <!-- Post title goes in these h1 tags -->
-    <h2 class="card-title mt-3 text-center text-purple">{{ post.title }}</h2>
+    <h2 class="card-title mt-3 logo-font text-center text-purple">{{ post.title }}</h2>
     <!-- Post author goes before the | the post's created date goes after -->
     <h6 class="post-subtitle text-muted text-center">{{ post.author }} | {{ post.created_on }}</h6>
     <br>
@@ -21,9 +21,9 @@
     <div class="text-center">
         {% if post.blog_image|slugify == "placeholder" %}
         <img src="https://res.cloudinary.com/dspwticaf/image/upload/v1677333448/pa9lehu7vhb8pp5mvtyi.jpg" width="400" height="300"
-            alt="{{ post.title }} generic">
+            alt="{{ post.title }} generic" class="img-fluid">
         {% else %}
-        <img src=" {{ post.blog_image.url }}" width="400" height="300" alt="{{ post.title }} photo">
+        <img src=" {{ post.blog_image.url }}" width="400" height="300" alt="{{ post.title }} photo" class="img-fluid">
         {% endif %}
     </div>
 </div>

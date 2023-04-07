@@ -38,6 +38,11 @@
     margin-right: auto;
 }
 
+.card-img-top {
+    width: 400px;
+    height: 300px;
+}
+
 .post-subtitle {
     text-align: center;
     color: purple;
@@ -121,8 +126,8 @@ ol li::before {
 
 /* hie the sidebar on smaller screns */
 @media (max-width: 991px) {
-    
-     #right-sidebar {
-        display: none; 
-    } 
+
+    #right-sidebar {
+        display: none;
+    }
 }

@@ -24,9 +24,11 @@
 }
 
 .carousel-indicators {
-  color: rgb(75, 11, 75);
+  color: rgb(85, 5, 85);
+  background-color: white;
   font-weight: bold;
 }
+
 
 .backlay {
   background: rgba(241, 99, 241, 0.5);

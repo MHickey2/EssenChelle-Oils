@@ -3,7 +3,7 @@
 
 Back to the [README](README.md)
 
-Testing has taken place continuously throughout the development of the project. When faults were detected they were fixed on an ongoing basis. These were fixed locally in GitPod and committed to GitHub regularly. Faults fixed and outstanding can be found in the README.md Document.
+Testing has taken place continuously throughout the development of the project. When faults were detected they were fixed on an ongoing basis locally in GitPod and committed to GitHub manually. Faults fixed and outstanding can be found in the README.md Document.
 
 # Table of Contents <a name="toc"></a>
 
@@ -36,7 +36,7 @@ Testing has taken place continuously throughout the development of the project. 
 ----
 ## Responsive Testing<a name="responsivetesting"></a>
 
-   I regularly tested the responsiveness of the site using Google Chrome Developer tools, information on this can be found [here](https://developer.chrome.com/docs/devtools/). I did have issues with this tool near the end of the project for some reason if I used it I would lose internet (not sure why it was doing that) but had to find another alternative for testing, so I found [Responsive Test Tool Site](https://responsivetesttool.com/), which allowed me to test the site in a range of different devices. My site works well up to 5120 x 2880 screen size. I have set the max size of screen at 1500px. I also used Window Resizer and a Responsive Design Tester Application available in the Google Chrome Store. I also used the Am I responsive site to test the site and the image below is from that Testing:
+   I regularly tested the responsiveness of the site using Google Chrome Developer tools, information on this can be found [here](https://developer.chrome.com/docs/devtools/). I did have issues with this tool near the end of the project for some reason if I used it I would lose internet (not sure why it was doing that) but had to find another alternative for testing, so I found [Responsive Test Tool Site](https://responsivetesttool.com/), which allowed me to test the site in a range of different devices. My site works well up to 5120 x 2880 screen size. Although I have set the max size of screen at 1500px. I also used Window Resizer and a Responsive Design Tester Application available in the Google Chrome Store. I also used the Am I responsive site to test the site and the image below is from that Testing Tool:
 
    <br/>
 
@@ -55,7 +55,6 @@ Testing has taken place continuously throughout the development of the project. 
 1. W3C Validator <a name="w3c"></a>
 
 Using [https://validator.w3.org/](https://validator.w3.org/) All Pages were tested with the validator, the results of the HTML validation can be seen below:
-
 
 <br/>
 
@@ -76,7 +75,7 @@ The result can be seen below:
 <br/>
 
 3. Python Validation   <a name="python"></a>
-  Python testing was done without the use of Pep8 as the site was down, instead an extension was added which highlighted errors and showed them in the problems panel within gitpod. Most errors during the build related to long lines, which I rectified. I also used [Code Institute Python Linter](https://pep8ci.herokuapp.com/). I found no faults from the gitpod linter testing and have included sample results from the Code Institute Linter
+  Python testing was done without the use of Pep8 as the site was down, instead an extension was added which highlighted errors and showed them in the problems panel within gitpod. Most errors during the build related to long lines, which I rectified. I also used [Code Institute Python Linter](https://pep8ci.herokuapp.com/). I found no faults from the gitpod linter testing and have included sample results from the Code Institute Linter. I have had to open a seperate workspace in the last few days of the project as I had run out of gitpod hours and could not access my original workspace (not sure if that makes a difference and if everything I installed is still present, but thought I would mention it anyway, in case they are not)
 
   <br/>
 
@@ -94,7 +93,7 @@ The result can be seen below:
 
 
 4. Lighthouse Testing   <a name="lighthouse"></a>
-I have been experiencing issues with Lighouse testing, although I have been working in incognitor there are still issues with getting accurate results (had same issues with previous projects). On many occassions it does not work at all and if it does work it encounters issues, I have removed extensions from incognito and tested other sites to esatablish a baseline, but tends to act the same way no matter what website I test, so I looked to alternatives that may work better, I have provided a sample score from Lighthouse and have used Page Speed Insights which I have had no problems with using and have provided scores to supplement the Lighthouse scores. There were errors in rendering third party code mainly bootstrap, JQuery,Stripe and MailChimp, but cannot really adjust or remove these as they are essential for functionality within the site. I will refer to this in the unsolved bugs in the readme.
+I have been experiencing issues with Lighouse testing, although I have been working in incognito there are still issues with getting accurate results (had same issues with previous projects). On many occassions it does not work at all and if it does work it encounters issues, I have removed extensions from incognito and tested other sites to esatablish a baseline, but tends to act the same way no matter what website I test, so I looked to alternatives that may work better, I have provided a sample score from Lighthouse and have used Page Speed Insights which I have had no problems with using and have provided scores to supplement the Lighthouse scores. There were errors in rendering third party code mainly bootstrap, JQuery,Stripe and MailChimp, but cannot really adjust or remove these as they are essential for functionality within the site. I have referred to this in the unsolved bugs in the bug section of the readme document.
 
 <br>
 
@@ -138,7 +137,7 @@ Used [https://color.a11y.com/](https://color.a11y.com/) to check for any contras
 
 
 8. Link Checker   <a name="linkchecker"></a>
-Besides manually checking links on the site I used this tool as an extra measure for testing and the result can be seen below:
+Besides manually checking links on the site I used [Dr Link Checker](https://www.drlinkcheck.com/) as an extra measure for testing and the result can be seen below:
 
 <br/>
 

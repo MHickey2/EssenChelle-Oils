@@ -29,7 +29,7 @@
     <link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
     
     <style>
-        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:300px; display:block; margin-left: auto;
+        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif;  width:270px; display:block; margin-left: auto;
         margin-right: auto; }
         /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
            We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
@@ -51,13 +51,13 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
     <!-- Stripe -->
-    <script src="https://js.stripe.com/v3/"></script>   
-     <!--Mail Chimp validation Link-->
-    <script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>    
+    <script src="https://js.stripe.com/v3/"></script>          
     <!--Iconify-->
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>    
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/19b8bbb0d6.js" crossorigin="anonymous"></script>
+     <!--Mail Chimp validation Link-->
+    <script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script> 
     {% endblock corejs %}        
     
 
@@ -183,7 +183,9 @@
 
     {% include 'includes/footer.html' %}
 
-    {% block postloadjs %}   
+    {% block postloadjs %}
+    
+       
     <script>
         $('.toast').toast('show');
     </script>

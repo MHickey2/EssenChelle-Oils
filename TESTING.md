@@ -103,6 +103,14 @@ I have been experiencing issues with Lighouse testing, although I have been work
 
 <br/> 
 
+<br>
+
+<p align ="center">      
+     <img src=assets/readme/images/mobilescore.png width="600"  alt="lighouse testing specs Desktop" />    
+</p>
+
+<br/> 
+
 <p align ="center">      
      <img src=assets/readme/images/pagespeeddesktop.png width="600"  alt="pagespeed Desktop" />    
 </p>

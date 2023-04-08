@@ -348,7 +348,7 @@ All products were displayed the same way, regardless of the category type so the
 
 <br>
 
-### Add A Product Form Page (Product Management Page)
+### Add A Product Form Page 
 
 | Feature             |  Expect                     | Action    | Result|
 | --------------------| --------------------------  | --------  | ------|

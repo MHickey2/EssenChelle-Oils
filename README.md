@@ -1031,7 +1031,7 @@ The Page is shown to the user when their order has been processed. It contains a
 <br>
 
 ### 18. Add Product Page     <a name="addproductpage"></a>
-This Page is also the product management page. The superuser can add a product in the frontend as well as in the admin panel. It can be accessed via the account icon or with a button at the left and bottom of the products page.(which I found more intutive to user). This page has a form where you can add product details and add a product image, if an image is not added a generic image will be applied. When the product is added the user is redirected to the products page.
+The Add Product page can be found in the account admin dropdown. The superuser can add a product in the frontend as well as in the admin panel. It can be accessed via the account icon or with a button at the left and bottom of the products page.(which I found more intutive to user). This page has a form where you can add product details and add a product image, if an image is not added a generic image will be applied. When the product is added the user is redirected to the products page.
 
 <br>
 
@@ -1064,7 +1064,7 @@ If you are a Superuser you can find the button to delete a product below the pro
 <br/>
 
 ### 21. Add Blog Page     <a name="addblogpage"></a>
- The Blog Management page can be found in the account admin dropdown.The button to access the add blog page is visible on the bottom and left of the blog page, only for the superuser, I found this more accessible to use generally.The Page has a form which allows the superuser to add a blog to the blog collection. The blogs all have a general focus on highlighting products on the site. This feature is only available to the Superuser as the content is generated to promote sales. It is also hoped to provide engaging content to encourage users to come back for more. These blogs will also be shared in social media to draw followers.
+ The Add Blog page can be found in the account admin dropdown.The button to access the add blog page is visible on the bottom and left of the blog page, only for the superuser, I found this more accessible to use generally.The Page has a form which allows the superuser to add a blog to the blog collection. The blogs all have a general focus on highlighting products on the site. This feature is only available to the Superuser as the content is generated to promote sales. It is also hoped to provide engaging content to encourage users to come back for more. These blogs will also be shared in social media to draw followers.
 
 <br>
 
@@ -1177,7 +1177,7 @@ The admin panel allows the admin/superuser to perform a wide range of functional
 
 ### 29. Security Measures  <a name="security"></a>
 
-To ensure security on the site, only logged in users can access certain features on the site. A logged in user can add a product review or comment for a blog in the blog section. A superuser can add, updata and delete products within the admin panel. The superuser also has access to add, edit and delete products within the product pages. The superuser can add, edit and delete blogs in the admin panel but they can also access these capabilities within the blog page. Only the Admin/Superuser can access the admin Panel(would need sign in credentials).The Database URL and secret key are stored in the env.py file to prevent unwanted connections to the Database. As I was following the boutique ado walkthrough, I had not realised the secret key was commited in the early stages of the development, after doing my research into the issue and with the advice from CI, I generated a new key, and this was immediately put in the env.py file, making the other key obselete. All secret keys were included in the env.py file. Cross-Site Request Forgery (CSRF) Tokens are used on all Forms within the App for added protection. All keys needed for the inclusion of AWS, Cloudinary and Stripe were concealed for security purposes.
+To ensure security on the site, only logged in users can access certain features on the site. A logged in user can add a product review or comment for a blog in the blog section. A superuser can add, updata and delete products within the admin panel. The superuser also has access to add, edit and delete products within the product pages. The superuser can add, edit and delete blogs in the admin panel but they can also access these capabilities within the blog page. Only the Admin/Superuser can access the admin Panel(would need sign in credentials).The Database URL and secret key are stored in the env.py file to prevent unwanted connections to the Database. As I was following the boutique ado walkthrough, I had not realised the secret key was commited in the early stages of the development, after doing my research into the issue and with the advice from CI, I generated a new key, and this was immediately put in the env.py file, making the other key obselete. All secret keys were included in the env.py file. Cross-Site Request Forgery (CSRF) Tokens are used on all Forms within the App for added protection. All keys needed for the inclusion of the database, Cloudinary, Stripe and for Email were concealed for security purposes.
 
 <br>
 
@@ -1211,8 +1211,6 @@ To ensure security on the site, only logged in users can access certain features
 
  To increase CRUD capabilities in the frontend for the superuser I would like to allow them to approve reviews for products and comments for blogs without needing to access the admin panel by allowing the superuser to see the comments and reviews on pages within the application, much in the same way as they can use the CRUD for products and blogs. This could also be done for the contact messages, currently these messages are saved in the database and can be accessed in the panel and the message is sent to the admin/staff user, but it would good to have the option to access this information freely within the site's frontend.
 
-
- 
  <br>
 
 #### [Return to Table of Contents](#toc)
@@ -1236,7 +1234,10 @@ To ensure security on the site, only logged in users can access certain features
 -   [GitHub:](https://github.com/) - is the respository for all the git pushes.
 -   [Gitpod](https://gitpod.io/) - was the IDE Editor.
 -   [Heroku:](https://heroku.com) - used to deploy the application.
+-   [Stripe](https://stripe.com/en-ie) - used for payments on site.
+-   [Mailchimp](https://mailchimp.com/) - used for the newsletter.
 -   [Google Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - Used for Testing Site.
+-   [ResponsiveTestTool](https://responsivetesttool.com/) - used for Responsive Testing.
 -   [Markdown](https://markdown-guide.readthedocs.io/en/latest/) - Markdown Guide.
 -   [Cloudinary](https://cloudinary.com/) - used for images for the site.
 -   [Elephant SQL](https://www.elephantsql.com/) – deployed project on Heroku uses an Elephant SQL database. 
@@ -1245,6 +1246,7 @@ To ensure security on the site, only logged in users can access certain features
 -   [LogoMaker](https://www.logomaker.com/) - For creating the Logo for the site.
 -   [Favicon.io](https://favicon.io) - for making the site favicon.
 -   [tinyPNG](https://tinyjpg.com/) - for image compression.
+-   [Pixelied](https://pixelied.com/) - used to convert PNG to WEBP.
 -   [Figma](https://www.figma.com/) - used for making the wireframes for the site.
 -   [Code Institute Python Linter](https://pep8ci.herokuapp.com/) - used to validate Python in Project.
 -   [Accesibility Test](https://accessibilitytest.org/) - free accessibility testing tool.
@@ -1253,6 +1255,11 @@ To ensure security on the site, only logged in users can access certain features
 -   [Diffchecker](https://www.diffchecker.com/) - which was useful for finding coding errors in development.
 -   [Temp Email Site](https://temp-mail.org/en/) - used to test emails for registering and purchasing on site.
 -   [Page Speed Insights](https://pagespeed.web.dev/) - used to test speed and performance of website.
+-   [Image Resizer](https://imageresizer.com/) - Used to Compress & Resize Images.
+-   [W3C Markup Validation Service](https://validator.w3.org/) - Used to validate HTML code.
+-   [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_input) - Used to validate CSS code.
+-   [Pep8ci](https://pep8ci.herokuapp.com/) - Used to validate Python code. 
+-   [JSHint](https://jshint.com/) - Used to validate JS code.
 
 ### Django Packages
 
@@ -1293,13 +1300,20 @@ Go to the [TESTING DOCUMENT](TESTING.md)
 
  I had an issue when updating the quantity selector so it works on both the desktop and mobile screens, for this I just used the fix advised during the walkthrough video, and although I updated the 3 files, it did not work, so used the code diff application and found no difference, but it still did not work, so I got on to tutor support and explaied the issue, by the means of print statements, the problem was found in the script on the bag page, while updating the dollar signs to the euro signs throughout the site, when I wanted the currency to show euros instead of dollars, I had mistakenly added a euro in a query instead of the required dollar, so this had caused a 500 error, which displayed in the termnal, when this was replaced, it started to work as it was supposed to.
 
+ I had an issue with the sidebar in the blog page, it worked fine on bigger screens but caused issues with smaller screens, so experimented on making it work, but in the end I made a decision to remove the sidebar on smaller screens, I don't think it takes anything from the page itself and was in the end the best decision for the site. The carousel too is a feature that does not make it to a smaller screen, so the about us page just has an image and the introductory text, which is sufficient for an about page.  The FAG page had an issue with hiding information in the collapsibles but have added a scroll to ensure the user gets to see all the neccessary content in the collapsibles.
+
  <br>
 
  ### Unresolved <a name="unresolved"></a>
 
  There is an issue in regards to sizes of products at the moment you will be offered different sizes within cerain products, which you can select successfully, there is an issue with applying 2 different prices to seperate sizes of the one product, which would need to be addressed. You can have either a small or large essential oil product in some items, but currently both products will be priced the same, now I could content the smaller bottle is of a higher quality and the larger bottle is a weaker solution and this could account for the pricing, but moving forward I would add additional functionality to offer a greater range of sizes for a greater range of products with a differing range of costs.  I really didnt want to deviate too much from the existing scripts, as I felt this might have a detrimental effect on the whole buying procedure and the inclusion of the Stripe functioning, but this would be an area that would need more of a deep dive for building E-commerce sites in the future.
 
-While testing with lighthouse and page speed, the scores were affected by the inclusion of third party code essential for the site, this was mainly in the area of Boostrap, Jquery and mailchimp. I did try some minor fixes for these issues. In regards to the JQuery I did try to change to a newer JQuery version (3.4.1 to 3.5.1) but it stopped some functionality I had in regards to the navigation, so left it as it was. The mailchimp is included in every page, and the functionality of the newsletter subscription is provided by mailchimp, so I was not in a position to alter this code. I did change my images to new generation webp formats, as Lighhouse suggested this would be beneficial for the site. The Javascript in the site was provided by code institute and I did not want to make any alterations in case the Stripe payments could have been badly effected. 
+While testing with lighthouse and page speed, the scores were affected by the inclusion of third party code essential for the site, this was mainly in the area of Boostrap, Jquery and mailchimp. I did try some minor fixes for these issues. In regards to the JQuery I did try to change to a newer JQuery version (3.4.1 to 3.5.1) but it stopped some functionality I had in regards to the navigation, so left it as it was. Right at the end I tried this again and have managed to update the Jquery without losing functionality. The mailchimp is included in every page, and the functionality of the newsletter subscription is provided by mailchimp, so I was not in a position to alter this code.
+However the inclusion of their link and script has been problematic if I leave it at the end of the page, you get the thank you for subscribing message which is simple and effective, but causes issues with lighhouse. If I add it at the top it will take you to the mailchimp page, which seems to offer a subscriper more options, but causes an error with lighthouse, frankly there is no way of getting the location right in my experience, I can tell you either way the subscribers are saved in my mailchimp account and I am updated on receiving subscribers, so I guess it serves it's purpose. 
+
+I did change my images to new generation webp formats, as Lighhouse suggested this would be beneficial for the site. The Javascript in the site was provided by code institute and I did not want to make any alterations in case the Stripe payments could have been badly effected. 
+
+I did try to lessen the effects of render blocking issues in particular for mobile screens and despite trying to change the placement of settings, not sure if it helped any, not sure about cacheing and this would be an area worth exploring further. It is hard to test with lighthouse, when each time you use it the page goes down, so will use page speed until I get to the bottom of that issue. 
 
  <br>
 

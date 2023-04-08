@@ -38,9 +38,11 @@
     margin-right: auto;
 }
 
-.card-img-top {
+
+/*styling for images in cards*/
+.card-img-top {   
     width: 400px;
-    height: 300px;
+    height: 300px;   
 }
 
 .post-subtitle {

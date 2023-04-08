@@ -69,7 +69,7 @@ def add_product(request):
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
             product = form.save()
-            messages.success(request, 'Successfully added product!')            
+            messages.success(request, 'Successfully added product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
             messages.error(request, 'Failed to add product. Please ensure the form is valid.')  # noqa
@@ -149,7 +149,7 @@ def product_detail(request, product_id):
     form = ReviewForm()
 
     if request.method == 'POST':
-        form = ReviewForm(data=request.POST)        
+        form = ReviewForm(data=request.POST)
         if form.is_valid():
             review = form.save(commit=False)
             review.user = request.user
@@ -157,8 +157,14 @@ def product_detail(request, product_id):
             review.product = product
             review.save()
             messages.success(
-                request, 'Your Review has been added and awaits approval!')           
+                request, 'Your Review has been added and awaits approval!')
             return redirect(reverse('product_detail', args=[product.id]))
+        else:
+            messages.error(request,
+                           "Sorry your Review could not be submitted.")
+            return redirect(reverse('product_detail', args=[product.id]))
+    else:
+        form = ReviewForm()
 
     context = {
         'product': product,

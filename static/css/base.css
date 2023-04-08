@@ -208,15 +208,14 @@ footer {
 } 
 
 /*styling for images in cards*/
-.card-img-top1 {
-    object-fit: cover;
+ .card-img-top1 {
+    object-fit: cover; 
     width: 237px;
-    height: 411px;    
-    height: auto;      
+    height: 411px;
     display: block;
     margin-left: auto;
-    margin-right: auto;
-} 
+    margin-right: auto;     
+}  
 
 /* Changing img holder position, so the overlay will be related to it */
 .card-image {

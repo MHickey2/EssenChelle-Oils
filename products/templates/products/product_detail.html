@@ -113,7 +113,7 @@
     <div class=" col-md-8 card1 mb-4  mt-3">
         <h3 class="text-purple ml-2">Product Reviews:</h3>
         <p class="ml-2 text-muted">Current Reviews: {{product.number_of_reviews}} reviews</p>
-        <p class="ml-2">Log in to add a preview for this product</p>
+        <p class="ml-2">You need to be logged in to add a preview for this product</p>
         <div class="reviewsection">
             <!-- loop inside the empty control tags to iterate through each comment in comments -->
             {% for review in reviews %}
@@ -126,8 +126,7 @@
                         {{ review.created_on }}
                     </span> wrote:
                 </p>
-                <!-- The body of the comment goes before the | -->
-                <!-- {{ review.stars }} -->
+                <!-- The ratings for products -->
                 {% if review.stars == 5 %}
                             <i class="fas fa-star" ></i>
                             <i class="fas fa-star" ></i>
@@ -162,8 +161,7 @@
                 Your review is awaiting approval
             </div>
             {% else %}
-            {% if user.is_authenticated %} 
-
+            {% if user.is_authenticated %}
             <h3 class="text-purple">Leave a Review for this Product:</h3>
             <p>Posting as: {{ user.username }}</p>
             <form method="post" style="margin-top: 1.3em;">
@@ -172,7 +170,6 @@
                 <button type="submit" class="btn btn-signup btn-success btn-lg">Submit</button>
             </form>
             {% endif %} 
-
             {% endif %}
         </div>
     </div>

@@ -12,7 +12,7 @@
 The EssenChelle Oils site is my 5th Project for the Code Institute and it is a full stack E-commerce site using the Django Framework, it includes Python, JavaScript, CSS and Bootstrap5. It utilizes Stripe payments. It has user authentication and Full CRUD functionality for the products and Blogs for the Superuser. The website deals with the sale of essential oils and associated products. The website would appeal to people who use or want to know more about Essential Oils and are interested in buying these products. This website has been built for educational purposes and the payment transactions are purely for demonstration only. If you want to test the payment functionality, you can use: 
 
 <p align ="center"> 
-`Card number: 4242 4242 4242 4242  Exp: Future Date i.e. 05/25 and CVC can be any 3 numbers.`
+<mark>Card number: 4242 4242 4242 4242  Exp: Future Date i.e. 05/25 and CVC can be any 3 numbers.</mark>
 </p>
 
 <br/>
@@ -73,22 +73,23 @@ The EssenChelle Oils site is my 5th Project for the Code Institute and it is a f
     - [12. FAQ Page     ](#12-faq-page-----)
     - [13. Privacy Policy Page    ](#13-privacy-policy-page----)
     - [14. Copyright Page    ](#14-copyright-page----)
-    - [15. Shopping Bag Page     ](#15-shopping-bag-page-----)
-    - [16. Checkout Page     ](#16-checkout-page-----)
-    - [17. Checkout Success Page     ](#17-checkout-success-page-----)
+    - [15. Special Offers Page   ](#15-special-offers-page---)
+    - [16. Shopping Bag Page     ](#16-shopping-bag-page-----)
+    - [17. Checkout Page     ](#17-checkout-page-----)
+    - [18. Checkout Success Page     ](#18-checkout-success-page-----)
   - [The following pages are also available, but only to the superuser on the site.](#the-following-pages-are-also-available-but-only-to-the-superuser-on-the-site)
-    - [18. Add Product Page     ](#18-add-product-page-----)
-    - [19. Edit Product Page     ](#19-edit-product-page-----)
-    - [20. Delete Product Page     ](#20-delete-product-page-----)
-    - [21. Add Blog Page     ](#21-add-blog-page-----)
-    - [22. Edit Blog Page     ](#22-edit-blog-page-----)
-    - [23. Delete Blog Page     ](#23-delete-blog-page-----)
-    - [24. Signup Page   ](#24-signup-page---)
-    - [25. Login Page   ](#25-login-page---)
-    - [26. Logout Page   ](#26-logout-page---)
-    - [27. Custom Error Pages  ](#27-custom-error-pages--)
-    - [28. Admin Panel  ](#28-admin-panel--)
-    - [29. Security Measures  ](#29-security-measures--)
+    - [19. Add Product Page     ](#19-add-product-page-----)
+    - [20. Edit Product Page     ](#20-edit-product-page-----)
+    - [21. Delete Product Page     ](#21-delete-product-page-----)
+    - [22. Add Blog Page     ](#22-add-blog-page-----)
+    - [23. Edit Blog Page     ](#23-edit-blog-page-----)
+    - [24. Delete Blog Page     ](#24-delete-blog-page-----)
+    - [25. Signup Page   ](#25-signup-page---)
+    - [26. Login Page   ](#26-login-page---)
+    - [27. Logout Page   ](#27-logout-page---)
+    - [28. Custom Error Pages  ](#28-custom-error-pages--)
+    - [29. Admin Panel  ](#29-admin-panel--)
+    - [30. Security Measures  ](#30-security-measures--)
       - [Return to Table of Contents](#return-to-table-of-contents-6)
   - [8. Future Implementation  ](#8-future-implementation--)
       - [Return to Table of Contents](#return-to-table-of-contents-7)
@@ -787,7 +788,7 @@ The logo was the first asset I created in Logo maker, it depicts a simple female
 There is a search bar, where the user can search for products by name or keyword. There is an Account Icon, which contains a dropdown menu:
 
 Account Icon - Register, Log In. (Before Log in or registering)
-Account Icon - Product Management, Blog Management, My Profile, Product Favourites, Log Out. (If logged in and Superuser)
+Account Icon - Add a Product, Add a Blog, My Profile, Product Favourites, Log Out. (If logged in and Superuser)
 Account Icon - My Profile, Product Favourites, Log Out (If logged in and ordinary User)
 
 Shopping Bag Icon - Takes you to the Shopping Bag Page.
@@ -991,7 +992,18 @@ This page shows the copyright information for the EssenChelle Oil Company. The l
 
 <br/>
 
-### 15. Shopping Bag Page     <a name="shoppingbagpage"></a>
+### 15. Special Offers Page   <a name="specialofferspage"></a>
+This Page shows products in the category of New Arrivals, Deals and Clearance Items. You can select to see products within just one category by choosing the option in the dropdown menu or by selecting the relevant badge at the top of the page. You can view the number of products and there is a facility for sorting at the top of the page. The options for sorting includes price, rating, name and category.
+
+<br>
+
+<p align ="center">      
+     <img src="assets/readme/images/specialoffers.jpg"  width="500"  alt="special offers page" />    
+</p>
+
+<br/>
+
+### 16. Shopping Bag Page     <a name="shoppingbagpage"></a>
 The Page shows the products that the user has currently in their shopping bag. This will initially display no products, but as products are added, they will be displayed on the page. Any products displayed will show an image, the price, a quantity selector for the number of items and the total price for all products in the bag. You can update the number of items or remove an item if neccessary. If the product amount exceeds 50 there is no delivery cost, but if it is lower a delivery cost will be applied. There is a keep shopping button and this allows the user to return to shop for more products. There is also a 'Go to secure checkout button' and this will send the user to the checkout page where they can complete the purchasing process.
 
 <br>
@@ -1002,7 +1014,7 @@ The Page shows the products that the user has currently in their shopping bag. T
 
 <br/>
 
-### 16. Checkout Page     <a name="checkoutpage"></a>
+### 17. Checkout Page     <a name="checkoutpage"></a>
 The Checkout Page shows the form to complete the order and the order summary. If you have previously clicked to save your delivery information on profile, this information will be already filled in. You can adjust your bag or you can complete your order. When the user has successfully entered all their details correctly, a spinner feature will show while the purchase is being processed. In some cases a popup will be shown to allow the user to authenthicate their card. With Stripe there is added validation to ensure the card details have been entered correctly.
 
 <br>
@@ -1013,7 +1025,7 @@ The Checkout Page shows the form to complete the order and the order summary. If
 
 <br/>
 
-### 17. Checkout Success Page     <a name="checkoutsuccesspage"></a>
+### 18. Checkout Success Page     <a name="checkoutsuccesspage"></a>
 The Page is shown to the user when their order has been processed. It contains a Thank you message and includes the order information, order details, delivery details and billing information, and there is a link to the latest deals page on the site. There is also a success message displayed(toast) advising the user that their order has been processed successfully and a confirmation email will be sent to them.
 
 <br>
@@ -1030,7 +1042,7 @@ The Page is shown to the user when their order has been processed. It contains a
 
 <br>
 
-### 18. Add Product Page     <a name="addproductpage"></a>
+### 19. Add Product Page     <a name="addproductpage"></a>
 The Add Product page can be found in the account admin dropdown. The superuser can add a product in the frontend as well as in the admin panel. It can be accessed via the account icon or with a button at the left and bottom of the products page.(which I found more intutive to user). This page has a form where you can add product details and add a product image, if an image is not added a generic image will be applied. When the product is added the user is redirected to the products page.
 
 <br>
@@ -1041,7 +1053,7 @@ The Add Product page can be found in the account admin dropdown. The superuser c
 
 <br/>
 
-### 19. Edit Product Page     <a name="editproductpage"></a>
+### 20. Edit Product Page     <a name="editproductpage"></a>
 If you are a Superuser you can find the button to edit a product below the product Title in the products page and on the product detail page again below the product Title. The Edit Product Page has a form which allows the superuser to edit product details for individual products. When the product details have been edited and the form is submitted the superuser will be redirected to the product detail page for that specific product.
 
 <br>
@@ -1052,7 +1064,7 @@ If you are a Superuser you can find the button to edit a product below the produ
 
 <br/>
 
-### 20. Delete Product Page     <a name="deleteproductpage"></a>
+### 21. Delete Product Page     <a name="deleteproductpage"></a>
 If you are a Superuser you can find the button to delete a product below the product Title in the products page and on the product detail page below again under the product Title.The Delete Product Page has a form which allows the superuser to delete individual products. If you select to delete the product you will be redirected to the products page, where the product will have been removed. 
 
 <br>
@@ -1063,7 +1075,7 @@ If you are a Superuser you can find the button to delete a product below the pro
 
 <br/>
 
-### 21. Add Blog Page     <a name="addblogpage"></a>
+### 22. Add Blog Page     <a name="addblogpage"></a>
  The Add Blog page can be found in the account admin dropdown.The button to access the add blog page is visible on the bottom and left of the blog page, only for the superuser, I found this more accessible to use generally.The Page has a form which allows the superuser to add a blog to the blog collection. The blogs all have a general focus on highlighting products on the site. This feature is only available to the Superuser as the content is generated to promote sales. It is also hoped to provide engaging content to encourage users to come back for more. These blogs will also be shared in social media to draw followers.
 
 <br>
@@ -1074,7 +1086,7 @@ If you are a Superuser you can find the button to delete a product below the pro
 
 <br/>
 
-### 22. Edit Blog Page     <a name="editblogpage"></a>
+### 23. Edit Blog Page     <a name="editblogpage"></a>
  The link to edit a blog can be found at the bottom of individual blogs in the blog page and the bottom left side of the page below the blog in the blog detail page. The Edit Blog Page has a form which allows the superuser to edit an existing blog. A Toast will tell the user that they are editing the blog. When the blog is edited, the changes will be updated in the blog on the blog page. 
 
 <br>
@@ -1085,7 +1097,7 @@ If you are a Superuser you can find the button to delete a product below the pro
 
 <br/>
 
-### 23. Delete Blog Page     <a name="deleteblogpage"></a>
+### 24. Delete Blog Page     <a name="deleteblogpage"></a>
 The link to delete a blog can be found at the bottom of individual blogs in the blog page and the bottom left side of the page below the blog in the blog detail page.The Delete Page has a form which allows the superuser to delete an existing blog. The user will be returned to the Blog page and their blog will have been removed.
 
 <br>
@@ -1102,7 +1114,7 @@ The following pages are available to all users on the site.
 
 <br> 
 
-###  24. Signup Page   <a name="signuppage"></a>
+###  25. Signup Page   <a name="signuppage"></a>
 
 On the Signup Page, a new user can sign up for the EssenChelle Oils website by filling out and submitting the form. On registering they will be assigned a Profile for the site. On registering they will be sent an email confirming their registration. 
 
@@ -1114,7 +1126,7 @@ On the Signup Page, a new user can sign up for the EssenChelle Oils website by f
 
 <br/>
 
-###  25. Login Page   <a name="loginpage"></a>
+###  26. Login Page   <a name="loginpage"></a>
 
 A registered User can log in to the website by inputting their username and password and they will have full access to all the logged in features within the site. If they are logged in and are a superuser they will have extra functionality enabled. If the user forgets their email they can choose the forget password link and they will be sent an email to reset their password. They can then login with their new password. They can use the checkout box to be remembered, to make it easier for them to log in the next time.
 
@@ -1127,7 +1139,7 @@ A registered User can log in to the website by inputting their username and pass
 
 <br/> 
 
-###  26. Logout Page   <a name="logoutpage"></a>
+###  27. Logout Page   <a name="logoutpage"></a>
 
 In the Logout Page, the User can confirm that they want to exit the website and they can then log out of the site.
 
@@ -1139,7 +1151,7 @@ In the Logout Page, the User can confirm that they want to exit the website and 
 
 <br/> 
 
-### 27. Custom Error Pages  <a name="error pages"></a>
+### 28. Custom Error Pages  <a name="error pages"></a>
 
 I have included custom Error Pages in the error folder within the templates folder(403,404,405,500), Below is the image from the 404 page, but they all look similar, barring the fault lines.
 
@@ -1157,7 +1169,7 @@ The following panel feature is available to the superuser.
 
 <br>
 
-### 28. Admin Panel  <a name="adminpanel"></a>
+### 29. Admin Panel  <a name="adminpanel"></a>
 
 The admin panel allows the admin/superuser to perform a wide range of functionalities within the site. The admin can add, delete, edit products and they can review and add or change details in all admin areas. The admin can also approve reviews for individual products and comments for individual blogs.
 
@@ -1175,7 +1187,7 @@ The admin panel allows the admin/superuser to perform a wide range of functional
 
 <br/> 
 
-### 29. Security Measures  <a name="security"></a>
+### 30. Security Measures  <a name="security"></a>
 
 To ensure security on the site, only logged in users can access certain features on the site. A logged in user can add a product review or comment for a blog in the blog section. A superuser can add, updata and delete products within the admin panel. The superuser also has access to add, edit and delete products within the product pages. The superuser can add, edit and delete blogs in the admin panel but they can also access these capabilities within the blog page. Only the Admin/Superuser can access the admin Panel(would need sign in credentials).The Database URL and secret key are stored in the env.py file to prevent unwanted connections to the Database. As I was following the boutique ado walkthrough, I had not realised the secret key was commited in the early stages of the development, after doing my research into the issue and with the advice from CI, I generated a new key, and this was immediately put in the env.py file, making the other key obselete. All secret keys were included in the env.py file. Cross-Site Request Forgery (CSRF) Tokens are used on all Forms within the App for added protection. All keys needed for the inclusion of the database, Cloudinary, Stripe and for Email were concealed for security purposes.
 
@@ -1499,6 +1511,8 @@ ALLOWED_HOSTS =
 
 When you go through the purchasing process on your site, you can check on your webhooks to see if they have succeeded. I enabled a webhook for the gitpod site and the deployed site. Every so often in the gitpod webhook, it would fail and you would have to check if the url had changed, it changes now and again usually by just one number, but it is enough to make it fail. In the early stages, I had not noticed the url change and figured it was an issue with the code, but as time went on and if there was an issue I just updated the endpoint address and it would work again. The endpoint for the deployed site does not change, but if the url changes after submission, the url in the gitpod site may be updated again and the webhook may fail(in gitpod site).
 
+<br>
+
 ### Final Deployment 
 
 - When development is complete change the debug setting to: `DEBUG = False` in settings.py
@@ -1513,12 +1527,12 @@ When you go through the purchasing process on your site, you can check on your w
 
  ## Credits <a name="credits"></a>
 
- All images on the site were sourced in Pexels, the initial template for the essential oil and massage oil bottles were sourced in freepics. These templates were used in photoshop in combination with a brand created with [LogoMaker](https://www.logomaker.com/) to create customised images with the essenchelle brand, to add authenticity to the website. The Doterra essential oil images were found on the Pexel's site, but they were referenced in the product description.
+ All images on the site were sourced in Pexels, the initial template for the essential oil and massage oil bottles were sourced in freepics. These templates were used in photoshop in combination with a brand created with [LogoMaker](https://www.logomaker.com/) to create customised images with the essenchelle brand, to add authenticity to the website. The Doterra essential oil images were found on the Pexel's site, but they were referenced in the product description. A number of the Oil Burners were souced on a shopping site.
 
  The logo and Favicon were built with the online tools: [LogoMaker](https://www.logomaker.com/) and 
  [Favicon.io](https://favicon.io/)
 
- The Project began with the basic code used in the 'Boutique Ado' walkthrough Project, but was modified according to my own needs within the Project. As the Project developed, I sought out various Tutorials and consulted documentation for Django and Stripe.
+ The Project began with the basic code used in the 'Boutique Ado' walkthrough Project, but was modified according to my own needs within the Project. As the Project developed, I sought out various Tutorials and consulted documentation for Django and Stripe. I also used some code from the Blog Walkthrough from Project 4.
 
  I also used the following online resources:
 
@@ -1542,9 +1556,10 @@ My link to the external site on the blog page with great information on using Es
 
 Everyone in Code Institute who contributed to my Projects, in particular Ed from Tutor Support, who shared his vast knowledge with me, but also every other Tutor who helped me along the way.
 
-Thank you also to Joshua, Jason and Holly, who helped me in a coding crisis near the end of the Project.
+Thank you also to Joshua, Jason and Holly, who helped me in a IDE issue near the end of the Project.
 
 Thank you to my Mentor Brian Macharia for all your help and guidance for all my Projects.
+
 <br>
 
  #### [Return to Table of Contents](#toc) 
@@ -1557,5 +1572,6 @@ Michelle Hickey, Full Stack Software Developer.
 - [Portfolio](https://michellehickey.crevado.com/)
 - [UX Portfolio](https://www.behance.net/michellehickey2)
 
+<br>
 
 [Back to the Top](#table-of-contents)

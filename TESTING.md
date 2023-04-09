@@ -155,6 +155,16 @@ Besides manually checking links on the site I used [Dr Link Checker](https://www
   
   <br>
 
+Not sure where to put this note, but this seemed a logical place, in the assessment it was mention that we could use the following, but I do not have any paid links or distrusted content, and as this is an educational site I do not have any sponsored or compensated links, however I would ensure to include these in a real life site.
+
+<br>
+
+````
+Use “nofollow” for any paid links and distrusted content.
+Use “sponsored” for any sponsored or compensated links.
+````
+
+<br>
 
  #### [Return to Table of Contents](#toc)
 ----  

@@ -60,6 +60,7 @@
 
 }
 
+/*referred to in credits*/
 .collapsible {
   align-content: center;
   background-color: #990c9e;;
@@ -70,8 +71,7 @@
   border: none;
   text-align: left; 
   outline: none;
-  font-size: 14px;
-  
+  font-size: 14px;  
 }
 
 .active,
@@ -87,7 +87,7 @@
   background-color: #f1f1f1;  
 }
 
-/* Our Products Styling */
+/* Our Products Styling lost track of link */
 .testsection {
   background-color: white;
 }

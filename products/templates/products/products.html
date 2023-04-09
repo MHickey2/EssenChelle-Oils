@@ -125,7 +125,6 @@
     icon="mdi:arrow-up" class="greenicon" width="18"></iconify-icon>
 </a>
 {% endblock %}
-
 {% block postloadjs %}
     {{ block.super }}
     <script>
@@ -133,7 +132,7 @@
 			window.scrollTo(0,0)
 		})
 	</script>
-    
+<!--js for sorting -->    
     <script>
         $('#sort-selector').change(function() {
             var selector = $(this);

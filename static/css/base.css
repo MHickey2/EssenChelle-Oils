@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none !important;
 }
 
 html {
@@ -17,7 +18,7 @@ html {
 }
 
 body {
-    background: url('https://res.cloudinary.com/dspwticaf/image/upload/v1680017191/massageoil_hboa7n.webp') no-repeat top center fixed;
+    background: url('https://res.cloudinary.com/dspwticaf/image/upload/v1680017191/massageoil_hboa7n.webp') no-repeat top center fixed; 
     height: calc(100vh - 164px);
     max-width: 1500px;
     margin-left: auto;
@@ -25,7 +26,6 @@ body {
     width: auto !important;
     overflow-x: hidden !important;
 }
-
 
 /*Some of the styling came with the Boutique Ado Walkthrough, but has been modified
 to fit the new site's styling, but some elements are the same as they fitted the
@@ -37,8 +37,8 @@ needs of the current project*/
 
 }
 /*Styling for the headings for the site*/
-.logo-font {
-    font-family: 'Courgette';
+.logo-font {    
+    font-family: 'Courgette', cursive;
 }
 
 .main-nav {
@@ -52,6 +52,7 @@ needs of the current project*/
     color: purple !important;
     font-size: 20px;
 }
+
 
 /* from Bulma */
 .icon {
@@ -209,9 +210,9 @@ footer {
 
 /*styling for images in cards*/
  .card-img-top1 {
-    object-fit: cover; 
-    width: 237px;
-    height: 411px;
+    object-fit: cover;     
+    width: 250px;
+    height: 428px;
     display: block;
     margin-left: auto;
     margin-right: auto;     

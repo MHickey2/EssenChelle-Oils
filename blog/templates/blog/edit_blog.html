@@ -23,7 +23,6 @@
                     {% csrf_token %}
                     {{ form | crispy }}
                     <br>
-
                     <button type="submit" class="btn btn-success btn-lg ">Update</button>
                 </form>
         </div>
@@ -39,8 +38,7 @@
 <div class="text-center">
     <a href="{% url 'blog' %}" class="btn btn-dark ml-3 mx-auto mt-3 mb-3">Back</a>
 </div>
-
-
+<!--Summernote Editor js-->
 <script>
     $(document).ready(function () {
         $('.summernote').summernote({
